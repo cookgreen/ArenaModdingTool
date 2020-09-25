@@ -1,2 +1,2 @@
-# MBBannerlordModdingTools
-Unofficial Modding tool for Mount&amp;Blade II Bannerlord
+# Arena
+Unofficial Modding tool for Mount & Blade II Bannerlord
