@@ -18,25 +18,42 @@ namespace ArenaModdingTool
             InitializeComponent();
             this.appSetting = appSetting;
             SwitchLanguage();
+
+            foreach(var langName in LanguageManager.Instance.GetLanguageNames())
+            {
+                var item = mnuToolLanguage.DropDownItems.Add(langName);
+                item.Click += (o, e) =>
+                {
+                    LanguageManager.Instance.CurrentLocalization = langName;
+                    SwitchLanguage();
+                    foreach (var control in panel2.Controls)
+                    {
+                        if (control is ILocalization)
+                        {
+                            (control as ILocalization).SwitchLanguage();
+                        }
+                    }
+                };
+            }
         }
 
         public void SwitchLanguage()
         {
-            Text = Helper.LOC(appSetting.Localization, "ui_main_form_title");
-            mnuFile.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFile");
-            mnuFileNew.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFileNew");
-            mnuFileNewProject.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFileNewProject");
-            mnuFileNewOtherFile.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFileNewOtherFile");
-            mnuFileOpen.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFileOpen");
-            mnuFileOpenProject.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFileOpenProjet");
-            mnuFileOpenOtherFile.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuFileOpenOtherProject");
-            mnuPlugin.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuPlugin");
-            mnuTool.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuTool");
-            mnuToolLanguage.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuToolLanguage");
-            mnuHelp.Text = Helper.LOC(appSetting.Localization, "ui_main_form_mnuHelp");
-            btnFactions.Text = Helper.LOC(appSetting.Localization, "ui_main_form_panel_buttons_faction");
-            btnTroops.Text = Helper.LOC(appSetting.Localization, "ui_main_form_panel_buttons_troop");
-            btnParties.Text = Helper.LOC(appSetting.Localization, "ui_main_form_panel_buttons_parties");
+            Text = Helper.LOC("ui_main_form_title");
+            mnuFile.Text = Helper.LOC("ui_main_form_mnuFile");
+            mnuFileNew.Text = Helper.LOC("ui_main_form_mnuFileNew");
+            mnuFileNewProject.Text = Helper.LOC("ui_main_form_mnuFileNewProject");
+            mnuFileNewOtherFile.Text = Helper.LOC("ui_main_form_mnuFileNewOtherFile");
+            mnuFileOpen.Text = Helper.LOC("ui_main_form_mnuFileOpen");
+            mnuFileOpenProject.Text = Helper.LOC("ui_main_form_mnuFileOpenProjet");
+            mnuFileOpenOtherFile.Text = Helper.LOC("ui_main_form_mnuFileOpenOtherProject");
+            mnuPlugin.Text = Helper.LOC("ui_main_form_mnuPlugin");
+            mnuTool.Text = Helper.LOC("ui_main_form_mnuTool");
+            mnuToolLanguage.Text = Helper.LOC("ui_main_form_mnuToolLanguage");
+            mnuHelp.Text = Helper.LOC("ui_main_form_mnuHelp");
+            btnFactions.Text = Helper.LOC("ui_main_form_panel_buttons_faction");
+            btnTroops.Text = Helper.LOC("ui_main_form_panel_buttons_troop");
+            btnParties.Text = Helper.LOC("ui_main_form_panel_buttons_parties");
         }
     }
 }

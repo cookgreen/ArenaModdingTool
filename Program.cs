@@ -17,6 +17,8 @@ namespace ArenaModdingTool
             LanguageManager.Instance.Init();
             AppSetting appSetting = new AppSetting("app.ini");
 
+            LanguageManager.Instance.CurrentLocalization = appSetting.Localization;
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMain(appSetting));

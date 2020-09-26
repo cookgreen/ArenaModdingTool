@@ -25,9 +25,16 @@ namespace ArenaModdingTool
             }
         }
 
+        public string CurrentLocalization { get; set; }
+
+        public List<string> GetLanguageNames()
+        {
+            return languages.Select(o => o.LocalizedName).ToList();
+        }
+
         public string GetLocalizationString(string local, string stringID)
         {
-            var lang = languages.Where(o => o.ID == local).FirstOrDefault();
+            var lang = languages.Where(o => o.LocalizedName == local).FirstOrDefault();
             return lang[stringID];
         }
 

@@ -8,9 +8,9 @@ namespace ArenaModdingTool
 {
     public class Helper
     {
-        public static string LOC(string local, string stringID)
+        public static string LOC(string stringID)
         {
-            return LanguageManager.Instance.GetLocalizationString(local, stringID);
+            return LanguageManager.Instance.GetLocalizationString(LanguageManager.Instance.CurrentLocalization, stringID);
         }
     }
 }
