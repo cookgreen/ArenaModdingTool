@@ -13,6 +13,7 @@ namespace ArenaModdingTool
     public partial class frmMain : Form, ILocalization
     {
         private AppSetting appSetting;
+        private AMProject currentProject;
         public frmMain(AppSetting appSetting)
         {
             InitializeComponent();
@@ -54,6 +55,15 @@ namespace ArenaModdingTool
             btnFactions.Text = Helper.LOC("ui_main_form_panel_buttons_faction");
             btnTroops.Text = Helper.LOC("ui_main_form_panel_buttons_troop");
             btnParties.Text = Helper.LOC("ui_main_form_panel_buttons_parties");
+        }
+
+        private void mnuFileNewProject_Click(object sender, EventArgs e)
+        {
+            frmNewProject newProjectForm = new frmNewProject();
+            if (newProjectForm.ShowDialog() == DialogResult.OK)
+            {
+                currentProject = newProjectForm.NewProject;
+            }
         }
     }
 }

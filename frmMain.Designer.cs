@@ -43,10 +43,10 @@
             this.mnuPlugin = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.panelControls = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnFactions = new System.Windows.Forms.Button();
-            this.btnTroops = new System.Windows.Forms.Button();
             this.btnParties = new System.Windows.Forms.Button();
+            this.btnTroops = new System.Windows.Forms.Button();
+            this.btnFactions = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -81,19 +81,20 @@
             this.mnuFileNewProject,
             this.mnuFileNewOtherFile});
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(108, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(180, 22);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileNewProject
             // 
             this.mnuFileNewProject.Name = "mnuFileNewProject";
-            this.mnuFileNewProject.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNewProject.Size = new System.Drawing.Size(180, 22);
             this.mnuFileNewProject.Text = "Project";
+            this.mnuFileNewProject.Click += new System.EventHandler(this.mnuFileNewProject_Click);
             // 
             // mnuFileNewOtherFile
             // 
             this.mnuFileNewOtherFile.Name = "mnuFileNewOtherFile";
-            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(180, 22);
             this.mnuFileNewOtherFile.Text = "File";
             // 
             // mnuFileOpen
@@ -102,7 +103,7 @@
             this.mnuFileOpenProject,
             this.mnuFileOpenOtherFile});
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(108, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(180, 22);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileOpenProject
@@ -120,12 +121,12 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(105, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // mnuFileExit
             // 
             this.mnuFileExit.Name = "mnuFileExit";
-            this.mnuFileExit.Size = new System.Drawing.Size(108, 22);
+            this.mnuFileExit.Size = new System.Drawing.Size(180, 22);
             this.mnuFileExit.Text = "Exit";
             // 
             // mnuTool
@@ -166,6 +167,36 @@
             this.panelControls.Size = new System.Drawing.Size(142, 425);
             this.panelControls.TabIndex = 1;
             // 
+            // btnParties
+            // 
+            this.btnParties.Enabled = false;
+            this.btnParties.Location = new System.Drawing.Point(29, 201);
+            this.btnParties.Name = "btnParties";
+            this.btnParties.Size = new System.Drawing.Size(75, 50);
+            this.btnParties.TabIndex = 2;
+            this.btnParties.Text = "Parties";
+            this.btnParties.UseVisualStyleBackColor = true;
+            // 
+            // btnTroops
+            // 
+            this.btnTroops.Enabled = false;
+            this.btnTroops.Location = new System.Drawing.Point(29, 108);
+            this.btnTroops.Name = "btnTroops";
+            this.btnTroops.Size = new System.Drawing.Size(75, 50);
+            this.btnTroops.TabIndex = 1;
+            this.btnTroops.Text = "Troops";
+            this.btnTroops.UseVisualStyleBackColor = true;
+            // 
+            // btnFactions
+            // 
+            this.btnFactions.Enabled = false;
+            this.btnFactions.Location = new System.Drawing.Point(29, 19);
+            this.btnFactions.Name = "btnFactions";
+            this.btnFactions.Size = new System.Drawing.Size(75, 50);
+            this.btnFactions.TabIndex = 0;
+            this.btnFactions.Text = "Factions";
+            this.btnFactions.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -174,33 +205,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(658, 425);
             this.panel2.TabIndex = 2;
-            // 
-            // btnFactions
-            // 
-            this.btnFactions.Location = new System.Drawing.Point(29, 19);
-            this.btnFactions.Name = "btnFactions";
-            this.btnFactions.Size = new System.Drawing.Size(75, 50);
-            this.btnFactions.TabIndex = 0;
-            this.btnFactions.Text = "Factions";
-            this.btnFactions.UseVisualStyleBackColor = true;
-            // 
-            // btnTroops
-            // 
-            this.btnTroops.Location = new System.Drawing.Point(29, 108);
-            this.btnTroops.Name = "btnTroops";
-            this.btnTroops.Size = new System.Drawing.Size(75, 50);
-            this.btnTroops.TabIndex = 1;
-            this.btnTroops.Text = "Troops";
-            this.btnTroops.UseVisualStyleBackColor = true;
-            // 
-            // btnParties
-            // 
-            this.btnParties.Location = new System.Drawing.Point(29, 201);
-            this.btnParties.Name = "btnParties";
-            this.btnParties.Size = new System.Drawing.Size(75, 50);
-            this.btnParties.TabIndex = 2;
-            this.btnParties.Text = "Parties";
-            this.btnParties.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
