@@ -14,9 +14,12 @@ namespace ArenaModdingTool
         [STAThread]
         static void Main()
         {
+            LanguageManager.Instance.Init();
+            AppSetting appSetting = new AppSetting("app.ini");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new frmMain(appSetting));
         }
     }
 }

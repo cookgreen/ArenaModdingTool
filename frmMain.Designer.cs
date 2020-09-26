@@ -28,15 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPlugin = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuTool = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuToolLanguage = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelControls = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNew = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNewProject = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNewOtherFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,21 +37,32 @@
             this.mnuFileOpenProject = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileOpenOtherFile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuStrip1.SuspendLayout();
+            this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuTool = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuToolLanguage = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPlugin = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelControls = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnFactions = new System.Windows.Forms.Button();
+            this.btnTroops = new System.Windows.Forms.Button();
+            this.btnParties = new System.Windows.Forms.Button();
+            this.menu.SuspendLayout();
+            this.panelControls.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuTool,
             this.mnuPlugin,
             this.mnuHelp});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(800, 25);
+            this.menu.TabIndex = 0;
+            this.menu.Text = "menuStrip1";
             // 
             // mnuFile
             // 
@@ -70,6 +74,73 @@
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Size = new System.Drawing.Size(39, 21);
             this.mnuFile.Text = "File";
+            // 
+            // mnuFileNew
+            // 
+            this.mnuFileNew.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuFileNewProject,
+            this.mnuFileNewOtherFile});
+            this.mnuFileNew.Name = "mnuFileNew";
+            this.mnuFileNew.Size = new System.Drawing.Size(108, 22);
+            this.mnuFileNew.Text = "New";
+            // 
+            // mnuFileNewProject
+            // 
+            this.mnuFileNewProject.Name = "mnuFileNewProject";
+            this.mnuFileNewProject.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNewProject.Text = "Project";
+            // 
+            // mnuFileNewOtherFile
+            // 
+            this.mnuFileNewOtherFile.Name = "mnuFileNewOtherFile";
+            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNewOtherFile.Text = "File";
+            // 
+            // mnuFileOpen
+            // 
+            this.mnuFileOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuFileOpenProject,
+            this.mnuFileOpenOtherFile});
+            this.mnuFileOpen.Name = "mnuFileOpen";
+            this.mnuFileOpen.Size = new System.Drawing.Size(108, 22);
+            this.mnuFileOpen.Text = "Open";
+            // 
+            // mnuFileOpenProject
+            // 
+            this.mnuFileOpenProject.Name = "mnuFileOpenProject";
+            this.mnuFileOpenProject.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileOpenProject.Text = "Project";
+            // 
+            // mnuFileOpenOtherFile
+            // 
+            this.mnuFileOpenOtherFile.Name = "mnuFileOpenOtherFile";
+            this.mnuFileOpenOtherFile.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileOpenOtherFile.Text = "File";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(105, 6);
+            // 
+            // mnuFileExit
+            // 
+            this.mnuFileExit.Name = "mnuFileExit";
+            this.mnuFileExit.Size = new System.Drawing.Size(108, 22);
+            this.mnuFileExit.Text = "Exit";
+            // 
+            // mnuTool
+            // 
+            this.mnuTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuToolLanguage});
+            this.mnuTool.Name = "mnuTool";
+            this.mnuTool.Size = new System.Drawing.Size(46, 21);
+            this.mnuTool.Text = "Tool";
+            // 
+            // mnuToolLanguage
+            // 
+            this.mnuToolLanguage.Name = "mnuToolLanguage";
+            this.mnuToolLanguage.Size = new System.Drawing.Size(130, 22);
+            this.mnuToolLanguage.Text = "language";
             // 
             // mnuPlugin
             // 
@@ -83,22 +154,12 @@
             this.mnuHelp.Size = new System.Drawing.Size(47, 21);
             this.mnuHelp.Text = "Help";
             // 
-            // mnuTool
-            // 
-            this.mnuTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuToolLanguage});
-            this.mnuTool.Name = "mnuTool";
-            this.mnuTool.Size = new System.Drawing.Size(46, 21);
-            this.mnuTool.Text = "Tool";
-            // 
-            // mnuToolLanguage
-            // 
-            this.mnuToolLanguage.Name = "mnuToolLanguage";
-            this.mnuToolLanguage.Size = new System.Drawing.Size(180, 22);
-            this.mnuToolLanguage.Text = "language";
-            // 
             // panelControls
             // 
+            this.panelControls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelControls.Controls.Add(this.btnParties);
+            this.panelControls.Controls.Add(this.btnTroops);
+            this.panelControls.Controls.Add(this.btnFactions);
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControls.Location = new System.Drawing.Point(0, 25);
             this.panelControls.Name = "panelControls";
@@ -107,64 +168,39 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(142, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(658, 425);
             this.panel2.TabIndex = 2;
             // 
-            // mnuFileExit
+            // btnFactions
             // 
-            this.mnuFileExit.Name = "mnuFileExit";
-            this.mnuFileExit.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileExit.Text = "Exit";
+            this.btnFactions.Location = new System.Drawing.Point(29, 19);
+            this.btnFactions.Name = "btnFactions";
+            this.btnFactions.Size = new System.Drawing.Size(75, 50);
+            this.btnFactions.TabIndex = 0;
+            this.btnFactions.Text = "Factions";
+            this.btnFactions.UseVisualStyleBackColor = true;
             // 
-            // mnuFileNew
+            // btnTroops
             // 
-            this.mnuFileNew.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFileNewProject,
-            this.mnuFileNewOtherFile});
-            this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileNew.Text = "New";
+            this.btnTroops.Location = new System.Drawing.Point(29, 108);
+            this.btnTroops.Name = "btnTroops";
+            this.btnTroops.Size = new System.Drawing.Size(75, 50);
+            this.btnTroops.TabIndex = 1;
+            this.btnTroops.Text = "Troops";
+            this.btnTroops.UseVisualStyleBackColor = true;
             // 
-            // mnuFileNewProject
+            // btnParties
             // 
-            this.mnuFileNewProject.Name = "mnuFileNewProject";
-            this.mnuFileNewProject.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileNewProject.Text = "Project";
-            // 
-            // mnuFileNewOtherFile
-            // 
-            this.mnuFileNewOtherFile.Name = "mnuFileNewOtherFile";
-            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileNewOtherFile.Text = "File";
-            // 
-            // mnuFileOpen
-            // 
-            this.mnuFileOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFileOpenProject,
-            this.mnuFileOpenOtherFile});
-            this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileOpen.Text = "Open";
-            // 
-            // mnuFileOpenProject
-            // 
-            this.mnuFileOpenProject.Name = "mnuFileOpenProject";
-            this.mnuFileOpenProject.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileOpenProject.Text = "Project";
-            // 
-            // mnuFileOpenOtherFile
-            // 
-            this.mnuFileOpenOtherFile.Name = "mnuFileOpenOtherFile";
-            this.mnuFileOpenOtherFile.Size = new System.Drawing.Size(180, 22);
-            this.mnuFileOpenOtherFile.Text = "File";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.btnParties.Location = new System.Drawing.Point(29, 201);
+            this.btnParties.Name = "btnParties";
+            this.btnParties.Size = new System.Drawing.Size(75, 50);
+            this.btnParties.TabIndex = 2;
+            this.btnParties.Text = "Parties";
+            this.btnParties.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -173,14 +209,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelControls);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menu);
+            this.MainMenuStrip = this.menu;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arena - Modding Tool for Bannerlord";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
+            this.panelControls.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,7 +225,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem mnuFile;
         private System.Windows.Forms.ToolStripMenuItem mnuPlugin;
         private System.Windows.Forms.ToolStripMenuItem mnuHelp;
@@ -204,6 +241,9 @@
         private System.Windows.Forms.ToolStripMenuItem mnuFileOpenProject;
         private System.Windows.Forms.ToolStripMenuItem mnuFileOpenOtherFile;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.Button btnParties;
+        private System.Windows.Forms.Button btnTroops;
+        private System.Windows.Forms.Button btnFactions;
     }
 }
 
