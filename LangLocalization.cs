@@ -39,24 +39,25 @@ namespace ArenaModdingTool
             {
                 while (reader.Peek() > -1)
                 {
-                    string line = reader.ReadLine().Replace(" ", string.Empty);
+                    string line = reader.ReadLine();
                     string[] tokens = line.Split('=');
-                    string key = tokens[0];
+                    string key = tokens[0].Trim();
+                    string value = tokens[1].Trim();
                     if (key == "ui_lang_id")
                     {
-                        id = tokens[1];
+                        id = value;
                     }
                     else if (key == "ui_lang_name")
                     {
-                        name = tokens[1];
+                        name = value;
                     }
                     else if (key == "ui_lang_localized_name")
                     {
-                        localizedName = tokens[1];
+                        localizedName = value;
                     }
                     else
                     {
-                        localizationDic[key] = tokens[1];
+                        localizationDic[key] = value;
                     }
                 }
             }

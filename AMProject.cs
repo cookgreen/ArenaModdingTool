@@ -17,5 +17,10 @@ namespace ArenaModdingTool
         {
             bannerlordModule = new MBBannerlordModule();
         }
+
+        public void CreateNew()
+        {
+            bannerlordModule.CreateNew();
+        }
     }
 }

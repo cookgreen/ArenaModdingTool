@@ -8,5 +8,10 @@ namespace ArenaModdingTool
 {
     public class MBBannerlordModule
     {
+        
+        public void CreateNew()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
