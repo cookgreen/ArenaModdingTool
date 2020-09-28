@@ -11,13 +11,14 @@ using System.Windows.Forms;
 
 namespace ArenaModdingTool
 {
-    public partial class frmImportProject : Form
+    public partial class frmImportProject : Form, ILocalization
     {
         private AMProject project;
         public AMProject Project { get { return project; } }
         public frmImportProject()
         {
             InitializeComponent();
+            SwitchLanguage();
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -52,6 +53,14 @@ namespace ArenaModdingTool
         {
             DialogResult = DialogResult.Cancel;
             Close();
+        }
+
+        public void SwitchLanguage()
+        {
+            Text = Helper.LOC("ui_import_project_form_title");
+            lbModLocation.Text = Helper.LOC("ui_import_project_form_label_location");
+            btnOK.Text = Helper.LOC("ui_ok");
+            btnCancel.Text = Helper.LOC("ui_cancel");
         }
     }
 }
