@@ -329,6 +329,8 @@
             this.txtBannerKey.Name = "txtBannerKey";
             this.txtBannerKey.Size = new System.Drawing.Size(518, 21);
             this.txtBannerKey.TabIndex = 23;
+            this.txtBannerKey.DoubleClick += new System.EventHandler(this.txtBannerKey_DoubleClick);
+            this.txtBannerKey.Enter += new System.EventHandler(this.txtBannerKey_Enter);
             // 
             // txtOwner
             // 

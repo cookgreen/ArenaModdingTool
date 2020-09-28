@@ -54,5 +54,16 @@ namespace ArenaModdingTool.Controls
         {
 
         }
+
+        private void txtBannerKey_DoubleClick(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://bannerlord.party/banner/");
+        }
+
+        private void txtBannerKey_Enter(object sender, EventArgs e)
+        {
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_double_click_textbox_will_open_banner_editor"));
+        }
     }
 }
