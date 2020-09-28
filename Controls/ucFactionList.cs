@@ -24,6 +24,17 @@ namespace ArenaModdingTool.Controls
         public ucFactionList(MBSPKingdoms kingdoms)
         {
             this.kingdoms = kingdoms;
+            InitializeComponent();
+            loadKingdoms();
+        }
+
+        private void loadKingdoms()
+        {
+            factionList.Nodes.Clear();
+            foreach(var kingdom in kingdoms.Kingdoms)
+            {
+                factionList.Nodes.Add(kingdom.name);
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

@@ -36,6 +36,7 @@
             this.mnuFileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileOpenProject = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileOpenOtherFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuImport = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTool = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +47,7 @@
             this.btnParties = new System.Windows.Forms.Button();
             this.btnTroops = new System.Windows.Forms.Button();
             this.btnFactions = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mnuImport = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -119,6 +119,13 @@
             this.mnuFileOpenOtherFile.Name = "mnuFileOpenOtherFile";
             this.mnuFileOpenOtherFile.Size = new System.Drawing.Size(116, 22);
             this.mnuFileOpenOtherFile.Text = "File";
+            // 
+            // mnuImport
+            // 
+            this.mnuImport.Name = "mnuImport";
+            this.mnuImport.Size = new System.Drawing.Size(180, 22);
+            this.mnuImport.Text = "Import";
+            this.mnuImport.Click += new System.EventHandler(this.mnuImport_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -201,28 +208,21 @@
             this.btnFactions.UseVisualStyleBackColor = true;
             this.btnFactions.Click += new System.EventHandler(this.btnFactions_Click);
             // 
-            // panel2
+            // panelMain
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(142, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(658, 425);
-            this.panel2.TabIndex = 2;
-            // 
-            // mnuImport
-            // 
-            this.mnuImport.Name = "mnuImport";
-            this.mnuImport.Size = new System.Drawing.Size(180, 22);
-            this.mnuImport.Text = "Import";
-            this.mnuImport.Click += new System.EventHandler(this.mnuImport_Click);
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(142, 25);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(658, 425);
+            this.panelMain.TabIndex = 2;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
@@ -247,7 +247,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuTool;
         private System.Windows.Forms.ToolStripMenuItem mnuToolLanguage;
         private System.Windows.Forms.Panel panelControls;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.ToolStripMenuItem mnuFileNew;
         private System.Windows.Forms.ToolStripMenuItem mnuFileNewProject;
         private System.Windows.Forms.ToolStripMenuItem mnuFileExit;

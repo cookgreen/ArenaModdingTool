@@ -28,7 +28,7 @@ namespace ArenaModdingTool
                 {
                     LanguageManager.Instance.CurrentLocalization = langName;
                     SwitchLanguage();
-                    foreach (var control in panel2.Controls)
+                    foreach (var control in panelMain.Controls)
                     {
                         if (control is ILocalization)
                         {
@@ -50,6 +50,8 @@ namespace ArenaModdingTool
             mnuFileOpenProject.Text = Helper.LOC("ui_main_form_mnuFileOpenProjet");
             mnuFileOpenOtherFile.Text = Helper.LOC("ui_main_form_mnuFileOpenOtherProject");
             mnuPlugin.Text = Helper.LOC("ui_main_form_mnuPlugin");
+            mnuImport.Text = Helper.LOC("ui_main_form_mnuImport");
+            mnuFileExit.Text = Helper.LOC("ui_main_form_mnuFileExit");
             mnuTool.Text = Helper.LOC("ui_main_form_mnuTool");
             mnuToolLanguage.Text = Helper.LOC("ui_main_form_mnuToolLanguage");
             mnuHelp.Text = Helper.LOC("ui_main_form_mnuHelp");
@@ -70,8 +72,8 @@ namespace ArenaModdingTool
         private void btnFactions_Click(object sender, EventArgs e)
         {
             ucFactionEditor factionEditorCtrl = new ucFactionEditor(currentProject);
-            panel2.Controls.Clear();
-            panel2.Controls.Add(factionEditorCtrl);
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(factionEditorCtrl);
             factionEditorCtrl.Dock = DockStyle.Fill;
         }
 
@@ -87,6 +89,19 @@ namespace ArenaModdingTool
 
         private void importModuleProject()
         {
+            frmImportProject importProjectForm = new frmImportProject();
+            if (importProjectForm.ShowDialog() == DialogResult.OK)
+            {
+                currentProject = importProjectForm.Project;
+                OpenProject(currentProject);
+            }
+        }
+
+        private void OpenProject(AMProject currentProject)
+        {
+            btnFactions.Enabled = true;
+            btnParties.Enabled = true;
+            btnTroops.Enabled = true;
         }
     }
 }

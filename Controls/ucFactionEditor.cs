@@ -29,8 +29,8 @@ namespace ArenaModdingTool.Controls
         private void FactionList_SelectKingdomChanged(MBSPKingdom kingdom)
         {
             factionDetailsCtrl = new ucFactionDetails(kingdom);
-            panel1.Controls.Clear();
-            panel1.Controls.Add(factionDetailsCtrl);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(factionDetailsCtrl);
             factionDetailsCtrl.Dock = DockStyle.Fill;
         }
     }
