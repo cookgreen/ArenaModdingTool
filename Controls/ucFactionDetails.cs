@@ -14,15 +14,15 @@ namespace ArenaModdingTool.Controls
     public partial class ucFactionDetails : UserControl
     {
         private AddEditState state;
-        private MBSPKingdom kingdom;
-        public ucFactionDetails(MBSPKingdom kingdom)
+        private MBKingdom kingdom;
+        public ucFactionDetails(MBKingdom kingdom)
         {
             InitializeComponent();
             state = AddEditState.View;
             loadKingdomDetails(kingdom);
         }
 
-        private void loadKingdomDetails(MBSPKingdom kingdom)
+        private void loadKingdomDetails(MBKingdom kingdom)
         {
             this.kingdom = kingdom;
             txtAlternativeColor.Text = kingdom.alternative_color;

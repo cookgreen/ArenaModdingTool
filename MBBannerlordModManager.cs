@@ -10,16 +10,16 @@ using XmlLoader;
 
 namespace ArenaModdingTool
 {
-    public class MBBannerlord
+    public class MBBannerlordModManager
     {
-        private static MBBannerlord instance;
-        public static MBBannerlord Instance
+        private static MBBannerlordModManager instance;
+        public static MBBannerlordModManager Instance
         {
             get 
             {
                 if (instance == null)
                 {
-                    instance = new MBBannerlord();
+                    instance = new MBBannerlordModManager();
                 }
                 return instance; 
             }
@@ -34,7 +34,7 @@ namespace ArenaModdingTool
         {
             get { return officalMods; }
         }
-        public MBBannerlord()
+        public MBBannerlordModManager()
         {
             officalMods = new List<MBBannerlordModule>();
         }

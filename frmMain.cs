@@ -21,7 +21,7 @@ namespace ArenaModdingTool
             this.appSetting = appSetting;
             SwitchLanguage();
 
-            MBBannerlord.Instance.Init();
+            MBBannerlordModManager.Instance.Init();
 
             foreach(var langName in LanguageManager.Instance.GetLanguageNames())
             {

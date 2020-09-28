@@ -13,7 +13,7 @@ namespace ArenaModdingTool
     public class MBBannerlordModule
     {
         private MBModule moduleInfo;
-        private MBSPKingdoms kingdoms;
+        private MBKingdoms kingdoms;
         private string path;
         public MBBannerlordModule()
         {
@@ -34,7 +34,7 @@ namespace ArenaModdingTool
             if (findedSPKingdomsNode.Count() == 1)
             {
                 xmlLoader = new XmlObjectLoader(Path.Combine(path, "ModuleData\\" + findedSPKingdomsNode.First().XmlName.path) + ".xml");
-                xmlLoader.Load<MBSPKingdoms>(out kingdoms);
+                xmlLoader.Load<MBKingdoms>(out kingdoms);
             }
         }
 
@@ -42,7 +42,7 @@ namespace ArenaModdingTool
         {
             get { return moduleInfo; }
         }
-        public MBSPKingdoms Kingdoms
+        public MBKingdoms Kingdoms
         {
             get { return kingdoms; }
         }

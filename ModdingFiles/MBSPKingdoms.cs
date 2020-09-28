@@ -8,14 +8,14 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("Kingdoms")]
-    public class MBSPKingdoms
+    public class MBKingdoms
     {
         [XmlElement("Kingdom")]
-        public List<MBSPKingdom> Kingdoms { get; set; }
+        public List<MBKingdom> Kingdoms { get; set; }
     }
 
     [XmlRoot("Kingdom")]
-    public class MBSPKingdom
+    public class MBKingdom
     {
         [XmlAttribute]
         public string id { get; set; }

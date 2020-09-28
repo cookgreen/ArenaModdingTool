@@ -13,15 +13,15 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucFactionList : UserControl
     {
-        public event Action<MBSPKingdom> SelectKingdomChanged;
-        private MBSPKingdoms kingdoms;
+        public event Action<MBKingdom> SelectKingdomChanged;
+        private MBKingdoms kingdoms;
 
         public ucFactionList()
         {
             InitializeComponent();
         }
 
-        public ucFactionList(MBSPKingdoms kingdoms)
+        public ucFactionList(MBKingdoms kingdoms)
         {
             this.kingdoms = kingdoms;
             InitializeComponent();
