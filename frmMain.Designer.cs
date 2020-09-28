@@ -47,6 +47,7 @@
             this.btnTroops = new System.Windows.Forms.Button();
             this.btnFactions = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.mnuImport = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFileNew,
             this.mnuFileOpen,
+            this.mnuImport,
             this.toolStripMenuItem1,
             this.mnuFileExit});
             this.mnuFile.Name = "mnuFile";
@@ -87,14 +89,14 @@
             // mnuFileNewProject
             // 
             this.mnuFileNewProject.Name = "mnuFileNewProject";
-            this.mnuFileNewProject.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileNewProject.Size = new System.Drawing.Size(116, 22);
             this.mnuFileNewProject.Text = "Project";
             this.mnuFileNewProject.Click += new System.EventHandler(this.mnuFileNewProject_Click);
             // 
             // mnuFileNewOtherFile
             // 
             this.mnuFileNewOtherFile.Name = "mnuFileNewOtherFile";
-            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(116, 22);
             this.mnuFileNewOtherFile.Text = "File";
             // 
             // mnuFileOpen
@@ -186,6 +188,7 @@
             this.btnTroops.TabIndex = 1;
             this.btnTroops.Text = "Troops";
             this.btnTroops.UseVisualStyleBackColor = true;
+            this.btnTroops.Click += new System.EventHandler(this.btnTroops_Click);
             // 
             // btnFactions
             // 
@@ -196,6 +199,7 @@
             this.btnFactions.TabIndex = 0;
             this.btnFactions.Text = "Factions";
             this.btnFactions.UseVisualStyleBackColor = true;
+            this.btnFactions.Click += new System.EventHandler(this.btnFactions_Click);
             // 
             // panel2
             // 
@@ -205,6 +209,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(658, 425);
             this.panel2.TabIndex = 2;
+            // 
+            // mnuImport
+            // 
+            this.mnuImport.Name = "mnuImport";
+            this.mnuImport.Size = new System.Drawing.Size(180, 22);
+            this.mnuImport.Text = "Import";
+            this.mnuImport.Click += new System.EventHandler(this.mnuImport_Click);
             // 
             // frmMain
             // 
@@ -248,6 +259,7 @@
         private System.Windows.Forms.Button btnParties;
         private System.Windows.Forms.Button btnTroops;
         private System.Windows.Forms.Button btnFactions;
+        private System.Windows.Forms.ToolStripMenuItem mnuImport;
     }
 }
 

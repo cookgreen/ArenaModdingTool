@@ -13,6 +13,7 @@ namespace ArenaModdingTool
         public string ModuleName { get; set; }
         public string Location { get; set; }
         public List<string> IncludedFiles { get; set; }
+        public MBBannerlordModule BannerlordModule { get { return bannerlordModule; } }
         public AMProject()
         {
             bannerlordModule = new MBBannerlordModule();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArenaModdingTool.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,6 +65,28 @@ namespace ArenaModdingTool
             {
                 currentProject = newProjectForm.NewProject;
             }
+        }
+
+        private void btnFactions_Click(object sender, EventArgs e)
+        {
+            ucFactionEditor factionEditorCtrl = new ucFactionEditor(currentProject);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(factionEditorCtrl);
+            factionEditorCtrl.Dock = DockStyle.Fill;
+        }
+
+        private void btnTroops_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuImport_Click(object sender, EventArgs e)
+        {
+            importModuleProject();
+        }
+
+        private void importModuleProject()
+        {
         }
     }
 }
