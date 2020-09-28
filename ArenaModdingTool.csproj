@@ -91,6 +91,7 @@
     <Compile Include="ILocalization.cs" />
     <Compile Include="LangLocalization.cs" />
     <Compile Include="LanguageManager.cs" />
+    <Compile Include="MBBannerlord.cs" />
     <Compile Include="MBBannerlordModule.cs" />
     <Compile Include="ModdingFiles\MBSPKingdoms.cs" />
     <Compile Include="ModdingFiles\MBSubModule.cs" />
