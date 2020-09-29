@@ -66,7 +66,7 @@ namespace ArenaModdingTool.Forms
         private void txtKingdom_DoubleClick(object sender, EventArgs e)
         {
             frmKingdomListViewer kingdomListViewer = new frmKingdomListViewer(project);
-            if (kingdomListViewer.ShowDialog() == DialogResult.OK)
+            if (kingdomListViewer.ShowDialog() == DialogResult.OK && kingdom.id != kingdomListViewer.SelectedKingdom.id)
             {
                 txtKingdom.Text = "Kingdoms." + kingdomListViewer.SelectedKingdom.id;
             }
