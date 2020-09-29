@@ -83,9 +83,9 @@ namespace ArenaModdingTool.Forms
             var lvi = relationshipList.Items[index];
             KingdomRelationship relationship = new KingdomRelationship();
             relationship.kingdom = lvi.Text;
-            relationship.value = lvi.SubItems[0].Text;
-            relationship.isAtWar = lvi.SubItems[1].Text;
-            frmKingdomRelationshipAddEdit kingdomRelationshipAddEdit = new frmKingdomRelationshipAddEdit(project, kingdom, true);
+            relationship.value = lvi.SubItems[1].Text;
+            relationship.isAtWar = lvi.SubItems[2].Text;
+            frmKingdomRelationshipAddEdit kingdomRelationshipAddEdit = new frmKingdomRelationshipAddEdit(project, kingdom, false, relationship);
             if (kingdomRelationshipAddEdit.ShowDialog() == DialogResult.OK)
             {
                 var relationshipNew = kingdomRelationshipAddEdit.Relationship;

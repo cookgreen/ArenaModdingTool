@@ -75,17 +75,16 @@ namespace ArenaModdingTool.Forms
         private void txtValue_TextChanged(object sender, EventArgs e)
         {
             int intValue;
-            if (!int.TryParse(txtValue.Text, out intValue))
+            if (int.TryParse(txtValue.Text, out intValue))
             {
-                txtValue.Text = null;
-            }
-            else if (intValue < 0)
-            {
-                chkIsAtWar.Checked = true;
-            }
-            else if (intValue >= 0)
-            {
-                chkIsAtWar.Checked = false;
+                if (intValue < 0)
+                {
+                    chkIsAtWar.Checked = true;
+                }
+                else if (intValue >= 0)
+                {
+                    chkIsAtWar.Checked = false;
+                }
             }
         }
     }
