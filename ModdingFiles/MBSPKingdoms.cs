@@ -12,6 +12,8 @@ namespace ArenaModdingTool.ModdingFiles
     {
         [XmlElement("Kingdom")]
         public List<MBKingdom> Kingdoms { get; set; }
+        [XmlIgnore]
+        public string FilePath { get; set; }
     }
 
     [XmlRoot("Kingdom")]

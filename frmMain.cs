@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,10 +74,21 @@ namespace ArenaModdingTool
 
         private void btnFactions_Click(object sender, EventArgs e)
         {
-            ucFactionEditor factionEditorCtrl = new ucFactionEditor(currentProject);
+            TabControl tabControl = new TabControl();
+            tabControl.Dock = DockStyle.Fill;
+            foreach(var kingdoms in currentProject.BannerlordModule.ModuleKingdoms)
+            {
+                var moduleName = (new DirectoryInfo(kingdoms.FilePath).Parent.Parent.Name);
+                var fileName = new DirectoryInfo(kingdoms.FilePath).Name;
+                var page = new TabPage(moduleName + " - " + fileName);
+                ucFactionEditor factionEditorCtrl = new ucFactionEditor(kingdoms);
+                page.Controls.Clear();
+                page.Controls.Add(factionEditorCtrl);
+                factionEditorCtrl.Dock = DockStyle.Fill;
+                tabControl.TabPages.Add(page);
+            }
             panelMain.Controls.Clear();
-            panelMain.Controls.Add(factionEditorCtrl);
-            factionEditorCtrl.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(tabControl);
         }
 
         private void btnTroops_Click(object sender, EventArgs e)

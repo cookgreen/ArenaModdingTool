@@ -13,7 +13,7 @@ namespace ArenaModdingTool
     public class MBBannerlordModule
     {
         private MBModule moduleInfo;
-        private MBKingdoms kingdoms;
+        private List<MBKingdoms> moduleKingdoms;
         private string path;
         public MBBannerlordModule()
         {
@@ -22,6 +22,10 @@ namespace ArenaModdingTool
         public MBBannerlordModule(string path)
         {
             this.path = path;
+
+            moduleKingdoms = new List<MBKingdoms>();
+
+
             loadMod();
         }
 
@@ -31,10 +35,14 @@ namespace ArenaModdingTool
             xmlLoader.Load<MBModule>(out moduleInfo);
 
             var findedSPKingdomsNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "Kingdoms");
-            if (findedSPKingdomsNode.Count() == 1)
+            foreach (var node in findedSPKingdomsNode)
             {
-                xmlLoader = new XmlObjectLoader(Path.Combine(path, "ModuleData\\" + findedSPKingdomsNode.First().XmlName.path) + ".xml");
+                MBKingdoms kingdoms;
+                string kingdomsXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path) + ".xml";
+                xmlLoader = new XmlObjectLoader(Path.Combine(path, "ModuleData\\" + node.XmlName.path) + ".xml");
                 xmlLoader.Load<MBKingdoms>(out kingdoms);
+                kingdoms.FilePath = kingdomsXmlPath;
+                moduleKingdoms.Add(kingdoms);
             }
         }
 
@@ -42,9 +50,9 @@ namespace ArenaModdingTool
         {
             get { return moduleInfo; }
         }
-        public MBKingdoms Kingdoms
+        public List<MBKingdoms> ModuleKingdoms
         {
-            get { return kingdoms; }
+            get { return moduleKingdoms; }
         }
         public void CreateNew()
         {

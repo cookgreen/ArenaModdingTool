@@ -105,12 +105,14 @@
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Enabled = false;
             this.btnSave.Location = new System.Drawing.Point(591, 8);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -587,6 +589,7 @@
             this.btnEditRelationships.TabIndex = 38;
             this.btnEditRelationships.Text = "Edit Relationships";
             this.btnEditRelationships.UseVisualStyleBackColor = true;
+            this.btnEditRelationships.Click += new System.EventHandler(this.btnEditRelationships_Click);
             // 
             // ucFactionDetails
             // 

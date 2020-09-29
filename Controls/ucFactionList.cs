@@ -13,12 +13,19 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucFactionList : UserControl
     {
-        public event Action<MBKingdom> SelectKingdomChanged;
+        private AddEditState state;
+        public event Action<MBKingdom, int> SelectKingdomChanged;
         private MBKingdoms kingdoms;
+
+        public AddEditState State
+        {
+            get { return state; }
+        }
 
         public ucFactionList()
         {
             InitializeComponent();
+            state = AddEditState.View;
         }
 
         public ucFactionList(MBKingdoms kingdoms)
@@ -39,7 +46,15 @@ namespace ArenaModdingTool.Controls
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            state = AddEditState.Add;
 
+            factionList.Enabled = false;
+            btnAdd.Enabled = false;
+            btnDelete.Enabled = false;
+            btnModify.Enabled = false;
+
+            MBKingdom kingdom = new MBKingdom();
+            SelectKingdomChanged?.Invoke(kingdom, -1);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -49,7 +64,37 @@ namespace ArenaModdingTool.Controls
 
         private void btnModify_Click(object sender, EventArgs e)
         {
+            state = AddEditState.Edit;
 
+            factionList.Enabled = false;
+            btnAdd.Enabled = false;
+            btnDelete.Enabled = false;
+            btnModify.Enabled = false;
+
+            int index = factionList.Nodes.IndexOf(factionList.SelectedNode);
+            SelectKingdomChanged?.Invoke(kingdoms.Kingdoms[index], index);
+        }
+
+        public void ChangeAddEditState(AddEditState newState)
+        {
+            if ((state == AddEditState.Add || state == AddEditState.Edit) && 
+                 newState == AddEditState.View)
+            {
+                factionList.Enabled = true;
+                btnAdd.Enabled = true;
+                if (factionList.SelectedNode != null)
+                {
+                    btnDelete.Enabled = true;
+                    btnModify.Enabled = true;
+                }
+
+                state = newState;
+            }
+        }
+
+        public void RefreshData()
+        {
+            loadKingdoms();
         }
 
         private void factionList_AfterSelect(object sender, TreeViewEventArgs e)
@@ -59,7 +104,12 @@ namespace ArenaModdingTool.Controls
                 int index = factionList.Nodes.IndexOf(e.Node);
                 btnDelete.Enabled = true;
                 btnModify.Enabled = true;
-                SelectKingdomChanged?.Invoke(kingdoms.Kingdoms[index]);
+                SelectKingdomChanged?.Invoke(kingdoms.Kingdoms[index], index);
+            }
+            else
+            {
+                btnDelete.Enabled = false;
+                btnModify.Enabled = false;
             }
         }
     }

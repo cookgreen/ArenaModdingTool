@@ -15,11 +15,22 @@ namespace ArenaModdingTool.Controls
     {
         private AddEditState state;
         private MBKingdom kingdom;
-        public ucFactionDetails(MBKingdom kingdom)
+        private int index;
+        public event Action<MBKingdom, AddEditState, int> SaveKingdomInfoFinished;
+        public ucFactionDetails(MBKingdom kingdom, AddEditState state, int index)
         {
             InitializeComponent();
-            state = AddEditState.View;
             loadKingdomDetails(kingdom);
+            this.state = state;
+            this.index = index;
+            if (state == AddEditState.Add || state == AddEditState.Edit)
+            {
+                btnSave.Enabled = true;
+            }
+            else if(state == AddEditState.View)
+            {
+                btnSave.Enabled = false;
+            }
         }
 
         private void loadKingdomDetails(MBKingdom kingdom)
@@ -63,7 +74,46 @@ namespace ArenaModdingTool.Controls
         private void txtBannerKey_Enter(object sender, EventArgs e)
         {
             ToolTip toolTip = new ToolTip();
-            toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_double_click_textbox_will_open_banner_editor"));
+            toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_tooltip_message_double_click_textbox_will_open_banner_editor"));
+        }
+
+        private void btnEditRelationships_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtID.Text))
+            {
+                MessageBox.Show(Helper.LOC("str_error_message_ID_and_Name_are_necessary"));
+                return;
+            }
+
+            kingdom.alternative_color = txtAlternativeColor.Text;
+            kingdom.alternative_color2 = txtAlternativeColor2.Text;
+            kingdom.banner_key = txtBannerKey.Text;
+            kingdom.color = txtColor.Text;
+            kingdom.color2 = txtColor2.Text;
+            kingdom.culture = txtCulture.Text;
+            kingdom.flag_mesh = txtFlagMesh.Text;
+            kingdom.id = txtID.Text;
+            kingdom.label_color = txtLabelColor.Text;
+            kingdom.name = txtName.Text;
+            kingdom.owner = txtOwner.Text;
+            kingdom.Policies = new List<KingdomPolicy>();
+            kingdom.primary_banner_color = txtPrimaryBannerColor.Text;
+            kingdom.Relationships = new List<KingdomRelationship>();
+            kingdom.ruler_title = txtRulerTitle.Text;
+            kingdom.secondary_banner_color = txtSecondaryBannerlordColor.Text;
+            kingdom.settlement_banner_mesh = txtSettlementBannerMesh.Text;
+            kingdom.short_name = txtShortName.Text;
+            kingdom.text = txtIntroduction.Text;
+            kingdom.title = txtTitle.Text;
+
+            SaveKingdomInfoFinished?.Invoke(kingdom, state, index);
+
+            state = AddEditState.View;
         }
     }
 }
