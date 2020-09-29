@@ -11,7 +11,7 @@ using ArenaModdingTool.ModdingFiles;
 
 namespace ArenaModdingTool.Controls
 {
-    public partial class ucFactionList : UserControl
+    public partial class ucKingdomsList : UserControl
     {
         private AddEditState state;
         public event Action<MBKingdom, int> SelectKingdomChanged;
@@ -22,13 +22,13 @@ namespace ArenaModdingTool.Controls
             get { return state; }
         }
 
-        public ucFactionList()
+        public ucKingdomsList()
         {
             InitializeComponent();
             state = AddEditState.View;
         }
 
-        public ucFactionList(MBKingdoms kingdoms)
+        public ucKingdomsList(MBKingdoms kingdoms)
         {
             this.kingdoms = kingdoms;
             InitializeComponent();

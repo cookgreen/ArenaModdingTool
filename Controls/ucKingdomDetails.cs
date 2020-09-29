@@ -11,13 +11,13 @@ using ArenaModdingTool.ModdingFiles;
 
 namespace ArenaModdingTool.Controls
 {
-    public partial class ucFactionDetails : UserControl
+    public partial class ucKingdomDetails : UserControl
     {
         private AddEditState state;
         private MBKingdom kingdom;
         private int index;
         public event Action<MBKingdom, AddEditState, int> SaveKingdomInfoFinished;
-        public ucFactionDetails(MBKingdom kingdom, AddEditState state, int index)
+        public ucKingdomDetails(MBKingdom kingdom, AddEditState state, int index)
         {
             InitializeComponent();
             loadKingdomDetails(kingdom);

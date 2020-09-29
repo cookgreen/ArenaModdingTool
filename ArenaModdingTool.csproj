@@ -56,23 +56,23 @@
     <Compile Include="Controls\ucDataList.Designer.cs">
       <DependentUpon>ucDataList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ucFactionList.cs">
+    <Compile Include="Controls\ucKingdomsList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\ucFactionList.Designer.cs">
-      <DependentUpon>ucFactionList.cs</DependentUpon>
+    <Compile Include="Controls\ucKingdomsList.Designer.cs">
+      <DependentUpon>ucKingdomsList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ucFactionEditor.cs">
+    <Compile Include="Controls\ucKingdomEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\ucFactionEditor.Designer.cs">
-      <DependentUpon>ucFactionEditor.cs</DependentUpon>
+    <Compile Include="Controls\ucKingdomEditor.Designer.cs">
+      <DependentUpon>ucKingdomEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ucFactionDetails.cs">
+    <Compile Include="Controls\ucKingdomDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\ucFactionDetails.Designer.cs">
-      <DependentUpon>ucFactionDetails.cs</DependentUpon>
+    <Compile Include="Controls\ucKingdomDetails.Designer.cs">
+      <DependentUpon>ucKingdomDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="AddEditState.cs" />
     <Compile Include="Controls\ucNPCCharacterList.cs">
@@ -115,14 +115,14 @@
     <EmbeddedResource Include="Controls\ucDataList.resx">
       <DependentUpon>ucDataList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucFactionDetails.resx">
-      <DependentUpon>ucFactionDetails.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ucKingdomDetails.resx">
+      <DependentUpon>ucKingdomDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucFactionList.resx">
-      <DependentUpon>ucFactionList.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ucKingdomsList.resx">
+      <DependentUpon>ucKingdomsList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucFactionEditor.resx">
-      <DependentUpon>ucFactionEditor.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ucKingdomEditor.resx">
+      <DependentUpon>ucKingdomEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucNPCCharacterList.resx">
       <DependentUpon>ucNPCCharacterList.cs</DependentUpon>

@@ -83,7 +83,7 @@
             this.mnuFileNewProject,
             this.mnuFileNewOtherFile});
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(116, 22);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileNewProject
@@ -105,7 +105,7 @@
             this.mnuFileOpenProject,
             this.mnuFileOpenOtherFile});
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(116, 22);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileOpenProject
@@ -123,19 +123,19 @@
             // mnuImport
             // 
             this.mnuImport.Name = "mnuImport";
-            this.mnuImport.Size = new System.Drawing.Size(180, 22);
+            this.mnuImport.Size = new System.Drawing.Size(116, 22);
             this.mnuImport.Text = "Import";
             this.mnuImport.Click += new System.EventHandler(this.mnuImport_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 6);
             // 
             // mnuFileExit
             // 
             this.mnuFileExit.Name = "mnuFileExit";
-            this.mnuFileExit.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileExit.Size = new System.Drawing.Size(116, 22);
             this.mnuFileExit.Text = "Exit";
             // 
             // mnuTool
@@ -204,7 +204,7 @@
             this.btnFactions.Name = "btnFactions";
             this.btnFactions.Size = new System.Drawing.Size(75, 50);
             this.btnFactions.TabIndex = 0;
-            this.btnFactions.Text = "Factions";
+            this.btnFactions.Text = "Kingdoms";
             this.btnFactions.UseVisualStyleBackColor = true;
             this.btnFactions.Click += new System.EventHandler(this.btnFactions_Click);
             // 

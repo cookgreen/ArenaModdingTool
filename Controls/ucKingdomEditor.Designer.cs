@@ -1,6 +1,6 @@
 ﻿namespace ArenaModdingTool.Controls
 {
-    partial class ucFactionEditor
+    partial class ucKingdomEditor
     {
         /// <summary> 
         /// 必需的设计器变量。

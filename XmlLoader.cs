@@ -28,7 +28,7 @@ namespace XmlLoader
 				stream.Close();
 				return true;
 			}
-			catch (Exception ex)
+			catch
 			{
 				xmlData = default(T);
 				return false;
@@ -45,7 +45,7 @@ namespace XmlLoader
 				stream.Close();
 				return true;
 			}
-			catch (Exception ex)
+			catch
 			{
 				return false;
 			}

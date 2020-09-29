@@ -12,18 +12,17 @@ using XmlLoader;
 
 namespace ArenaModdingTool.Controls
 {
-    public partial class ucFactionEditor : UserControl
+    public partial class ucKingdomEditor : UserControl
     {
-        private AMProject project;
         private MBKingdoms kingdoms;
-        private ucFactionList factionListCtrl;
-        private ucFactionDetails factionDetailsCtrl;
-        public ucFactionEditor(MBKingdoms kingdoms)
+        private ucKingdomsList factionListCtrl;
+        private ucKingdomDetails factionDetailsCtrl;
+        public ucKingdomEditor(MBKingdoms kingdoms)
         {
             InitializeComponent();
             this.kingdoms = kingdoms;
 
-            factionListCtrl = new ucFactionList(kingdoms);
+            factionListCtrl = new ucKingdomsList(kingdoms);
             factionListCtrl.SelectKingdomChanged += FactionList_SelectKingdomChanged;
             panel1.Controls.Clear();
             panel1.Controls.Add(factionListCtrl);
@@ -32,7 +31,7 @@ namespace ArenaModdingTool.Controls
 
         private void FactionList_SelectKingdomChanged(MBKingdom kingdom, int index)
         {
-            factionDetailsCtrl = new ucFactionDetails(kingdom, factionListCtrl.State, index);
+            factionDetailsCtrl = new ucKingdomDetails(kingdom, factionListCtrl.State, index);
             panel2.Controls.Clear();
             panel2.Controls.Add(factionDetailsCtrl);
             factionDetailsCtrl.Dock = DockStyle.Fill;

@@ -1,6 +1,6 @@
 ﻿namespace ArenaModdingTool.Controls
 {
-    partial class ucFactionDetails
+    partial class ucKingdomDetails
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -591,12 +591,12 @@
             this.btnEditRelationships.UseVisualStyleBackColor = true;
             this.btnEditRelationships.Click += new System.EventHandler(this.btnEditRelationships_Click);
             // 
-            // ucFactionDetails
+            // ucKingdomDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "ucFactionDetails";
+            this.Name = "ucKingdomDetails";
             this.Size = new System.Drawing.Size(680, 764);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
