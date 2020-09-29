@@ -115,9 +115,14 @@ namespace ArenaModdingTool.Controls
             toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_tooltip_message_double_click_textbox_will_open_banner_editor"));
         }
 
-        private void btnEditRelationships_Click(object sender, EventArgs e)
+        private void btnEditRelationshipsAndPolicies_Click(object sender, EventArgs e)
         {
-
+            frmKingdomRelationshipPolicyEditor relationshipPolicyEditor = new frmKingdomRelationshipPolicyEditor(project, kingdom);
+            if (relationshipPolicyEditor.ShowDialog() == DialogResult.OK)
+            {
+                kingdom.Relationships = relationshipPolicyEditor.Relationships;
+                kingdom.Policies = relationshipPolicyEditor.Policies;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)

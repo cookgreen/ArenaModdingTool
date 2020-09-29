@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnEditPolicies = new System.Windows.Forms.Button();
             this.txtRulerTitle = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtShortName = new System.Windows.Forms.TextBox();
@@ -71,7 +70,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.txtIntroduction = new System.Windows.Forms.RichTextBox();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.btnEditRelationships = new System.Windows.Forms.Button();
+            this.btnEditRelationshipsAndPolicies = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -119,7 +118,6 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.btnEditPolicies, 1, 19);
             this.tableLayoutPanel2.Controls.Add(this.txtRulerTitle, 1, 16);
             this.tableLayoutPanel2.Controls.Add(this.txtTitle, 1, 15);
             this.tableLayoutPanel2.Controls.Add(this.txtShortName, 1, 14);
@@ -158,7 +156,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label20, 0, 19);
             this.tableLayoutPanel2.Controls.Add(this.txtIntroduction, 1, 17);
             this.tableLayoutPanel2.Controls.Add(this.txtID, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnEditRelationships, 1, 18);
+            this.tableLayoutPanel2.Controls.Add(this.btnEditRelationshipsAndPolicies, 1, 18);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -186,16 +184,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(674, 713);
             this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // btnEditPolicies
-            // 
-            this.btnEditPolicies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditPolicies.Location = new System.Drawing.Point(153, 691);
-            this.btnEditPolicies.Name = "btnEditPolicies";
-            this.btnEditPolicies.Size = new System.Drawing.Size(518, 19);
-            this.btnEditPolicies.TabIndex = 39;
-            this.btnEditPolicies.Text = "Edit Policies";
-            this.btnEditPolicies.UseVisualStyleBackColor = true;
             // 
             // txtRulerTitle
             // 
@@ -582,16 +570,17 @@
             this.txtID.Size = new System.Drawing.Size(518, 21);
             this.txtID.TabIndex = 21;
             // 
-            // btnEditRelationships
+            // btnEditRelationshipsAndPolicies
             // 
-            this.btnEditRelationships.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditRelationships.Location = new System.Drawing.Point(153, 666);
-            this.btnEditRelationships.Name = "btnEditRelationships";
-            this.btnEditRelationships.Size = new System.Drawing.Size(518, 19);
-            this.btnEditRelationships.TabIndex = 38;
-            this.btnEditRelationships.Text = "Edit Relationships";
-            this.btnEditRelationships.UseVisualStyleBackColor = true;
-            this.btnEditRelationships.Click += new System.EventHandler(this.btnEditRelationships_Click);
+            this.btnEditRelationshipsAndPolicies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEditRelationshipsAndPolicies.Location = new System.Drawing.Point(153, 666);
+            this.btnEditRelationshipsAndPolicies.Name = "btnEditRelationshipsAndPolicies";
+            this.tableLayoutPanel2.SetRowSpan(this.btnEditRelationshipsAndPolicies, 2);
+            this.btnEditRelationshipsAndPolicies.Size = new System.Drawing.Size(518, 44);
+            this.btnEditRelationshipsAndPolicies.TabIndex = 38;
+            this.btnEditRelationshipsAndPolicies.Text = "Edit Relationship and Policies";
+            this.btnEditRelationshipsAndPolicies.UseVisualStyleBackColor = true;
+            this.btnEditRelationshipsAndPolicies.Click += new System.EventHandler(this.btnEditRelationshipsAndPolicies_Click);
             // 
             // ucKingdomDetails
             // 
@@ -652,7 +641,6 @@
         private System.Windows.Forms.TextBox txtPrimaryBannerColor;
         private System.Windows.Forms.TextBox txtBannerKey;
         private System.Windows.Forms.TextBox txtOwner;
-        private System.Windows.Forms.Button btnEditRelationships;
-        private System.Windows.Forms.Button btnEditPolicies;
+        private System.Windows.Forms.Button btnEditRelationshipsAndPolicies;
     }
 }

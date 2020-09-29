@@ -62,6 +62,12 @@
     <Compile Include="Controls\ucHeroList.Designer.cs">
       <DependentUpon>ucHeroList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ucKingdomList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucKingdomList.Designer.cs">
+      <DependentUpon>ucKingdomList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucKingdomsList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,30 @@
     <Compile Include="Forms\frmImportProject.Designer.cs">
       <DependentUpon>frmImportProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmKingdomListViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKingdomListViewer.Designer.cs">
+      <DependentUpon>frmKingdomListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKingdomPolicyAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKingdomPolicyAddEdit.Designer.cs">
+      <DependentUpon>frmKingdomPolicyAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKingdomRelationshipAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKingdomRelationshipAddEdit.Designer.cs">
+      <DependentUpon>frmKingdomRelationshipAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKingdomRelationshipPolicyEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKingdomRelationshipPolicyEditor.Designer.cs">
+      <DependentUpon>frmKingdomRelationshipPolicyEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +169,9 @@
     <EmbeddedResource Include="Controls\ucKingdomDetails.resx">
       <DependentUpon>ucKingdomDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucKingdomList.resx">
+      <DependentUpon>ucKingdomList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucKingdomsList.resx">
       <DependentUpon>ucKingdomsList.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +189,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmImportProject.resx">
       <DependentUpon>frmImportProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKingdomListViewer.resx">
+      <DependentUpon>frmKingdomListViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKingdomRelationshipAddEdit.resx">
+      <DependentUpon>frmKingdomRelationshipAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKingdomRelationshipPolicyEditor.resx">
+      <DependentUpon>frmKingdomRelationshipPolicyEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
