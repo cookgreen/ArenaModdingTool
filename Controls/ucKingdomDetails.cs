@@ -67,7 +67,41 @@ namespace ArenaModdingTool.Controls
 
         private void colorTextBox_Click(object sender, EventArgs e)
         {
-
+            string name = (sender as TextBox).Name;
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                string color = colorDialog.Color.ToHexString();
+                string color2 = colorDialog.Color.ToHexStringPrefix("0x");
+                if (name == txtAlternativeColor.Name)
+                {
+                    txtAlternativeColor.Text = color;
+                }
+                else if (name == txtAlternativeColor2.Name)
+                {
+                    txtAlternativeColor2.Text = color;
+                }
+                else if (name == txtColor.Name)
+                {
+                    txtColor.Text = color;
+                }
+                else if (name == txtColor2.Name)
+                {
+                    txtColor2.Text = color;
+                }
+                else if (name == txtLabelColor.Name)
+                {
+                    txtLabelColor.Text = color;
+                }
+                else if (name == txtPrimaryBannerColor.Name)
+                {
+                    txtPrimaryBannerColor.Text = color2;
+                }
+                else if (name == txtSecondaryBannerlordColor.Name)
+                {
+                    txtSecondaryBannerlordColor.Text = color2;
+                }
+            }
         }
 
         private void txtBannerKey_DoubleClick(object sender, EventArgs e)
@@ -114,6 +148,8 @@ namespace ArenaModdingTool.Controls
             kingdom.short_name = txtShortName.Text;
             kingdom.text = txtIntroduction.Text;
             kingdom.title = txtTitle.Text;
+
+            btnSave.Enabled = false;
 
             SaveKingdomInfoFinished?.Invoke(kingdom, state, index);
 

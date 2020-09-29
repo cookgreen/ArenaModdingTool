@@ -263,7 +263,7 @@
             this.txtAlternativeColor2.ReadOnly = true;
             this.txtAlternativeColor2.Size = new System.Drawing.Size(518, 21);
             this.txtAlternativeColor2.TabIndex = 30;
-            this.txtAlternativeColor2.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtAlternativeColor2.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtAlternativeColor
             // 
@@ -273,7 +273,7 @@
             this.txtAlternativeColor.ReadOnly = true;
             this.txtAlternativeColor.Size = new System.Drawing.Size(518, 21);
             this.txtAlternativeColor.TabIndex = 29;
-            this.txtAlternativeColor.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtAlternativeColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtColor2
             // 
@@ -283,7 +283,7 @@
             this.txtColor2.ReadOnly = true;
             this.txtColor2.Size = new System.Drawing.Size(518, 21);
             this.txtColor2.TabIndex = 28;
-            this.txtColor2.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtColor2.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtColor
             // 
@@ -293,7 +293,7 @@
             this.txtColor.ReadOnly = true;
             this.txtColor.Size = new System.Drawing.Size(518, 21);
             this.txtColor.TabIndex = 27;
-            this.txtColor.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtLabelColor
             // 
@@ -303,7 +303,7 @@
             this.txtLabelColor.ReadOnly = true;
             this.txtLabelColor.Size = new System.Drawing.Size(518, 21);
             this.txtLabelColor.TabIndex = 26;
-            this.txtLabelColor.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtLabelColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtSecondaryBannerlordColor
             // 
@@ -313,7 +313,7 @@
             this.txtSecondaryBannerlordColor.ReadOnly = true;
             this.txtSecondaryBannerlordColor.Size = new System.Drawing.Size(518, 21);
             this.txtSecondaryBannerlordColor.TabIndex = 25;
-            this.txtSecondaryBannerlordColor.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtSecondaryBannerlordColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtPrimaryBannerColor
             // 
@@ -323,7 +323,7 @@
             this.txtPrimaryBannerColor.ReadOnly = true;
             this.txtPrimaryBannerColor.Size = new System.Drawing.Size(518, 21);
             this.txtPrimaryBannerColor.TabIndex = 24;
-            this.txtPrimaryBannerColor.Click += new System.EventHandler(this.colorTextBox_Click);
+            this.txtPrimaryBannerColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtBannerKey
             // 
