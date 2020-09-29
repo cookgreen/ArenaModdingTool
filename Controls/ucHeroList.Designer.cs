@@ -1,6 +1,6 @@
 ﻿namespace ArenaModdingTool.Controls
 {
-    partial class ucDataList
+    partial class ucHeroList
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -28,18 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
-            // ucDataList
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(347, 440);
+            this.treeView1.TabIndex = 0;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // ucHeroList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ucDataList";
-            this.Size = new System.Drawing.Size(394, 362);
+            this.Controls.Add(this.treeView1);
+            this.Name = "ucHeroList";
+            this.Size = new System.Drawing.Size(347, 440);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TreeView treeView1;
     }
 }

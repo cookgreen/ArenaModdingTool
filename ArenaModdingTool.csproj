@@ -50,11 +50,17 @@
   <ItemGroup>
     <Compile Include="AMProject.cs" />
     <Compile Include="AppSetting.cs" />
-    <Compile Include="Controls\ucDataList.cs">
+    <Compile Include="Controls\ucCultureList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\ucDataList.Designer.cs">
-      <DependentUpon>ucDataList.cs</DependentUpon>
+    <Compile Include="Controls\ucCultureList.Designer.cs">
+      <DependentUpon>ucCultureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHeroList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHeroList.Designer.cs">
+      <DependentUpon>ucHeroList.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ucKingdomsList.cs">
       <SubType>UserControl</SubType>
@@ -78,25 +84,34 @@
     <Compile Include="Controls\ucNPCCharacterList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmBasicDataViewer.cs">
+    <Compile Include="Forms\frmCultureListViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmImportProject.cs">
+    <Compile Include="Forms\frmCultureListViewer.Designer.cs">
+      <DependentUpon>frmCultureListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHeroListViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmImportProject.Designer.cs">
+    <Compile Include="Forms\frmHeroListViewer.Designer.cs">
+      <DependentUpon>frmHeroListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmImportProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmImportProject.Designer.cs">
       <DependentUpon>frmImportProject.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNewProject.cs">
+    <Compile Include="Forms\frmNewProject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewProject.Designer.cs">
+    <Compile Include="Forms\frmNewProject.Designer.cs">
       <DependentUpon>frmNewProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
@@ -114,8 +129,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XmlLoader.cs" />
-    <EmbeddedResource Include="Controls\ucDataList.resx">
-      <DependentUpon>ucDataList.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ucCultureList.resx">
+      <DependentUpon>ucCultureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHeroList.resx">
+      <DependentUpon>ucHeroList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucKingdomDetails.resx">
       <DependentUpon>ucKingdomDetails.cs</DependentUpon>
@@ -129,16 +147,19 @@
     <EmbeddedResource Include="Controls\ucNPCCharacterList.resx">
       <DependentUpon>ucNPCCharacterList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBasicDataViewer.resx">
-      <DependentUpon>frmBasicDataViewer.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCultureListViewer.resx">
+      <DependentUpon>frmCultureListViewer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmImportProject.resx">
+    <EmbeddedResource Include="Forms\frmHeroListViewer.resx">
+      <DependentUpon>frmHeroListViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmImportProject.resx">
       <DependentUpon>frmImportProject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewProject.resx">
+    <EmbeddedResource Include="Forms\frmNewProject.resx">
       <DependentUpon>frmNewProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

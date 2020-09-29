@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArenaModdingTool.ModdingFiles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,37 +8,49 @@ using System.Windows.Forms;
 
 namespace ArenaModdingTool.Controls
 {
-    public class ucNPCCharacterList : ucDataList
+    public class ucNPCCharacterList : UserControl
     {
-        private TreeView treeView1;
+        private TreeView npcCharacterList;
+        private MBNPCCharacters npcCharacters;
 
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.npcCharacterList = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
-            // treeView1
+            // npcCharacterList
             // 
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(184, 379);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.npcCharacterList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.npcCharacterList.Location = new System.Drawing.Point(0, 0);
+            this.npcCharacterList.Name = "npcCharacterList";
+            this.npcCharacterList.Size = new System.Drawing.Size(184, 410);
+            this.npcCharacterList.TabIndex = 0;
+            this.npcCharacterList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // ucNPCCharacterList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.npcCharacterList);
             this.Name = "ucNPCCharacterList";
-            this.Size = new System.Drawing.Size(184, 379);
+            this.Size = new System.Drawing.Size(184, 410);
             this.ResumeLayout(false);
 
         }
 
-        public ucNPCCharacterList()
+        public ucNPCCharacterList(MBNPCCharacters npcCharacters)
         {
             InitializeComponent();
+            this.npcCharacters = npcCharacters;
+            loadNPCCharacters();
+        }
+
+        private void loadNPCCharacters()
+        {
+            npcCharacterList.Nodes.Clear();
+            foreach (var npcCharacter in npcCharacters.NPCCharacters)
+            {
+                npcCharacterList.Nodes.Add(npcCharacter.name);
+            }
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)

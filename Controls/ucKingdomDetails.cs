@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ArenaModdingTool.ModdingFiles;
+using ArenaModdingTool.Forms;
 
 namespace ArenaModdingTool.Controls
 {
@@ -16,13 +17,16 @@ namespace ArenaModdingTool.Controls
         private AddEditState state;
         private MBKingdom kingdom;
         private int index;
+        private AMProject project;
+
         public event Action<MBKingdom, AddEditState, int> SaveKingdomInfoFinished;
-        public ucKingdomDetails(MBKingdom kingdom, AddEditState state, int index)
+        public ucKingdomDetails(AMProject project, MBKingdom kingdom, AddEditState state, int index)
         {
             InitializeComponent();
             loadKingdomDetails(kingdom);
             this.state = state;
             this.index = index;
+            this.project = project;
             if (state == AddEditState.Add || state == AddEditState.Edit)
             {
                 btnSave.Enabled = true;
@@ -114,6 +118,24 @@ namespace ArenaModdingTool.Controls
             SaveKingdomInfoFinished?.Invoke(kingdom, state, index);
 
             state = AddEditState.View;
+        }
+
+        private void txtCulture_DoubleClick(object sender, EventArgs e)
+        {
+            frmCultureListViewer cultureListViewer = new frmCultureListViewer(project);
+            if (cultureListViewer.ShowDialog() == DialogResult.OK)
+            {
+                txtCulture.Text = "Cultures." + cultureListViewer.SelectedCulture.id;
+            }
+        }
+
+        private void txtOwner_DoubleClick(object sender, EventArgs e)
+        {
+            frmHeroListViewer heroListViewer = new frmHeroListViewer(project);
+            if (heroListViewer.ShowDialog() == DialogResult.OK)
+            {
+                txtOwner.Text = "Heroes." + heroListViewer.SelectedHero.id;
+            }
         }
     }
 }

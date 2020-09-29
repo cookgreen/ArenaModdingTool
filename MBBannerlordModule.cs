@@ -154,6 +154,14 @@ namespace ArenaModdingTool
         {
             get { return moduleCultures; }
         }
+        public List<MBHeroes> ModuleHeroes
+        {
+            get { return moduleHeroes; }
+        }
+        public List<MBNPCCharacters> ModuleNPCCharacters
+        {
+            get { return moduleNPCCharacters; }
+        }
         public void CreateNew()
         {
         }

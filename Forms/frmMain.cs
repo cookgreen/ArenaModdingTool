@@ -81,7 +81,7 @@ namespace ArenaModdingTool
                 var moduleName = (new DirectoryInfo(kingdoms.FilePath).Parent.Parent.Name);
                 var fileName = new DirectoryInfo(kingdoms.FilePath).Name;
                 var page = new TabPage(moduleName + " - " + fileName);
-                ucKingdomEditor factionEditorCtrl = new ucKingdomEditor(kingdoms);
+                ucKingdomEditor factionEditorCtrl = new ucKingdomEditor(currentProject, kingdoms);
                 page.Controls.Clear();
                 page.Controls.Add(factionEditorCtrl);
                 factionEditorCtrl.Dock = DockStyle.Fill;

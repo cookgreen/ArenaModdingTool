@@ -17,7 +17,9 @@ namespace ArenaModdingTool.Controls
         private MBKingdoms kingdoms;
         private ucKingdomsList factionListCtrl;
         private ucKingdomDetails factionDetailsCtrl;
-        public ucKingdomEditor(MBKingdoms kingdoms)
+        private AMProject project;
+
+        public ucKingdomEditor(AMProject project, MBKingdoms kingdoms)
         {
             InitializeComponent();
             this.kingdoms = kingdoms;
@@ -27,11 +29,12 @@ namespace ArenaModdingTool.Controls
             panel1.Controls.Clear();
             panel1.Controls.Add(factionListCtrl);
             factionListCtrl.Dock = DockStyle.Fill;
+            this.project = project;
         }
 
         private void FactionList_SelectKingdomChanged(MBKingdom kingdom, int index)
         {
-            factionDetailsCtrl = new ucKingdomDetails(kingdom, factionListCtrl.State, index);
+            factionDetailsCtrl = new ucKingdomDetails(project, kingdom, factionListCtrl.State, index);
             panel2.Controls.Clear();
             panel2.Controls.Add(factionDetailsCtrl);
             factionDetailsCtrl.Dock = DockStyle.Fill;

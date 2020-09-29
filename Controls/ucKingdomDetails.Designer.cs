@@ -253,6 +253,7 @@
             this.txtCulture.ReadOnly = true;
             this.txtCulture.Size = new System.Drawing.Size(518, 21);
             this.txtCulture.TabIndex = 31;
+            this.txtCulture.DoubleClick += new System.EventHandler(this.txtCulture_DoubleClick);
             // 
             // txtAlternativeColor2
             // 
@@ -342,6 +343,7 @@
             this.txtOwner.ReadOnly = true;
             this.txtOwner.Size = new System.Drawing.Size(518, 21);
             this.txtOwner.TabIndex = 22;
+            this.txtOwner.DoubleClick += new System.EventHandler(this.txtOwner_DoubleClick);
             // 
             // label1
             // 
