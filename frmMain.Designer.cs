@@ -44,10 +44,12 @@
             this.mnuPlugin = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.panelControls = new System.Windows.Forms.Panel();
-            this.btnParties = new System.Windows.Forms.Button();
-            this.btnTroops = new System.Windows.Forms.Button();
-            this.btnFactions = new System.Windows.Forms.Button();
+            this.btnNPCCharacters = new System.Windows.Forms.Button();
+            this.btnCultures = new System.Windows.Forms.Button();
+            this.btnKingdoms = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnHeros = new System.Windows.Forms.Button();
+            this.btnItems = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -167,46 +169,48 @@
             // panelControls
             // 
             this.panelControls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelControls.Controls.Add(this.btnParties);
-            this.panelControls.Controls.Add(this.btnTroops);
-            this.panelControls.Controls.Add(this.btnFactions);
+            this.panelControls.Controls.Add(this.btnItems);
+            this.panelControls.Controls.Add(this.btnHeros);
+            this.panelControls.Controls.Add(this.btnNPCCharacters);
+            this.panelControls.Controls.Add(this.btnCultures);
+            this.panelControls.Controls.Add(this.btnKingdoms);
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControls.Location = new System.Drawing.Point(0, 25);
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(142, 425);
             this.panelControls.TabIndex = 1;
             // 
-            // btnParties
+            // btnNPCCharacters
             // 
-            this.btnParties.Enabled = false;
-            this.btnParties.Location = new System.Drawing.Point(29, 201);
-            this.btnParties.Name = "btnParties";
-            this.btnParties.Size = new System.Drawing.Size(75, 50);
-            this.btnParties.TabIndex = 2;
-            this.btnParties.Text = "Parties";
-            this.btnParties.UseVisualStyleBackColor = true;
+            this.btnNPCCharacters.Enabled = false;
+            this.btnNPCCharacters.Location = new System.Drawing.Point(22, 164);
+            this.btnNPCCharacters.Name = "btnNPCCharacters";
+            this.btnNPCCharacters.Size = new System.Drawing.Size(95, 68);
+            this.btnNPCCharacters.TabIndex = 2;
+            this.btnNPCCharacters.Text = "NPCCharacters";
+            this.btnNPCCharacters.UseVisualStyleBackColor = true;
             // 
-            // btnTroops
+            // btnCultures
             // 
-            this.btnTroops.Enabled = false;
-            this.btnTroops.Location = new System.Drawing.Point(29, 108);
-            this.btnTroops.Name = "btnTroops";
-            this.btnTroops.Size = new System.Drawing.Size(75, 50);
-            this.btnTroops.TabIndex = 1;
-            this.btnTroops.Text = "Troops";
-            this.btnTroops.UseVisualStyleBackColor = true;
-            this.btnTroops.Click += new System.EventHandler(this.btnTroops_Click);
+            this.btnCultures.Enabled = false;
+            this.btnCultures.Location = new System.Drawing.Point(22, 90);
+            this.btnCultures.Name = "btnCultures";
+            this.btnCultures.Size = new System.Drawing.Size(95, 68);
+            this.btnCultures.TabIndex = 1;
+            this.btnCultures.Text = "Cultures";
+            this.btnCultures.UseVisualStyleBackColor = true;
+            this.btnCultures.Click += new System.EventHandler(this.btnTroops_Click);
             // 
-            // btnFactions
+            // btnKingdoms
             // 
-            this.btnFactions.Enabled = false;
-            this.btnFactions.Location = new System.Drawing.Point(29, 19);
-            this.btnFactions.Name = "btnFactions";
-            this.btnFactions.Size = new System.Drawing.Size(75, 50);
-            this.btnFactions.TabIndex = 0;
-            this.btnFactions.Text = "Kingdoms";
-            this.btnFactions.UseVisualStyleBackColor = true;
-            this.btnFactions.Click += new System.EventHandler(this.btnFactions_Click);
+            this.btnKingdoms.Enabled = false;
+            this.btnKingdoms.Location = new System.Drawing.Point(22, 16);
+            this.btnKingdoms.Name = "btnKingdoms";
+            this.btnKingdoms.Size = new System.Drawing.Size(95, 68);
+            this.btnKingdoms.TabIndex = 0;
+            this.btnKingdoms.Text = "Kingdoms";
+            this.btnKingdoms.UseVisualStyleBackColor = true;
+            this.btnKingdoms.Click += new System.EventHandler(this.btnFactions_Click);
             // 
             // panelMain
             // 
@@ -216,6 +220,26 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(658, 425);
             this.panelMain.TabIndex = 2;
+            // 
+            // btnHeros
+            // 
+            this.btnHeros.Enabled = false;
+            this.btnHeros.Location = new System.Drawing.Point(22, 238);
+            this.btnHeros.Name = "btnHeros";
+            this.btnHeros.Size = new System.Drawing.Size(95, 68);
+            this.btnHeros.TabIndex = 3;
+            this.btnHeros.Text = "Heros";
+            this.btnHeros.UseVisualStyleBackColor = true;
+            // 
+            // btnItems
+            // 
+            this.btnItems.Enabled = false;
+            this.btnItems.Location = new System.Drawing.Point(22, 312);
+            this.btnItems.Name = "btnItems";
+            this.btnItems.Size = new System.Drawing.Size(95, 68);
+            this.btnItems.TabIndex = 4;
+            this.btnItems.Text = "Items";
+            this.btnItems.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -256,10 +280,12 @@
         private System.Windows.Forms.ToolStripMenuItem mnuFileOpenProject;
         private System.Windows.Forms.ToolStripMenuItem mnuFileOpenOtherFile;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.Button btnParties;
-        private System.Windows.Forms.Button btnTroops;
-        private System.Windows.Forms.Button btnFactions;
+        private System.Windows.Forms.Button btnNPCCharacters;
+        private System.Windows.Forms.Button btnCultures;
+        private System.Windows.Forms.Button btnKingdoms;
         private System.Windows.Forms.ToolStripMenuItem mnuImport;
+        private System.Windows.Forms.Button btnHeros;
+        private System.Windows.Forms.Button btnItems;
     }
 }
 

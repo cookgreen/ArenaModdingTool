@@ -107,6 +107,8 @@
     <Compile Include="MBBannerlordModule.cs" />
     <Compile Include="ModdingFiles\MBCultures.cs" />
     <Compile Include="ModdingFiles\MBHeroes.cs" />
+    <Compile Include="ModdingFiles\MBItems.cs" />
+    <Compile Include="ModdingFiles\MBNPCCharacters.cs" />
     <Compile Include="ModdingFiles\MBSPKingdoms.cs" />
     <Compile Include="ModdingFiles\MBSubModule.cs" />
     <Compile Include="Program.cs" />

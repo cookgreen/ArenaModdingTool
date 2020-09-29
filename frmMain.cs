@@ -22,8 +22,6 @@ namespace ArenaModdingTool
             this.appSetting = appSetting;
             SwitchLanguage();
 
-            MBBannerlordModManager.Instance.Init();
-
             foreach(var langName in LanguageManager.Instance.GetLanguageNames())
             {
                 var item = mnuToolLanguage.DropDownItems.Add(langName);
@@ -58,9 +56,11 @@ namespace ArenaModdingTool
             mnuTool.Text = Helper.LOC("ui_main_form_mnuTool");
             mnuToolLanguage.Text = Helper.LOC("ui_main_form_mnuToolLanguage");
             mnuHelp.Text = Helper.LOC("ui_main_form_mnuHelp");
-            btnFactions.Text = Helper.LOC("ui_main_form_panel_buttons_faction");
-            btnTroops.Text = Helper.LOC("ui_main_form_panel_buttons_troop");
-            btnParties.Text = Helper.LOC("ui_main_form_panel_buttons_parties");
+            btnKingdoms.Text = Helper.LOC("ui_main_form_panel_buttons_kingdom_edit");
+            btnCultures.Text = Helper.LOC("ui_main_form_panel_buttons_culture_edit");
+            btnNPCCharacters.Text = Helper.LOC("ui_main_form_panel_buttons_npccharacters_edit");
+            btnHeros.Text = Helper.LOC("ui_main_form_panel_buttons_heroes_edit");
+            btnItems.Text = Helper.LOC("ui_main_form_panel_buttons_items_edit");
         }
 
         private void mnuFileNewProject_Click(object sender, EventArgs e)
@@ -113,9 +113,12 @@ namespace ArenaModdingTool
 
         private void OpenProject(AMProject currentProject)
         {
-            btnFactions.Enabled = true;
-            btnParties.Enabled = true;
-            btnTroops.Enabled = true;
+            MBBannerlordModManager.Instance.Init();
+            btnKingdoms.Enabled = true;
+            btnNPCCharacters.Enabled = true;
+            btnCultures.Enabled = true;
+            btnHeros.Enabled = true;
+            btnItems.Enabled = true;
         }
     }
 }

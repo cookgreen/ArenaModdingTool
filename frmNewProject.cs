@@ -49,5 +49,35 @@ namespace ArenaModdingTool
             colXmlNodePath.Text = Helper.LOC("ui_create_new_project_form_listview_xmls_column_path");
             colXmlNodeIncludedGameTypes.Text = Helper.LOC("ui_create_new_project_form_listview_xmls_included_gametypes");
         }
+
+        private void btnAddSubModule_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddXmlNode_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteSubModule_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteXmlNode_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModifySubModule_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModifyXmlNode_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

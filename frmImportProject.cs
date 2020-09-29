@@ -31,7 +31,7 @@ namespace ArenaModdingTool
                 var files = di.EnumerateFiles();
                 if (files.Where(o => o.Name == "SubModule.xml").Count() == 0)
                 {
-                    MessageBox.Show("Invalid Path!");
+                    MessageBox.Show(Helper.LOC("str_error_message_invalid_module_path"));
                     txtModuleLocation.Text = null;
                 }
             }
