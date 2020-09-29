@@ -144,9 +144,7 @@ namespace ArenaModdingTool.Controls
             kingdom.label_color = txtLabelColor.Text;
             kingdom.name = txtName.Text;
             kingdom.owner = txtOwner.Text;
-            kingdom.Policies = new List<KingdomPolicy>();
             kingdom.primary_banner_color = txtPrimaryBannerColor.Text;
-            kingdom.Relationships = new List<KingdomRelationship>();
             kingdom.ruler_title = txtRulerTitle.Text;
             kingdom.secondary_banner_color = txtSecondaryBannerlordColor.Text;
             kingdom.settlement_banner_mesh = txtSettlementBannerMesh.Text;
