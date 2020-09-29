@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlLoader;
 
 namespace ArenaModdingTool
 {
@@ -16,7 +17,9 @@ namespace ArenaModdingTool
     {
         private AppSetting appSetting;
         private AMProject currentProject;
-        public frmMain(AppSetting appSetting)
+        private RecentOperations recentOperations;
+
+        public frmMain(AppSetting appSetting, RecentOperations recentOperations)
         {
             InitializeComponent();
             this.appSetting = appSetting;
@@ -38,6 +41,20 @@ namespace ArenaModdingTool
                     }
                 };
             }
+
+            this.recentOperations = recentOperations;
+            foreach (var recentOpt in recentOperations.RecentOperationList)
+            {
+                if (recentOpt.Type == "Import")
+                {
+                    var item = mnuRecentlyImportedProject.DropDownItems.Add(recentOpt.Value);
+                    item.Click += (o, e) =>
+                    {
+                        currentProject = new AMProject(recentOpt.Value);
+                        OpenProject(currentProject);
+                    };
+                }
+            }
         }
 
         public void SwitchLanguage()
@@ -56,6 +73,7 @@ namespace ArenaModdingTool
             mnuTool.Text = Helper.LOC("ui_main_form_mnuTool");
             mnuToolLanguage.Text = Helper.LOC("ui_main_form_mnuToolLanguage");
             mnuHelp.Text = Helper.LOC("ui_main_form_mnuHelp");
+            mnuRecentlyImportedProject.Text = Helper.LOC("ui_main_form_mnuRecentImportedProject");
             btnKingdoms.Text = Helper.LOC("ui_main_form_panel_buttons_kingdom_edit");
             btnCultures.Text = Helper.LOC("ui_main_form_panel_buttons_culture_edit");
             btnNPCCharacters.Text = Helper.LOC("ui_main_form_panel_buttons_npccharacters_edit");
@@ -108,6 +126,18 @@ namespace ArenaModdingTool
             {
                 currentProject = importProjectForm.Project;
                 OpenProject(currentProject);
+
+                string loc = currentProject.Location.Replace("\\", "/");
+                if (recentOperations.RecentOperationList.Where(o => o.Value == loc).Count() == 0)
+                {
+                    recentOperations.RecentOperationList.Add(new RecentOperation()
+                    {
+                        Type = "Import",
+                        Value = currentProject.Location.Replace("\\", "/")
+                    });
+                    XmlObjectLoader xmlObjectLoader = new XmlObjectLoader("RecentOperations.xml");
+                    xmlObjectLoader.Save(recentOperations);
+                }
             }
         }
 
@@ -119,6 +149,11 @@ namespace ArenaModdingTool
             btnCultures.Enabled = true;
             btnHeros.Enabled = true;
             btnItems.Enabled = true;
+        }
+
+        private void mnuFileExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -128,6 +128,7 @@
     <Compile Include="ModdingFiles\MBSubModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentOperations.cs" />
     <Compile Include="XmlLoader.cs" />
     <EmbeddedResource Include="Controls\ucCultureList.resx">
       <DependentUpon>ucCultureList.cs</DependentUpon>
@@ -196,6 +197,11 @@
     <None Include="languages\Lang_EN.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RecentOperations.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

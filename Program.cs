@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlLoader;
 
 namespace ArenaModdingTool
 {
@@ -19,9 +20,13 @@ namespace ArenaModdingTool
 
             LanguageManager.Instance.CurrentLocalization = appSetting.Localization;
 
+            RecentOperations recentOperations;
+            XmlObjectLoader xmlObjectLoader = new XmlObjectLoader("RecentOperations.xml");
+            xmlObjectLoader.Load(out recentOperations);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain(appSetting));
+            Application.Run(new frmMain(appSetting, recentOperations));
         }
     }
 }

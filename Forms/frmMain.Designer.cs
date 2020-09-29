@@ -44,12 +44,14 @@
             this.mnuPlugin = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.panelControls = new System.Windows.Forms.Panel();
+            this.btnItems = new System.Windows.Forms.Button();
+            this.btnHeros = new System.Windows.Forms.Button();
             this.btnNPCCharacters = new System.Windows.Forms.Button();
             this.btnCultures = new System.Windows.Forms.Button();
             this.btnKingdoms = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.btnHeros = new System.Windows.Forms.Button();
-            this.btnItems = new System.Windows.Forms.Button();
+            this.mnuRecentlyImportedProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +76,8 @@
             this.mnuFileOpen,
             this.mnuImport,
             this.toolStripMenuItem1,
+            this.mnuRecentlyImportedProject,
+            this.toolStripMenuItem2,
             this.mnuFileExit});
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Size = new System.Drawing.Size(39, 21);
@@ -85,7 +89,7 @@
             this.mnuFileNewProject,
             this.mnuFileNewOtherFile});
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(219, 22);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileNewProject
@@ -107,7 +111,7 @@
             this.mnuFileOpenProject,
             this.mnuFileOpenOtherFile});
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(219, 22);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileOpenProject
@@ -125,20 +129,21 @@
             // mnuImport
             // 
             this.mnuImport.Name = "mnuImport";
-            this.mnuImport.Size = new System.Drawing.Size(116, 22);
+            this.mnuImport.Size = new System.Drawing.Size(219, 22);
             this.mnuImport.Text = "Import";
             this.mnuImport.Click += new System.EventHandler(this.mnuImport_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(216, 6);
             // 
             // mnuFileExit
             // 
             this.mnuFileExit.Name = "mnuFileExit";
-            this.mnuFileExit.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileExit.Size = new System.Drawing.Size(219, 22);
             this.mnuFileExit.Text = "Exit";
+            this.mnuFileExit.Click += new System.EventHandler(this.mnuFileExit_Click);
             // 
             // mnuTool
             // 
@@ -179,6 +184,26 @@
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(142, 425);
             this.panelControls.TabIndex = 1;
+            // 
+            // btnItems
+            // 
+            this.btnItems.Enabled = false;
+            this.btnItems.Location = new System.Drawing.Point(22, 312);
+            this.btnItems.Name = "btnItems";
+            this.btnItems.Size = new System.Drawing.Size(95, 68);
+            this.btnItems.TabIndex = 4;
+            this.btnItems.Text = "Items";
+            this.btnItems.UseVisualStyleBackColor = true;
+            // 
+            // btnHeros
+            // 
+            this.btnHeros.Enabled = false;
+            this.btnHeros.Location = new System.Drawing.Point(22, 238);
+            this.btnHeros.Name = "btnHeros";
+            this.btnHeros.Size = new System.Drawing.Size(95, 68);
+            this.btnHeros.TabIndex = 3;
+            this.btnHeros.Text = "Heros";
+            this.btnHeros.UseVisualStyleBackColor = true;
             // 
             // btnNPCCharacters
             // 
@@ -221,25 +246,16 @@
             this.panelMain.Size = new System.Drawing.Size(658, 425);
             this.panelMain.TabIndex = 2;
             // 
-            // btnHeros
+            // mnuRecentlyImportedProject
             // 
-            this.btnHeros.Enabled = false;
-            this.btnHeros.Location = new System.Drawing.Point(22, 238);
-            this.btnHeros.Name = "btnHeros";
-            this.btnHeros.Size = new System.Drawing.Size(95, 68);
-            this.btnHeros.TabIndex = 3;
-            this.btnHeros.Text = "Heros";
-            this.btnHeros.UseVisualStyleBackColor = true;
+            this.mnuRecentlyImportedProject.Name = "mnuRecentlyImportedProject";
+            this.mnuRecentlyImportedProject.Size = new System.Drawing.Size(219, 22);
+            this.mnuRecentlyImportedProject.Text = "RecentlyImportedProject";
             // 
-            // btnItems
+            // toolStripMenuItem2
             // 
-            this.btnItems.Enabled = false;
-            this.btnItems.Location = new System.Drawing.Point(22, 312);
-            this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(95, 68);
-            this.btnItems.TabIndex = 4;
-            this.btnItems.Text = "Items";
-            this.btnItems.UseVisualStyleBackColor = true;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(216, 6);
             // 
             // frmMain
             // 
@@ -286,6 +302,8 @@
         private System.Windows.Forms.ToolStripMenuItem mnuImport;
         private System.Windows.Forms.Button btnHeros;
         private System.Windows.Forms.Button btnItems;
+        private System.Windows.Forms.ToolStripMenuItem mnuRecentlyImportedProject;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
     }
 }
 
