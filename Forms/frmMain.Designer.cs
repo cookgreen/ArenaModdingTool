@@ -38,6 +38,8 @@
             this.mnuFileOpenOtherFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuImport = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuRecentlyImportedProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTool = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuToolLanguage = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,8 +52,6 @@
             this.btnCultures = new System.Windows.Forms.Button();
             this.btnKingdoms = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.mnuRecentlyImportedProject = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -95,15 +95,16 @@
             // mnuFileNewProject
             // 
             this.mnuFileNewProject.Name = "mnuFileNewProject";
-            this.mnuFileNewProject.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNewProject.Size = new System.Drawing.Size(180, 22);
             this.mnuFileNewProject.Text = "Project";
             this.mnuFileNewProject.Click += new System.EventHandler(this.mnuFileNewProject_Click);
             // 
             // mnuFileNewOtherFile
             // 
             this.mnuFileNewOtherFile.Name = "mnuFileNewOtherFile";
-            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(180, 22);
             this.mnuFileNewOtherFile.Text = "File";
+            this.mnuFileNewOtherFile.Click += new System.EventHandler(this.mnuFileNewOtherFile_Click);
             // 
             // mnuFileOpen
             // 
@@ -137,6 +138,17 @@
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(216, 6);
+            // 
+            // mnuRecentlyImportedProject
+            // 
+            this.mnuRecentlyImportedProject.Name = "mnuRecentlyImportedProject";
+            this.mnuRecentlyImportedProject.Size = new System.Drawing.Size(219, 22);
+            this.mnuRecentlyImportedProject.Text = "RecentlyImportedProject";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(216, 6);
             // 
             // mnuFileExit
             // 
@@ -194,6 +206,7 @@
             this.btnItems.TabIndex = 4;
             this.btnItems.Text = "Items";
             this.btnItems.UseVisualStyleBackColor = true;
+            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
             // btnHeros
             // 
@@ -204,6 +217,7 @@
             this.btnHeros.TabIndex = 3;
             this.btnHeros.Text = "Heros";
             this.btnHeros.UseVisualStyleBackColor = true;
+            this.btnHeros.Click += new System.EventHandler(this.btnHeros_Click);
             // 
             // btnNPCCharacters
             // 
@@ -214,6 +228,7 @@
             this.btnNPCCharacters.TabIndex = 2;
             this.btnNPCCharacters.Text = "NPCCharacters";
             this.btnNPCCharacters.UseVisualStyleBackColor = true;
+            this.btnNPCCharacters.Click += new System.EventHandler(this.btnNPCCharacters_Click);
             // 
             // btnCultures
             // 
@@ -224,7 +239,7 @@
             this.btnCultures.TabIndex = 1;
             this.btnCultures.Text = "Cultures";
             this.btnCultures.UseVisualStyleBackColor = true;
-            this.btnCultures.Click += new System.EventHandler(this.btnTroops_Click);
+            this.btnCultures.Click += new System.EventHandler(this.btnCultures_Click);
             // 
             // btnKingdoms
             // 
@@ -245,17 +260,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(658, 425);
             this.panelMain.TabIndex = 2;
-            // 
-            // mnuRecentlyImportedProject
-            // 
-            this.mnuRecentlyImportedProject.Name = "mnuRecentlyImportedProject";
-            this.mnuRecentlyImportedProject.Size = new System.Drawing.Size(219, 22);
-            this.mnuRecentlyImportedProject.Text = "RecentlyImportedProject";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(216, 6);
             // 
             // frmMain
             // 

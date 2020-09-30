@@ -87,8 +87,32 @@
       <DependentUpon>ucKingdomDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="AddEditState.cs" />
+    <Compile Include="Controls\ucNPCCharacterDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucNPCCharacterDetails.Designer.cs">
+      <DependentUpon>ucNPCCharacterDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucNPCCharacterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucNPCCharacterEditor.Designer.cs">
+      <DependentUpon>ucNPCCharacterEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucNPCCharacterList.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucNPCCharacterListEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucNPCCharacterListEdit.Designer.cs">
+      <DependentUpon>ucNPCCharacterListEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCreateNewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCreateNewFile.Designer.cs">
+      <DependentUpon>frmCreateNewFile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmCultureListViewer.cs">
       <SubType>Form</SubType>
@@ -144,6 +168,12 @@
     <Compile Include="Forms\frmNewProject.Designer.cs">
       <DependentUpon>frmNewProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmNPCCharacterListViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterListViewer.Designer.cs">
+      <DependentUpon>frmNPCCharacterListViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="ILocalization.cs" />
     <Compile Include="LangLocalization.cs" />
@@ -159,6 +189,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecentOperations.cs" />
+    <Compile Include="TemplateFile.cs" />
+    <Compile Include="TemplateFileManager.cs" />
     <Compile Include="XmlLoader.cs" />
     <EmbeddedResource Include="Controls\ucCultureList.resx">
       <DependentUpon>ucCultureList.cs</DependentUpon>
@@ -178,8 +210,20 @@
     <EmbeddedResource Include="Controls\ucKingdomEditor.resx">
       <DependentUpon>ucKingdomEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucNPCCharacterDetails.resx">
+      <DependentUpon>ucNPCCharacterDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucNPCCharacterEditor.resx">
+      <DependentUpon>ucNPCCharacterEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucNPCCharacterList.resx">
       <DependentUpon>ucNPCCharacterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucNPCCharacterListEdit.resx">
+      <DependentUpon>ucNPCCharacterListEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCreateNewFile.resx">
+      <DependentUpon>frmCreateNewFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCultureListViewer.resx">
       <DependentUpon>frmCultureListViewer.cs</DependentUpon>
@@ -204,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNewProject.resx">
       <DependentUpon>frmNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterListViewer.resx">
+      <DependentUpon>frmNPCCharacterListViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -244,6 +291,13 @@
     <Content Include="RecentOperations.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="templates\template_kingdoms.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\template_npccharacters.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

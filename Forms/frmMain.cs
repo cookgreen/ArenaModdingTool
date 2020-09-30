@@ -1,4 +1,5 @@
 ﻿using ArenaModdingTool.Controls;
+using ArenaModdingTool.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -92,6 +93,47 @@ namespace ArenaModdingTool
 
         private void btnFactions_Click(object sender, EventArgs e)
         {
+            string errMsg = string.Empty;
+            bool canLoaded = false;
+            if (!currentProject.BannerlordModule.HasModuleKingdomFile)
+            {
+                if (MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
+                     DialogResult.Yes)
+                {
+                    return;
+                }
+                else
+                {
+                    canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", "npccharacters", out errMsg);
+
+                    if (!canLoaded)
+                    {
+                        MessageBox.Show(errMsg, "Notice");
+                        return;
+                    }
+                    else
+                    {
+                        currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
+                        {
+                            XmlName = new ModdingFiles.MBXmlNodeName()
+                            {
+                                id = "NPCCharacters",
+                                path = "npccharacters"
+                            },
+                            IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
+                            {
+                                GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
+                                {
+                                    new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
+                                    new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
+                                }
+                            }
+                        });
+                        currentProject.SaveModuleInfo();
+                    }
+                }
+            }
+
             TabControl tabControl = new TabControl();
             tabControl.Dock = DockStyle.Fill;
             foreach(var kingdoms in currentProject.BannerlordModule.ModuleKingdoms)
@@ -109,7 +151,7 @@ namespace ArenaModdingTool
             panelMain.Controls.Add(tabControl);
         }
 
-        private void btnTroops_Click(object sender, EventArgs e)
+        private void btnCultures_Click(object sender, EventArgs e)
         {
 
         }
@@ -154,6 +196,85 @@ namespace ArenaModdingTool
         private void mnuFileExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnNPCCharacters_Click(object sender, EventArgs e)
+        {
+            string errMsg = string.Empty;
+            bool canLoaded = false;
+            if (!currentProject.BannerlordModule.HasModuleCharacterFile)
+            {
+                if (MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
+                     DialogResult.Yes)
+                {
+                    return;
+                }
+                else
+                {
+                    canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", "npccharacters", out errMsg);
+
+                    if (!canLoaded)
+                    {
+                        MessageBox.Show(errMsg, "Notice");
+                        return;
+                    }
+                    else
+                    {
+                        currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
+                        {
+                            XmlName = new ModdingFiles.MBXmlNodeName()
+                            {
+                                id = "NPCCharacters",
+                                path = "npccharacters"
+                            },
+                            IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
+                            {
+                                GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
+                                {
+                                    new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
+                                    new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
+                                }
+                            }
+                        });
+                        currentProject.SaveModuleInfo();
+                    }
+                }
+            }
+
+            TabControl tabControl = new TabControl();
+            tabControl.Dock = DockStyle.Fill;
+            foreach (var characters in currentProject.BannerlordModule.ModuleNPCCharacters)
+            {
+                var moduleName = (new DirectoryInfo(characters.FilePath).Parent.Parent.Name);
+                var fileName = new DirectoryInfo(characters.FilePath).Name;
+                var page = new TabPage(moduleName + " - " + fileName);
+                ucNPCCharacterEditor npcCharacterEditor = new ucNPCCharacterEditor(currentProject, characters);
+                page.Controls.Clear();
+                page.Controls.Add(npcCharacterEditor);
+                npcCharacterEditor.Dock = DockStyle.Fill;
+                tabControl.TabPages.Add(page);
+            }
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(tabControl);
+        }
+
+        private void btnHeros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuFileNewOtherFile_Click(object sender, EventArgs e)
+        {
+            frmCreateNewFile createNewFileForm = new frmCreateNewFile();
+            if (createNewFileForm.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
         }
     }
 }

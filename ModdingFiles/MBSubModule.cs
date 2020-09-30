@@ -21,6 +21,8 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlElement]
         public MBSubModuleInfoElement SingleplayerModule { get; set; }
         [XmlElement]
+        public MBSubModuleInfoElement MultiplayerModule { get; set; }
+        [XmlElement]
         public MBSubModuleInfoElement Official { get; set; }
         [XmlElement]
         public MBSubModuleDepencyModules DependedModules { get; set; }
@@ -51,9 +53,9 @@ namespace ArenaModdingTool.ModdingFiles
     public class MBModuleTag
     {
         [XmlAttribute]
-        public string Key { get; set; }
+        public string key { get; set; }
         [XmlAttribute]
-        public string Value { get; set; }
+        public string value { get; set; }
     }
 
     [XmlRoot("Placeholder")]
@@ -73,7 +75,7 @@ namespace ArenaModdingTool.ModdingFiles
     public class MBSubModuleDepencyModule
     {
         [XmlAttribute]
-        public string id { get; set; }
+        public string Id { get; set; }
     }
 
     public class MBXmlNode

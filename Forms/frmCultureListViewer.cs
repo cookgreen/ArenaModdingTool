@@ -28,33 +28,13 @@ namespace ArenaModdingTool.Forms
 
         private void loadCulture()
         {
-            if (project.BannerlordModule.ModuleCultures == null || project.BannerlordModule.ModuleCultures.Count == 0)
+            TabControl tabControl = new TabControl();
+            tabControl.Dock = DockStyle.Fill;
+            foreach (var mod in MBBannerlordModManager.Instance.OfficialMods)
             {
-                TabControl tabControl = new TabControl();
-                tabControl.Dock = DockStyle.Fill;
-                foreach (var mod in MBBannerlordModManager.Instance.OfficialMods)
+                foreach (var cultures in mod.ModuleCultures)
                 {
-                    foreach (var cultures in mod.ModuleCultures)
-                    {
-                        TabPage page = new TabPage(mod.ModuleInfo.Id.value + " - " + (new DirectoryInfo(cultures.FilePath).Name));
-                        ucCultureList ucCultureList = new ucCultureList(cultures);
-                        ucCultureList.SelectCultureChanged += UcCultureList_SelectCultureChanged;
-                        page.Controls.Clear();
-                        page.Controls.Add(ucCultureList);
-                        ucCultureList.Dock = DockStyle.Fill;
-                        tabControl.TabPages.Add(page);
-                    }
-                }
-                panel1.Controls.Clear();
-                panel1.Controls.Add(tabControl);
-            }
-            else
-            {
-                TabControl tabControl = new TabControl();
-                tabControl.Dock = DockStyle.Fill;
-                foreach (var cultures in project.BannerlordModule.ModuleCultures)
-                {
-                    TabPage page = new TabPage((new DirectoryInfo(cultures.FilePath).Name));
+                    TabPage page = new TabPage(mod.ModuleInfo.Id.value + " - " + (new DirectoryInfo(cultures.FilePath).Name));
                     ucCultureList ucCultureList = new ucCultureList(cultures);
                     ucCultureList.SelectCultureChanged += UcCultureList_SelectCultureChanged;
                     page.Controls.Clear();
@@ -62,9 +42,20 @@ namespace ArenaModdingTool.Forms
                     ucCultureList.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panel1.Controls.Clear();
-                panel1.Controls.Add(tabControl);
             }
+
+            foreach (var cultures in project.BannerlordModule.ModuleCultures)
+            {
+                TabPage page = new TabPage((new DirectoryInfo(cultures.FilePath).Name));
+                ucCultureList ucCultureList = new ucCultureList(cultures);
+                ucCultureList.SelectCultureChanged += UcCultureList_SelectCultureChanged;
+                page.Controls.Clear();
+                page.Controls.Add(ucCultureList);
+                ucCultureList.Dock = DockStyle.Fill;
+                tabControl.TabPages.Add(page);
+            }
+            panel1.Controls.Clear();
+            panel1.Controls.Add(tabControl);
         }
 
         private void UcCultureList_SelectCultureChanged(MBCulture culture, int index)

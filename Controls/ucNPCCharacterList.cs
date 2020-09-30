@@ -12,6 +12,12 @@ namespace ArenaModdingTool.Controls
     {
         private TreeView npcCharacterList;
         private MBNPCCharacters npcCharacters;
+        private MBNPCCharacter selectedCharacter;
+        public event Action<MBNPCCharacter, int> SelectNPCCharacterChanged;
+        public MBNPCCharacter SelectedCharacter
+        {
+            get { return selectedCharacter; }
+        }
 
         private void InitializeComponent()
         {
@@ -55,7 +61,12 @@ namespace ArenaModdingTool.Controls
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            
+            if (e.Node != null)
+            {
+                int index = npcCharacterList.Nodes.IndexOf(e.Node);
+                selectedCharacter = npcCharacters.NPCCharacters[index];
+                SelectNPCCharacterChanged?.Invoke(npcCharacters.NPCCharacters[index], index);
+            }
         }
     }
 }

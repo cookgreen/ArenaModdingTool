@@ -28,43 +28,34 @@ namespace ArenaModdingTool.Forms
 
         private void loadHeroes()
         {
-            if (project.BannerlordModule.ModuleHeroes == null || project.BannerlordModule.ModuleHeroes.Count == 0)
+            TabControl tabControl = new TabControl();
+            tabControl.Dock = DockStyle.Fill;
+            foreach (var mod in MBBannerlordModManager.Instance.OfficialMods)
             {
-                TabControl tabControl = new TabControl();
-                tabControl.Dock = DockStyle.Fill;
-                foreach (var mod in MBBannerlordModManager.Instance.OfficialMods)
+                foreach (var cultures in mod.ModuleHeroes)
                 {
-                    foreach (var cultures in mod.ModuleHeroes)
-                    {
-                        TabPage page = new TabPage(mod.ModuleInfo.Id.value + " - " + (new DirectoryInfo(cultures.FilePath).Name));
-                        ucHeroList ucCultureList = new ucHeroList(cultures);
-                        ucCultureList.SelectHeroChanged += UcCultureList_SelectHeroChanged;
-                        page.Controls.Clear();
-                        page.Controls.Add(ucCultureList);
-                        ucCultureList.Dock = DockStyle.Fill;
-                        tabControl.TabPages.Add(page);
-                    }
-                }
-                panel1.Controls.Clear();
-                panel1.Controls.Add(tabControl);
-            }
-            else
-            {
-                TabControl tabControl = new TabControl();
-                tabControl.Dock = DockStyle.Fill;
-                foreach (var heroes in project.BannerlordModule.ModuleHeroes)
-                {
-                    TabPage page = new TabPage((new DirectoryInfo(heroes.FilePath).Name));
-                    ucHeroList ucCultureList = new ucHeroList(heroes);
+                    TabPage page = new TabPage(mod.ModuleInfo.Id.value + " - " + (new DirectoryInfo(cultures.FilePath).Name));
+                    ucHeroList ucCultureList = new ucHeroList(cultures);
                     ucCultureList.SelectHeroChanged += UcCultureList_SelectHeroChanged;
                     page.Controls.Clear();
                     page.Controls.Add(ucCultureList);
                     ucCultureList.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panel1.Controls.Clear();
-                panel1.Controls.Add(tabControl);
             }
+
+            foreach (var heroes in project.BannerlordModule.ModuleHeroes)
+            {
+                TabPage page = new TabPage((new DirectoryInfo(heroes.FilePath).Name));
+                ucHeroList ucCultureList = new ucHeroList(heroes);
+                ucCultureList.SelectHeroChanged += UcCultureList_SelectHeroChanged;
+                page.Controls.Clear();
+                page.Controls.Add(ucCultureList);
+                ucCultureList.Dock = DockStyle.Fill;
+                tabControl.TabPages.Add(page);
+            }
+            panel1.Controls.Clear();
+            panel1.Controls.Add(tabControl);
         }
 
         private void UcCultureList_SelectHeroChanged(ModdingFiles.MBHero hero, int index)

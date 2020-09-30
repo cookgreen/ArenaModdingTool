@@ -19,6 +19,14 @@ namespace ArenaModdingTool
         private List<MBItems> moduleItems;
         private List<MBNPCCharacters> moduleNPCCharacters;
         private string path;
+        private bool hasModuleCharactersFile;
+        private bool hasModuleKingdomsFile;
+
+        public string ModuleDataPath
+        {
+            get { return Path.Combine(path, "ModuleData"); }
+        }
+
         public MBBannerlordModule()
         {
 
@@ -44,14 +52,11 @@ namespace ArenaModdingTool
             var findedSPKingdomsNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "Kingdoms");
             foreach (var node in findedSPKingdomsNode)
             {
-                MBKingdoms kingdoms;
                 string kingdomsXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path) + ".xml";
                 if (File.Exists(kingdomsXmlPath))
                 {
-                    xmlLoader = new XmlObjectLoader(kingdomsXmlPath);
-                    xmlLoader.Load(out kingdoms);
-                    kingdoms.FilePath = kingdomsXmlPath;
-                    moduleKingdoms.Add(kingdoms);
+                    hasModuleKingdomsFile = true;
+                    LoadKingdoms(kingdomsXmlPath);
                 }
             }
 
@@ -115,7 +120,6 @@ namespace ArenaModdingTool
             var findedNPCCharacterNodes = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "NPCCharacters");
             foreach (var node in findedNPCCharacterNodes)
             {
-                MBNPCCharacters characters;
                 string charactersXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path);
                 if (Directory.Exists(charactersXmlPath))
                 {
@@ -124,22 +128,35 @@ namespace ArenaModdingTool
                     {
                         if (file.Extension == ".xml")
                         {
-                            xmlLoader = new XmlObjectLoader(file.FullName);
-                            xmlLoader.Load(out characters);
-                            characters.FilePath = file.FullName;
-                            moduleNPCCharacters.Add(characters);
+                            LoadNPCCharacters(file.FullName);
                         }
                     }
                 }
                 else if (File.Exists(charactersXmlPath + ".xml"))
                 {
+                    hasModuleCharactersFile = true;
                     charactersXmlPath = charactersXmlPath + ".xml";
-                    xmlLoader = new XmlObjectLoader(charactersXmlPath);
-                    xmlLoader.Load(out characters);
-                    characters.FilePath = charactersXmlPath;
-                    moduleNPCCharacters.Add(characters);
+                    LoadNPCCharacters(charactersXmlPath);
                 }
             }
+        }
+
+        public void LoadKingdoms(string destFileFullPath)
+        {
+            MBKingdoms kingdoms;
+            var xmlLoader = new XmlObjectLoader(destFileFullPath);
+            xmlLoader.Load(out kingdoms);
+            kingdoms.FilePath = destFileFullPath;
+            moduleKingdoms.Add(kingdoms);
+        }
+
+        public void LoadNPCCharacters(string destFileFullPath)
+        {
+            MBNPCCharacters characters;
+            var xmlLoader = new XmlObjectLoader(destFileFullPath);
+            xmlLoader.Load(out characters);
+            characters.FilePath = destFileFullPath;
+            moduleNPCCharacters.Add(characters);
         }
 
         public MBModule ModuleInfo
@@ -162,6 +179,19 @@ namespace ArenaModdingTool
         {
             get { return moduleNPCCharacters; }
         }
+
+        public string ModulePath { get { return path; } }
+
+        public bool HasModuleCharacterFile
+        {
+            get { return hasModuleCharactersFile; }
+        }
+
+        public bool HasModuleKingdomFile 
+        {
+            get { return hasModuleKingdomsFile; }
+        }
+
         public void CreateNew()
         {
         }

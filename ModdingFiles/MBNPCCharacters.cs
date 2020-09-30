@@ -18,6 +18,7 @@ namespace ArenaModdingTool.ModdingFiles
     [XmlRoot("NPCCharacter")]
     public class MBNPCCharacter
     {
+
         [XmlAttribute]
         public string id { get; set; }
         [XmlAttribute]
@@ -30,6 +31,12 @@ namespace ArenaModdingTool.ModdingFiles
         public string occupation { get; set; }
         [XmlAttribute]
         public string culture { get; set; }
+        public bool is_companion { get; set; }
+        public bool is_female { get; set; }
+        public bool is_hero { get; set; }
+        public bool is_mecenary { get; set; }
+        public string voice { get; set; }
+        public string civilian_template { get; set; }
 
         [XmlElement("face")]
         public MBNPCCharacterFace Face { get; set; }

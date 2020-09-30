@@ -32,43 +32,33 @@ namespace ArenaModdingTool.Forms
 
         private void LoadKingdoms()
         {
-            if (project.BannerlordModule.ModuleKingdoms == null || project.BannerlordModule.ModuleKingdoms.Count == 0)
+            TabControl tabControl = new TabControl();
+            tabControl.Dock = DockStyle.Fill;
+            foreach (var mod in MBBannerlordModManager.Instance.OfficialMods)
             {
-                TabControl tabControl = new TabControl();
-                tabControl.Dock = DockStyle.Fill;
-                foreach (var mod in MBBannerlordModManager.Instance.OfficialMods)
+                foreach (var kingdoms in mod.ModuleKingdoms)
                 {
-                    foreach (var kingdoms in mod.ModuleKingdoms)
-                    {
-                        TabPage page = new TabPage(mod.ModuleInfo.Id.value + " - " + (new DirectoryInfo(kingdoms.FilePath).Name));
-                        ucKingdomList ucCultureList = new ucKingdomList(kingdoms);
-                        ucCultureList.SelectKingdomChanged += UcKingdomList_SelectKingdomChanged; ;
-                        page.Controls.Clear();
-                        page.Controls.Add(ucCultureList);
-                        ucCultureList.Dock = DockStyle.Fill;
-                        tabControl.TabPages.Add(page);
-                    }
-                }
-                panel1.Controls.Clear();
-                panel1.Controls.Add(tabControl);
-            }
-            else
-            {
-                TabControl tabControl = new TabControl();
-                tabControl.Dock = DockStyle.Fill;
-                foreach (var kingdoms in project.BannerlordModule.ModuleKingdoms)
-                {
-                    TabPage page = new TabPage((new DirectoryInfo(kingdoms.FilePath).Name));
-                    ucKingdomList ucKingdomList = new ucKingdomList(kingdoms);
-                    ucKingdomList.SelectKingdomChanged += UcKingdomList_SelectKingdomChanged;
+                    TabPage page = new TabPage(mod.ModuleInfo.Id.value + " - " + (new DirectoryInfo(kingdoms.FilePath).Name));
+                    ucKingdomList ucCultureList = new ucKingdomList(kingdoms);
+                    ucCultureList.SelectKingdomChanged += UcKingdomList_SelectKingdomChanged; ;
                     page.Controls.Clear();
-                    page.Controls.Add(ucKingdomList);
-                    ucKingdomList.Dock = DockStyle.Fill;
+                    page.Controls.Add(ucCultureList);
+                    ucCultureList.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panel1.Controls.Clear();
-                panel1.Controls.Add(tabControl);
             }
+            foreach (var kingdoms in project.BannerlordModule.ModuleKingdoms)
+            {
+                TabPage page = new TabPage((new DirectoryInfo(kingdoms.FilePath).Name));
+                ucKingdomList ucKingdomList = new ucKingdomList(kingdoms);
+                ucKingdomList.SelectKingdomChanged += UcKingdomList_SelectKingdomChanged;
+                page.Controls.Clear();
+                page.Controls.Add(ucKingdomList);
+                ucKingdomList.Dock = DockStyle.Fill;
+                tabControl.TabPages.Add(page);
+            }
+            panel1.Controls.Clear();
+            panel1.Controls.Add(tabControl);
         }
 
         private void UcKingdomList_SelectKingdomChanged(MBKingdom kingdom, int index)
