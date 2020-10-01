@@ -120,6 +120,24 @@
     <Compile Include="Forms\frmCultureListViewer.Designer.cs">
       <DependentUpon>frmCultureListViewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmNPCCharacterComponentEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterComponentEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterComponentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterEquipmentSetEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterEquipmentSetEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterEquipmentSetEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterFaceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterFaceEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterFaceEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmHeroListViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +191,18 @@
     </Compile>
     <Compile Include="Forms\frmNPCCharacterListViewer.Designer.cs">
       <DependentUpon>frmNPCCharacterListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterSkillAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterSkillAddEdit.Designer.cs">
+      <DependentUpon>frmNPCCharacterSkillAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterSkillEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterSkillEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterSkillEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="ILocalization.cs" />
@@ -251,6 +281,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNPCCharacterListViewer.resx">
       <DependentUpon>frmNPCCharacterListViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterSkillAddEdit.resx">
+      <DependentUpon>frmNPCCharacterSkillAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterSkillEditor.resx">
+      <DependentUpon>frmNPCCharacterSkillEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -48,9 +48,20 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlElement("equipmentSet")]
         public List<MBNPCCharacterEquipmentSet> EquipmentSets { get; set; }
 
+        [XmlElement("equipment")]
+        public List<MBNPCCharacterEquipment> OtherEquipments { get; set; }
+
         [XmlArray("upgrade_targets")]
         [XmlArrayItem("upgrade_target")]
         public List<MBNPCCharacterUpgradeTarget> UpgradeTargets { get; set; }
+
+        public MBNPCCharacter()
+        {
+            Skills = new List<MBNPCCharacterSkill>();
+            EquipmentSets = new List<MBNPCCharacterEquipmentSet>();
+            UpgradeTargets = new List<MBNPCCharacterUpgradeTarget>();
+            OtherEquipments = new List<MBNPCCharacterEquipment>();
+        }
     }
 
     [XmlRoot("face")]

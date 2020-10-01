@@ -52,6 +52,11 @@ namespace ArenaModdingTool.Controls
             SaveNPCCharacterInfoFinished?.Invoke(character, state, index);
         }
 
+        private void btnEditFace_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnEditComponents_Click(object sender, EventArgs e)
         {
 
@@ -77,7 +82,7 @@ namespace ArenaModdingTool.Controls
             frmNPCCharacterListViewer characterListViewer = new frmNPCCharacterListViewer(project);
             if (characterListViewer.ShowDialog() == DialogResult.OK)
             {
-                txtCulture.Text = "NPCCharacters." + characterListViewer.SelectedCharacter.id;
+                txtCivilianTemplate.Text = "NPCCharacters." + characterListViewer.SelectedCharacter.id;
             }
         }
 

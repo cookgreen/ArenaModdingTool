@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtOccupation = new System.Windows.Forms.TextBox();
+            this.txtCivilianTemplate = new System.Windows.Forms.TextBox();
+            this.txtCulture = new System.Windows.Forms.TextBox();
+            this.txtVoice = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,17 +47,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtVoice = new System.Windows.Forms.TextBox();
-            this.txtCulture = new System.Windows.Forms.TextBox();
-            this.txtCivilianTemplate = new System.Windows.Forms.TextBox();
-            this.txtOccupation = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkIsMecenary = new System.Windows.Forms.CheckBox();
             this.chkIsHero = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.chkIsFemale = new System.Windows.Forms.CheckBox();
-            this.chkIsMecenary = new System.Windows.Forms.CheckBox();
             this.chkIsCompanion = new System.Windows.Forms.CheckBox();
+            this.chkIsFemale = new System.Windows.Forms.CheckBox();
             this.cmbGroups = new System.Windows.Forms.ComboBox();
             this.btnEditComponents = new System.Windows.Forms.Button();
             this.btnEditSkills = new System.Windows.Forms.Button();
@@ -60,6 +60,7 @@
             this.btnEditOtherEquipments = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnEditFace = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -97,6 +98,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnEditEquipmentSet, 1, 12);
             this.tableLayoutPanel1.Controls.Add(this.btnEditOtherEquipments, 1, 13);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 15);
+            this.tableLayoutPanel1.Controls.Add(this.btnEditFace, 1, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -110,15 +112,59 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(547, 486);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(588, 524);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // txtOccupation
+            // 
+            this.txtOccupation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtOccupation.Location = new System.Drawing.Point(153, 233);
+            this.txtOccupation.Name = "txtOccupation";
+            this.txtOccupation.Size = new System.Drawing.Size(432, 21);
+            this.txtOccupation.TabIndex = 23;
+            // 
+            // txtCivilianTemplate
+            // 
+            this.txtCivilianTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCivilianTemplate.Location = new System.Drawing.Point(153, 183);
+            this.txtCivilianTemplate.Name = "txtCivilianTemplate";
+            this.txtCivilianTemplate.ReadOnly = true;
+            this.txtCivilianTemplate.Size = new System.Drawing.Size(432, 21);
+            this.txtCivilianTemplate.TabIndex = 21;
+            this.txtCivilianTemplate.DoubleClick += new System.EventHandler(this.txtCivilianTemplate_DoubleClick);
+            // 
+            // txtCulture
+            // 
+            this.txtCulture.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCulture.Location = new System.Drawing.Point(153, 78);
+            this.txtCulture.Name = "txtCulture";
+            this.txtCulture.ReadOnly = true;
+            this.txtCulture.Size = new System.Drawing.Size(432, 21);
+            this.txtCulture.TabIndex = 18;
+            this.txtCulture.DoubleClick += new System.EventHandler(this.txtCulture_DoubleClick);
+            // 
+            // txtVoice
+            // 
+            this.txtVoice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtVoice.Location = new System.Drawing.Point(153, 53);
+            this.txtVoice.Name = "txtVoice";
+            this.txtVoice.Size = new System.Drawing.Size(432, 21);
+            this.txtVoice.TabIndex = 17;
+            // 
+            // txtName
+            // 
+            this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtName.Location = new System.Drawing.Point(153, 28);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(432, 21);
+            this.txtName.TabIndex = 16;
             // 
             // label1
             // 
@@ -203,7 +249,7 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Location = new System.Drawing.Point(3, 255);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 80);
+            this.label10.Size = new System.Drawing.Size(144, 35);
             this.label10.TabIndex = 9;
             this.label10.Text = "face";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,9 +258,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(3, 385);
+            this.label12.Location = new System.Drawing.Point(3, 360);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(144, 25);
+            this.label12.Size = new System.Drawing.Size(144, 35);
             this.label12.TabIndex = 11;
             this.label12.Text = "equipmentSet";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -223,9 +269,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 360);
+            this.label11.Location = new System.Drawing.Point(3, 325);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(144, 25);
+            this.label11.Size = new System.Drawing.Size(144, 35);
             this.label11.TabIndex = 12;
             this.label11.Text = "skills";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -233,7 +279,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 335);
+            this.label13.Location = new System.Drawing.Point(3, 290);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 12);
             this.label13.TabIndex = 13;
@@ -243,9 +289,9 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(3, 410);
+            this.label14.Location = new System.Drawing.Point(3, 395);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(144, 25);
+            this.label14.Size = new System.Drawing.Size(144, 35);
             this.label14.TabIndex = 14;
             this.label14.Text = "Other Equipments";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,52 +301,8 @@
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtID.Location = new System.Drawing.Point(153, 3);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(391, 21);
+            this.txtID.Size = new System.Drawing.Size(432, 21);
             this.txtID.TabIndex = 15;
-            // 
-            // txtName
-            // 
-            this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtName.Location = new System.Drawing.Point(153, 28);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(391, 21);
-            this.txtName.TabIndex = 16;
-            // 
-            // txtVoice
-            // 
-            this.txtVoice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtVoice.Location = new System.Drawing.Point(153, 53);
-            this.txtVoice.Name = "txtVoice";
-            this.txtVoice.Size = new System.Drawing.Size(391, 21);
-            this.txtVoice.TabIndex = 17;
-            // 
-            // txtCulture
-            // 
-            this.txtCulture.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCulture.Location = new System.Drawing.Point(153, 78);
-            this.txtCulture.Name = "txtCulture";
-            this.txtCulture.ReadOnly = true;
-            this.txtCulture.Size = new System.Drawing.Size(391, 21);
-            this.txtCulture.TabIndex = 18;
-            this.txtCulture.DoubleClick += new System.EventHandler(this.txtCulture_DoubleClick);
-            // 
-            // txtCivilianTemplate
-            // 
-            this.txtCivilianTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCivilianTemplate.Location = new System.Drawing.Point(153, 183);
-            this.txtCivilianTemplate.Name = "txtCivilianTemplate";
-            this.txtCivilianTemplate.ReadOnly = true;
-            this.txtCivilianTemplate.Size = new System.Drawing.Size(391, 21);
-            this.txtCivilianTemplate.TabIndex = 21;
-            this.txtCivilianTemplate.DoubleClick += new System.EventHandler(this.txtCivilianTemplate_DoubleClick);
-            // 
-            // txtOccupation
-            // 
-            this.txtOccupation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtOccupation.Location = new System.Drawing.Point(153, 233);
-            this.txtOccupation.Name = "txtOccupation";
-            this.txtOccupation.Size = new System.Drawing.Size(391, 21);
-            this.txtOccupation.TabIndex = 23;
             // 
             // panel1
             // 
@@ -309,8 +311,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(153, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(391, 34);
+            this.panel1.Size = new System.Drawing.Size(432, 34);
             this.panel1.TabIndex = 24;
+            // 
+            // chkIsMecenary
+            // 
+            this.chkIsMecenary.AutoSize = true;
+            this.chkIsMecenary.Location = new System.Drawing.Point(81, 8);
+            this.chkIsMecenary.Name = "chkIsMecenary";
+            this.chkIsMecenary.Size = new System.Drawing.Size(84, 16);
+            this.chkIsMecenary.TabIndex = 1;
+            this.chkIsMecenary.Text = "IsMecenary";
+            this.chkIsMecenary.UseVisualStyleBackColor = true;
             // 
             // chkIsHero
             // 
@@ -329,28 +341,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(153, 143);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 34);
+            this.panel2.Size = new System.Drawing.Size(432, 34);
             this.panel2.TabIndex = 25;
-            // 
-            // chkIsFemale
-            // 
-            this.chkIsFemale.AutoSize = true;
-            this.chkIsFemale.Location = new System.Drawing.Point(3, 9);
-            this.chkIsFemale.Name = "chkIsFemale";
-            this.chkIsFemale.Size = new System.Drawing.Size(72, 16);
-            this.chkIsFemale.TabIndex = 1;
-            this.chkIsFemale.Text = "IsFemale";
-            this.chkIsFemale.UseVisualStyleBackColor = true;
-            // 
-            // chkIsMecenary
-            // 
-            this.chkIsMecenary.AutoSize = true;
-            this.chkIsMecenary.Location = new System.Drawing.Point(81, 8);
-            this.chkIsMecenary.Name = "chkIsMecenary";
-            this.chkIsMecenary.Size = new System.Drawing.Size(84, 16);
-            this.chkIsMecenary.TabIndex = 1;
-            this.chkIsMecenary.Text = "IsMecenary";
-            this.chkIsMecenary.UseVisualStyleBackColor = true;
             // 
             // chkIsCompanion
             // 
@@ -361,6 +353,16 @@
             this.chkIsCompanion.TabIndex = 2;
             this.chkIsCompanion.Text = "IsCompanion";
             this.chkIsCompanion.UseVisualStyleBackColor = true;
+            // 
+            // chkIsFemale
+            // 
+            this.chkIsFemale.AutoSize = true;
+            this.chkIsFemale.Location = new System.Drawing.Point(3, 9);
+            this.chkIsFemale.Name = "chkIsFemale";
+            this.chkIsFemale.Size = new System.Drawing.Size(72, 16);
+            this.chkIsFemale.TabIndex = 1;
+            this.chkIsFemale.Text = "IsFemale";
+            this.chkIsFemale.UseVisualStyleBackColor = true;
             // 
             // cmbGroups
             // 
@@ -373,15 +375,15 @@
             "Cavalry"});
             this.cmbGroups.Location = new System.Drawing.Point(153, 208);
             this.cmbGroups.Name = "cmbGroups";
-            this.cmbGroups.Size = new System.Drawing.Size(391, 20);
+            this.cmbGroups.Size = new System.Drawing.Size(432, 20);
             this.cmbGroups.TabIndex = 26;
             // 
             // btnEditComponents
             // 
             this.btnEditComponents.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditComponents.Location = new System.Drawing.Point(153, 338);
+            this.btnEditComponents.Location = new System.Drawing.Point(153, 293);
             this.btnEditComponents.Name = "btnEditComponents";
-            this.btnEditComponents.Size = new System.Drawing.Size(391, 19);
+            this.btnEditComponents.Size = new System.Drawing.Size(432, 29);
             this.btnEditComponents.TabIndex = 27;
             this.btnEditComponents.Text = "Edit Components";
             this.btnEditComponents.UseVisualStyleBackColor = true;
@@ -390,9 +392,9 @@
             // btnEditSkills
             // 
             this.btnEditSkills.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditSkills.Location = new System.Drawing.Point(153, 363);
+            this.btnEditSkills.Location = new System.Drawing.Point(153, 328);
             this.btnEditSkills.Name = "btnEditSkills";
-            this.btnEditSkills.Size = new System.Drawing.Size(391, 19);
+            this.btnEditSkills.Size = new System.Drawing.Size(432, 29);
             this.btnEditSkills.TabIndex = 28;
             this.btnEditSkills.Text = "Edit Skills";
             this.btnEditSkills.UseVisualStyleBackColor = true;
@@ -401,9 +403,9 @@
             // btnEditEquipmentSet
             // 
             this.btnEditEquipmentSet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditEquipmentSet.Location = new System.Drawing.Point(153, 388);
+            this.btnEditEquipmentSet.Location = new System.Drawing.Point(153, 363);
             this.btnEditEquipmentSet.Name = "btnEditEquipmentSet";
-            this.btnEditEquipmentSet.Size = new System.Drawing.Size(391, 19);
+            this.btnEditEquipmentSet.Size = new System.Drawing.Size(432, 29);
             this.btnEditEquipmentSet.TabIndex = 29;
             this.btnEditEquipmentSet.Text = "Edit EquipmentSet";
             this.btnEditEquipmentSet.UseVisualStyleBackColor = true;
@@ -412,9 +414,9 @@
             // btnEditOtherEquipments
             // 
             this.btnEditOtherEquipments.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditOtherEquipments.Location = new System.Drawing.Point(153, 413);
+            this.btnEditOtherEquipments.Location = new System.Drawing.Point(153, 398);
             this.btnEditOtherEquipments.Name = "btnEditOtherEquipments";
-            this.btnEditOtherEquipments.Size = new System.Drawing.Size(391, 19);
+            this.btnEditOtherEquipments.Size = new System.Drawing.Size(432, 29);
             this.btnEditOtherEquipments.TabIndex = 30;
             this.btnEditOtherEquipments.Text = "Edit Other Equipments";
             this.btnEditOtherEquipments.UseVisualStyleBackColor = true;
@@ -424,15 +426,15 @@
             // 
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(153, 449);
+            this.panel3.Location = new System.Drawing.Point(153, 487);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(391, 34);
+            this.panel3.Size = new System.Drawing.Size(432, 34);
             this.panel3.TabIndex = 31;
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(313, 5);
+            this.btnSave.Location = new System.Drawing.Point(354, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
@@ -440,13 +442,24 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnEditFace
+            // 
+            this.btnEditFace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEditFace.Location = new System.Drawing.Point(153, 258);
+            this.btnEditFace.Name = "btnEditFace";
+            this.btnEditFace.Size = new System.Drawing.Size(432, 29);
+            this.btnEditFace.TabIndex = 32;
+            this.btnEditFace.Text = "Edit Face";
+            this.btnEditFace.UseVisualStyleBackColor = true;
+            this.btnEditFace.Click += new System.EventHandler(this.btnEditFace_Click);
+            // 
             // ucNPCCharacterDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ucNPCCharacterDetails";
-            this.Size = new System.Drawing.Size(547, 486);
+            this.Size = new System.Drawing.Size(588, 524);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -492,5 +505,6 @@
         private System.Windows.Forms.Button btnEditOtherEquipments;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnEditFace;
     }
 }
