@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArenaModdingTool.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,18 +16,21 @@ namespace ArenaModdingTool
         [STAThread]
         static void Main()
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
             LanguageManager.Instance.Init();
             AppSetting appSetting = new AppSetting("app.ini");
-
-            LanguageManager.Instance.CurrentLocalization = appSetting.Localization;
 
             RecentOperations recentOperations;
             XmlObjectLoader xmlObjectLoader = new XmlObjectLoader("RecentOperations.xml");
             xmlObjectLoader.Load(out recentOperations);
 
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain(appSetting, recentOperations));
+            frmAppSetting appSettingSelector = new frmAppSetting(appSetting);
+            if(appSettingSelector.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new frmMain(appSettingSelector.AppSetting, recentOperations));
+            }
         }
     }
 }

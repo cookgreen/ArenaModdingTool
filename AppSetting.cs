@@ -35,5 +35,13 @@ namespace ArenaModdingTool
                 }
             }
         }
+
+        public void Save()
+        {
+            using (StreamWriter writer = new StreamWriter(appSettingINI))
+            {
+                writer.WriteLine(string.Format("Localization={0}", Localization));
+            }
+        }
     }
 }

@@ -114,6 +114,12 @@
     <Compile Include="Controls\ucNPCCharacterListEdit.Designer.cs">
       <DependentUpon>ucNPCCharacterListEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmAppSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAppSetting.Designer.cs">
+      <DependentUpon>frmAppSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmCreateNewFile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucNPCCharacterListEdit.resx">
       <DependentUpon>ucNPCCharacterListEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAppSetting.resx">
+      <DependentUpon>frmAppSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCreateNewFile.resx">
       <DependentUpon>frmCreateNewFile.cs</DependentUpon>

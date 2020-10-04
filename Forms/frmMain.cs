@@ -24,6 +24,9 @@ namespace ArenaModdingTool
         {
             InitializeComponent();
             this.appSetting = appSetting;
+
+            LanguageManager.Instance.CurrentLocalization = appSetting.Localization;
+
             SwitchLanguage();
 
             foreach(var langName in LanguageManager.Instance.GetLanguageNames())
@@ -32,6 +35,8 @@ namespace ArenaModdingTool
                 item.Click += (o, e) =>
                 {
                     LanguageManager.Instance.CurrentLocalization = langName;
+                    appSetting.Localization = langName;
+                    appSetting.Save();
                     SwitchLanguage();
                     foreach (var control in panelMain.Controls)
                     {
