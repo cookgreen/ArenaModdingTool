@@ -68,6 +68,8 @@ namespace ArenaModdingTool.ModdingFiles
     public class MBNPCCharacterFace
     {
         [XmlElement]
+        public MBSubModuleInfoElement face_key_template { get; set; }
+        [XmlElement]
         public MBNPCCharacterBody BodyProperties { get; set; }
         [XmlElement]
         public MBNPCCharacterBody BodyPropertiesMax { get; set; }

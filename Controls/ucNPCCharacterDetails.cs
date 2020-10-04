@@ -54,7 +54,11 @@ namespace ArenaModdingTool.Controls
 
         private void btnEditFace_Click(object sender, EventArgs e)
         {
-
+            frmNPCCharacterFaceEditor characterFaceEditor = new frmNPCCharacterFaceEditor(project, character);
+            if (characterFaceEditor.ShowDialog() == DialogResult.OK)
+            {
+                character.Face = characterFaceEditor.CharacterFace;
+            }
         }
 
         private void btnEditComponents_Click(object sender, EventArgs e)

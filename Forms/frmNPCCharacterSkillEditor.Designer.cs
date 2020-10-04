@@ -115,6 +115,7 @@
             this.skillListView.TabIndex = 4;
             this.skillListView.UseCompatibleStateImageBehavior = false;
             this.skillListView.View = System.Windows.Forms.View.Details;
+            this.skillListView.SelectedIndexChanged += new System.EventHandler(this.skillListView_SelectedIndexChanged);
             // 
             // colSkillID
             // 

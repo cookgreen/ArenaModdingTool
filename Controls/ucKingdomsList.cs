@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ArenaModdingTool.ModdingFiles;
+using XmlLoader;
 
 namespace ArenaModdingTool.Controls
 {
@@ -59,7 +60,17 @@ namespace ArenaModdingTool.Controls
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (factionList.SelectedNode != null)
+            {
+                int index = factionList.Nodes.IndexOf(factionList.SelectedNode);
+                kingdoms.Kingdoms.RemoveAt(index);
+                factionList.Nodes.RemoveAt(index);
 
+                XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(kingdoms.FilePath);
+                xmlObjectLoader.Save(kingdoms);
+
+                RefreshData();
+            }
         }
 
         private void btnModify_Click(object sender, EventArgs e)

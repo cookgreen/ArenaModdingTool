@@ -20,10 +20,14 @@ namespace ArenaModdingTool.Forms
             get { return skill; }
         }
 
-        public frmNPCCharacterSkillAddEdit(bool isAddOrEdit = true, MBNPCCharacterSkill skill = null)
+        MBNPCCharacter character;
+
+        public frmNPCCharacterSkillAddEdit(MBNPCCharacter character, bool isAddOrEdit = true, MBNPCCharacterSkill skill = null)
         {
             InitializeComponent();
             this.isAddOrEdit = isAddOrEdit;
+            this.character = character;
+
             loadHardcodedSkillList();
             if (!isAddOrEdit)
             {
@@ -36,6 +40,31 @@ namespace ArenaModdingTool.Forms
         {
             cmbSkills.Items.Clear();
             cmbSkills.Items.Add("OneHandWeapon");
+            cmbSkills.Items.Add("TwoHandWeapon");
+            cmbSkills.Items.Add("Polearm");
+            cmbSkills.Items.Add("Crossbow");
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            var skillid = cmbSkills.SelectedItem.ToString();
+            if (character.Skills.Where(o => o.id == skillid).Count() > 0)
+            {
+                MessageBox.Show(Helper.LOC("str_error_message_there_is_already_same_skill_id_existed"), Helper.LOC("str_error"));
+                return;
+            }
+
+            skill = new MBNPCCharacterSkill();
+            skill.id = cmbSkills.SelectedItem.ToString();
+            skill.value = numericUpDown1.Value.ToString();
+
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

@@ -279,11 +279,13 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Location = new System.Drawing.Point(3, 290);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 12);
+            this.label13.Size = new System.Drawing.Size(144, 35);
             this.label13.TabIndex = 13;
             this.label13.Text = "Components";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label14
             // 

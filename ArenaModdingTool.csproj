@@ -50,6 +50,12 @@
   <ItemGroup>
     <Compile Include="AMProject.cs" />
     <Compile Include="AppSetting.cs" />
+    <Compile Include="Controls\ucCultureDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCultureDetails.Designer.cs">
+      <DependentUpon>ucCultureDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucCultureList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     <Compile Include="TemplateFile.cs" />
     <Compile Include="TemplateFileManager.cs" />
     <Compile Include="XmlLoader.cs" />
+    <EmbeddedResource Include="Controls\ucCultureDetails.resx">
+      <DependentUpon>ucCultureDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucCultureList.resx">
       <DependentUpon>ucCultureList.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNewProject.resx">
       <DependentUpon>frmNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterFaceEditor.resx">
+      <DependentUpon>frmNPCCharacterFaceEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNPCCharacterListViewer.resx">
       <DependentUpon>frmNPCCharacterListViewer.cs</DependentUpon>
