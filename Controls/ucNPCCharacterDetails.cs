@@ -49,6 +49,18 @@ namespace ArenaModdingTool.Controls
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            character.id = txtID.Text;
+            character.name = txtName.Text;
+            character.voice = txtVoice.Text;
+            character.culture = txtCulture.Text;
+            character.civilian_template = txtCivilianTemplate.Text;
+            character.default_group = cmbGroups.SelectedItem.ToString();
+            character.occupation = txtOccupation.Text;
+            character.is_companion = chkIsCompanion.Checked;
+            character.is_female = chkIsFemale.Checked;
+            character.is_hero = chkIsHero.Checked;
+            character.is_mecenary = chkIsMecenary.Checked;
+
             SaveNPCCharacterInfoFinished?.Invoke(character, state, index);
         }
 
@@ -68,17 +80,29 @@ namespace ArenaModdingTool.Controls
 
         private void btnEditSkills_Click(object sender, EventArgs e)
         {
-
+            frmNPCCharacterSkillEditor characterSkillEditor = new frmNPCCharacterSkillEditor(character);
+            if (characterSkillEditor.ShowDialog() == DialogResult.OK)
+            {
+                character.Skills = characterSkillEditor.Skills;
+            }
         }
 
         private void btnEditEquipmentSet_Click(object sender, EventArgs e)
         {
-
+            frmNPCCharacterEquipmentSetsEditor characterEquipmentSetsEditor = new frmNPCCharacterEquipmentSetsEditor(character);
+            if (characterEquipmentSetsEditor.ShowDialog() == DialogResult.OK)
+            {
+                character.EquipmentSets = characterEquipmentSetsEditor.EquipmentSets;
+            }
         }
 
         private void btnEditOtherEquipments_Click(object sender, EventArgs e)
         {
-
+            frmNPCCharacterEquipmentsEditor characterEquipmentsEditor = new frmNPCCharacterEquipmentsEditor(false, character.OtherEquipments);
+            if (characterEquipmentsEditor.ShowDialog() == DialogResult.OK)
+            {
+                character.OtherEquipments = characterEquipmentsEditor.Equipments;
+            }
         }
 
         private void txtCivilianTemplate_DoubleClick(object sender, EventArgs e)

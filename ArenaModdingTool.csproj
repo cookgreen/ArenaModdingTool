@@ -132,11 +132,23 @@
     <Compile Include="Forms\frmNPCCharacterComponentEditor.Designer.cs">
       <DependentUpon>frmNPCCharacterComponentEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmNPCCharacterEquipmentSetEditor.cs">
+    <Compile Include="Forms\frmNPCCharacterEquipmentEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmNPCCharacterEquipmentSetEditor.Designer.cs">
-      <DependentUpon>frmNPCCharacterEquipmentSetEditor.cs</DependentUpon>
+    <Compile Include="Forms\frmNPCCharacterEquipmentEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterEquipmentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterEquipmentsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterEquipmentsEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterEquipmentsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterEquipmentSetsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNPCCharacterEquipmentSetsEditor.Designer.cs">
+      <DependentUpon>frmNPCCharacterEquipmentSetsEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNPCCharacterFaceEditor.cs">
       <SubType>Form</SubType>
@@ -287,6 +299,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNewProject.resx">
       <DependentUpon>frmNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterEquipmentEditor.resx">
+      <DependentUpon>frmNPCCharacterEquipmentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterEquipmentsEditor.resx">
+      <DependentUpon>frmNPCCharacterEquipmentsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNPCCharacterEquipmentSetsEditor.resx">
+      <DependentUpon>frmNPCCharacterEquipmentSetsEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNPCCharacterFaceEditor.resx">
       <DependentUpon>frmNPCCharacterFaceEditor.cs</DependentUpon>
