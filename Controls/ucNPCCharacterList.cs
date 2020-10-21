@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlLoader;
 
 namespace ArenaModdingTool.Controls
 {
@@ -57,6 +58,26 @@ namespace ArenaModdingTool.Controls
             {
                 npcCharacterList.Nodes.Add(npcCharacter.name);
             }
+        }
+
+        public void DeleteSelected()
+        {
+            if (npcCharacterList.SelectedNode != null)
+            {
+                int index = npcCharacterList.Nodes.IndexOf(npcCharacterList.SelectedNode);
+                npcCharacters.NPCCharacters.RemoveAt(index);
+                npcCharacterList.Nodes.RemoveAt(index);
+
+                XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(npcCharacters.FilePath);
+                xmlObjectLoader.Save(npcCharacters);
+
+                RefreshData();
+            }
+        }
+
+        public void RefreshData()
+        {
+            loadNPCCharacters();
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)

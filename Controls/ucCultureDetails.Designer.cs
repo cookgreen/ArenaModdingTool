@@ -67,13 +67,13 @@
             this.chkIsMainCulture = new System.Windows.Forms.CheckBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -526,24 +526,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Details Info #1";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnSave);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 521);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(623, 34);
-            this.panel1.TabIndex = 2;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(541, 6);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
@@ -589,6 +571,24 @@
             this.tabPage7.Size = new System.Drawing.Size(615, 486);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Name Builder";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnSave);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 521);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(623, 34);
+            this.panel1.TabIndex = 2;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(541, 6);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // ucCultureDetails
             // 

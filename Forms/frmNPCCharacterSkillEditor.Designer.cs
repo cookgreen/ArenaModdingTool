@@ -74,6 +74,7 @@
             // 
             // btnModify
             // 
+            this.btnModify.Enabled = false;
             this.btnModify.Location = new System.Drawing.Point(73, 246);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(75, 23);
@@ -84,6 +85,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Enabled = false;
             this.btnDelete.Location = new System.Drawing.Point(40, 246);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(27, 23);
@@ -109,6 +111,7 @@
             this.colSkillValue});
             this.skillListView.FullRowSelect = true;
             this.skillListView.GridLines = true;
+            this.skillListView.HideSelection = false;
             this.skillListView.Location = new System.Drawing.Point(6, 12);
             this.skillListView.Name = "skillListView";
             this.skillListView.Size = new System.Drawing.Size(537, 227);

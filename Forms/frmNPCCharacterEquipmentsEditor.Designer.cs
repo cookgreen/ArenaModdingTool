@@ -45,6 +45,7 @@
             this.columnHeader2});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(627, 324);
@@ -75,6 +76,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Enabled = false;
             this.btnDelete.Location = new System.Drawing.Point(42, 342);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(23, 23);
@@ -85,6 +87,7 @@
             // 
             // btnModify
             // 
+            this.btnModify.Enabled = false;
             this.btnModify.Location = new System.Drawing.Point(71, 343);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(75, 23);

@@ -207,6 +207,8 @@ namespace ArenaModdingTool
         {
             string errMsg = string.Empty;
             bool canLoaded = false;
+            bool isContinue = true;
+
             if (!currentProject.BannerlordModule.HasModuleCharacterFile)
             {
                 if (MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
@@ -216,51 +218,63 @@ namespace ArenaModdingTool
                 }
                 else
                 {
-                    canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", "npccharacters", out errMsg);
+                    frmValueInputer frmInputFileName = new frmValueInputer(Helper.LOC("str_info_please_input_a_valid_file_name"));
+                    if (frmInputFileName.ShowDialog() == DialogResult.OK)
+                    {
+                        string fileName = frmInputFileName.Value;
+                        canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", fileName, out errMsg);
 
-                    if (!canLoaded)
-                    {
-                        MessageBox.Show(errMsg, "Notice");
-                        return;
-                    }
-                    else
-                    {
-                        currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
+                        if (!canLoaded)
                         {
-                            XmlName = new ModdingFiles.MBXmlNodeName()
+                            MessageBox.Show(errMsg, "Notice");
+                            return;
+                        }
+                        else
+                        {
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
                             {
-                                id = "NPCCharacters",
-                                path = "npccharacters"
-                            },
-                            IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
-                            {
-                                GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
+                                XmlName = new ModdingFiles.MBXmlNodeName()
+                                {
+                                    id = "NPCCharacters",
+                                    path = "npccharacters"
+                                },
+                                IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
+                                {
+                                    GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
                                 {
                                     new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
                                     new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
                                 }
-                            }
-                        });
-                        currentProject.SaveModuleInfo();
+                                }
+                            });
+                            currentProject.SaveModuleInfo();
+                        }
+                    }
+                    else
+                    {
+                        isContinue = false;
                     }
                 }
             }
 
-            TabControl tabControl = new TabControl();
-            tabControl.Dock = DockStyle.Fill;
-            foreach (var characters in currentProject.BannerlordModule.ModuleNPCCharacters)
+            if (isContinue)
             {
-                var moduleName = (new DirectoryInfo(characters.FilePath).Parent.Parent.Name);
-                var fileName = new DirectoryInfo(characters.FilePath).Name;
-                var page = new TabPage(moduleName + " - " + fileName);
-                ucNPCCharacterEditor npcCharacterEditor = new ucNPCCharacterEditor(currentProject, characters);
-                page.Controls.Clear();
-                page.Controls.Add(npcCharacterEditor);
-                npcCharacterEditor.Dock = DockStyle.Fill;
-                tabControl.TabPages.Add(page);
+                TabControl tabControl = new TabControl();
+                tabControl.Dock = DockStyle.Fill;
+                foreach (var characters in currentProject.BannerlordModule.ModuleNPCCharacters)
+                {
+                    var moduleName = (new DirectoryInfo(characters.FilePath).Parent.Parent.Name);
+                    var fileName = new DirectoryInfo(characters.FilePath).Name;
+                    var page = new TabPage(moduleName + " - " + fileName);
+                    ucNPCCharacterEditor npcCharacterEditor = new ucNPCCharacterEditor(currentProject, characters);
+                    page.Controls.Clear();
+                    page.Controls.Add(npcCharacterEditor);
+                    npcCharacterEditor.Dock = DockStyle.Fill;
+                    tabControl.TabPages.Add(page);
+                }
+                panelMain.Controls.Clear();
+                panelMain.Controls.Add(tabControl);
             }
-            panelMain.Controls.Clear();
-            panelMain.Controls.Add(tabControl);
         }
 
         private void btnHeros_Click(object sender, EventArgs e)

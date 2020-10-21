@@ -18,7 +18,7 @@ namespace ArenaModdingTool.Controls
         private MBNPCCharacter selectedCharacter;
         private int selectedIndex;
 
-        public event Action<MBNPCCharacter, int> SelectNPCCharacterChanged;
+        public event Action<MBNPCCharacter, int, AddEditState> SelectNPCCharacterChanged;
         public ucNPCCharacterListEdit(MBNPCCharacters characters)
         {
             InitializeComponent();
@@ -27,13 +27,19 @@ namespace ArenaModdingTool.Controls
             panel2.Controls.Clear();
             panel2.Controls.Add(ucNPCCharacterList);
             ucNPCCharacterList.Dock = DockStyle.Fill;
+            state = AddEditState.View;
         }
 
-        private void UcNPCCharacterList_SelectNPCCharacterChanged(MBNPCCharacter arg1, int arg2)
+        private void UcNPCCharacterList_SelectNPCCharacterChanged(MBNPCCharacter character, int index)
         {
-            selectedCharacter = arg1;
-            selectedIndex = arg2;
-            SelectNPCCharacterChanged?.Invoke(arg1, arg2);
+            selectedCharacter = character;
+            selectedIndex = index;
+            SelectNPCCharacterChanged?.Invoke(character, index, state);
+            if (character != null)
+            {
+                btnDelete.Enabled = true;
+                btnModify.Enabled = true;
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -46,12 +52,17 @@ namespace ArenaModdingTool.Controls
             btnModify.Enabled = false;
 
             MBNPCCharacter character = new MBNPCCharacter();
-            SelectNPCCharacterChanged?.Invoke(character, -1);
+            SelectNPCCharacterChanged?.Invoke(character, -1, state);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            ucNPCCharacterList.DeleteSelected();
+        }
 
+        public void RefreshData()
+        {
+            ucNPCCharacterList.RefreshData();
         }
 
         private void btnModify_Click(object sender, EventArgs e)
@@ -63,7 +74,7 @@ namespace ArenaModdingTool.Controls
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
 
-            SelectNPCCharacterChanged?.Invoke(selectedCharacter, selectedIndex);
+            SelectNPCCharacterChanged?.Invoke(selectedCharacter, selectedIndex, state);
         }
 
         public void ChangeAddEditState(AddEditState newState)

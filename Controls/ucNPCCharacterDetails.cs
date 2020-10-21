@@ -29,6 +29,15 @@ namespace ArenaModdingTool.Controls
             this.state = state;
             this.index = index;
 
+            if (state == AddEditState.View)
+            {
+                btnSave.Visible = false;
+            }
+            else
+            {
+                btnSave.Visible = true;
+            }
+
             LoadNPCCharacter();
         }
 
