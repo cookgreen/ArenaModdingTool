@@ -13,7 +13,11 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucHeroList : UserControl
     {
+        private MBHero selectedHero;
         private MBHeroes heroes;
+
+        public MBHero SelectedHero { get { return selectedHero; }  }
+
         public event Action<MBHero, int> SelectHeroChanged;
 
         public ucHeroList(MBHeroes heroes)
@@ -37,8 +41,14 @@ namespace ArenaModdingTool.Controls
             if (e.Node != null)
             {
                 int index = treeView1.Nodes.IndexOf(e.Node);
+                selectedHero = heroes.Heroes[index];
                 SelectHeroChanged?.Invoke(heroes.Heroes[index], index);
             }
+        }
+
+        public void DeleteSelected()
+        {
+
         }
     }
 }

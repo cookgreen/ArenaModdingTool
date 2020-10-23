@@ -56,6 +56,11 @@ namespace ArenaModdingTool
                     var item = mnuRecentlyImportedProject.DropDownItems.Add(recentOpt.Value);
                     item.Click += (o, e) =>
                     {
+                        if (!Directory.Exists(recentOpt.Value))
+                        {
+                            MessageBox.Show(Helper.LOC("str_error_message_cannot_find_specific_directory"), Helper.LOC("str_error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
                         currentProject = new AMProject(recentOpt.Value);
                         OpenProject(currentProject);
                     };
@@ -161,48 +166,6 @@ namespace ArenaModdingTool
 
         }
 
-        private void mnuImport_Click(object sender, EventArgs e)
-        {
-            importModuleProject();
-        }
-
-        private void importModuleProject()
-        {
-            frmImportProject importProjectForm = new frmImportProject();
-            if (importProjectForm.ShowDialog() == DialogResult.OK)
-            {
-                currentProject = importProjectForm.Project;
-                OpenProject(currentProject);
-
-                string loc = currentProject.Location.Replace("\\", "/");
-                if (recentOperations.RecentOperationList.Where(o => o.Value == loc).Count() == 0)
-                {
-                    recentOperations.RecentOperationList.Add(new RecentOperation()
-                    {
-                        Type = "Import",
-                        Value = currentProject.Location.Replace("\\", "/")
-                    });
-                    XmlObjectLoader xmlObjectLoader = new XmlObjectLoader("RecentOperations.xml");
-                    xmlObjectLoader.Save(recentOperations);
-                }
-            }
-        }
-
-        private void OpenProject(AMProject currentProject)
-        {
-            MBBannerlordModManager.Instance.Init();
-            btnKingdoms.Enabled = true;
-            btnNPCCharacters.Enabled = true;
-            btnCultures.Enabled = true;
-            btnHeros.Enabled = true;
-            btnItems.Enabled = true;
-        }
-
-        private void mnuFileExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnNPCCharacters_Click(object sender, EventArgs e)
         {
             string errMsg = string.Empty;
@@ -285,6 +248,48 @@ namespace ArenaModdingTool
         private void btnItems_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnuImport_Click(object sender, EventArgs e)
+        {
+            importModuleProject();
+        }
+
+        private void importModuleProject()
+        {
+            frmImportProject importProjectForm = new frmImportProject();
+            if (importProjectForm.ShowDialog() == DialogResult.OK)
+            {
+                currentProject = importProjectForm.Project;
+                OpenProject(currentProject);
+
+                string loc = currentProject.Location.Replace("\\", "/");
+                if (recentOperations.RecentOperationList.Where(o => o.Value == loc).Count() == 0)
+                {
+                    recentOperations.RecentOperationList.Add(new RecentOperation()
+                    {
+                        Type = "Import",
+                        Value = currentProject.Location.Replace("\\", "/")
+                    });
+                    XmlObjectLoader xmlObjectLoader = new XmlObjectLoader("RecentOperations.xml");
+                    xmlObjectLoader.Save(recentOperations);
+                }
+            }
+        }
+
+        private void OpenProject(AMProject currentProject)
+        {
+            MBBannerlordModManager.Instance.Init();
+            btnKingdoms.Enabled = true;
+            btnNPCCharacters.Enabled = true;
+            btnCultures.Enabled = true;
+            btnHeros.Enabled = true;
+            btnItems.Enabled = true;
+        }
+
+        private void mnuFileExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void mnuFileNewOtherFile_Click(object sender, EventArgs e)

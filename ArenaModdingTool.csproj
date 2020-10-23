@@ -62,11 +62,23 @@
     <Compile Include="Controls\ucCultureList.Designer.cs">
       <DependentUpon>ucCultureList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ucHeroEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHeroEditor.Designer.cs">
+      <DependentUpon>ucHeroEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucHeroList.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ucHeroList.Designer.cs">
       <DependentUpon>ucHeroList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHeroDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHeroDetails.Designer.cs">
+      <DependentUpon>ucHeroDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ucKingdomList.cs">
       <SubType>UserControl</SubType>
@@ -114,6 +126,12 @@
     <Compile Include="Controls\ucNPCCharacterListEdit.Designer.cs">
       <DependentUpon>ucNPCCharacterListEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ucHeroListEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHeroListEdit.Designer.cs">
+      <DependentUpon>ucHeroListEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmAppSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +149,12 @@
     </Compile>
     <Compile Include="Forms\frmCultureListViewer.Designer.cs">
       <DependentUpon>frmCultureListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLocalizedTextInputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLocalizedTextInputer.Designer.cs">
+      <DependentUpon>frmLocalizedTextInputer.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNPCCharacterComponentEditor.cs">
       <SubType>Form</SubType>
@@ -258,8 +282,17 @@
     <EmbeddedResource Include="Controls\ucCultureList.resx">
       <DependentUpon>ucCultureList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHeroDetails.resx">
+      <DependentUpon>ucHeroDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHeroEditor.resx">
+      <DependentUpon>ucHeroEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucHeroList.resx">
       <DependentUpon>ucHeroList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHeroListEdit.resx">
+      <DependentUpon>ucHeroListEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucKingdomDetails.resx">
       <DependentUpon>ucKingdomDetails.cs</DependentUpon>
@@ -308,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKingdomRelationshipPolicyEditor.resx">
       <DependentUpon>frmKingdomRelationshipPolicyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLocalizedTextInputer.resx">
+      <DependentUpon>frmLocalizedTextInputer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
