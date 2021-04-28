@@ -18,11 +18,14 @@ namespace ArenaModdingTool.Forms
 
         public List<MBNPCCharacterEquipment> Equipments { get { return equipments; } }
 
-        public frmNPCCharacterEquipmentsEditor(bool isAddOrEdit = true, List<MBNPCCharacterEquipment> equipments = null)
+        public bool IsCivilian { get { return chkIsCivilian.Checked; } }
+
+        public frmNPCCharacterEquipmentsEditor(bool isAddOrEdit = true, List<MBNPCCharacterEquipment> equipments = null, bool isCivilian  = false)
         {
             InitializeComponent();
             this.isAddOrEdit = isAddOrEdit;
             this.equipments = equipments;
+            chkIsCivilian.Checked = isCivilian;
             if (!isAddOrEdit && equipments != null)
             {
                 loadEquipments();

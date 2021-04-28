@@ -66,12 +66,13 @@ namespace ArenaModdingTool.Forms
         private void btnEdit_Click(object sender, EventArgs e)
         {
             int selectedIndex = equipmentSetList.SelectedIndex;
-            frmNPCCharacterEquipmentsEditor characterEquipmentsEditor = new frmNPCCharacterEquipmentsEditor(false, equipmentSets[selectedIndex].Equipments);
+            frmNPCCharacterEquipmentsEditor characterEquipmentsEditor = new frmNPCCharacterEquipmentsEditor(false, equipmentSets[selectedIndex].Equipments, equipmentSets[selectedIndex].IsCivilian);
             if (characterEquipmentsEditor.ShowDialog() == DialogResult.OK)
             {
                 equipmentSets.RemoveAt(selectedIndex);
                 MBNPCCharacterEquipmentSet equipmentSet = new MBNPCCharacterEquipmentSet();
                 equipmentSet.Equipments = characterEquipmentsEditor.Equipments;
+                equipmentSet.IsCivilian = characterEquipmentsEditor.IsCivilian;
                 equipmentSets.Insert(selectedIndex, equipmentSet);
                 RefreshData();
             }

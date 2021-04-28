@@ -125,6 +125,8 @@ namespace ArenaModdingTool.Forms
                 txtBodyPropertiesKey.Enabled = false;
                 txtBodyPropertiesVersion.Enabled = false;
                 txtBodyPropertiesWeight.Enabled = false;
+
+                chkUseBodyPropertiesMax.Checked = false;
             }
             else
             {
@@ -134,6 +136,8 @@ namespace ArenaModdingTool.Forms
                 txtBodyPropertiesKey.Enabled = true;
                 txtBodyPropertiesVersion.Enabled = true;
                 txtBodyPropertiesWeight.Enabled = true;
+
+                chkUseBodyPropertiesMax.Checked = true;
             }
         }
 
@@ -143,6 +147,32 @@ namespace ArenaModdingTool.Forms
             if (characterListViewer.ShowDialog() == DialogResult.OK)
             {
                 txtFaceKeyTemplate.Text = "NPCCharacters." + characterListViewer.SelectedCharacter.id;
+            }
+        }
+
+        private void rbDonotUseFaceKeyTemplate_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbUseFaceKeyTemplate.Checked)
+            {
+                txtFaceKeyTemplate.Enabled = true;
+                txtBodyPropertiesAge.Enabled = false;
+                txtBodyPropertiesBuild.Enabled = false;
+                txtBodyPropertiesKey.Enabled = false;
+                txtBodyPropertiesVersion.Enabled = false;
+                txtBodyPropertiesWeight.Enabled = false;
+
+                chkUseBodyPropertiesMax.Checked = false;
+            }
+            else
+            {
+                txtFaceKeyTemplate.Enabled = false;
+                txtBodyPropertiesAge.Enabled = true;
+                txtBodyPropertiesBuild.Enabled = true;
+                txtBodyPropertiesKey.Enabled = true;
+                txtBodyPropertiesVersion.Enabled = true;
+                txtBodyPropertiesWeight.Enabled = true;
+
+                chkUseBodyPropertiesMax.Checked = true;
             }
         }
     }

@@ -13,11 +13,19 @@ namespace ArenaModdingTool
     public partial class frmNewProject : Form, ILocalization
     {
         private AMProject newProject;
-        public AMProject NewProject { get; set; }
+        public AMProject NewProject 
+        {
+            get
+            {
+                return newProject;
+            }
+        }
+
         public frmNewProject()
         {
             InitializeComponent();
             SwitchLanguage();
+            newProject = new AMProject();
         }
 
         private void btnOK_Click(object sender, EventArgs e)

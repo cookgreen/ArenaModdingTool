@@ -101,6 +101,9 @@ namespace ArenaModdingTool.ModdingFiles
     [XmlRoot("equipmentSet")]
     public class MBNPCCharacterEquipmentSet
     {
+        [XmlAttribute("civilian")]
+        public bool IsCivilian { get; set; }
+
         [XmlElement("equipment")]
         public List<MBNPCCharacterEquipment> Equipments { get; set; }
     }

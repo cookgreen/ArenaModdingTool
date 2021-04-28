@@ -30,10 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtSlot = new System.Windows.Forms.TextBox();
             this.txtItemId = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
+            this.cmbEquipmentSlots = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -53,13 +53,6 @@
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 1;
             this.label2.Text = "Item:";
-            // 
-            // txtSlot
-            // 
-            this.txtSlot.Location = new System.Drawing.Point(54, 10);
-            this.txtSlot.Name = "txtSlot";
-            this.txtSlot.Size = new System.Drawing.Size(239, 21);
-            this.txtSlot.TabIndex = 2;
             // 
             // txtItemId
             // 
@@ -88,15 +81,33 @@
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // cmbEquipmentSlots
+            // 
+            this.cmbEquipmentSlots.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEquipmentSlots.FormattingEnabled = true;
+            this.cmbEquipmentSlots.Items.AddRange(new object[] {
+            "Body",
+            "Cape",
+            "Leg",
+            "Gloves",
+            "Item0",
+            "Item1",
+            "Item2",
+            "Item3"});
+            this.cmbEquipmentSlots.Location = new System.Drawing.Point(54, 10);
+            this.cmbEquipmentSlots.Name = "cmbEquipmentSlots";
+            this.cmbEquipmentSlots.Size = new System.Drawing.Size(239, 20);
+            this.cmbEquipmentSlots.TabIndex = 6;
+            // 
             // frmNPCCharacterEquipmentEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(305, 101);
+            this.Controls.Add(this.cmbEquipmentSlots);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtItemId);
-            this.Controls.Add(this.txtSlot);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -114,9 +125,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSlot;
         private System.Windows.Forms.TextBox txtItemId;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.ComboBox cmbEquipmentSlots;
     }
 }

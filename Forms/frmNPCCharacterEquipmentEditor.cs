@@ -24,14 +24,26 @@ namespace ArenaModdingTool.Forms
             if (!isAddOrEdit && equipment != null)
             {
                 txtItemId.Text = equipment.id;
-                txtSlot.Text = equipment.slot;
+                cmbEquipmentSlots.SelectedItem = equipment.slot;
             }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            if (cmbEquipmentSlots.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a valid slot!");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtItemId.Text))
+            {
+                MessageBox.Show("Please input a valid item!");
+                return;
+            }
+
             equipment = new MBNPCCharacterEquipment();
-            equipment.slot = txtSlot.Text;
+            equipment.slot = cmbEquipmentSlots.SelectedItem.ToString();
             equipment.id = txtItemId.Text;
 
             DialogResult = DialogResult.OK;
@@ -40,6 +52,7 @@ namespace ArenaModdingTool.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.Cancel;
             Close();
         }
     }

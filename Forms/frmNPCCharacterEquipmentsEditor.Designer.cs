@@ -36,6 +36,7 @@
             this.btnModify = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
+            this.chkIsCivilian = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // listView1
@@ -98,7 +99,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(564, 367);
+            this.button1.Location = new System.Drawing.Point(564, 387);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -108,7 +109,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(483, 367);
+            this.btnOK.Location = new System.Drawing.Point(483, 387);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 5;
@@ -116,11 +117,22 @@
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // chkIsCivilian
+            // 
+            this.chkIsCivilian.AutoSize = true;
+            this.chkIsCivilian.Location = new System.Drawing.Point(561, 346);
+            this.chkIsCivilian.Name = "chkIsCivilian";
+            this.chkIsCivilian.Size = new System.Drawing.Size(72, 16);
+            this.chkIsCivilian.TabIndex = 6;
+            this.chkIsCivilian.Text = "civilian";
+            this.chkIsCivilian.UseVisualStyleBackColor = true;
+            // 
             // frmNPCCharacterEquipmentsEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 399);
+            this.ClientSize = new System.Drawing.Size(651, 422);
+            this.Controls.Add(this.chkIsCivilian);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnModify);
@@ -135,6 +147,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NPC Character Equipments Editor";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -148,5 +161,6 @@
         private System.Windows.Forms.Button btnModify;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.CheckBox chkIsCivilian;
     }
 }

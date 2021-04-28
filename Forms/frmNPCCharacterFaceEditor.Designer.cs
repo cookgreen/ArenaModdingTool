@@ -84,6 +84,7 @@
             // rbDonotUseFaceKeyTemplate
             // 
             this.rbDonotUseFaceKeyTemplate.AutoSize = true;
+            this.rbDonotUseFaceKeyTemplate.Checked = true;
             this.rbDonotUseFaceKeyTemplate.Location = new System.Drawing.Point(11, 68);
             this.rbDonotUseFaceKeyTemplate.Name = "rbDonotUseFaceKeyTemplate";
             this.rbDonotUseFaceKeyTemplate.Size = new System.Drawing.Size(185, 16);
@@ -91,6 +92,7 @@
             this.rbDonotUseFaceKeyTemplate.TabStop = true;
             this.rbDonotUseFaceKeyTemplate.Text = "Don\'t Use Face Key Template";
             this.rbDonotUseFaceKeyTemplate.UseVisualStyleBackColor = true;
+            this.rbDonotUseFaceKeyTemplate.CheckedChanged += new System.EventHandler(this.rbDonotUseFaceKeyTemplate_CheckedChanged);
             // 
             // txtFaceKeyTemplate
             // 
@@ -117,9 +119,9 @@
             this.rbUseFaceKeyTemplate.Name = "rbUseFaceKeyTemplate";
             this.rbUseFaceKeyTemplate.Size = new System.Drawing.Size(149, 16);
             this.rbUseFaceKeyTemplate.TabIndex = 14;
-            this.rbUseFaceKeyTemplate.TabStop = true;
             this.rbUseFaceKeyTemplate.Text = "Use Face Key Template";
             this.rbUseFaceKeyTemplate.UseVisualStyleBackColor = true;
+            this.rbUseFaceKeyTemplate.CheckedChanged += new System.EventHandler(this.rbUseFaceKeyTemplate_CheckedChanged);
             // 
             // btnOK
             // 
@@ -246,12 +248,13 @@
             // chkUseBodyPropertiesMax
             // 
             this.chkUseBodyPropertiesMax.AutoSize = true;
-            this.chkUseBodyPropertiesMax.Location = new System.Drawing.Point(12, 201);
+            this.chkUseBodyPropertiesMax.Location = new System.Drawing.Point(21, 201);
             this.chkUseBodyPropertiesMax.Name = "chkUseBodyPropertiesMax";
             this.chkUseBodyPropertiesMax.Size = new System.Drawing.Size(162, 16);
             this.chkUseBodyPropertiesMax.TabIndex = 10;
             this.chkUseBodyPropertiesMax.Text = "Use Body Properties Max";
             this.chkUseBodyPropertiesMax.UseVisualStyleBackColor = true;
+            this.chkUseBodyPropertiesMax.CheckedChanged += new System.EventHandler(this.chkUseBodyPropertiesMax_CheckedChanged);
             // 
             // groupBox1
             // 
