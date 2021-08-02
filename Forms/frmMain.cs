@@ -247,7 +247,76 @@ namespace ArenaModdingTool
 
         private void btnItems_Click(object sender, EventArgs e)
         {
+            string errMsg = string.Empty;
+            bool canLoaded = false;
+            bool isContinue = true;
 
+            if (currentProject.BannerlordModule.ModuleItems.Count == 0)
+            {
+                if (MessageBox.Show(Helper.LOC("str_info_message_no_any_items_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
+                     DialogResult.Yes)
+                {
+                    return;
+                }
+                else
+                {
+                    frmValueInputer frmInputFileName = new frmValueInputer(Helper.LOC("str_info_please_input_a_valid_file_name"));
+                    if (frmInputFileName.ShowDialog() == DialogResult.OK)
+                    {
+                        string fileName = frmInputFileName.Value;
+                        canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Item", fileName, out errMsg);
+
+                        if (!canLoaded)
+                        {
+                            MessageBox.Show(errMsg, "Notice");
+                            return;
+                        }
+                        else
+                        {
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
+                            {
+                                XmlName = new ModdingFiles.MBXmlNodeName()
+                                {
+                                    id = "Items",
+                                    path = "spitems"
+                                },
+                                IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
+                                {
+                                    GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
+                                {
+                                    new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
+                                    new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
+                                }
+                                }
+                            });
+                            currentProject.SaveModuleInfo();
+                        }
+                    }
+                    else
+                    {
+                        isContinue = false;
+                    }
+                }
+            }
+
+            if (isContinue)
+            {
+                TabControl tabControl = new TabControl();
+                tabControl.Dock = DockStyle.Fill;
+                foreach (var items in currentProject.BannerlordModule.ModuleItems)
+                {
+                    var moduleName = (new DirectoryInfo(items.FilePath).Parent.Parent.Name);
+                    var fileName = new DirectoryInfo(items.FilePath).Name;
+                    var page = new TabPage(moduleName + " - " + fileName);
+                    ucItemsEditor itemsEditor = new ucItemsEditor(currentProject, items);
+                    page.Controls.Clear();
+                    page.Controls.Add(itemsEditor);
+                    itemsEditor.Dock = DockStyle.Fill;
+                    tabControl.TabPages.Add(page);
+                }
+                panelMain.Controls.Clear();
+                panelMain.Controls.Add(tabControl);
+            }
         }
 
         private void mnuImport_Click(object sender, EventArgs e)

@@ -163,6 +163,10 @@ namespace ArenaModdingTool
         {
             get { return moduleInfo; }
         }
+        public List<MBItems> ModuleItems
+        {
+            get { return moduleItems; }
+        }
         public List<MBKingdoms> ModuleKingdoms
         {
             get { return moduleKingdoms; }
@@ -184,12 +188,12 @@ namespace ArenaModdingTool
 
         public bool HasModuleCharacterFile
         {
-            get { return hasModuleCharactersFile; }
+            get { return moduleNPCCharacters.Count > 0; }
         }
 
         public bool HasModuleKingdomFile 
         {
-            get { return hasModuleKingdomsFile; }
+            get { return moduleKingdoms.Count > 0; }
         }
 
         public void CreateNew()

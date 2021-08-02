@@ -80,6 +80,30 @@
     <Compile Include="Controls\ucHeroDetails.Designer.cs">
       <DependentUpon>ucHeroDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ucItemListEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucItemListEdit.Designer.cs">
+      <DependentUpon>ucItemListEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucItemsDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucItemsDetails.Designer.cs">
+      <DependentUpon>ucItemsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucItemsEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucItemsEditor.Designer.cs">
+      <DependentUpon>ucItemsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucItemsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucItemsList.Designer.cs">
+      <DependentUpon>ucItemsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucKingdomList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -293,6 +317,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucHeroListEdit.resx">
       <DependentUpon>ucHeroListEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucItemListEdit.resx">
+      <DependentUpon>ucItemListEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucItemsDetails.resx">
+      <DependentUpon>ucItemsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucItemsEditor.resx">
+      <DependentUpon>ucItemsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucItemsList.resx">
+      <DependentUpon>ucItemsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucKingdomDetails.resx">
       <DependentUpon>ucKingdomDetails.cs</DependentUpon>
