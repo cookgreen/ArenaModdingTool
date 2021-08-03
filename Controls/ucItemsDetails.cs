@@ -14,9 +14,17 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucItemsDetails : UserControl
     {
-        public ucItemsDetails(MBItem item)
+        private MBItem item;
+        private AddEditState addEditState;
+        public event Action DoSave;
+
+        public ucItemsDetails(MBItem item, AddEditState addEditState)
         {
             InitializeComponent();
+
+            this.item = item;
+            this.addEditState = addEditState;
+
             if (item != null)
             {
                 decimal val;
@@ -78,12 +86,80 @@ namespace ArenaModdingTool.Controls
 
         private void btnEditItemComponent_Click(object sender, EventArgs e)
         {
-
+            if (item.ItemComponent == null)
+            {
+                frmItemComponentChooser itemComponentChooser = new frmItemComponentChooser();
+                if (itemComponentChooser.ShowDialog() == DialogResult.OK)
+                {
+                    var itemComponentType = itemComponentChooser.ItemComponentType;
+                    switch(itemComponentType)
+                    {
+                        case ItemComponentType.Armour:
+                            item.ItemComponent = new MBItemComponent();
+                            item.ItemComponent.Armour = new MBItemArmour();
+                            frmItemComponentArmourEditor itemComponentArmourEditor = new frmItemComponentArmourEditor(item.ItemComponent.Armour);
+                            if(itemComponentArmourEditor.ShowDialog() == DialogResult.OK)
+                            {
+                                item.ItemComponent.Armour = itemComponentArmourEditor.ItemArmour;
+                            }
+                            break;
+                        case ItemComponentType.Weapon:
+                            item.ItemComponent = new MBItemComponent();
+                            item.ItemComponent.Weapon = new MBItemWeapon();
+                            frmItemComponentWeaponEditor itemComponentWeaponEditor = new frmItemComponentWeaponEditor(item.ItemComponent.Weapon);
+                            if (itemComponentWeaponEditor.ShowDialog() == DialogResult.OK)
+                            {
+                                item.ItemComponent.Weapon = itemComponentWeaponEditor.ItemWeapon;
+                            }
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                if (item.ItemComponent.Weapon != null)
+                {
+                    frmItemComponentWeaponEditor itemComponentWeaponEditor = new frmItemComponentWeaponEditor(item.ItemComponent.Weapon);
+                    if (itemComponentWeaponEditor.ShowDialog() == DialogResult.OK)
+                    {
+                        item.ItemComponent.Weapon = itemComponentWeaponEditor.ItemWeapon;
+                    }
+                }
+                else if (item.ItemComponent.Armour != null)
+                {
+                    frmItemComponentArmourEditor itemComponentArmourEditor = new frmItemComponentArmourEditor(item.ItemComponent.Armour);
+                    if (itemComponentArmourEditor.ShowDialog() == DialogResult.OK)
+                    {
+                        item.ItemComponent.Armour = itemComponentArmourEditor.ItemArmour;
+                    }
+                }
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            switch(addEditState)
+            {
+                case AddEditState.Add:
+                    item = new MBItem();
+                    break;
+            }
 
+            item.id = txtId.Text;
+            item.name = txtName.Text;
+            item.body_name = txtBodyName.Text;
+            item.mesh = txtMesh.Text;
+            item.culture = txtCulture.Text;
+            item.value = numValue.Value.ToString();
+            item.is_merchandise = chkIsMerchandise.Checked.ToString();
+            item.weight = numWeight.Value.ToString();
+            item.difficulty = numDifficulty.Value.ToString();
+            item.Type = txtType.Text;
+            item.AmmoOffset = txtAmmoOffset.Text;
+            item.item_holsters = txtItemHolsters.Text;
+            item.holster_position_shift = txtHolsterPositionShift.Text;
+
+            DoSave?.Invoke();
         }
     }
 }

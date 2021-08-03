@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ArenaModdingTool
 {
-    public enum AddEditState
+    public enum ItemComponentType
     {
-        Add,
-        Edit,
-        View,
+        Armour,
+        Weapon,
+        Invalid
     }
 }

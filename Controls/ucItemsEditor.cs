@@ -15,26 +15,62 @@ namespace ArenaModdingTool.Controls
     {
         private AMProject currentProject;
         private MBItems items;
-        private ucItemListEdit itemsListEdit;
+        private ucItemsListEdit itemsListEdit;
+        private ucItemsDetails itemDetailsCtrl;
 
         public ucItemsEditor(AMProject currentProject, MBItems items)
         {
             InitializeComponent();
+
             this.currentProject = currentProject;
             this.items = items;
+
             panel1.Controls.Clear();
-            itemsListEdit = new ucItemListEdit(items);
+            itemsListEdit = new ucItemsListEdit(items);
             itemsListEdit.Dock = DockStyle.Fill;
-            panel1.Controls.Add(itemsListEdit);
             itemsListEdit.SelectedItemChanged += ItemsListEdit_SelectedItemChanged;
+            itemsListEdit.AddEditStateChanged += ItemsListEdit_AddEditStateChanged;
+            panel1.Controls.Add(itemsListEdit);
         }
 
         private void ItemsListEdit_SelectedItemChanged()
         {
-            ucItemsDetails itemDetailsCtrl = new ucItemsDetails(itemsListEdit.SelectedItem);
             panel2.Controls.Clear();
-            panel2.Controls.Add(itemDetailsCtrl);
+            itemDetailsCtrl = new ucItemsDetails(itemsListEdit.SelectedItem, itemsListEdit.AddEditState);
             itemDetailsCtrl.Dock = DockStyle.Fill;
+            itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
+            panel2.Controls.Add(itemDetailsCtrl);
+        }
+
+        private void ItemsListEdit_AddEditStateChanged()
+        {
+            switch(itemsListEdit.AddEditState)
+            {
+                case AddEditState.Add:
+
+                    panel2.Controls.Clear();
+                    itemDetailsCtrl = new ucItemsDetails(null, itemsListEdit.AddEditState);
+                    itemDetailsCtrl.Dock = DockStyle.Fill;
+                    itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
+                    panel2.Controls.Add(itemDetailsCtrl);
+
+                    break;
+
+                case AddEditState.Edit:
+
+                    panel2.Controls.Clear();
+                    itemDetailsCtrl = new ucItemsDetails(itemsListEdit.SelectedItem, itemsListEdit.AddEditState);
+                    itemDetailsCtrl.Dock = DockStyle.Fill;
+                    itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
+                    panel2.Controls.Add(itemDetailsCtrl);
+
+                    break;
+            }
+        }
+
+        private void ItemDetailsCtrl_DoSave()
+        {
+            itemsListEdit.ChangeState(AddEditState.View);
         }
     }
 }

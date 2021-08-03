@@ -80,11 +80,11 @@
     <Compile Include="Controls\ucHeroDetails.Designer.cs">
       <DependentUpon>ucHeroDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ucItemListEdit.cs">
+    <Compile Include="Controls\ucItemsListEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\ucItemListEdit.Designer.cs">
-      <DependentUpon>ucItemListEdit.cs</DependentUpon>
+    <Compile Include="Controls\ucItemsListEdit.Designer.cs">
+      <DependentUpon>ucItemsListEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ucItemsDetails.cs">
       <SubType>UserControl</SubType>
@@ -173,6 +173,24 @@
     </Compile>
     <Compile Include="Forms\frmCultureListViewer.Designer.cs">
       <DependentUpon>frmCultureListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItemComponentArmourEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItemComponentArmourEditor.Designer.cs">
+      <DependentUpon>frmItemComponentArmourEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItemComponentChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItemComponentChooser.Designer.cs">
+      <DependentUpon>frmItemComponentChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItemComponentWeaponEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItemComponentWeaponEditor.Designer.cs">
+      <DependentUpon>frmItemComponentWeaponEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmLocalizedTextInputer.cs">
       <SubType>Form</SubType>
@@ -290,6 +308,7 @@
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="ILocalization.cs" />
+    <Compile Include="ItemComponentType.cs" />
     <Compile Include="LangLocalization.cs" />
     <Compile Include="LanguageManager.cs" />
     <Compile Include="MBBannerlordModManager.cs" />
@@ -324,8 +343,8 @@
     <EmbeddedResource Include="Controls\ucHeroListEdit.resx">
       <DependentUpon>ucHeroListEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucItemListEdit.resx">
-      <DependentUpon>ucItemListEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ucItemsListEdit.resx">
+      <DependentUpon>ucItemsListEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucItemsDetails.resx">
       <DependentUpon>ucItemsDetails.cs</DependentUpon>
@@ -374,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmImportProject.resx">
       <DependentUpon>frmImportProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmItemComponentChooser.resx">
+      <DependentUpon>frmItemComponentChooser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKingdomListViewer.resx">
       <DependentUpon>frmKingdomListViewer.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
 namespace ArenaModdingTool.Controls
 {
-    partial class ucItemListEdit
+    partial class ucItemsListEdit
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -74,6 +74,7 @@ namespace ArenaModdingTool.Controls
             this.btnModify.TabIndex = 2;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnDelete
             // 
@@ -84,6 +85,7 @@ namespace ArenaModdingTool.Controls
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "-";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -93,6 +95,7 @@ namespace ArenaModdingTool.Controls
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel2
             // 
