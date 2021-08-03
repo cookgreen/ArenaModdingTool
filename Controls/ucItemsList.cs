@@ -8,12 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlLoader;
 
 namespace ArenaModdingTool.Controls
 {
     public partial class ucItemsList : UserControl
     {
         private MBItems items;
+        private int index;
+        private MBItem selectedItem;
+
         public event Action<MBItem, int> SelectedItemChanged;
 
         public ucItemsList(MBItems items)
@@ -38,8 +42,19 @@ namespace ArenaModdingTool.Controls
             if (e.Node != null)
             {
                 MBItem item = e.Node.Tag as MBItem;
-                SelectedItemChanged?.Invoke(item, treeView1.Nodes.IndexOf(e.Node));
+                selectedItem = item;
+                index = treeView1.Nodes.IndexOf(e.Node);
+                SelectedItemChanged?.Invoke(item, index);
             }
+        }
+
+        public void DeleteSelectedItem()
+        {
+            treeView1.Nodes.RemoveAt(index);
+            items.Items.RemoveAt(index);
+
+            XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(items.FilePath);
+            xmlObjectLoader.Save(items);
         }
     }
 }

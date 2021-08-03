@@ -16,7 +16,12 @@ namespace ArenaModdingTool.Controls
     {
         private MBItem item;
         private AddEditState addEditState;
+        
         public event Action DoSave;
+        public MBItem Item
+        {
+            get { return item; }
+        }
 
         public ucItemsDetails(MBItem item, AddEditState addEditState)
         {

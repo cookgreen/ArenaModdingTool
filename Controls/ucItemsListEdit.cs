@@ -16,9 +16,10 @@ namespace ArenaModdingTool.Controls
         private MBItem selectedItem;
         private ucItemsList itemsListCtrl;
         private AddEditState addEditState;
+        private int selectedIndex;
 
         public event Action AddEditStateChanged;
-        public event Action SelectedItemChanged;
+        public event Action<int> SelectedItemChanged;
         public MBItem SelectedItem
         {
             get { return selectedItem; }
@@ -41,8 +42,9 @@ namespace ArenaModdingTool.Controls
         private void ItemsListCtrl_SelectedItemChanged(MBItem item, int index)
         {
             selectedItem = item;
+            selectedIndex = index;
 
-            SelectedItemChanged?.Invoke();
+            SelectedItemChanged?.Invoke(index);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace ArenaModdingTool.Controls
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            itemsListCtrl.DeleteSelectedItem();
         }
 
         private void btnModify_Click(object sender, EventArgs e)

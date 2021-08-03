@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlLoader;
 
 namespace ArenaModdingTool.Controls
 {
@@ -17,6 +18,7 @@ namespace ArenaModdingTool.Controls
         private MBItems items;
         private ucItemsListEdit itemsListEdit;
         private ucItemsDetails itemDetailsCtrl;
+        private int editIndex;
 
         public ucItemsEditor(AMProject currentProject, MBItems items)
         {
@@ -33,13 +35,14 @@ namespace ArenaModdingTool.Controls
             panel1.Controls.Add(itemsListEdit);
         }
 
-        private void ItemsListEdit_SelectedItemChanged()
+        private void ItemsListEdit_SelectedItemChanged(int index)
         {
             panel2.Controls.Clear();
             itemDetailsCtrl = new ucItemsDetails(itemsListEdit.SelectedItem, itemsListEdit.AddEditState);
             itemDetailsCtrl.Dock = DockStyle.Fill;
             itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
             panel2.Controls.Add(itemDetailsCtrl);
+            editIndex = index;
         }
 
         private void ItemsListEdit_AddEditStateChanged()
@@ -70,6 +73,19 @@ namespace ArenaModdingTool.Controls
 
         private void ItemDetailsCtrl_DoSave()
         {
+            var item = itemDetailsCtrl.Item;
+            switch(itemsListEdit.AddEditState)
+            {
+                case AddEditState.Add:
+                    items.Items.Add(item);
+                    break;
+                case AddEditState.Edit:
+                    items.Items[editIndex] = item;
+                    break;
+            }
+            XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(items.FilePath);
+            xmlObjectLoader.Save(items);
+
             itemsListEdit.ChangeState(AddEditState.View);
         }
     }
