@@ -1,5 +1,6 @@
 ﻿using ArenaModdingTool.Controls;
 using ArenaModdingTool.Forms;
+using ArenaModdingTool.ModdingFiles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -260,10 +261,11 @@ namespace ArenaModdingTool
                 }
                 else
                 {
-                    frmValueInputer frmInputFileName = new frmValueInputer(Helper.LOC("str_info_please_input_a_valid_file_name"));
-                    if (frmInputFileName.ShowDialog() == DialogResult.OK)
+                    frmCreateNewFile createNewFileWin = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath);
+                    if (createNewFileWin.ShowDialog() == DialogResult.OK)
                     {
-                        string fileName = frmInputFileName.Value;
+                        string fileName = createNewFileWin.FileName;
+                        var includeGameTypes = createNewFileWin.IncludeGameTypes;
                         canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Item", fileName, out errMsg);
 
                         if (!canLoaded)
@@ -273,22 +275,19 @@ namespace ArenaModdingTool
                         }
                         else
                         {
-                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
+                            var mbXmlNode = new MBXmlNode();
+                            mbXmlNode.XmlName = new MBXmlNodeName();
+                            mbXmlNode.XmlName.id = "Items";
+                            mbXmlNode.XmlName.path = fileName;
+                            mbXmlNode.IncludedGameTypes = new MBXmlNodeIncludedGameTypes();
+                            mbXmlNode.IncludedGameTypes.GameTypes = new List<MBSubModuleInfoElement>();
+                            foreach(var igt in includeGameTypes)
                             {
-                                XmlName = new ModdingFiles.MBXmlNodeName()
-                                {
-                                    id = "Items",
-                                    path = "spitems"
-                                },
-                                IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
-                                {
-                                    GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
-                                {
-                                    new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
-                                    new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
-                                }
-                                }
-                            });
+                                MBSubModuleInfoElement element = new MBSubModuleInfoElement();
+                                element.value = igt;
+                                mbXmlNode.IncludedGameTypes.GameTypes.Add(element);
+                            }
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
                             currentProject.SaveModuleInfo();
                         }
                     }
@@ -363,11 +362,6 @@ namespace ArenaModdingTool
 
         private void mnuFileNewOtherFile_Click(object sender, EventArgs e)
         {
-            frmCreateNewFile createNewFileForm = new frmCreateNewFile();
-            if (createNewFileForm.ShowDialog() == DialogResult.OK)
-            {
-                
-            }
         }
     }
 }
