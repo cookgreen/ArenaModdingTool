@@ -42,11 +42,17 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlAttribute]
         public string weight { get; set; }
         [XmlAttribute]
+        public string difficulty { get; set; }
+        [XmlAttribute]
         public string Type { get; set; }
+        [XmlAttribute]
+        public string AmmoOffset { get; set; }
         [XmlAttribute]
         public string subtype { get; set; }
         [XmlAttribute]
         public string item_holsters { get; set; }
+        [XmlAttribute]
+        public string holster_position_shift { get; set; }
         [XmlAttribute]
         public string appearance { get; set; }
 

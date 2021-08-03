@@ -282,6 +282,12 @@
     <Compile Include="Forms\frmValueInputer.Designer.cs">
       <DependentUpon>frmValueInputer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmVectorEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVectorEditor.Designer.cs">
+      <DependentUpon>frmVectorEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="ILocalization.cs" />
     <Compile Include="LangLocalization.cs" />
@@ -410,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmValueInputer.resx">
       <DependentUpon>frmValueInputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVectorEditor.resx">
+      <DependentUpon>frmVectorEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

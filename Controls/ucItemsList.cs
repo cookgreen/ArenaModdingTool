@@ -14,6 +14,7 @@ namespace ArenaModdingTool.Controls
     public partial class ucItemsList : UserControl
     {
         private MBItems items;
+        public event Action<MBItem, int> SelectedItemChanged;
 
         public ucItemsList(MBItems items)
         {
@@ -27,7 +28,17 @@ namespace ArenaModdingTool.Controls
             treeView1.Nodes.Clear();
             foreach (var item in items.Items)
             {
-                treeView1.Nodes.Add(item.name);
+                var node = treeView1.Nodes.Add(item.name);
+                node.Tag = item;
+            }
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node != null)
+            {
+                MBItem item = e.Node.Tag as MBItem;
+                SelectedItemChanged?.Invoke(item, treeView1.Nodes.IndexOf(e.Node));
             }
         }
     }
