@@ -19,8 +19,6 @@ namespace ArenaModdingTool
         private List<MBItems> moduleItems;
         private List<MBNPCCharacters> moduleNPCCharacters;
         private string path;
-        private bool hasModuleCharactersFile;
-        private bool hasModuleKingdomsFile;
 
         public string ModuleDataPath
         {
@@ -55,7 +53,6 @@ namespace ArenaModdingTool
                 string kingdomsXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path) + ".xml";
                 if (File.Exists(kingdomsXmlPath))
                 {
-                    hasModuleKingdomsFile = true;
                     LoadKingdoms(kingdomsXmlPath);
                 }
             }
@@ -134,7 +131,6 @@ namespace ArenaModdingTool
                 }
                 else if (File.Exists(charactersXmlPath + ".xml"))
                 {
-                    hasModuleCharactersFile = true;
                     charactersXmlPath = charactersXmlPath + ".xml";
                     LoadNPCCharacters(charactersXmlPath);
                 }

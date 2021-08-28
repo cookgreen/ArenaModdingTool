@@ -13,6 +13,11 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlElement("NPCCharacter")]
         public List<MBNPCCharacter> NPCCharacters { get; set; }
         public string FilePath { get; set; }
+
+        public MBNPCCharacters()
+        {
+            NPCCharacters = new List<MBNPCCharacter>();
+        }
     }
 
     [XmlRoot("NPCCharacter")]

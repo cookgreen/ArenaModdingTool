@@ -14,6 +14,11 @@ namespace ArenaModdingTool.ModdingFiles
         public List<MBKingdom> Kingdoms { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
+
+        public MBKingdoms()
+        {
+            Kingdoms = new List<MBKingdom>();
+        }
     }
 
     [XmlRoot("Kingdom")]
@@ -63,6 +68,12 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArray("policies")]
         [XmlArrayItem("policy")]
         public List<KingdomPolicy> Policies { get; set; }
+
+        public MBKingdom()
+        {
+            Relationships = new List<KingdomRelationship>();
+            Policies = new List<KingdomPolicy>();
+        }
     }
     public class KingdomRelationship
     {

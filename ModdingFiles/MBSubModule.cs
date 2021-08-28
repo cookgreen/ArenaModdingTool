@@ -34,6 +34,21 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArray("Xmls")]
         [XmlArrayItem("XmlNode")]
         public List<MBXmlNode> XmlNodes { get; set; }
+
+        public MBModule()
+        {
+            Name = new MBSubModuleInfoElement();
+            Id = new MBSubModuleInfoElement();
+            Version = new MBSubModuleInfoElement();
+            DefaultModule = new MBSubModuleInfoElement();
+            SingleplayerModule = new MBSubModuleInfoElement();
+            MultiplayerModule = new MBSubModuleInfoElement();
+            Official = new MBSubModuleInfoElement();
+            DependedModules = new MBSubModuleDepencyModules();
+
+            SubModules = new List<MBSubModule>();
+            XmlNodes = new List<MBXmlNode>();
+        }
     }
     public class MBSubModule
     {
@@ -47,6 +62,14 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArray("Tags")]
         [XmlArrayItem("Tag")]
         public List<MBModuleTag> Tags { get; set; }
+
+        public MBSubModule()
+        {
+            Name = new MBSubModuleInfoElement();
+            DLLName = new MBSubModuleInfoElement();
+            SubModuleClassType = new MBSubModuleInfoElement();
+            Tags = new List<MBModuleTag>();
+        }
     }
 
     [XmlRoot("Tag")]
@@ -70,6 +93,11 @@ namespace ArenaModdingTool.ModdingFiles
     {
         [XmlElement("DependedModule")]
         public List<MBSubModuleDepencyModule> DependencyModules { get; set; }
+
+        public MBSubModuleDepencyModules()
+        {
+            DependencyModules = new List<MBSubModuleDepencyModule>();
+        }
     }
 
     public class MBSubModuleDepencyModule
@@ -84,6 +112,12 @@ namespace ArenaModdingTool.ModdingFiles
         public MBXmlNodeName XmlName { get; set; }
         [XmlElement]
         public MBXmlNodeIncludedGameTypes IncludedGameTypes { get; set; }
+
+        public MBXmlNode()
+        {
+            XmlName = new MBXmlNodeName();
+            IncludedGameTypes = new MBXmlNodeIncludedGameTypes();
+        }
     }
 
     public class MBXmlNodeName
@@ -99,5 +133,10 @@ namespace ArenaModdingTool.ModdingFiles
     {
         [XmlElement("GameType")]
         public List<MBSubModuleInfoElement> GameTypes { get; set; }
+
+        public MBXmlNodeIncludedGameTypes()
+        {
+            GameTypes = new List<MBSubModuleInfoElement>();
+        }
     }
 }

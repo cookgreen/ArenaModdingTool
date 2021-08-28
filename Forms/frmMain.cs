@@ -105,7 +105,7 @@ namespace ArenaModdingTool
         private void btnFactions_Click(object sender, EventArgs e)
         {
             string errMsg = string.Empty;
-            bool canLoaded = false;
+
             if (!currentProject.BannerlordModule.HasModuleKingdomFile)
             {
                 if (MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
@@ -115,7 +115,9 @@ namespace ArenaModdingTool
                 }
                 else
                 {
-                    canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", "npccharacters", out errMsg);
+                    frmCreateNewFile frmCreateNewFile = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "SPKingdoms");
+                    var fileName = frmCreateNewFile.FileName;
+                    bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Kingdom", fileName, out errMsg);
 
                     if (!canLoaded)
                     {
@@ -124,22 +126,8 @@ namespace ArenaModdingTool
                     }
                     else
                     {
-                        currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
-                        {
-                            XmlName = new ModdingFiles.MBXmlNodeName()
-                            {
-                                id = "NPCCharacters",
-                                path = "npccharacters"
-                            },
-                            IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
-                            {
-                                GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
-                                {
-                                    new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
-                                    new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
-                                }
-                            }
-                        });
+                        var mbXmlNode = frmCreateNewFile.MBXmlNode;
+                        currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
                         currentProject.SaveModuleInfo();
                     }
                 }
@@ -170,7 +158,6 @@ namespace ArenaModdingTool
         private void btnNPCCharacters_Click(object sender, EventArgs e)
         {
             string errMsg = string.Empty;
-            bool canLoaded = false;
             bool isContinue = true;
 
             if (!currentProject.BannerlordModule.HasModuleCharacterFile)
@@ -182,11 +169,11 @@ namespace ArenaModdingTool
                 }
                 else
                 {
-                    frmValueInputer frmInputFileName = new frmValueInputer(Helper.LOC("str_info_please_input_a_valid_file_name"));
-                    if (frmInputFileName.ShowDialog() == DialogResult.OK)
+                    frmCreateNewFile frmCreateNewFile = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "NPCCharacters");
+                    if (frmCreateNewFile.ShowDialog() == DialogResult.OK)
                     {
-                        string fileName = frmInputFileName.Value;
-                        canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", fileName, out errMsg);
+                        string fileName = frmCreateNewFile.FileName;
+                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("NPCCharacters", fileName, out errMsg);
 
                         if (!canLoaded)
                         {
@@ -195,22 +182,8 @@ namespace ArenaModdingTool
                         }
                         else
                         {
-                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(new ModdingFiles.MBXmlNode()
-                            {
-                                XmlName = new ModdingFiles.MBXmlNodeName()
-                                {
-                                    id = "NPCCharacters",
-                                    path = "npccharacters"
-                                },
-                                IncludedGameTypes = new ModdingFiles.MBXmlNodeIncludedGameTypes()
-                                {
-                                    GameTypes = new List<ModdingFiles.MBSubModuleInfoElement>()
-                                {
-                                    new ModdingFiles.MBSubModuleInfoElement(){value = "Campaign"},
-                                    new ModdingFiles.MBSubModuleInfoElement(){value = "CampaignStoryMode"},
-                                }
-                                }
-                            });
+                            var mbXmlNode = frmCreateNewFile.MBXmlNode;
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
                             currentProject.SaveModuleInfo();
                         }
                     }
@@ -249,7 +222,6 @@ namespace ArenaModdingTool
         private void btnItems_Click(object sender, EventArgs e)
         {
             string errMsg = string.Empty;
-            bool canLoaded = false;
             bool isContinue = true;
 
             if (currentProject.BannerlordModule.ModuleItems.Count == 0)
@@ -261,12 +233,11 @@ namespace ArenaModdingTool
                 }
                 else
                 {
-                    frmCreateNewFile createNewFileWin = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath);
+                    frmCreateNewFile createNewFileWin = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "Items");
                     if (createNewFileWin.ShowDialog() == DialogResult.OK)
                     {
                         string fileName = createNewFileWin.FileName;
-                        var includeGameTypes = createNewFileWin.IncludeGameTypes;
-                        canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Item", fileName, out errMsg);
+                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Item", fileName, out errMsg);
 
                         if (!canLoaded)
                         {
@@ -275,18 +246,7 @@ namespace ArenaModdingTool
                         }
                         else
                         {
-                            var mbXmlNode = new MBXmlNode();
-                            mbXmlNode.XmlName = new MBXmlNodeName();
-                            mbXmlNode.XmlName.id = "Items";
-                            mbXmlNode.XmlName.path = fileName;
-                            mbXmlNode.IncludedGameTypes = new MBXmlNodeIncludedGameTypes();
-                            mbXmlNode.IncludedGameTypes.GameTypes = new List<MBSubModuleInfoElement>();
-                            foreach(var igt in includeGameTypes)
-                            {
-                                MBSubModuleInfoElement element = new MBSubModuleInfoElement();
-                                element.value = igt;
-                                mbXmlNode.IncludedGameTypes.GameTypes.Add(element);
-                            }
+                            var mbXmlNode = createNewFileWin.MBXmlNode;
                             currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
                             currentProject.SaveModuleInfo();
                         }

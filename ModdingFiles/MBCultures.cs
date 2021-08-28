@@ -14,6 +14,11 @@ namespace ArenaModdingTool.ModdingFiles
         public List<MBCulture> Cultures { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
+
+        public MBCultures()
+        {
+            Cultures = new List<MBCulture>();
+        }
     }
 
     public class MBCulture
@@ -185,6 +190,16 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArray("tournament_team_templates_four_participant")]
         [XmlArrayItem("template")]
         public List<MBCultureTemplateName> tournament_team_templates_four_participant { get; set; }
+
+        public MBCulture()
+        {
+            MaleNames = new List<MBCultureName>();
+            FemaleNames = new List<MBCultureName>();
+            ClanNames = new List<MBCultureName>();
+            tournament_team_templates_one_participants = new List<MBCultureTemplateName>();
+            tournament_team_templates_two_participant = new List<MBCultureTemplateName>();
+            tournament_team_templates_four_participant = new List<MBCultureTemplateName>();
+        }
     }
 
     [XmlRoot("name")]

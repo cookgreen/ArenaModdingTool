@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArenaModdingTool.ModdingFiles;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,14 +11,16 @@ namespace ArenaModdingTool
 {
     public class AMProject
     {
-        private MBBannerlordModule bannerlordModule;
         private string path;
+        private XmlObjectLoader xmlObjectLoader;
+        private MBBannerlordModule bannerlordModule;
 
         public string Name { get; set; }
         public string ModuleName { get; set; }
         public string Location { get; set; }
         public List<string> IncludedFiles { get; set; }
         public MBBannerlordModule BannerlordModule { get { return bannerlordModule; } }
+        
         public AMProject()
         {
             bannerlordModule = new MBBannerlordModule();
@@ -44,24 +47,44 @@ namespace ArenaModdingTool
             try
             {
                 string destFileFullPath = Path.Combine(BannerlordModule.ModuleDataPath, fileName + ".xml");
-                TemplateFileManager.Instance.FindFileByTypeAndCopy(type, destFileFullPath);
-                if (File.Exists(destFileFullPath))
+                xmlObjectLoader = new XmlObjectLoader(destFileFullPath);
+
+                if (type == "Kingdom")
                 {
-                    if (type == "Kingdom")
-                    {
-                        BannerlordModule.LoadKingdoms(destFileFullPath);
-                    }
-                    else if (type == "NPCCharacter")
-                    {
-                        BannerlordModule.LoadNPCCharacters(destFileFullPath);
-                    }
-                    return true;
+                    MBKingdoms mbKingdoms = new MBKingdoms();
+                    xmlObjectLoader.Save(mbKingdoms);
+                    mbKingdoms.FilePath = destFileFullPath;
+                    bannerlordModule.ModuleKingdoms.Add(mbKingdoms);
                 }
-                else
+                else if (type == "NPCCharacter")
                 {
-                    errorMessage = Helper.LOC("str_file_copy_error");
-                    return false;
+                    MBNPCCharacters mbNPCCharacters = new MBNPCCharacters();
+                    xmlObjectLoader.Save(mbNPCCharacters);
+                    mbNPCCharacters.FilePath = destFileFullPath;
+                    bannerlordModule.ModuleNPCCharacters.Add(mbNPCCharacters);
                 }
+                else if (type == "Items")
+                {
+                    MBItems mbItems = new MBItems();
+                    xmlObjectLoader.Save(mbItems);
+                    mbItems.FilePath = destFileFullPath;
+                    bannerlordModule.ModuleItems.Add(mbItems);
+                }
+                else if (type == "Heroes")
+                {
+                    MBHeroes mbHeroes = new MBHeroes();
+                    xmlObjectLoader.Save(mbHeroes);
+                    mbHeroes.FilePath = destFileFullPath;
+                    bannerlordModule.ModuleHeroes.Add(mbHeroes);
+                }
+                else if (type == "Cultures")
+                {
+                    MBCultures mbCultures = new MBCultures();
+                    xmlObjectLoader.Save(mbCultures);
+                    mbCultures.FilePath = destFileFullPath;
+                    bannerlordModule.ModuleCultures.Add(mbCultures);
+                }
+                return true;
             }
             catch (Exception ex)
             {

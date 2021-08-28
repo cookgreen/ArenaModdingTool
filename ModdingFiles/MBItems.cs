@@ -16,6 +16,12 @@ namespace ArenaModdingTool.ModdingFiles
         public List<MBCraftedItems> CraftedItems { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
+
+        public MBItems()
+        {
+            Items = new List<MBItem>();
+            CraftedItems = new List<MBCraftedItems>();
+        }
     }
 
     [XmlRoot("Item")]
@@ -133,6 +139,11 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArray("Pieces")]
         [XmlArrayItem("Piece")]
         public List<MBCraftedItemPiece> Pieces { get; set; }
+
+        public MBCraftedItems()
+        {
+            Pieces = new List<MBCraftedItemPiece>();
+        }
     }
 
     public class MBCraftedItemPiece

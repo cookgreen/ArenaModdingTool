@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArenaModdingTool.ModdingFiles;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,31 +13,26 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmCreateNewFile: Form
     {
+        private string fileType;
+        private MBXmlNode mbXmlNode;
+
+        public MBXmlNode MBXmlNode
+        {
+            get { return mbXmlNode; }
+        }
+
+
         public string FileName
         {
             get { return txtFileName.Text; }
         }
-        public List<string> IncludeGameTypes
-        {
-            get
-            {
-                List<string> includeGameTypes = new List<string>();
-                foreach(var control in groupBoxIncludeGameType.Controls)
-                {
-                    if (((CheckBox)control).Checked)
-                    {
-                        includeGameTypes.Add(((CheckBox)control).Text);
-                    }
-                }
-                return includeGameTypes;
-            }
-        }
 
-        public frmCreateNewFile(string fileName, string filePath)
+        public frmCreateNewFile(string fileName, string filePath, string fileType)
         {
             InitializeComponent();
             txtFileName.Text = fileName;
             txtFilePath.Text = filePath;
+            this.fileType = fileType;
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -45,6 +41,27 @@ namespace ArenaModdingTool.Forms
             {
                 MessageBox.Show("File name can't be empty!");
                 return;
+            }
+
+            List<string> includeGameTypes = new List<string>();
+            foreach (var control in groupBoxIncludeGameType.Controls)
+            {
+                if (((CheckBox)control).Checked)
+                {
+                    includeGameTypes.Add(((CheckBox)control).Text);
+                }
+            }
+            mbXmlNode = new MBXmlNode();
+            mbXmlNode.XmlName = new MBXmlNodeName();
+            mbXmlNode.XmlName.id = "Items";
+            mbXmlNode.XmlName.path = txtFileName.Text;
+            mbXmlNode.IncludedGameTypes = new MBXmlNodeIncludedGameTypes();
+            mbXmlNode.IncludedGameTypes.GameTypes = new List<MBSubModuleInfoElement>();
+            foreach (var igt in includeGameTypes)
+            {
+                MBSubModuleInfoElement element = new MBSubModuleInfoElement();
+                element.value = igt;
+                mbXmlNode.IncludedGameTypes.GameTypes.Add(element);
             }
 
             DialogResult = DialogResult.OK;

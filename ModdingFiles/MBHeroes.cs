@@ -14,6 +14,11 @@ namespace ArenaModdingTool.ModdingFiles
         public List<MBHero> Heroes { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
+
+        public MBHeroes()
+        {
+            Heroes = new List<MBHero>();
+        }
     }
 
     [XmlRoot("Hero")]
