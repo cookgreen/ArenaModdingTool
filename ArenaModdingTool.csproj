@@ -400,6 +400,9 @@
     <EmbeddedResource Include="Forms\frmItemComponentChooser.resx">
       <DependentUpon>frmItemComponentChooser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmItemComponentWeaponEditor.resx">
+      <DependentUpon>frmItemComponentWeaponEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKingdomListViewer.resx">
       <DependentUpon>frmKingdomListViewer.cs</DependentUpon>
     </EmbeddedResource>
