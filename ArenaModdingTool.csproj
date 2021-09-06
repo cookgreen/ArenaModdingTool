@@ -394,6 +394,9 @@
     <EmbeddedResource Include="Forms\frmImportProject.resx">
       <DependentUpon>frmImportProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmItemComponentArmourEditor.resx">
+      <DependentUpon>frmItemComponentArmourEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmItemComponentChooser.resx">
       <DependentUpon>frmItemComponentChooser.cs</DependentUpon>
     </EmbeddedResource>
