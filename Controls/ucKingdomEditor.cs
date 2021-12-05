@@ -14,12 +14,12 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucKingdomEditor : UserControl
     {
-        private MBKingdoms kingdoms;
+        private MBBannerlordKingdoms kingdoms;
         private ucKingdomsList factionListCtrl;
         private ucKingdomDetails factionDetailsCtrl;
         private AMProject project;
 
-        public ucKingdomEditor(AMProject project, MBKingdoms kingdoms)
+        public ucKingdomEditor(AMProject project, MBBannerlordKingdoms kingdoms)
         {
             InitializeComponent();
             this.kingdoms = kingdoms;
@@ -32,7 +32,7 @@ namespace ArenaModdingTool.Controls
             this.project = project;
         }
 
-        private void FactionList_SelectKingdomChanged(MBKingdom kingdom, int index)
+        private void FactionList_SelectKingdomChanged(MBBannerlordKingdom kingdom, int index)
         {
             factionDetailsCtrl = new ucKingdomDetails(project, kingdom, factionListCtrl.State, index);
             panel2.Controls.Clear();
@@ -42,7 +42,7 @@ namespace ArenaModdingTool.Controls
             factionDetailsCtrl.SaveKingdomInfoFinished += FactionDetailsCtrl_SaveKingdomInfoFinished;
         }
 
-        private void FactionDetailsCtrl_SaveKingdomInfoFinished(MBKingdom savedKingdom, AddEditState state, int index)
+        private void FactionDetailsCtrl_SaveKingdomInfoFinished(MBBannerlordKingdom savedKingdom, AddEditState state, int index)
         {
             if (state == AddEditState.Add)
             {

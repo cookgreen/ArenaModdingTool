@@ -20,9 +20,9 @@ namespace ArenaModdingTool.Forms
             get { return skill; }
         }
 
-        MBNPCCharacter character;
+        MBBannerlordNPCCharacter character;
 
-        public frmNPCCharacterSkillAddEdit(MBNPCCharacter character, bool isAddOrEdit = true, MBNPCCharacterSkill skill = null)
+        public frmNPCCharacterSkillAddEdit(MBBannerlordNPCCharacter character, bool isAddOrEdit = true, MBNPCCharacterSkill skill = null)
         {
             InitializeComponent();
             this.isAddOrEdit = isAddOrEdit;

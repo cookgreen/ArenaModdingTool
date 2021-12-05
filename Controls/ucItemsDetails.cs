@@ -14,16 +14,16 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucItemsDetails : UserControl
     {
-        private MBItem item;
+        private MBBannerlordItem item;
         private AddEditState addEditState;
         
         public event Action DoSave;
-        public MBItem Item
+        public MBBannerlordItem Item
         {
             get { return item; }
         }
 
-        public ucItemsDetails(MBItem item, AddEditState addEditState)
+        public ucItemsDetails(MBBannerlordItem item, AddEditState addEditState)
         {
             InitializeComponent();
 
@@ -146,7 +146,7 @@ namespace ArenaModdingTool.Controls
             switch(addEditState)
             {
                 case AddEditState.Add:
-                    item = new MBItem();
+                    item = new MBBannerlordItem();
                     break;
             }
 

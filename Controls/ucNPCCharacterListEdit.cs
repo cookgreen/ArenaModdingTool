@@ -15,11 +15,11 @@ namespace ArenaModdingTool.Controls
     {
         private ucNPCCharacterList ucNPCCharacterList;
         private AddEditState state;
-        private MBNPCCharacter selectedCharacter;
+        private MBBannerlordNPCCharacter selectedCharacter;
         private int selectedIndex;
 
-        public event Action<MBNPCCharacter, int, AddEditState> SelectNPCCharacterChanged;
-        public ucNPCCharacterListEdit(MBNPCCharacters characters)
+        public event Action<MBBannerlordNPCCharacter, int, AddEditState> SelectNPCCharacterChanged;
+        public ucNPCCharacterListEdit(MBBannerlordNPCCharacters characters)
         {
             InitializeComponent();
             ucNPCCharacterList = new ucNPCCharacterList(characters);
@@ -30,7 +30,7 @@ namespace ArenaModdingTool.Controls
             state = AddEditState.View;
         }
 
-        private void UcNPCCharacterList_SelectNPCCharacterChanged(MBNPCCharacter character, int index)
+        private void UcNPCCharacterList_SelectNPCCharacterChanged(MBBannerlordNPCCharacter character, int index)
         {
             selectedCharacter = character;
             selectedIndex = index;
@@ -51,7 +51,7 @@ namespace ArenaModdingTool.Controls
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
 
-            MBNPCCharacter character = new MBNPCCharacter();
+            MBBannerlordNPCCharacter character = new MBBannerlordNPCCharacter();
             SelectNPCCharacterChanged?.Invoke(character, -1, state);
         }
 

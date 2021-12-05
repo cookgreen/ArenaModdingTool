@@ -13,14 +13,14 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucHeroList : UserControl
     {
-        private MBHero selectedHero;
-        private MBHeroes heroes;
+        private MBBannerlordHero selectedHero;
+        private MBBannerlordHeroes heroes;
 
-        public MBHero SelectedHero { get { return selectedHero; }  }
+        public MBBannerlordHero SelectedHero { get { return selectedHero; }  }
 
-        public event Action<MBHero, int> SelectHeroChanged;
+        public event Action<MBBannerlordHero, int> SelectHeroChanged;
 
-        public ucHeroList(MBHeroes heroes)
+        public ucHeroList(MBBannerlordHeroes heroes)
         {
             InitializeComponent();
             this.heroes = heroes;

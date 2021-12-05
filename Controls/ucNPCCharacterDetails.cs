@@ -15,13 +15,13 @@ namespace ArenaModdingTool.Controls
     public partial class ucNPCCharacterDetails : UserControl
     {
         private AMProject project;
-        private MBNPCCharacter character;
+        private MBBannerlordNPCCharacter character;
         private AddEditState state;
         private int index;
 
-        public event Action<MBNPCCharacter, AddEditState, int> SaveNPCCharacterInfoFinished;
+        public event Action<MBBannerlordNPCCharacter, AddEditState, int> SaveNPCCharacterInfoFinished;
 
-        public ucNPCCharacterDetails(AMProject project, MBNPCCharacter character, AddEditState state, int index)
+        public ucNPCCharacterDetails(AMProject project, MBBannerlordNPCCharacter character, AddEditState state, int index)
         {
             InitializeComponent();
             this.project = project;

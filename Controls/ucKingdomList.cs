@@ -13,16 +13,16 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucKingdomList : UserControl
     {
-        private MBKingdoms kingdoms;
-        public event Action<MBKingdom, int> SelectKingdomChanged;
+        private MBBannerlordKingdoms kingdoms;
+        public event Action<MBBannerlordKingdom, int> SelectKingdomChanged;
 
-        public ucKingdomList(MBKingdoms kingdoms)
+        public ucKingdomList(MBBannerlordKingdoms kingdoms)
         {
             InitializeComponent();
             loadKingdoms(kingdoms);
         }
 
-        private void loadKingdoms(MBKingdoms kingdoms)
+        private void loadKingdoms(MBBannerlordKingdoms kingdoms)
         {
             this.kingdoms = kingdoms;
 

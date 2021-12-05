@@ -14,11 +14,11 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucNPCCharacterEditor : UserControl
     {
-        private MBNPCCharacters characters;
+        private MBBannerlordNPCCharacters characters;
         private ucNPCCharacterListEdit trooperListCtrl;
         private AMProject project;
 
-        public ucNPCCharacterEditor(AMProject project, MBNPCCharacters characters)
+        public ucNPCCharacterEditor(AMProject project, MBBannerlordNPCCharacters characters)
         {
             InitializeComponent();
             this.characters = characters;
@@ -31,7 +31,7 @@ namespace ArenaModdingTool.Controls
             this.project = project;
         }
 
-        private void NpcListCtrl_SelectNPCCharacterChanged(MBNPCCharacter character, int index, AddEditState state)
+        private void NpcListCtrl_SelectNPCCharacterChanged(MBBannerlordNPCCharacter character, int index, AddEditState state)
         {
             ucNPCCharacterDetails trooperDetailsCtrl = new ucNPCCharacterDetails(project, character, state, index);
             panel2.Controls.Clear();
@@ -40,7 +40,7 @@ namespace ArenaModdingTool.Controls
             trooperDetailsCtrl.SaveNPCCharacterInfoFinished += CharacterDetailsCtrl_SaveNPCCharacterInfoFinished;
         }
 
-        private void CharacterDetailsCtrl_SaveNPCCharacterInfoFinished(MBNPCCharacter savedCharatcer, AddEditState state, int index)
+        private void CharacterDetailsCtrl_SaveNPCCharacterInfoFinished(MBBannerlordNPCCharacter savedCharatcer, AddEditState state, int index)
         {
             if (state == AddEditState.Add)
             {

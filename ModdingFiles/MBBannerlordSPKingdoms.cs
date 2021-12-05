@@ -8,21 +8,21 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("Kingdoms")]
-    public class MBKingdoms
+    public class MBBannerlordKingdoms
     {
         [XmlElement("Kingdom")]
-        public List<MBKingdom> Kingdoms { get; set; }
+        public List<MBBannerlordKingdom> Kingdoms { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
 
-        public MBKingdoms()
+        public MBBannerlordKingdoms()
         {
-            Kingdoms = new List<MBKingdom>();
+            Kingdoms = new List<MBBannerlordKingdom>();
         }
     }
 
     [XmlRoot("Kingdom")]
-    public class MBKingdom
+    public class MBBannerlordKingdom
     {
         [XmlAttribute]
         public string id { get; set; }
@@ -69,7 +69,7 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArrayItem("policy")]
         public List<KingdomPolicy> Policies { get; set; }
 
-        public MBKingdom()
+        public MBBannerlordKingdom()
         {
             Relationships = new List<KingdomRelationship>();
             Policies = new List<KingdomPolicy>();

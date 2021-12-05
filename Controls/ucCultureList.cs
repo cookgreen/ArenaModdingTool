@@ -13,10 +13,10 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucCultureList : UserControl
     {
-        private MBCultures cultures;
-        public event Action<MBCulture, int> SelectCultureChanged;
+        private MBBannerlordCultures cultures;
+        public event Action<MBBannerlordCulture, int> SelectCultureChanged;
 
-        public ucCultureList(MBCultures cultures)
+        public ucCultureList(MBBannerlordCultures cultures)
         {
             InitializeComponent();
             this.cultures = cultures;

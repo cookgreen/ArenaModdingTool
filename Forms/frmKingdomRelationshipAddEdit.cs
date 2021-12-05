@@ -15,7 +15,7 @@ namespace ArenaModdingTool.Forms
     {
         private KingdomRelationship relationship;
         private AMProject project;
-        private MBKingdom kingdom;
+        private MBBannerlordKingdom kingdom;
         private bool isAddOrEdit;
 
         public KingdomRelationship Relationship
@@ -23,7 +23,7 @@ namespace ArenaModdingTool.Forms
             get { return relationship; }
         }
 
-        public frmKingdomRelationshipAddEdit(AMProject project, MBKingdom kingdom, bool isAddOrEdit, KingdomRelationship relationship = null)
+        public frmKingdomRelationshipAddEdit(AMProject project, MBBannerlordKingdom kingdom, bool isAddOrEdit, KingdomRelationship relationship = null)
         {
             InitializeComponent();
             this.project = project;

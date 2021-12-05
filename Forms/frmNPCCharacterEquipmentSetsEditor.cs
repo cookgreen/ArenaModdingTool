@@ -15,9 +15,9 @@ namespace ArenaModdingTool.Forms
     {
         private List<MBNPCCharacterEquipmentSet> equipmentSets;
         public List<MBNPCCharacterEquipmentSet> EquipmentSets { get { return equipmentSets; } }
-        private MBNPCCharacter character;
+        private MBBannerlordNPCCharacter character;
 
-        public frmNPCCharacterEquipmentSetsEditor(MBNPCCharacter character)
+        public frmNPCCharacterEquipmentSetsEditor(MBBannerlordNPCCharacter character)
         {
             InitializeComponent();
             this.character = character;

@@ -16,8 +16,8 @@ namespace ArenaModdingTool.Forms
     public partial class frmNPCCharacterListViewer : Form
     {
         private AMProject project;
-        private MBNPCCharacter selectedCharacter;
-        public MBNPCCharacter SelectedCharacter
+        private MBBannerlordNPCCharacter selectedCharacter;
+        public MBBannerlordNPCCharacter SelectedCharacter
         {
             get { return selectedCharacter; }
         }
@@ -60,7 +60,7 @@ namespace ArenaModdingTool.Forms
             panel1.Controls.Add(tabControl);
         }
 
-        private void UcCharacterList_SelectNPCCharacterChanged(MBNPCCharacter character, int index)
+        private void UcCharacterList_SelectNPCCharacterChanged(MBBannerlordNPCCharacter character, int index)
         {
             selectedCharacter = character;
         }

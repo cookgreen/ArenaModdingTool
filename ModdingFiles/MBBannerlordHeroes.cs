@@ -8,21 +8,21 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("Heroes")]
-    public class MBHeroes
+    public class MBBannerlordHeroes
     {
         [XmlElement("Hero")]
-        public List<MBHero> Heroes { get; set; }
+        public List<MBBannerlordHero> Heroes { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
 
-        public MBHeroes()
+        public MBBannerlordHeroes()
         {
-            Heroes = new List<MBHero>();
+            Heroes = new List<MBBannerlordHero>();
         }
     }
 
     [XmlRoot("Hero")]
-    public class MBHero
+    public class MBBannerlordHero
     {
         [XmlAttribute]
         public string id { get; set; }

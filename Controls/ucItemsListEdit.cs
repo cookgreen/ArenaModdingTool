@@ -13,14 +13,14 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucItemsListEdit : UserControl
     {
-        private MBItem selectedItem;
+        private MBBannerlordItem selectedItem;
         private ucItemsList itemsListCtrl;
         private AddEditState addEditState;
         private int selectedIndex;
 
         public event Action AddEditStateChanged;
         public event Action<int> SelectedItemChanged;
-        public MBItem SelectedItem
+        public MBBannerlordItem SelectedItem
         {
             get { return selectedItem; }
         }
@@ -29,7 +29,7 @@ namespace ArenaModdingTool.Controls
             get { return addEditState; }
         }
 
-        public ucItemsListEdit(MBItems items)
+        public ucItemsListEdit(MBBannerlordItems items)
         {
             InitializeComponent();
             panel2.Controls.Clear();
@@ -39,7 +39,7 @@ namespace ArenaModdingTool.Controls
             panel2.Controls.Add(itemsListCtrl);
         }
 
-        private void ItemsListCtrl_SelectedItemChanged(MBItem item, int index)
+        private void ItemsListCtrl_SelectedItemChanged(MBBannerlordItem item, int index)
         {
             selectedItem = item;
             selectedIndex = index;

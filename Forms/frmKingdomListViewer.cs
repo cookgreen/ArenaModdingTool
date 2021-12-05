@@ -15,10 +15,10 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmKingdomListViewer : Form
     {
-        private MBKingdom selectedKingdom;
+        private MBBannerlordKingdom selectedKingdom;
         private AMProject project;
 
-        public MBKingdom SelectedKingdom
+        public MBBannerlordKingdom SelectedKingdom
         {
             get { return selectedKingdom; }
         }
@@ -61,7 +61,7 @@ namespace ArenaModdingTool.Forms
             panel1.Controls.Add(tabControl);
         }
 
-        private void UcKingdomList_SelectKingdomChanged(MBKingdom kingdom, int index)
+        private void UcKingdomList_SelectKingdomChanged(MBBannerlordKingdom kingdom, int index)
         {
             selectedKingdom = kingdom;
         }

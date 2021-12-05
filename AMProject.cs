@@ -51,35 +51,35 @@ namespace ArenaModdingTool
 
                 if (type == "Kingdom")
                 {
-                    MBKingdoms mbKingdoms = new MBKingdoms();
+                    MBBannerlordKingdoms mbKingdoms = new MBBannerlordKingdoms();
                     xmlObjectLoader.Save(mbKingdoms);
                     mbKingdoms.FilePath = destFileFullPath;
                     bannerlordModule.ModuleKingdoms.Add(mbKingdoms);
                 }
                 else if (type == "NPCCharacter")
                 {
-                    MBNPCCharacters mbNPCCharacters = new MBNPCCharacters();
+                    MBBannerlordNPCCharacters mbNPCCharacters = new MBBannerlordNPCCharacters();
                     xmlObjectLoader.Save(mbNPCCharacters);
                     mbNPCCharacters.FilePath = destFileFullPath;
                     bannerlordModule.ModuleNPCCharacters.Add(mbNPCCharacters);
                 }
                 else if (type == "Items")
                 {
-                    MBItems mbItems = new MBItems();
+                    MBBannerlordItems mbItems = new MBBannerlordItems();
                     xmlObjectLoader.Save(mbItems);
                     mbItems.FilePath = destFileFullPath;
                     bannerlordModule.ModuleItems.Add(mbItems);
                 }
                 else if (type == "Heroes")
                 {
-                    MBHeroes mbHeroes = new MBHeroes();
+                    MBBannerlordHeroes mbHeroes = new MBBannerlordHeroes();
                     xmlObjectLoader.Save(mbHeroes);
                     mbHeroes.FilePath = destFileFullPath;
                     bannerlordModule.ModuleHeroes.Add(mbHeroes);
                 }
                 else if (type == "Cultures")
                 {
-                    MBCultures mbCultures = new MBCultures();
+                    MBBannerlordCultures mbCultures = new MBBannerlordCultures();
                     xmlObjectLoader.Save(mbCultures);
                     mbCultures.FilePath = destFileFullPath;
                     bannerlordModule.ModuleCultures.Add(mbCultures);

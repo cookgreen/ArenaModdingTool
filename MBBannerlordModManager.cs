@@ -57,7 +57,7 @@ namespace ArenaModdingTool
                     {
                         if (dii.EnumerateFiles().Where(o => o.Name == "SubModule.xml").Count() == 1)
                         {
-                            MBModule module;
+                            ModdingFiles.MBBannerlordModule module;
                             var moduleFile = dii.EnumerateFiles().Where(o => o.Name == "SubModule.xml").FirstOrDefault();
                             XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(moduleFile.FullName);
                             xmlObjectLoader.Load(out module);

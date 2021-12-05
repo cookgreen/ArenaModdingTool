@@ -8,20 +8,20 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("NPCCharacters")]
-    public class MBNPCCharacters
+    public class MBBannerlordNPCCharacters
     {
         [XmlElement("NPCCharacter")]
-        public List<MBNPCCharacter> NPCCharacters { get; set; }
+        public List<MBBannerlordNPCCharacter> NPCCharacters { get; set; }
         public string FilePath { get; set; }
 
-        public MBNPCCharacters()
+        public MBBannerlordNPCCharacters()
         {
-            NPCCharacters = new List<MBNPCCharacter>();
+            NPCCharacters = new List<MBBannerlordNPCCharacter>();
         }
     }
 
     [XmlRoot("NPCCharacter")]
-    public class MBNPCCharacter
+    public class MBBannerlordNPCCharacter
     {
 
         [XmlAttribute]
@@ -60,7 +60,7 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArrayItem("upgrade_target")]
         public List<MBNPCCharacterUpgradeTarget> UpgradeTargets { get; set; }
 
-        public MBNPCCharacter()
+        public MBBannerlordNPCCharacter()
         {
             Skills = new List<MBNPCCharacterSkill>();
             EquipmentSets = new List<MBNPCCharacterEquipmentSet>();

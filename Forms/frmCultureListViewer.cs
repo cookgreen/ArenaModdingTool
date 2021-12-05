@@ -24,7 +24,7 @@ namespace ArenaModdingTool.Forms
             loadCulture();
         }
 
-        public MBCulture SelectedCulture { get; set; }
+        public MBBannerlordCulture SelectedCulture { get; set; }
 
         private void loadCulture()
         {
@@ -58,7 +58,7 @@ namespace ArenaModdingTool.Forms
             panel1.Controls.Add(tabControl);
         }
 
-        private void UcCultureList_SelectCultureChanged(MBCulture culture, int index)
+        private void UcCultureList_SelectCultureChanged(MBBannerlordCulture culture, int index)
         {
             SelectedCulture = culture;
         }

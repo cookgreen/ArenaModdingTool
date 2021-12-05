@@ -8,20 +8,20 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("SPCultures")]
-    public class MBCultures
+    public class MBBannerlordCultures
     {
         [XmlElement("Culture")]
-        public List<MBCulture> Cultures { get; set; }
+        public List<MBBannerlordCulture> Cultures { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
 
-        public MBCultures()
+        public MBBannerlordCultures()
         {
-            Cultures = new List<MBCulture>();
+            Cultures = new List<MBBannerlordCulture>();
         }
     }
 
-    public class MBCulture
+    public class MBBannerlordCulture
     {
         [XmlAttribute]
         public string id { get; set; }
@@ -191,7 +191,7 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArrayItem("template")]
         public List<MBCultureTemplateName> tournament_team_templates_four_participant { get; set; }
 
-        public MBCulture()
+        public MBBannerlordCulture()
         {
             MaleNames = new List<MBCultureName>();
             FemaleNames = new List<MBCultureName>();

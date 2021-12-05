@@ -13,11 +13,11 @@ namespace ArenaModdingTool.Controls
     {
         private ucHeroList ucHeroList;
         private AddEditState state;
-        private MBHero selectedHero;
+        private MBBannerlordHero selectedHero;
         private int selectedIndex;
 
-        public event Action<MBHero, int, AddEditState> SelectedHeroChanged;
-        public ucHeroListEdit(MBHeroes heroes)
+        public event Action<MBBannerlordHero, int, AddEditState> SelectedHeroChanged;
+        public ucHeroListEdit(MBBannerlordHeroes heroes)
         {
             InitializeComponent();
             ucHeroList = new ucHeroList(heroes);
@@ -28,7 +28,7 @@ namespace ArenaModdingTool.Controls
             state = AddEditState.View;
         }
 
-        private void UcHeroList_SelectHeroChanged(MBHero selectedHero, int selectedIndex)
+        private void UcHeroList_SelectHeroChanged(MBBannerlordHero selectedHero, int selectedIndex)
         {
             this.selectedHero = selectedHero;
             this.selectedIndex = selectedIndex;
@@ -49,7 +49,7 @@ namespace ArenaModdingTool.Controls
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
 
-            MBHero hero = new MBHero();
+            MBBannerlordHero hero = new MBBannerlordHero();
             SelectedHeroChanged?.Invoke(hero, -1, state);
         }
 

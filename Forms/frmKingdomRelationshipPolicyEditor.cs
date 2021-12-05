@@ -14,7 +14,7 @@ namespace ArenaModdingTool.Forms
     public partial class frmKingdomRelationshipPolicyEditor : Form
     {
         private AMProject project;
-        private MBKingdom kingdom;
+        private MBBannerlordKingdom kingdom;
         private List<KingdomRelationship> relationships;
         private List<KingdomPolicy> policies;
         public List<KingdomRelationship> Relationships
@@ -26,7 +26,7 @@ namespace ArenaModdingTool.Forms
             get { return policies; }
         }
 
-        public frmKingdomRelationshipPolicyEditor(AMProject project, MBKingdom kingdom)
+        public frmKingdomRelationshipPolicyEditor(AMProject project, MBBannerlordKingdom kingdom)
         {
             InitializeComponent();
             this.project = project;
@@ -72,11 +72,6 @@ namespace ArenaModdingTool.Forms
             }
         }
 
-        private void btnAddPolicy_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnModifyRelationship_Click(object sender, EventArgs e)
         {
             int index = relationshipList.SelectedIndices[0];
@@ -98,20 +93,45 @@ namespace ArenaModdingTool.Forms
             }
         }
 
-        private void btnModifyPolicy_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDeleteRelationship_Click(object sender, EventArgs e)
         {
             int index = relationshipList.SelectedIndices[0];
             relationshipList.Items.RemoveAt(index);
         }
 
+        private void btnAddPolicy_Click(object sender, EventArgs e)
+        {
+            frmKingdomPolicyAddEdit kingdomPolicyAddEdit = new frmKingdomPolicyAddEdit(project, kingdom, true);
+            if (kingdomPolicyAddEdit.ShowDialog() == DialogResult.OK)
+            {
+                var policy = kingdomPolicyAddEdit.KingdomPolicy;
+                ListViewItem newItem = new ListViewItem();
+                newItem.Text = policy.id;
+                policyList.Items.Add(newItem);
+            }
+        }
+
+        private void btnModifyPolicy_Click(object sender, EventArgs e)
+        {
+            int index = policyList.SelectedIndices[0];
+            var lvi = policyList.Items[index];
+            KingdomPolicy kingdomPolicy = new KingdomPolicy();
+            kingdomPolicy.id = lvi.Text;
+            frmKingdomPolicyAddEdit kingdomRelationshipAddEdit = new frmKingdomPolicyAddEdit(project, kingdom, false, kingdomPolicy);
+            if (kingdomRelationshipAddEdit.ShowDialog() == DialogResult.OK)
+            {
+                var newPolicy = kingdomRelationshipAddEdit.KingdomPolicy;
+                ListViewItem NewItem = new ListViewItem();
+                NewItem.Text = newPolicy.id;
+                policyList.Items.Remove(lvi);
+                policyList.Items.Insert(index, NewItem);
+            }
+        }
+
         private void btnDeletePolicy_Click(object sender, EventArgs e)
         {
-
+            int index = policyList.SelectedIndices[0];
+            policyList.Items.RemoveAt(index);
         }
 
         private void btnOK_Click(object sender, EventArgs e)

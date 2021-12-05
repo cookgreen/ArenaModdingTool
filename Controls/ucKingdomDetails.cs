@@ -15,12 +15,12 @@ namespace ArenaModdingTool.Controls
     public partial class ucKingdomDetails : UserControl
     {
         private AddEditState state;
-        private MBKingdom kingdom;
+        private MBBannerlordKingdom kingdom;
         private int index;
         private AMProject project;
 
-        public event Action<MBKingdom, AddEditState, int> SaveKingdomInfoFinished;
-        public ucKingdomDetails(AMProject project, MBKingdom kingdom, AddEditState state, int index)
+        public event Action<MBBannerlordKingdom, AddEditState, int> SaveKingdomInfoFinished;
+        public ucKingdomDetails(AMProject project, MBBannerlordKingdom kingdom, AddEditState state, int index)
         {
             InitializeComponent();
             loadKingdomDetails(kingdom);
@@ -37,7 +37,7 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void loadKingdomDetails(MBKingdom kingdom)
+        private void loadKingdomDetails(MBBannerlordKingdom kingdom)
         {
             this.kingdom = kingdom;
             txtAlternativeColor.Text = kingdom.alternative_color;

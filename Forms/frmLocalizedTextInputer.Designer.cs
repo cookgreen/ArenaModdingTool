@@ -41,7 +41,7 @@
             this.lbLocalizedID.AutoSize = true;
             this.lbLocalizedID.Location = new System.Drawing.Point(13, 13);
             this.lbLocalizedID.Name = "lbLocalizedID";
-            this.lbLocalizedID.Size = new System.Drawing.Size(83, 12);
+            this.lbLocalizedID.Size = new System.Drawing.Size(111, 15);
             this.lbLocalizedID.TabIndex = 0;
             this.lbLocalizedID.Text = "localized ID:";
             // 
@@ -50,22 +50,22 @@
             this.lbOriginalText.AutoSize = true;
             this.lbOriginalText.Location = new System.Drawing.Point(15, 48);
             this.lbOriginalText.Name = "lbOriginalText";
-            this.lbOriginalText.Size = new System.Drawing.Size(35, 12);
+            this.lbOriginalText.Size = new System.Drawing.Size(47, 15);
             this.lbOriginalText.TabIndex = 1;
             this.lbOriginalText.Text = "Text:";
             // 
             // txtLocalizedID
             // 
-            this.txtLocalizedID.Location = new System.Drawing.Point(102, 10);
+            this.txtLocalizedID.Location = new System.Drawing.Point(130, 10);
             this.txtLocalizedID.Name = "txtLocalizedID";
-            this.txtLocalizedID.Size = new System.Drawing.Size(434, 21);
+            this.txtLocalizedID.Size = new System.Drawing.Size(406, 25);
             this.txtLocalizedID.TabIndex = 2;
             // 
             // txtOriginalText
             // 
-            this.txtOriginalText.Location = new System.Drawing.Point(102, 48);
+            this.txtOriginalText.Location = new System.Drawing.Point(130, 48);
             this.txtOriginalText.Name = "txtOriginalText";
-            this.txtOriginalText.Size = new System.Drawing.Size(434, 323);
+            this.txtOriginalText.Size = new System.Drawing.Size(406, 323);
             this.txtOriginalText.TabIndex = 3;
             this.txtOriginalText.Text = "";
             // 

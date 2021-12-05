@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("Module")]
-    public class MBModule
+    public class MBBannerlordModule
     {
         [XmlElement]
         public MBSubModuleInfoElement Name { get; set; }
@@ -29,13 +29,13 @@ namespace ArenaModdingTool.ModdingFiles
 
         [XmlArray("SubModules")]
         [XmlArrayItem("SubModule")]
-        public List<MBSubModule> SubModules { get; set; }
+        public List<MBBannerlordSubModule> SubModules { get; set; }
 
         [XmlArray("Xmls")]
         [XmlArrayItem("XmlNode")]
         public List<MBXmlNode> XmlNodes { get; set; }
 
-        public MBModule()
+        public MBBannerlordModule()
         {
             Name = new MBSubModuleInfoElement();
             Id = new MBSubModuleInfoElement();
@@ -46,11 +46,11 @@ namespace ArenaModdingTool.ModdingFiles
             Official = new MBSubModuleInfoElement();
             DependedModules = new MBSubModuleDepencyModules();
 
-            SubModules = new List<MBSubModule>();
+            SubModules = new List<MBBannerlordSubModule>();
             XmlNodes = new List<MBXmlNode>();
         }
     }
-    public class MBSubModule
+    public class MBBannerlordSubModule
     {
         [XmlElement]
         public MBSubModuleInfoElement Name { get; set; }
@@ -63,7 +63,7 @@ namespace ArenaModdingTool.ModdingFiles
         [XmlArrayItem("Tag")]
         public List<MBModuleTag> Tags { get; set; }
 
-        public MBSubModule()
+        public MBBannerlordSubModule()
         {
             Name = new MBSubModuleInfoElement();
             DLLName = new MBSubModuleInfoElement();

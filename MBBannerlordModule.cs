@@ -12,12 +12,12 @@ namespace ArenaModdingTool
 {
     public class MBBannerlordModule
     {
-        private MBModule moduleInfo;
-        private List<MBKingdoms> moduleKingdoms;
-        private List<MBCultures> moduleCultures;
-        private List<MBHeroes> moduleHeroes;
-        private List<MBItems> moduleItems;
-        private List<MBNPCCharacters> moduleNPCCharacters;
+        private ModdingFiles.MBBannerlordModule moduleInfo;
+        private List<MBBannerlordKingdoms> moduleKingdoms;
+        private List<MBBannerlordCultures> moduleCultures;
+        private List<MBBannerlordHeroes> moduleHeroes;
+        private List<MBBannerlordItems> moduleItems;
+        private List<MBBannerlordNPCCharacters> moduleNPCCharacters;
         private string path;
 
         public string ModuleDataPath
@@ -33,11 +33,11 @@ namespace ArenaModdingTool
         {
             this.path = path;
 
-            moduleKingdoms = new List<MBKingdoms>();
-            moduleCultures = new List<MBCultures>();
-            moduleHeroes = new List<MBHeroes>();
-            moduleItems = new List<MBItems>();
-            moduleNPCCharacters = new List<MBNPCCharacters>();
+            moduleKingdoms = new List<MBBannerlordKingdoms>();
+            moduleCultures = new List<MBBannerlordCultures>();
+            moduleHeroes = new List<MBBannerlordHeroes>();
+            moduleItems = new List<MBBannerlordItems>();
+            moduleNPCCharacters = new List<MBBannerlordNPCCharacters>();
 
             loadMod();
         }
@@ -45,7 +45,7 @@ namespace ArenaModdingTool
         private void loadMod()
         {
             XmlObjectLoader xmlLoader = new XmlObjectLoader(Path.Combine(path, "SubModule.xml"));
-            xmlLoader.Load<MBModule>(out moduleInfo);
+            xmlLoader.Load<ModdingFiles.MBBannerlordModule>(out moduleInfo);
 
             var findedSPKingdomsNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "Kingdoms");
             foreach (var node in findedSPKingdomsNode)
@@ -60,7 +60,7 @@ namespace ArenaModdingTool
             var findedSPCulturesNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "SPCultures");
             foreach (var node in findedSPCulturesNode)
             {
-                MBCultures cultures;
+                MBBannerlordCultures cultures;
                 string culturesXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path) + ".xml";
                 if (File.Exists(culturesXmlPath))
                 {
@@ -74,7 +74,7 @@ namespace ArenaModdingTool
             var findedHeroesNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "Heroes");
             foreach (var node in findedHeroesNode)
             {
-                MBHeroes heroes;
+                MBBannerlordHeroes heroes;
                 string heroesXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path) + ".xml";
                 if (File.Exists(heroesXmlPath))
                 {
@@ -88,7 +88,7 @@ namespace ArenaModdingTool
             var findedItemNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "Items");
             foreach (var node in findedItemNode)
             {
-                MBItems items;
+                MBBannerlordItems items;
                 string itemsXmlPath = Path.Combine(path, "ModuleData\\" + node.XmlName.path);
                 if (Directory.Exists(itemsXmlPath))
                 {
@@ -139,7 +139,7 @@ namespace ArenaModdingTool
 
         public void LoadKingdoms(string destFileFullPath)
         {
-            MBKingdoms kingdoms;
+            MBBannerlordKingdoms kingdoms;
             var xmlLoader = new XmlObjectLoader(destFileFullPath);
             xmlLoader.Load(out kingdoms);
             kingdoms.FilePath = destFileFullPath;
@@ -148,34 +148,34 @@ namespace ArenaModdingTool
 
         public void LoadNPCCharacters(string destFileFullPath)
         {
-            MBNPCCharacters characters;
+            MBBannerlordNPCCharacters characters;
             var xmlLoader = new XmlObjectLoader(destFileFullPath);
             xmlLoader.Load(out characters);
             characters.FilePath = destFileFullPath;
             moduleNPCCharacters.Add(characters);
         }
 
-        public MBModule ModuleInfo
+        public ModdingFiles.MBBannerlordModule ModuleInfo
         {
             get { return moduleInfo; }
         }
-        public List<MBItems> ModuleItems
+        public List<MBBannerlordItems> ModuleItems
         {
             get { return moduleItems; }
         }
-        public List<MBKingdoms> ModuleKingdoms
+        public List<MBBannerlordKingdoms> ModuleKingdoms
         {
             get { return moduleKingdoms; }
         }
-        public List<MBCultures> ModuleCultures
+        public List<MBBannerlordCultures> ModuleCultures
         {
             get { return moduleCultures; }
         }
-        public List<MBHeroes> ModuleHeroes
+        public List<MBBannerlordHeroes> ModuleHeroes
         {
             get { return moduleHeroes; }
         }
-        public List<MBNPCCharacters> ModuleNPCCharacters
+        public List<MBBannerlordNPCCharacters> ModuleNPCCharacters
         {
             get { return moduleNPCCharacters; }
         }

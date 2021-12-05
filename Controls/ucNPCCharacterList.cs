@@ -12,10 +12,10 @@ namespace ArenaModdingTool.Controls
     public class ucNPCCharacterList : UserControl
     {
         private TreeView npcCharacterList;
-        private MBNPCCharacters npcCharacters;
-        private MBNPCCharacter selectedCharacter;
-        public event Action<MBNPCCharacter, int> SelectNPCCharacterChanged;
-        public MBNPCCharacter SelectedCharacter
+        private MBBannerlordNPCCharacters npcCharacters;
+        private MBBannerlordNPCCharacter selectedCharacter;
+        public event Action<MBBannerlordNPCCharacter, int> SelectNPCCharacterChanged;
+        public MBBannerlordNPCCharacter SelectedCharacter
         {
             get { return selectedCharacter; }
         }
@@ -44,7 +44,7 @@ namespace ArenaModdingTool.Controls
 
         }
 
-        public ucNPCCharacterList(MBNPCCharacters npcCharacters)
+        public ucNPCCharacterList(MBBannerlordNPCCharacters npcCharacters)
         {
             InitializeComponent();
             this.npcCharacters = npcCharacters;

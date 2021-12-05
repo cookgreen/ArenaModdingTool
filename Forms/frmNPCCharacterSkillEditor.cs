@@ -13,14 +13,14 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmNPCCharacterSkillEditor : Form
     {
-        private MBNPCCharacter character;
+        private MBBannerlordNPCCharacter character;
         private List<MBNPCCharacterSkill> skills;
         public List<MBNPCCharacterSkill> Skills
         {
             get { return skills; }
         }
 
-        public frmNPCCharacterSkillEditor(MBNPCCharacter character)
+        public frmNPCCharacterSkillEditor(MBBannerlordNPCCharacter character)
         {
             InitializeComponent();
             this.character = character;

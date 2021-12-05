@@ -313,12 +313,12 @@
     <Compile Include="LanguageManager.cs" />
     <Compile Include="MBBannerlordModManager.cs" />
     <Compile Include="MBBannerlordModule.cs" />
-    <Compile Include="ModdingFiles\MBCultures.cs" />
-    <Compile Include="ModdingFiles\MBHeroes.cs" />
-    <Compile Include="ModdingFiles\MBItems.cs" />
-    <Compile Include="ModdingFiles\MBNPCCharacters.cs" />
-    <Compile Include="ModdingFiles\MBSPKingdoms.cs" />
-    <Compile Include="ModdingFiles\MBSubModule.cs" />
+    <Compile Include="ModdingFiles\MBBannerlordCulture.cs" />
+    <Compile Include="ModdingFiles\MBBannerlordHeroes.cs" />
+    <Compile Include="ModdingFiles\MBBannerlordItems.cs" />
+    <Compile Include="ModdingFiles\MBBannerlordNPCCharacters.cs" />
+    <Compile Include="ModdingFiles\MBBannerlordSPKingdoms.cs" />
+    <Compile Include="ModdingFiles\MBBannerlordModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecentOperations.cs" />
@@ -405,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKingdomListViewer.resx">
       <DependentUpon>frmKingdomListViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKingdomPolicyAddEdit.resx">
+      <DependentUpon>frmKingdomPolicyAddEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKingdomRelationshipAddEdit.resx">
       <DependentUpon>frmKingdomRelationshipAddEdit.cs</DependentUpon>

@@ -24,7 +24,7 @@ namespace ArenaModdingTool.Forms
             loadHeroes();
         }
 
-        public MBHero SelectedHero { get; set; }
+        public MBBannerlordHero SelectedHero { get; set; }
 
         private void loadHeroes()
         {
@@ -58,7 +58,7 @@ namespace ArenaModdingTool.Forms
             panel1.Controls.Add(tabControl);
         }
 
-        private void UcCultureList_SelectHeroChanged(ModdingFiles.MBHero hero, int index)
+        private void UcCultureList_SelectHeroChanged(ModdingFiles.MBBannerlordHero hero, int index)
         {
             SelectedHero = hero;
         }

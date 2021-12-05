@@ -8,24 +8,24 @@ using System.Xml.Serialization;
 namespace ArenaModdingTool.ModdingFiles
 {
     [XmlRoot("Items")]
-    public class MBItems
+    public class MBBannerlordItems
     {
         [XmlElement("Item")]
-        public List<MBItem> Items { get; set; }
+        public List<MBBannerlordItem> Items { get; set; }
         [XmlElement("CraftedItem")]
         public List<MBCraftedItems> CraftedItems { get; set; }
         [XmlIgnore]
         public string FilePath { get; set; }
 
-        public MBItems()
+        public MBBannerlordItems()
         {
-            Items = new List<MBItem>();
+            Items = new List<MBBannerlordItem>();
             CraftedItems = new List<MBCraftedItems>();
         }
     }
 
     [XmlRoot("Item")]
-    public class MBItem
+    public class MBBannerlordItem
     {
         [XmlAttribute]
         public string id { get; set; }

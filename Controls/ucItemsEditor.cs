@@ -15,12 +15,12 @@ namespace ArenaModdingTool.Controls
     public partial class ucItemsEditor : UserControl
     {
         private AMProject currentProject;
-        private MBItems items;
+        private MBBannerlordItems items;
         private ucItemsListEdit itemsListEdit;
         private ucItemsDetails itemDetailsCtrl;
         private int editIndex;
 
-        public ucItemsEditor(AMProject currentProject, MBItems items)
+        public ucItemsEditor(AMProject currentProject, MBBannerlordItems items)
         {
             InitializeComponent();
 

@@ -14,13 +14,13 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucItemsList : UserControl
     {
-        private MBItems items;
+        private MBBannerlordItems items;
         private int index;
-        private MBItem selectedItem;
+        private MBBannerlordItem selectedItem;
 
-        public event Action<MBItem, int> SelectedItemChanged;
+        public event Action<MBBannerlordItem, int> SelectedItemChanged;
 
-        public ucItemsList(MBItems items)
+        public ucItemsList(MBBannerlordItems items)
         {
             InitializeComponent();
             this.items = items;
@@ -41,7 +41,7 @@ namespace ArenaModdingTool.Controls
         {
             if (e.Node != null)
             {
-                MBItem item = e.Node.Tag as MBItem;
+                MBBannerlordItem item = e.Node.Tag as MBBannerlordItem;
                 selectedItem = item;
                 index = treeView1.Nodes.IndexOf(e.Node);
                 SelectedItemChanged?.Invoke(item, index);

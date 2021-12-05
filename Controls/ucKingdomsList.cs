@@ -15,8 +15,8 @@ namespace ArenaModdingTool.Controls
     public partial class ucKingdomsList : UserControl
     {
         private AddEditState state;
-        public event Action<MBKingdom, int> SelectKingdomChanged;
-        private MBKingdoms kingdoms;
+        public event Action<MBBannerlordKingdom, int> SelectKingdomChanged;
+        private MBBannerlordKingdoms kingdoms;
 
         public AddEditState State
         {
@@ -29,7 +29,7 @@ namespace ArenaModdingTool.Controls
             state = AddEditState.View;
         }
 
-        public ucKingdomsList(MBKingdoms kingdoms)
+        public ucKingdomsList(MBBannerlordKingdoms kingdoms)
         {
             this.kingdoms = kingdoms;
             InitializeComponent();
@@ -54,7 +54,7 @@ namespace ArenaModdingTool.Controls
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
 
-            MBKingdom kingdom = new MBKingdom();
+            MBBannerlordKingdom kingdom = new MBBannerlordKingdom();
             SelectKingdomChanged?.Invoke(kingdom, -1);
         }
 
