@@ -53,7 +53,7 @@ namespace ArenaModdingTool.Forms
             }
             mbXmlNode = new MBXmlNode();
             mbXmlNode.XmlName = new MBXmlNodeName();
-            mbXmlNode.XmlName.id = "Items";
+            mbXmlNode.XmlName.id = fileType;
             mbXmlNode.XmlName.path = txtFileName.Text;
             mbXmlNode.IncludedGameTypes = new MBXmlNodeIncludedGameTypes();
             mbXmlNode.IncludedGameTypes.GameTypes = new List<MBSubModuleInfoElement>();

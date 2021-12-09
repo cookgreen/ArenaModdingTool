@@ -102,21 +102,18 @@ namespace ArenaModdingTool
             }
         }
 
-        private void btnFactions_Click(object sender, EventArgs e)
-        {
-            string errMsg = string.Empty;
+        #region Five main features
 
+        private void btnKingdoms_Click(object sender, EventArgs e)
+        {
             if (!currentProject.BannerlordModule.HasModuleKingdomFile)
             {
-                if (MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
-                     DialogResult.Yes)
-                {
-                    return;
-                }
-                else
+                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
                 {
                     frmCreateNewFile frmCreateNewFile = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "SPKingdoms");
                     var fileName = frmCreateNewFile.FileName;
+                    string errMsg;
                     bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Kingdom", fileName, out errMsg);
 
                     if (!canLoaded)
@@ -152,24 +149,19 @@ namespace ArenaModdingTool
 
         private void btnCultures_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("WIP!");
         }
 
         private void btnNPCCharacters_Click(object sender, EventArgs e)
         {
-            string errMsg = string.Empty;
             bool isContinue = true;
-
             if (!currentProject.BannerlordModule.HasModuleCharacterFile)
             {
-                if (MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
-                     DialogResult.Yes)
-                {
-                    return;
-                }
-                else
+                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
                 {
                     frmCreateNewFile frmCreateNewFile = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "NPCCharacters");
+                    string errMsg;
                     if (frmCreateNewFile.ShowDialog() == DialogResult.OK)
                     {
                         string fileName = frmCreateNewFile.FileName;
@@ -216,27 +208,23 @@ namespace ArenaModdingTool
 
         private void btnHeros_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("WIP!");
         }
 
         private void btnItems_Click(object sender, EventArgs e)
         {
-            string errMsg = string.Empty;
             bool isContinue = true;
 
             if (currentProject.BannerlordModule.ModuleItems.Count == 0)
             {
-                if (MessageBox.Show(Helper.LOC("str_info_message_no_any_items_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) !=
-                     DialogResult.Yes)
-                {
-                    return;
-                }
-                else
+                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_items_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
                 {
                     frmCreateNewFile createNewFileWin = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "Items");
                     if (createNewFileWin.ShowDialog() == DialogResult.OK)
                     {
                         string fileName = createNewFileWin.FileName;
+                        string errMsg;
                         bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Item", fileName, out errMsg);
 
                         if (!canLoaded)
@@ -277,6 +265,8 @@ namespace ArenaModdingTool
                 panelMain.Controls.Add(tabControl);
             }
         }
+
+        #endregion
 
         private void mnuImport_Click(object sender, EventArgs e)
         {

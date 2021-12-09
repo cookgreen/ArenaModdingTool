@@ -250,7 +250,7 @@
             this.btnKingdoms.TabIndex = 0;
             this.btnKingdoms.Text = "Kingdoms";
             this.btnKingdoms.UseVisualStyleBackColor = true;
-            this.btnKingdoms.Click += new System.EventHandler(this.btnFactions_Click);
+            this.btnKingdoms.Click += new System.EventHandler(this.btnKingdoms_Click);
             // 
             // panelMain
             // 
