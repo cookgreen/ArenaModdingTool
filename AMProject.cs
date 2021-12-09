@@ -56,7 +56,7 @@ namespace ArenaModdingTool
                     mbKingdoms.FilePath = destFileFullPath;
                     bannerlordModule.ModuleKingdoms.Add(mbKingdoms);
                 }
-                else if (type == "NPCCharacter")
+                else if (type == "NPCCharacters")
                 {
                     MBBannerlordNPCCharacters mbNPCCharacters = new MBBannerlordNPCCharacters();
                     xmlObjectLoader.Save(mbNPCCharacters);
