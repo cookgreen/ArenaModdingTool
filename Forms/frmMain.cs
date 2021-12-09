@@ -106,45 +106,56 @@ namespace ArenaModdingTool
 
         private void btnKingdoms_Click(object sender, EventArgs e)
         {
+            bool isContinue = true;
             if (!currentProject.BannerlordModule.HasModuleKingdomFile)
             {
-                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_characters_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_kingdoms_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
                     frmCreateNewFile frmCreateNewFile = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "SPKingdoms");
-                    var fileName = frmCreateNewFile.FileName;
-                    string errMsg;
-                    bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Kingdom", fileName, out errMsg);
-
-                    if (!canLoaded)
+                    if (frmCreateNewFile.ShowDialog() == DialogResult.OK)
                     {
-                        MessageBox.Show(errMsg, "Notice");
-                        return;
+                        var fileName = frmCreateNewFile.FileName;
+                        string errMsg;
+                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Kingdom", fileName, out errMsg);
+
+                        if (!canLoaded)
+                        {
+                            MessageBox.Show(errMsg, "Notice");
+                            return;
+                        }
+                        else
+                        {
+                            var mbXmlNode = frmCreateNewFile.MBXmlNode;
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
+                            currentProject.SaveModuleInfo();
+                        }
                     }
                     else
                     {
-                        var mbXmlNode = frmCreateNewFile.MBXmlNode;
-                        currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
-                        currentProject.SaveModuleInfo();
+                        isContinue = false;
                     }
                 }
             }
 
-            TabControl tabControl = new TabControl();
-            tabControl.Dock = DockStyle.Fill;
-            foreach(var kingdoms in currentProject.BannerlordModule.ModuleKingdoms)
+            if (isContinue)
             {
-                var moduleName = (new DirectoryInfo(kingdoms.FilePath).Parent.Parent.Name);
-                var fileName = new DirectoryInfo(kingdoms.FilePath).Name;
-                var page = new TabPage(moduleName + " - " + fileName);
-                ucKingdomEditor factionEditorCtrl = new ucKingdomEditor(currentProject, kingdoms);
-                page.Controls.Clear();
-                page.Controls.Add(factionEditorCtrl);
-                factionEditorCtrl.Dock = DockStyle.Fill;
-                tabControl.TabPages.Add(page);
+                TabControl tabControl = new TabControl();
+                tabControl.Dock = DockStyle.Fill;
+                foreach (var kingdoms in currentProject.BannerlordModule.ModuleKingdoms)
+                {
+                    var moduleName = (new DirectoryInfo(kingdoms.FilePath).Parent.Parent.Name);
+                    var fileName = new DirectoryInfo(kingdoms.FilePath).Name;
+                    var page = new TabPage(moduleName + " - " + fileName);
+                    ucKingdomEditor factionEditorCtrl = new ucKingdomEditor(currentProject, kingdoms);
+                    page.Controls.Clear();
+                    page.Controls.Add(factionEditorCtrl);
+                    factionEditorCtrl.Dock = DockStyle.Fill;
+                    tabControl.TabPages.Add(page);
+                }
+                panelMain.Controls.Clear();
+                panelMain.Controls.Add(tabControl);
             }
-            panelMain.Controls.Clear();
-            panelMain.Controls.Add(tabControl);
         }
 
         private void btnCultures_Click(object sender, EventArgs e)
