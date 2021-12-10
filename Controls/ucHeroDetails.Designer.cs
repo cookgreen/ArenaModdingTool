@@ -38,15 +38,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBannerKey = new System.Windows.Forms.TextBox();
+            this.txtSpouse = new System.Windows.Forms.TextBox();
+            this.txtFaction = new System.Windows.Forms.TextBox();
+            this.txtMother = new System.Windows.Forms.TextBox();
+            this.txtFather = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkIsNoble = new System.Windows.Forms.CheckBox();
+            this.chkIsAlive = new System.Windows.Forms.CheckBox();
             this.txtIntroduction = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -86,6 +86,7 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -98,15 +99,15 @@
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox14, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.textBox12, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.textBox10, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox6, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtBannerKey, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtSpouse, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtFaction, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtMother, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtFather, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtID, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.chkIsNoble, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.chkIsAlive, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtIntroduction, 1, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -191,45 +192,45 @@
             this.label3.Text = "father";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox14
+            // txtBannerKey
             // 
-            this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Location = new System.Drawing.Point(153, 178);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(423, 21);
-            this.textBox14.TabIndex = 16;
+            this.txtBannerKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBannerKey.Location = new System.Drawing.Point(153, 178);
+            this.txtBannerKey.Name = "txtBannerKey";
+            this.txtBannerKey.Size = new System.Drawing.Size(423, 25);
+            this.txtBannerKey.TabIndex = 16;
             // 
-            // textBox12
+            // txtSpouse
             // 
-            this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Location = new System.Drawing.Point(153, 153);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(423, 21);
-            this.textBox12.TabIndex = 14;
+            this.txtSpouse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSpouse.Location = new System.Drawing.Point(153, 153);
+            this.txtSpouse.Name = "txtSpouse";
+            this.txtSpouse.Size = new System.Drawing.Size(423, 25);
+            this.txtSpouse.TabIndex = 14;
             // 
-            // textBox10
+            // txtFaction
             // 
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Location = new System.Drawing.Point(153, 128);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(423, 21);
-            this.textBox10.TabIndex = 12;
+            this.txtFaction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtFaction.Location = new System.Drawing.Point(153, 128);
+            this.txtFaction.Name = "txtFaction";
+            this.txtFaction.Size = new System.Drawing.Size(423, 25);
+            this.txtFaction.TabIndex = 12;
             // 
-            // textBox6
+            // txtMother
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(153, 78);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(423, 21);
-            this.textBox6.TabIndex = 8;
+            this.txtMother.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMother.Location = new System.Drawing.Point(153, 78);
+            this.txtMother.Name = "txtMother";
+            this.txtMother.Size = new System.Drawing.Size(423, 25);
+            this.txtMother.TabIndex = 8;
             // 
-            // textBox4
+            // txtFather
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(153, 53);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(423, 21);
-            this.textBox4.TabIndex = 6;
+            this.txtFather.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtFather.Location = new System.Drawing.Point(153, 53);
+            this.txtFather.Name = "txtFather";
+            this.txtFather.Size = new System.Drawing.Size(423, 25);
+            this.txtFather.TabIndex = 6;
             // 
             // label1
             // 
@@ -247,28 +248,28 @@
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtID.Location = new System.Drawing.Point(153, 3);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(423, 21);
+            this.txtID.Size = new System.Drawing.Size(423, 25);
             this.txtID.TabIndex = 2;
             // 
-            // checkBox1
+            // chkIsNoble
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(153, 28);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 16);
-            this.checkBox1.TabIndex = 19;
-            this.checkBox1.Text = "Noble?";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkIsNoble.AutoSize = true;
+            this.chkIsNoble.Location = new System.Drawing.Point(153, 28);
+            this.chkIsNoble.Name = "chkIsNoble";
+            this.chkIsNoble.Size = new System.Drawing.Size(77, 19);
+            this.chkIsNoble.TabIndex = 19;
+            this.chkIsNoble.Text = "Noble?";
+            this.chkIsNoble.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkIsAlive
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(153, 103);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(60, 16);
-            this.checkBox2.TabIndex = 28;
-            this.checkBox2.Text = "Alive?";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkIsAlive.AutoSize = true;
+            this.chkIsAlive.Location = new System.Drawing.Point(153, 103);
+            this.chkIsAlive.Name = "chkIsAlive";
+            this.chkIsAlive.Size = new System.Drawing.Size(77, 19);
+            this.chkIsAlive.TabIndex = 28;
+            this.chkIsAlive.Text = "Alive?";
+            this.chkIsAlive.UseVisualStyleBackColor = true;
             // 
             // txtIntroduction
             // 
@@ -300,19 +301,19 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txtBannerKey;
+        private System.Windows.Forms.TextBox txtSpouse;
+        private System.Windows.Forms.TextBox txtFaction;
+        private System.Windows.Forms.TextBox txtMother;
+        private System.Windows.Forms.TextBox txtFather;
+        private System.Windows.Forms.CheckBox chkIsNoble;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkIsAlive;
         private System.Windows.Forms.RichTextBox txtIntroduction;
     }
 }

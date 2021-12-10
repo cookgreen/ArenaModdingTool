@@ -17,6 +17,7 @@ namespace ArenaModdingTool.Controls
         private int selectedIndex;
 
         public event Action<MBBannerlordHero, int, AddEditState> SelectedHeroChanged;
+
         public ucHeroListEdit(MBBannerlordHeroes heroes)
         {
             InitializeComponent();
@@ -26,6 +27,8 @@ namespace ArenaModdingTool.Controls
             panel2.Controls.Add(ucHeroList);
             ucHeroList.Dock = DockStyle.Fill;
             state = AddEditState.View;
+
+            RefreshData();
         }
 
         private void UcHeroList_SelectHeroChanged(MBBannerlordHero selectedHero, int selectedIndex)
@@ -85,6 +88,11 @@ namespace ArenaModdingTool.Controls
 
                 state = newState;
             }
+        }
+
+        public void RefreshData()
+        {
+            ucHeroList.loadHeroes();
         }
     }
 }

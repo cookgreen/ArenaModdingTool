@@ -158,11 +158,6 @@ namespace ArenaModdingTool
             }
         }
 
-        private void btnCultures_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("WIP!");
-        }
-
         private void btnNPCCharacters_Click(object sender, EventArgs e)
         {
             bool isContinue = true;
@@ -217,11 +212,6 @@ namespace ArenaModdingTool
             }
         }
 
-        private void btnHeros_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("WIP!");
-        }
-
         private void btnItems_Click(object sender, EventArgs e)
         {
             bool isContinue = true;
@@ -236,7 +226,7 @@ namespace ArenaModdingTool
                     {
                         string fileName = createNewFileWin.FileName;
                         string errMsg;
-                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Item", fileName, out errMsg);
+                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Items", fileName, out errMsg);
 
                         if (!canLoaded)
                         {
@@ -275,6 +265,66 @@ namespace ArenaModdingTool
                 panelMain.Controls.Clear();
                 panelMain.Controls.Add(tabControl);
             }
+        }
+
+        private void btnHeros_Click(object sender, EventArgs e)
+        {
+            bool isContinue = true;
+
+            if (currentProject.BannerlordModule.ModuleHeroes.Count == 0)
+            {
+                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_heroes_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    frmCreateNewFile createNewFileWin = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "Heroes");
+                    if (createNewFileWin.ShowDialog() == DialogResult.OK)
+                    {
+                        string fileName = createNewFileWin.FileName;
+                        string errMsg;
+                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Heroes", fileName, out errMsg);
+
+                        if (!canLoaded)
+                        {
+                            MessageBox.Show(errMsg, "Notice");
+                            return;
+                        }
+                        else
+                        {
+                            var mbXmlNode = createNewFileWin.MBXmlNode;
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
+                            currentProject.SaveModuleInfo();
+                        }
+                    }
+                    else
+                    {
+                        isContinue = false;
+                    }
+                }
+            }
+
+            if (isContinue)
+            {
+                TabControl tabControl = new TabControl();
+                tabControl.Dock = DockStyle.Fill;
+                foreach (var items in currentProject.BannerlordModule.ModuleHeroes)
+                {
+                    var moduleName = (new DirectoryInfo(items.FilePath).Parent.Parent.Name);
+                    var fileName = new DirectoryInfo(items.FilePath).Name;
+                    var page = new TabPage(moduleName + " - " + fileName);
+                    ucHeroEditor heroEditor = new ucHeroEditor(currentProject, items);
+                    page.Controls.Clear();
+                    page.Controls.Add(heroEditor);
+                    heroEditor.Dock = DockStyle.Fill;
+                    tabControl.TabPages.Add(page);
+                }
+                panelMain.Controls.Clear();
+                panelMain.Controls.Add(tabControl);
+            }
+        }
+
+        private void btnCultures_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("WIP!");
         }
 
         #endregion

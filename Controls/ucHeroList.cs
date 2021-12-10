@@ -27,12 +27,12 @@ namespace ArenaModdingTool.Controls
             loadHeroes();
         }
 
-        private void loadHeroes()
+        public void loadHeroes()
         {
-            treeView1.Nodes.Clear();
+            heroList.Nodes.Clear();
             foreach (var hero in heroes.Heroes)
             {
-                treeView1.Nodes.Add(hero.id);
+                heroList.Nodes.Add(hero.id);
             }
         }
 
@@ -40,7 +40,7 @@ namespace ArenaModdingTool.Controls
         {
             if (e.Node != null)
             {
-                int index = treeView1.Nodes.IndexOf(e.Node);
+                int index = heroList.Nodes.IndexOf(e.Node);
                 selectedHero = heroes.Heroes[index];
                 SelectHeroChanged?.Invoke(heroes.Heroes[index], index);
             }
