@@ -7,15 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ArenaModdingTool.ModdingFiles;
 
 namespace ArenaModdingTool.Controls
 {
     public partial class ucCultureDetails : UserControl
     {
-        public ucCultureDetails()
+        private AMProject project;
+        private MBBannerlordCulture culture;
+        private int index;
+        private AddEditState addEditState;
+
+        public ucCultureDetails(AMProject project, MBBannerlordCulture culture, int index, AddEditState addEditState)
         {
             InitializeComponent();
+
+            this.project = project;
+            this.culture = culture;
+            this.index = index;
+            this.addEditState = addEditState;
+
+            loadCultureDetails();
         }
+
+        private void loadCultureDetails()
+        {
+            var propertiesInfos = culture.GetType().GetProperties();
+            for (int i = 0; i < tableLayoutPanel1.RowCount; i++)
+            {
+                var controlName = tableLayoutPanel1.GetControlFromPosition(0, i).Text;
+                var searchResult = propertiesInfos.Where(o => o.Name == controlName);
+                if (searchResult.Count() == 1)
+                {
+                    tableLayoutPanel1.GetControlFromPosition(1, i).Text = searchResult.First().GetValue(culture).ToString();
+                }
+            }
+            for (int i = 0; i < tableLayoutPanel4.RowCount; i++)
+            {
+                var controlName = tableLayoutPanel1.GetControlFromPosition(0, i).Text;
+                var searchResult = propertiesInfos.Where(o => o.Name == controlName);
+                if (searchResult.Count() == 1)
+                {
+                    tableLayoutPanel1.GetControlFromPosition(1, i).Text = searchResult.First().GetValue(culture).ToString();
+                }
+            }
+            for (int i = 0; i < tableLayoutPanel5.RowCount; i++)
+            {
+                var controlName = tableLayoutPanel1.GetControlFromPosition(0, i).Text;
+                var searchResult = propertiesInfos.Where(o => o.Name == controlName);
+                if (searchResult.Count() == 1)
+                {
+                    tableLayoutPanel1.GetControlFromPosition(1, i).Text = searchResult.First().GetValue(culture).ToString();
+                }
+            }
+        }
+
+        #region Name Builders
 
         private void btnAddMaleName_Click(object sender, EventArgs e)
         {
@@ -61,6 +108,8 @@ namespace ArenaModdingTool.Controls
         {
 
         }
+
+        #endregion
 
         private void btnSave_Click(object sender, EventArgs e)
         {

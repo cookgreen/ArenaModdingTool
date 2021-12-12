@@ -85,7 +85,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -98,7 +98,7 @@
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 903);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(899, 48);
             this.panel1.TabIndex = 0;
@@ -108,7 +108,7 @@
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Enabled = false;
             this.btnSave.Location = new System.Drawing.Point(788, 9);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 29);
             this.btnSave.TabIndex = 0;
@@ -162,7 +162,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnEditRelationshipsAndPolicies, 1, 18);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 20;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -193,7 +193,7 @@
             // 
             this.txtRulerTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRulerTitle.Location = new System.Drawing.Point(204, 500);
-            this.txtRulerTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRulerTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtRulerTitle.Name = "txtRulerTitle";
             this.txtRulerTitle.Size = new System.Drawing.Size(691, 25);
             this.txtRulerTitle.TabIndex = 37;
@@ -202,7 +202,7 @@
             // 
             this.txtTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTitle.Location = new System.Drawing.Point(204, 469);
-            this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(691, 25);
             this.txtTitle.TabIndex = 36;
@@ -211,7 +211,7 @@
             // 
             this.txtShortName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtShortName.Location = new System.Drawing.Point(204, 438);
-            this.txtShortName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtShortName.Margin = new System.Windows.Forms.Padding(4);
             this.txtShortName.Name = "txtShortName";
             this.txtShortName.Size = new System.Drawing.Size(691, 25);
             this.txtShortName.TabIndex = 35;
@@ -220,7 +220,7 @@
             // 
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtName.Location = new System.Drawing.Point(204, 407);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(691, 25);
             this.txtName.TabIndex = 34;
@@ -229,7 +229,7 @@
             // 
             this.txtFlagMesh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFlagMesh.Location = new System.Drawing.Point(204, 376);
-            this.txtFlagMesh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFlagMesh.Margin = new System.Windows.Forms.Padding(4);
             this.txtFlagMesh.Name = "txtFlagMesh";
             this.txtFlagMesh.Size = new System.Drawing.Size(691, 25);
             this.txtFlagMesh.TabIndex = 33;
@@ -238,7 +238,7 @@
             // 
             this.txtSettlementBannerMesh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSettlementBannerMesh.Location = new System.Drawing.Point(204, 345);
-            this.txtSettlementBannerMesh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSettlementBannerMesh.Margin = new System.Windows.Forms.Padding(4);
             this.txtSettlementBannerMesh.Name = "txtSettlementBannerMesh";
             this.txtSettlementBannerMesh.Size = new System.Drawing.Size(691, 25);
             this.txtSettlementBannerMesh.TabIndex = 32;
@@ -247,7 +247,7 @@
             // 
             this.txtCulture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCulture.Location = new System.Drawing.Point(204, 314);
-            this.txtCulture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCulture.Margin = new System.Windows.Forms.Padding(4);
             this.txtCulture.Name = "txtCulture";
             this.txtCulture.ReadOnly = true;
             this.txtCulture.Size = new System.Drawing.Size(691, 25);
@@ -258,7 +258,7 @@
             // 
             this.txtAlternativeColor2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAlternativeColor2.Location = new System.Drawing.Point(204, 283);
-            this.txtAlternativeColor2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAlternativeColor2.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlternativeColor2.Name = "txtAlternativeColor2";
             this.txtAlternativeColor2.ReadOnly = true;
             this.txtAlternativeColor2.Size = new System.Drawing.Size(691, 25);
@@ -269,7 +269,7 @@
             // 
             this.txtAlternativeColor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAlternativeColor.Location = new System.Drawing.Point(204, 252);
-            this.txtAlternativeColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAlternativeColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlternativeColor.Name = "txtAlternativeColor";
             this.txtAlternativeColor.ReadOnly = true;
             this.txtAlternativeColor.Size = new System.Drawing.Size(691, 25);
@@ -280,7 +280,7 @@
             // 
             this.txtColor2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtColor2.Location = new System.Drawing.Point(204, 221);
-            this.txtColor2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtColor2.Margin = new System.Windows.Forms.Padding(4);
             this.txtColor2.Name = "txtColor2";
             this.txtColor2.ReadOnly = true;
             this.txtColor2.Size = new System.Drawing.Size(691, 25);
@@ -291,7 +291,7 @@
             // 
             this.txtColor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtColor.Location = new System.Drawing.Point(204, 190);
-            this.txtColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtColor.Name = "txtColor";
             this.txtColor.ReadOnly = true;
             this.txtColor.Size = new System.Drawing.Size(691, 25);
@@ -302,7 +302,7 @@
             // 
             this.txtLabelColor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLabelColor.Location = new System.Drawing.Point(204, 159);
-            this.txtLabelColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLabelColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtLabelColor.Name = "txtLabelColor";
             this.txtLabelColor.ReadOnly = true;
             this.txtLabelColor.Size = new System.Drawing.Size(691, 25);
@@ -313,7 +313,7 @@
             // 
             this.txtSecondaryBannerlordColor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSecondaryBannerlordColor.Location = new System.Drawing.Point(204, 128);
-            this.txtSecondaryBannerlordColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSecondaryBannerlordColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtSecondaryBannerlordColor.Name = "txtSecondaryBannerlordColor";
             this.txtSecondaryBannerlordColor.ReadOnly = true;
             this.txtSecondaryBannerlordColor.Size = new System.Drawing.Size(691, 25);
@@ -324,7 +324,7 @@
             // 
             this.txtPrimaryBannerColor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtPrimaryBannerColor.Location = new System.Drawing.Point(204, 97);
-            this.txtPrimaryBannerColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrimaryBannerColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrimaryBannerColor.Name = "txtPrimaryBannerColor";
             this.txtPrimaryBannerColor.ReadOnly = true;
             this.txtPrimaryBannerColor.Size = new System.Drawing.Size(691, 25);
@@ -335,7 +335,7 @@
             // 
             this.txtBannerKey.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBannerKey.Location = new System.Drawing.Point(204, 66);
-            this.txtBannerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBannerKey.Margin = new System.Windows.Forms.Padding(4);
             this.txtBannerKey.Name = "txtBannerKey";
             this.txtBannerKey.Size = new System.Drawing.Size(691, 25);
             this.txtBannerKey.TabIndex = 23;
@@ -346,7 +346,7 @@
             // 
             this.txtOwner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtOwner.Location = new System.Drawing.Point(204, 35);
-            this.txtOwner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOwner.Margin = new System.Windows.Forms.Padding(4);
             this.txtOwner.Name = "txtOwner";
             this.txtOwner.ReadOnly = true;
             this.txtOwner.Size = new System.Drawing.Size(691, 25);
@@ -597,7 +597,7 @@
             // 
             this.txtIntroduction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtIntroduction.Location = new System.Drawing.Point(204, 531);
-            this.txtIntroduction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIntroduction.Margin = new System.Windows.Forms.Padding(4);
             this.txtIntroduction.Name = "txtIntroduction";
             this.txtIntroduction.Size = new System.Drawing.Size(691, 294);
             this.txtIntroduction.TabIndex = 20;
@@ -607,7 +607,7 @@
             // 
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtID.Location = new System.Drawing.Point(204, 4);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(691, 25);
             this.txtID.TabIndex = 21;
@@ -616,7 +616,7 @@
             // 
             this.btnEditRelationshipsAndPolicies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditRelationshipsAndPolicies.Location = new System.Drawing.Point(204, 833);
-            this.btnEditRelationshipsAndPolicies.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditRelationshipsAndPolicies.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditRelationshipsAndPolicies.Name = "btnEditRelationshipsAndPolicies";
             this.tableLayoutPanel2.SetRowSpan(this.btnEditRelationshipsAndPolicies, 2);
             this.btnEditRelationshipsAndPolicies.Size = new System.Drawing.Size(691, 54);
@@ -630,7 +630,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucKingdomDetails";
             this.Size = new System.Drawing.Size(907, 955);
             this.tableLayoutPanel1.ResumeLayout(false);

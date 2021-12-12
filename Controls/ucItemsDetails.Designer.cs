@@ -73,32 +73,35 @@ namespace ArenaModdingTool.Controls
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(600, 476);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(800, 595);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 439);
+            this.panel1.Location = new System.Drawing.Point(4, 549);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(594, 34);
+            this.panel1.Size = new System.Drawing.Size(792, 42);
             this.panel1.TabIndex = 2;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(501, 5);
+            this.btnSave.Location = new System.Drawing.Point(668, 6);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(100, 29);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -107,7 +110,7 @@ namespace ArenaModdingTool.Controls
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
@@ -138,35 +141,37 @@ namespace ArenaModdingTool.Controls
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 14);
             this.tableLayoutPanel1.Controls.Add(this.btnEditItemComponent, 1, 14);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(594, 430);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(792, 537);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(3, 150);
+            this.label7.Location = new System.Drawing.Point(4, 186);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 25);
+            this.label7.Size = new System.Drawing.Size(192, 31);
             this.label7.TabIndex = 25;
             this.label7.Text = "value";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,9 +180,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 125);
+            this.label6.Location = new System.Drawing.Point(4, 155);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 25);
+            this.label6.Size = new System.Drawing.Size(192, 31);
             this.label6.TabIndex = 24;
             this.label6.Text = "culture";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,9 +192,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 75);
+            this.label4.Location = new System.Drawing.Point(4, 93);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 25);
+            this.label4.Size = new System.Drawing.Size(192, 31);
             this.label4.TabIndex = 22;
             this.label4.Text = "body name";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,9 +204,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 50);
+            this.label3.Location = new System.Drawing.Point(4, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 25);
+            this.label3.Size = new System.Drawing.Size(192, 31);
             this.label3.TabIndex = 21;
             this.label3.Text = "name";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,35 +215,39 @@ namespace ArenaModdingTool.Controls
             // txtCulture
             // 
             this.txtCulture.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCulture.Location = new System.Drawing.Point(153, 128);
+            this.txtCulture.Location = new System.Drawing.Point(204, 159);
+            this.txtCulture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCulture.Name = "txtCulture";
             this.txtCulture.ReadOnly = true;
-            this.txtCulture.Size = new System.Drawing.Size(438, 21);
+            this.txtCulture.Size = new System.Drawing.Size(584, 25);
             this.txtCulture.TabIndex = 12;
             // 
             // txtBodyName
             // 
             this.txtBodyName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBodyName.Location = new System.Drawing.Point(153, 78);
+            this.txtBodyName.Location = new System.Drawing.Point(204, 97);
+            this.txtBodyName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBodyName.Name = "txtBodyName";
-            this.txtBodyName.Size = new System.Drawing.Size(438, 21);
+            this.txtBodyName.Size = new System.Drawing.Size(584, 25);
             this.txtBodyName.TabIndex = 8;
             // 
             // txtName
             // 
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtName.Location = new System.Drawing.Point(153, 53);
+            this.txtName.Location = new System.Drawing.Point(204, 66);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(438, 21);
+            this.txtName.Size = new System.Drawing.Size(584, 25);
             this.txtName.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 25);
+            this.label1.Size = new System.Drawing.Size(192, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,17 +255,19 @@ namespace ArenaModdingTool.Controls
             // txtId
             // 
             this.txtId.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtId.Location = new System.Drawing.Point(153, 3);
+            this.txtId.Location = new System.Drawing.Point(204, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(438, 21);
+            this.txtId.Size = new System.Drawing.Size(584, 25);
             this.txtId.TabIndex = 2;
             // 
             // chkMultiplayerItem
             // 
             this.chkMultiplayerItem.AutoSize = true;
-            this.chkMultiplayerItem.Location = new System.Drawing.Point(153, 28);
+            this.chkMultiplayerItem.Location = new System.Drawing.Point(204, 35);
+            this.chkMultiplayerItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkMultiplayerItem.Name = "chkMultiplayerItem";
-            this.chkMultiplayerItem.Size = new System.Drawing.Size(120, 16);
+            this.chkMultiplayerItem.Size = new System.Drawing.Size(157, 19);
             this.chkMultiplayerItem.TabIndex = 19;
             this.chkMultiplayerItem.Text = "Multiplayer Item";
             this.chkMultiplayerItem.UseVisualStyleBackColor = true;
@@ -261,18 +275,20 @@ namespace ArenaModdingTool.Controls
             // txtMesh
             // 
             this.txtMesh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMesh.Location = new System.Drawing.Point(153, 103);
+            this.txtMesh.Location = new System.Drawing.Point(204, 128);
+            this.txtMesh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMesh.Name = "txtMesh";
-            this.txtMesh.Size = new System.Drawing.Size(438, 21);
+            this.txtMesh.Size = new System.Drawing.Size(584, 25);
             this.txtMesh.TabIndex = 30;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 100);
+            this.label2.Location = new System.Drawing.Point(4, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 25);
+            this.label2.Size = new System.Drawing.Size(192, 31);
             this.label2.TabIndex = 31;
             this.label2.Text = "mesh";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,9 +296,10 @@ namespace ArenaModdingTool.Controls
             // chkIsMerchandise
             // 
             this.chkIsMerchandise.AutoSize = true;
-            this.chkIsMerchandise.Location = new System.Drawing.Point(153, 178);
+            this.chkIsMerchandise.Location = new System.Drawing.Point(204, 221);
+            this.chkIsMerchandise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkIsMerchandise.Name = "chkIsMerchandise";
-            this.chkIsMerchandise.Size = new System.Drawing.Size(108, 16);
+            this.chkIsMerchandise.Size = new System.Drawing.Size(141, 19);
             this.chkIsMerchandise.TabIndex = 32;
             this.chkIsMerchandise.Text = "is_merchandise";
             this.chkIsMerchandise.UseVisualStyleBackColor = true;
@@ -291,9 +308,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 200);
+            this.label5.Location = new System.Drawing.Point(4, 248);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 25);
+            this.label5.Size = new System.Drawing.Size(192, 31);
             this.label5.TabIndex = 33;
             this.label5.Text = "weight";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -302,9 +320,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 225);
+            this.label8.Location = new System.Drawing.Point(4, 279);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 25);
+            this.label8.Size = new System.Drawing.Size(192, 31);
             this.label8.TabIndex = 34;
             this.label8.Text = "difficulty";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -313,9 +332,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(3, 250);
+            this.label9.Location = new System.Drawing.Point(4, 310);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 25);
+            this.label9.Size = new System.Drawing.Size(192, 31);
             this.label9.TabIndex = 35;
             this.label9.Text = "type";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,9 +344,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(3, 275);
+            this.label10.Location = new System.Drawing.Point(4, 341);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 25);
+            this.label10.Size = new System.Drawing.Size(192, 31);
             this.label10.TabIndex = 36;
             this.label10.Text = "AmmoOffset";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,9 +356,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 300);
+            this.label11.Location = new System.Drawing.Point(4, 372);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(144, 25);
+            this.label11.Size = new System.Drawing.Size(192, 31);
             this.label11.TabIndex = 37;
             this.label11.Text = "item_holsters";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,9 +368,10 @@ namespace ArenaModdingTool.Controls
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(3, 325);
+            this.label12.Location = new System.Drawing.Point(4, 403);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(144, 25);
+            this.label12.Size = new System.Drawing.Size(192, 31);
             this.label12.TabIndex = 38;
             this.label12.Text = "holster_position_shift";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -356,87 +379,95 @@ namespace ArenaModdingTool.Controls
             // numWeight
             // 
             this.numWeight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numWeight.Location = new System.Drawing.Point(153, 203);
+            this.numWeight.Location = new System.Drawing.Point(204, 252);
+            this.numWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numWeight.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.numWeight.Name = "numWeight";
-            this.numWeight.Size = new System.Drawing.Size(438, 21);
+            this.numWeight.Size = new System.Drawing.Size(584, 25);
             this.numWeight.TabIndex = 39;
             // 
             // txtType
             // 
             this.txtType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtType.Location = new System.Drawing.Point(153, 253);
+            this.txtType.Location = new System.Drawing.Point(204, 314);
+            this.txtType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(438, 21);
+            this.txtType.Size = new System.Drawing.Size(584, 25);
             this.txtType.TabIndex = 41;
             // 
             // txtAmmoOffset
             // 
             this.txtAmmoOffset.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtAmmoOffset.Location = new System.Drawing.Point(153, 278);
+            this.txtAmmoOffset.Location = new System.Drawing.Point(204, 345);
+            this.txtAmmoOffset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAmmoOffset.Name = "txtAmmoOffset";
             this.txtAmmoOffset.ReadOnly = true;
-            this.txtAmmoOffset.Size = new System.Drawing.Size(438, 21);
+            this.txtAmmoOffset.Size = new System.Drawing.Size(584, 25);
             this.txtAmmoOffset.TabIndex = 42;
             this.txtAmmoOffset.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtAmmoOffset_MouseDoubleClick);
             // 
             // txtItemHolsters
             // 
             this.txtItemHolsters.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtItemHolsters.Location = new System.Drawing.Point(153, 303);
+            this.txtItemHolsters.Location = new System.Drawing.Point(204, 376);
+            this.txtItemHolsters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtItemHolsters.Name = "txtItemHolsters";
             this.txtItemHolsters.ReadOnly = true;
-            this.txtItemHolsters.Size = new System.Drawing.Size(438, 21);
+            this.txtItemHolsters.Size = new System.Drawing.Size(584, 25);
             this.txtItemHolsters.TabIndex = 43;
             this.txtItemHolsters.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtItemHolsters_MouseDoubleClick);
             // 
             // txtHolsterPositionShift
             // 
             this.txtHolsterPositionShift.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtHolsterPositionShift.Location = new System.Drawing.Point(153, 328);
+            this.txtHolsterPositionShift.Location = new System.Drawing.Point(204, 407);
+            this.txtHolsterPositionShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHolsterPositionShift.Name = "txtHolsterPositionShift";
             this.txtHolsterPositionShift.ReadOnly = true;
-            this.txtHolsterPositionShift.Size = new System.Drawing.Size(438, 21);
+            this.txtHolsterPositionShift.Size = new System.Drawing.Size(584, 25);
             this.txtHolsterPositionShift.TabIndex = 44;
             this.txtHolsterPositionShift.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtHolsterPositionShift_MouseDoubleClick);
             // 
             // numDifficulty
             // 
             this.numDifficulty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numDifficulty.Location = new System.Drawing.Point(153, 228);
+            this.numDifficulty.Location = new System.Drawing.Point(204, 283);
+            this.numDifficulty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numDifficulty.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.numDifficulty.Name = "numDifficulty";
-            this.numDifficulty.Size = new System.Drawing.Size(438, 21);
+            this.numDifficulty.Size = new System.Drawing.Size(584, 25);
             this.numDifficulty.TabIndex = 45;
             // 
             // numValue
             // 
             this.numValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numValue.Location = new System.Drawing.Point(153, 153);
+            this.numValue.Location = new System.Drawing.Point(204, 190);
+            this.numValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numValue.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.numValue.Name = "numValue";
-            this.numValue.Size = new System.Drawing.Size(438, 21);
+            this.numValue.Size = new System.Drawing.Size(584, 25);
             this.numValue.TabIndex = 46;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(3, 350);
+            this.label13.Location = new System.Drawing.Point(4, 434);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(144, 25);
+            this.label13.Size = new System.Drawing.Size(192, 31);
             this.label13.TabIndex = 47;
             this.label13.Text = "Component";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -444,9 +475,10 @@ namespace ArenaModdingTool.Controls
             // btnEditItemComponent
             // 
             this.btnEditItemComponent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditItemComponent.Location = new System.Drawing.Point(153, 353);
+            this.btnEditItemComponent.Location = new System.Drawing.Point(204, 438);
+            this.btnEditItemComponent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditItemComponent.Name = "btnEditItemComponent";
-            this.btnEditItemComponent.Size = new System.Drawing.Size(438, 19);
+            this.btnEditItemComponent.Size = new System.Drawing.Size(584, 23);
             this.btnEditItemComponent.TabIndex = 48;
             this.btnEditItemComponent.Text = "Edit Item Component";
             this.btnEditItemComponent.UseVisualStyleBackColor = true;
@@ -454,11 +486,12 @@ namespace ArenaModdingTool.Controls
             // 
             // ucItemsDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ucItemsDetails";
-            this.Size = new System.Drawing.Size(600, 476);
+            this.Size = new System.Drawing.Size(800, 595);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -1,0 +1,40 @@
+﻿using ArenaModdingTool.ModdingFiles;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ArenaModdingTool.Controls
+{
+    public partial class ucCultureEditor : UserControl
+    {
+        private AMProject project;
+        private MBBannerlordCultures cultures;
+        private ucCultureListEdit cultureListCtrl;
+        private ucCultureDetails cultureDetailsCtrl;
+
+        public ucCultureEditor(AMProject project, MBBannerlordCultures cultures)
+        {
+            InitializeComponent();
+
+            this.project = project;
+            this.cultures = cultures;
+
+            panel1.Controls.Clear();
+            cultureListCtrl = new ucCultureListEdit(cultures);
+            cultureListCtrl.Dock = DockStyle.Fill;
+            cultureListCtrl.SelectCultureChanged += CultureListCtrl_SelectCultureChanged; ;
+            panel1.Controls.Add(cultureListCtrl);
+        }
+
+        private void CultureListCtrl_SelectCultureChanged(MBBannerlordCulture selectedCulture, int index)
+        {
+
+        }
+    }
+}

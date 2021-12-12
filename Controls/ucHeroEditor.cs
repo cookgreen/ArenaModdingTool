@@ -59,10 +59,5 @@ namespace ArenaModdingTool.Controls
                 heroListEdit.RefreshData();
             }
         }
-
-        private void HeroListEdit_AddEditStateChanged()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

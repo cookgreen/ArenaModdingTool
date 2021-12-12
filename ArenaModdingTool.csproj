@@ -56,11 +56,23 @@
     <Compile Include="Controls\ucCultureDetails.Designer.cs">
       <DependentUpon>ucCultureDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ucCultureEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCultureEditor.Designer.cs">
+      <DependentUpon>ucCultureEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucCultureList.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ucCultureList.Designer.cs">
       <DependentUpon>ucCultureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCultureListEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCultureListEdit.Designer.cs">
+      <DependentUpon>ucCultureListEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ucHeroEditor.cs">
       <SubType>UserControl</SubType>
@@ -328,8 +340,14 @@
     <EmbeddedResource Include="Controls\ucCultureDetails.resx">
       <DependentUpon>ucCultureDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCultureEditor.resx">
+      <DependentUpon>ucCultureEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucCultureList.resx">
       <DependentUpon>ucCultureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCultureListEdit.resx">
+      <DependentUpon>ucCultureListEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucHeroDetails.resx">
       <DependentUpon>ucHeroDetails.cs</DependentUpon>
