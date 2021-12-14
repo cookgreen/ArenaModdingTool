@@ -197,7 +197,7 @@
             this.txtBannerKey.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBannerKey.Location = new System.Drawing.Point(153, 178);
             this.txtBannerKey.Name = "txtBannerKey";
-            this.txtBannerKey.Size = new System.Drawing.Size(423, 21);
+            this.txtBannerKey.Size = new System.Drawing.Size(423, 25);
             this.txtBannerKey.TabIndex = 16;
             // 
             // txtSpouse
@@ -205,7 +205,7 @@
             this.txtSpouse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSpouse.Location = new System.Drawing.Point(153, 153);
             this.txtSpouse.Name = "txtSpouse";
-            this.txtSpouse.Size = new System.Drawing.Size(423, 21);
+            this.txtSpouse.Size = new System.Drawing.Size(423, 25);
             this.txtSpouse.TabIndex = 14;
             // 
             // txtFaction
@@ -213,7 +213,7 @@
             this.txtFaction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFaction.Location = new System.Drawing.Point(153, 128);
             this.txtFaction.Name = "txtFaction";
-            this.txtFaction.Size = new System.Drawing.Size(423, 21);
+            this.txtFaction.Size = new System.Drawing.Size(423, 25);
             this.txtFaction.TabIndex = 12;
             // 
             // txtMother
@@ -221,7 +221,7 @@
             this.txtMother.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMother.Location = new System.Drawing.Point(153, 78);
             this.txtMother.Name = "txtMother";
-            this.txtMother.Size = new System.Drawing.Size(423, 21);
+            this.txtMother.Size = new System.Drawing.Size(423, 25);
             this.txtMother.TabIndex = 8;
             // 
             // txtFather
@@ -229,7 +229,7 @@
             this.txtFather.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFather.Location = new System.Drawing.Point(153, 53);
             this.txtFather.Name = "txtFather";
-            this.txtFather.Size = new System.Drawing.Size(423, 21);
+            this.txtFather.Size = new System.Drawing.Size(423, 25);
             this.txtFather.TabIndex = 6;
             // 
             // label1
@@ -248,7 +248,7 @@
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtID.Location = new System.Drawing.Point(153, 3);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(423, 21);
+            this.txtID.Size = new System.Drawing.Size(423, 25);
             this.txtID.TabIndex = 2;
             // 
             // chkIsNoble
@@ -256,7 +256,7 @@
             this.chkIsNoble.AutoSize = true;
             this.chkIsNoble.Location = new System.Drawing.Point(153, 28);
             this.chkIsNoble.Name = "chkIsNoble";
-            this.chkIsNoble.Size = new System.Drawing.Size(60, 16);
+            this.chkIsNoble.Size = new System.Drawing.Size(77, 19);
             this.chkIsNoble.TabIndex = 19;
             this.chkIsNoble.Text = "Noble?";
             this.chkIsNoble.UseVisualStyleBackColor = true;
@@ -266,7 +266,7 @@
             this.chkIsAlive.AutoSize = true;
             this.chkIsAlive.Location = new System.Drawing.Point(153, 103);
             this.chkIsAlive.Name = "chkIsAlive";
-            this.chkIsAlive.Size = new System.Drawing.Size(60, 16);
+            this.chkIsAlive.Size = new System.Drawing.Size(77, 19);
             this.chkIsAlive.TabIndex = 28;
             this.chkIsAlive.Text = "Alive?";
             this.chkIsAlive.UseVisualStyleBackColor = true;

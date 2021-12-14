@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabCtrlCultureDetails = new System.Windows.Forms.TabControl();
+            this.tabPageBasicInfo = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRebelsPartyTemplate = new System.Windows.Forms.TextBox();
             this.txtMilitiaPartyTemplate = new System.Windows.Forms.TextBox();
@@ -66,7 +66,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.chkIsMainCulture = new System.Windows.Forms.CheckBox();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPageDetails1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDuelPreset = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -98,7 +98,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.txtDefaultFaceKey = new System.Windows.Forms.TextBox();
             this.txtText = new System.Windows.Forms.RichTextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPageDetails2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMusician = new System.Windows.Forms.TextBox();
             this.txtTavernGameHost = new System.Windows.Forms.TextBox();
@@ -146,7 +146,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPageDetails3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.txtWeaponPracticeStage2 = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
@@ -176,7 +176,7 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtHorseMerchant = new System.Windows.Forms.TextBox();
             this.txtBarber = new System.Windows.Forms.TextBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPageNameBuilder = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnModifyClanName = new System.Windows.Forms.Button();
@@ -196,72 +196,70 @@
             this.btnDeleteMaleName = new System.Windows.Forms.Button();
             this.btnAddMaleName = new System.Windows.Forms.Button();
             this.maleNamesList = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabCtrlCultureDetails.SuspendLayout();
+            this.tabPageBasicInfo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabPageDetails1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.tabPageDetails2.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.tabPageDetails3.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
+            this.tabPageNameBuilder.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel2.Controls.Add(this.tabControl1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tabCtrlCultureDetails, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1154, 1227);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // tabControl1
+            // tabCtrlCultureDetails
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(6, 6);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(6);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1142, 1138);
-            this.tabControl1.TabIndex = 1;
+            this.tabCtrlCultureDetails.Controls.Add(this.tabPageBasicInfo);
+            this.tabCtrlCultureDetails.Controls.Add(this.tabPageDetails1);
+            this.tabCtrlCultureDetails.Controls.Add(this.tabPageDetails2);
+            this.tabCtrlCultureDetails.Controls.Add(this.tabPageDetails3);
+            this.tabCtrlCultureDetails.Controls.Add(this.tabPageNameBuilder);
+            this.tabCtrlCultureDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabCtrlCultureDetails.Location = new System.Drawing.Point(6, 6);
+            this.tabCtrlCultureDetails.Margin = new System.Windows.Forms.Padding(6);
+            this.tabCtrlCultureDetails.Name = "tabCtrlCultureDetails";
+            this.tabCtrlCultureDetails.SelectedIndex = 0;
+            this.tabCtrlCultureDetails.Size = new System.Drawing.Size(1142, 1215);
+            this.tabCtrlCultureDetails.TabIndex = 1;
             // 
-            // tabPage1
+            // tabPageBasicInfo
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(6);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPage1.Size = new System.Drawing.Size(1134, 1107);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Basic Info";
+            this.tabPageBasicInfo.AutoScroll = true;
+            this.tabPageBasicInfo.AutoScrollMinSize = new System.Drawing.Size(1000, 1000);
+            this.tabPageBasicInfo.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageBasicInfo.Controls.Add(this.tableLayoutPanel1);
+            this.tabPageBasicInfo.Location = new System.Drawing.Point(4, 32);
+            this.tabPageBasicInfo.Margin = new System.Windows.Forms.Padding(6);
+            this.tabPageBasicInfo.Name = "tabPageBasicInfo";
+            this.tabPageBasicInfo.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPageBasicInfo.Size = new System.Drawing.Size(1134, 1179);
+            this.tabPageBasicInfo.TabIndex = 0;
+            this.tabPageBasicInfo.Text = "Basic Info";
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.AutoScroll = true;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 330F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -324,7 +322,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 1095);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 1167);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // txtRebelsPartyTemplate
@@ -333,7 +331,7 @@
             this.txtRebelsPartyTemplate.Location = new System.Drawing.Point(336, 822);
             this.txtRebelsPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
             this.txtRebelsPartyTemplate.Name = "txtRebelsPartyTemplate";
-            this.txtRebelsPartyTemplate.Size = new System.Drawing.Size(780, 26);
+            this.txtRebelsPartyTemplate.Size = new System.Drawing.Size(780, 30);
             this.txtRebelsPartyTemplate.TabIndex = 36;
             // 
             // txtMilitiaPartyTemplate
@@ -342,7 +340,7 @@
             this.txtMilitiaPartyTemplate.Location = new System.Drawing.Point(336, 774);
             this.txtMilitiaPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
             this.txtMilitiaPartyTemplate.Name = "txtMilitiaPartyTemplate";
-            this.txtMilitiaPartyTemplate.Size = new System.Drawing.Size(780, 26);
+            this.txtMilitiaPartyTemplate.Size = new System.Drawing.Size(780, 30);
             this.txtMilitiaPartyTemplate.TabIndex = 35;
             // 
             // txtEliteCaravanPartyTemplate
@@ -351,7 +349,7 @@
             this.txtEliteCaravanPartyTemplate.Location = new System.Drawing.Point(336, 726);
             this.txtEliteCaravanPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
             this.txtEliteCaravanPartyTemplate.Name = "txtEliteCaravanPartyTemplate";
-            this.txtEliteCaravanPartyTemplate.Size = new System.Drawing.Size(780, 26);
+            this.txtEliteCaravanPartyTemplate.Size = new System.Drawing.Size(780, 30);
             this.txtEliteCaravanPartyTemplate.TabIndex = 34;
             // 
             // txtCaravanPartyTemplate
@@ -360,7 +358,7 @@
             this.txtCaravanPartyTemplate.Location = new System.Drawing.Point(336, 678);
             this.txtCaravanPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
             this.txtCaravanPartyTemplate.Name = "txtCaravanPartyTemplate";
-            this.txtCaravanPartyTemplate.Size = new System.Drawing.Size(780, 26);
+            this.txtCaravanPartyTemplate.Size = new System.Drawing.Size(780, 30);
             this.txtCaravanPartyTemplate.TabIndex = 33;
             // 
             // txtDefaultPartyTemplate
@@ -369,7 +367,7 @@
             this.txtDefaultPartyTemplate.Location = new System.Drawing.Point(336, 630);
             this.txtDefaultPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
             this.txtDefaultPartyTemplate.Name = "txtDefaultPartyTemplate";
-            this.txtDefaultPartyTemplate.Size = new System.Drawing.Size(780, 26);
+            this.txtDefaultPartyTemplate.Size = new System.Drawing.Size(780, 30);
             this.txtDefaultPartyTemplate.TabIndex = 32;
             // 
             // txtVillagerPartyTemplate
@@ -378,7 +376,7 @@
             this.txtVillagerPartyTemplate.Location = new System.Drawing.Point(336, 582);
             this.txtVillagerPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillagerPartyTemplate.Name = "txtVillagerPartyTemplate";
-            this.txtVillagerPartyTemplate.Size = new System.Drawing.Size(780, 26);
+            this.txtVillagerPartyTemplate.Size = new System.Drawing.Size(780, 30);
             this.txtVillagerPartyTemplate.TabIndex = 31;
             // 
             // txtTownEdgeNumber
@@ -387,7 +385,7 @@
             this.txtTownEdgeNumber.Location = new System.Drawing.Point(336, 534);
             this.txtTownEdgeNumber.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownEdgeNumber.Name = "txtTownEdgeNumber";
-            this.txtTownEdgeNumber.Size = new System.Drawing.Size(780, 26);
+            this.txtTownEdgeNumber.Size = new System.Drawing.Size(780, 30);
             this.txtTownEdgeNumber.TabIndex = 30;
             // 
             // txtRangedEliteMilitaTroop
@@ -396,7 +394,7 @@
             this.txtRangedEliteMilitaTroop.Location = new System.Drawing.Point(336, 438);
             this.txtRangedEliteMilitaTroop.Margin = new System.Windows.Forms.Padding(6);
             this.txtRangedEliteMilitaTroop.Name = "txtRangedEliteMilitaTroop";
-            this.txtRangedEliteMilitaTroop.Size = new System.Drawing.Size(780, 26);
+            this.txtRangedEliteMilitaTroop.Size = new System.Drawing.Size(780, 30);
             this.txtRangedEliteMilitaTroop.TabIndex = 28;
             // 
             // txtMeleeEliteMilitiaTroop
@@ -405,7 +403,7 @@
             this.txtMeleeEliteMilitiaTroop.Location = new System.Drawing.Point(336, 390);
             this.txtMeleeEliteMilitiaTroop.Margin = new System.Windows.Forms.Padding(6);
             this.txtMeleeEliteMilitiaTroop.Name = "txtMeleeEliteMilitiaTroop";
-            this.txtMeleeEliteMilitiaTroop.Size = new System.Drawing.Size(780, 26);
+            this.txtMeleeEliteMilitiaTroop.Size = new System.Drawing.Size(780, 30);
             this.txtMeleeEliteMilitiaTroop.TabIndex = 27;
             // 
             // txtMeleeMilitiaTroop
@@ -414,7 +412,7 @@
             this.txtMeleeMilitiaTroop.Location = new System.Drawing.Point(336, 342);
             this.txtMeleeMilitiaTroop.Margin = new System.Windows.Forms.Padding(6);
             this.txtMeleeMilitiaTroop.Name = "txtMeleeMilitiaTroop";
-            this.txtMeleeMilitiaTroop.Size = new System.Drawing.Size(780, 26);
+            this.txtMeleeMilitiaTroop.Size = new System.Drawing.Size(780, 30);
             this.txtMeleeMilitiaTroop.TabIndex = 26;
             // 
             // txtBasicTroop
@@ -423,7 +421,7 @@
             this.txtBasicTroop.Location = new System.Drawing.Point(336, 294);
             this.txtBasicTroop.Margin = new System.Windows.Forms.Padding(6);
             this.txtBasicTroop.Name = "txtBasicTroop";
-            this.txtBasicTroop.Size = new System.Drawing.Size(780, 26);
+            this.txtBasicTroop.Size = new System.Drawing.Size(780, 30);
             this.txtBasicTroop.TabIndex = 25;
             // 
             // txtEliteBasicTroop
@@ -432,7 +430,7 @@
             this.txtEliteBasicTroop.Location = new System.Drawing.Point(336, 246);
             this.txtEliteBasicTroop.Margin = new System.Windows.Forms.Padding(6);
             this.txtEliteBasicTroop.Name = "txtEliteBasicTroop";
-            this.txtEliteBasicTroop.Size = new System.Drawing.Size(780, 26);
+            this.txtEliteBasicTroop.Size = new System.Drawing.Size(780, 30);
             this.txtEliteBasicTroop.TabIndex = 24;
             // 
             // txtColor2
@@ -441,7 +439,7 @@
             this.txtColor2.Location = new System.Drawing.Point(336, 198);
             this.txtColor2.Margin = new System.Windows.Forms.Padding(6);
             this.txtColor2.Name = "txtColor2";
-            this.txtColor2.Size = new System.Drawing.Size(780, 26);
+            this.txtColor2.Size = new System.Drawing.Size(780, 30);
             this.txtColor2.TabIndex = 23;
             // 
             // txtColor
@@ -450,7 +448,7 @@
             this.txtColor.Location = new System.Drawing.Point(336, 150);
             this.txtColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(780, 26);
+            this.txtColor.Size = new System.Drawing.Size(780, 30);
             this.txtColor.TabIndex = 22;
             // 
             // txtName
@@ -459,7 +457,7 @@
             this.txtName.Location = new System.Drawing.Point(336, 54);
             this.txtName.Margin = new System.Windows.Forms.Padding(6);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(780, 26);
+            this.txtName.Size = new System.Drawing.Size(780, 30);
             this.txtName.TabIndex = 20;
             // 
             // label1
@@ -483,7 +481,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(318, 48);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name:";
+            this.label2.Text = "name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
@@ -684,20 +682,22 @@
             this.txtID.Location = new System.Drawing.Point(336, 6);
             this.txtID.Margin = new System.Windows.Forms.Padding(6);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(780, 26);
+            this.txtID.Size = new System.Drawing.Size(780, 30);
             this.txtID.TabIndex = 19;
             // 
-            // tabPage2
+            // tabPageDetails1
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(6);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPage2.Size = new System.Drawing.Size(1134, 1107);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Details Info #1";
+            this.tabPageDetails1.AutoScroll = true;
+            this.tabPageDetails1.AutoScrollMinSize = new System.Drawing.Size(1000, 1000);
+            this.tabPageDetails1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageDetails1.Controls.Add(this.tableLayoutPanel4);
+            this.tabPageDetails1.Location = new System.Drawing.Point(4, 32);
+            this.tabPageDetails1.Margin = new System.Windows.Forms.Padding(6);
+            this.tabPageDetails1.Name = "tabPageDetails1";
+            this.tabPageDetails1.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPageDetails1.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageDetails1.TabIndex = 1;
+            this.tabPageDetails1.Text = "Details Info #1";
             // 
             // tableLayoutPanel4
             // 
@@ -759,7 +759,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1095);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1090);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // txtDuelPreset
@@ -768,7 +768,7 @@
             this.txtDuelPreset.Location = new System.Drawing.Point(336, 677);
             this.txtDuelPreset.Margin = new System.Windows.Forms.Padding(6);
             this.txtDuelPreset.Name = "txtDuelPreset";
-            this.txtDuelPreset.Size = new System.Drawing.Size(780, 26);
+            this.txtDuelPreset.Size = new System.Drawing.Size(780, 30);
             this.txtDuelPreset.TabIndex = 41;
             // 
             // label37
@@ -789,7 +789,7 @@
             this.txtBlackmith.Location = new System.Drawing.Point(336, 869);
             this.txtBlackmith.Margin = new System.Windows.Forms.Padding(6);
             this.txtBlackmith.Name = "txtBlackmith";
-            this.txtBlackmith.Size = new System.Drawing.Size(780, 26);
+            this.txtBlackmith.Size = new System.Drawing.Size(780, 30);
             this.txtBlackmith.TabIndex = 33;
             // 
             // txtSteward
@@ -798,7 +798,7 @@
             this.txtSteward.Location = new System.Drawing.Point(336, 821);
             this.txtSteward.Margin = new System.Windows.Forms.Padding(6);
             this.txtSteward.Name = "txtSteward";
-            this.txtSteward.Size = new System.Drawing.Size(780, 26);
+            this.txtSteward.Size = new System.Drawing.Size(780, 30);
             this.txtSteward.TabIndex = 32;
             // 
             // txtGuard
@@ -807,7 +807,7 @@
             this.txtGuard.Location = new System.Drawing.Point(336, 773);
             this.txtGuard.Margin = new System.Windows.Forms.Padding(6);
             this.txtGuard.Name = "txtGuard";
-            this.txtGuard.Size = new System.Drawing.Size(780, 26);
+            this.txtGuard.Size = new System.Drawing.Size(780, 30);
             this.txtGuard.TabIndex = 31;
             // 
             // txtPrisonGuard
@@ -816,7 +816,7 @@
             this.txtPrisonGuard.Location = new System.Drawing.Point(336, 725);
             this.txtPrisonGuard.Margin = new System.Windows.Forms.Padding(6);
             this.txtPrisonGuard.Name = "txtPrisonGuard";
-            this.txtPrisonGuard.Size = new System.Drawing.Size(780, 26);
+            this.txtPrisonGuard.Size = new System.Drawing.Size(780, 30);
             this.txtPrisonGuard.TabIndex = 30;
             // 
             // txtVeteranCaravanGuard
@@ -825,7 +825,7 @@
             this.txtVeteranCaravanGuard.Location = new System.Drawing.Point(336, 629);
             this.txtVeteranCaravanGuard.Margin = new System.Windows.Forms.Padding(6);
             this.txtVeteranCaravanGuard.Name = "txtVeteranCaravanGuard";
-            this.txtVeteranCaravanGuard.Size = new System.Drawing.Size(780, 26);
+            this.txtVeteranCaravanGuard.Size = new System.Drawing.Size(780, 30);
             this.txtVeteranCaravanGuard.TabIndex = 28;
             // 
             // txtCaravanGuard
@@ -834,7 +834,7 @@
             this.txtCaravanGuard.Location = new System.Drawing.Point(336, 581);
             this.txtCaravanGuard.Margin = new System.Windows.Forms.Padding(6);
             this.txtCaravanGuard.Name = "txtCaravanGuard";
-            this.txtCaravanGuard.Size = new System.Drawing.Size(780, 26);
+            this.txtCaravanGuard.Size = new System.Drawing.Size(780, 30);
             this.txtCaravanGuard.TabIndex = 27;
             // 
             // txtArmedTrader
@@ -843,7 +843,7 @@
             this.txtArmedTrader.Location = new System.Drawing.Point(336, 533);
             this.txtArmedTrader.Margin = new System.Windows.Forms.Padding(6);
             this.txtArmedTrader.Name = "txtArmedTrader";
-            this.txtArmedTrader.Size = new System.Drawing.Size(780, 26);
+            this.txtArmedTrader.Size = new System.Drawing.Size(780, 30);
             this.txtArmedTrader.TabIndex = 26;
             // 
             // txtCaravanMaster
@@ -852,7 +852,7 @@
             this.txtCaravanMaster.Location = new System.Drawing.Point(336, 485);
             this.txtCaravanMaster.Margin = new System.Windows.Forms.Padding(6);
             this.txtCaravanMaster.Name = "txtCaravanMaster";
-            this.txtCaravanMaster.Size = new System.Drawing.Size(780, 26);
+            this.txtCaravanMaster.Size = new System.Drawing.Size(780, 30);
             this.txtCaravanMaster.TabIndex = 25;
             // 
             // txtVillager
@@ -861,7 +861,7 @@
             this.txtVillager.Location = new System.Drawing.Point(336, 437);
             this.txtVillager.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillager.Name = "txtVillager";
-            this.txtVillager.Size = new System.Drawing.Size(780, 26);
+            this.txtVillager.Size = new System.Drawing.Size(780, 30);
             this.txtVillager.TabIndex = 24;
             // 
             // txtTournamentMaster
@@ -870,7 +870,7 @@
             this.txtTournamentMaster.Location = new System.Drawing.Point(336, 389);
             this.txtTournamentMaster.Margin = new System.Windows.Forms.Padding(6);
             this.txtTournamentMaster.Name = "txtTournamentMaster";
-            this.txtTournamentMaster.Size = new System.Drawing.Size(780, 26);
+            this.txtTournamentMaster.Size = new System.Drawing.Size(780, 30);
             this.txtTournamentMaster.TabIndex = 23;
             // 
             // txtEncounterBackgroundMesh
@@ -879,7 +879,7 @@
             this.txtEncounterBackgroundMesh.Location = new System.Drawing.Point(336, 54);
             this.txtEncounterBackgroundMesh.Margin = new System.Windows.Forms.Padding(6);
             this.txtEncounterBackgroundMesh.Name = "txtEncounterBackgroundMesh";
-            this.txtEncounterBackgroundMesh.Size = new System.Drawing.Size(780, 26);
+            this.txtEncounterBackgroundMesh.Size = new System.Drawing.Size(780, 30);
             this.txtEncounterBackgroundMesh.TabIndex = 20;
             // 
             // label20
@@ -1044,7 +1044,7 @@
             this.txtProsperityBonus.Location = new System.Drawing.Point(336, 6);
             this.txtProsperityBonus.Margin = new System.Windows.Forms.Padding(6);
             this.txtProsperityBonus.Name = "txtProsperityBonus";
-            this.txtProsperityBonus.Size = new System.Drawing.Size(780, 26);
+            this.txtProsperityBonus.Size = new System.Drawing.Size(780, 30);
             this.txtProsperityBonus.TabIndex = 19;
             // 
             // label36
@@ -1064,7 +1064,7 @@
             this.txtDefaultFaceKey.Location = new System.Drawing.Point(336, 102);
             this.txtDefaultFaceKey.Margin = new System.Windows.Forms.Padding(6);
             this.txtDefaultFaceKey.Name = "txtDefaultFaceKey";
-            this.txtDefaultFaceKey.Size = new System.Drawing.Size(773, 26);
+            this.txtDefaultFaceKey.Size = new System.Drawing.Size(773, 30);
             this.txtDefaultFaceKey.TabIndex = 38;
             // 
             // txtText
@@ -1077,16 +1077,18 @@
             this.txtText.TabIndex = 39;
             this.txtText.Text = "";
             // 
-            // tabPage3
+            // tabPageDetails2
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage3.Controls.Add(this.tableLayoutPanel5);
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(6);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1134, 1107);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Details Info #2";
+            this.tabPageDetails2.AutoScroll = true;
+            this.tabPageDetails2.AutoScrollMinSize = new System.Drawing.Size(1000, 1000);
+            this.tabPageDetails2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageDetails2.Controls.Add(this.tableLayoutPanel5);
+            this.tabPageDetails2.Location = new System.Drawing.Point(4, 32);
+            this.tabPageDetails2.Margin = new System.Windows.Forms.Padding(6);
+            this.tabPageDetails2.Name = "tabPageDetails2";
+            this.tabPageDetails2.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageDetails2.TabIndex = 2;
+            this.tabPageDetails2.Text = "Details Info #2";
             // 
             // tableLayoutPanel5
             // 
@@ -1169,7 +1171,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1134, 1107);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1134, 1102);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // txtMusician
@@ -1178,7 +1180,7 @@
             this.txtMusician.Location = new System.Drawing.Point(336, 1062);
             this.txtMusician.Margin = new System.Windows.Forms.Padding(6);
             this.txtMusician.Name = "txtMusician";
-            this.txtMusician.Size = new System.Drawing.Size(792, 26);
+            this.txtMusician.Size = new System.Drawing.Size(792, 30);
             this.txtMusician.TabIndex = 52;
             // 
             // txtTavernGameHost
@@ -1187,7 +1189,7 @@
             this.txtTavernGameHost.Location = new System.Drawing.Point(336, 1014);
             this.txtTavernGameHost.Margin = new System.Windows.Forms.Padding(6);
             this.txtTavernGameHost.Name = "txtTavernGameHost";
-            this.txtTavernGameHost.Size = new System.Drawing.Size(792, 26);
+            this.txtTavernGameHost.Size = new System.Drawing.Size(792, 30);
             this.txtTavernGameHost.TabIndex = 51;
             // 
             // txtTarvenkeeper
@@ -1196,7 +1198,7 @@
             this.txtTarvenkeeper.Location = new System.Drawing.Point(336, 966);
             this.txtTarvenkeeper.Margin = new System.Windows.Forms.Padding(6);
             this.txtTarvenkeeper.Name = "txtTarvenkeeper";
-            this.txtTarvenkeeper.Size = new System.Drawing.Size(792, 26);
+            this.txtTarvenkeeper.Size = new System.Drawing.Size(792, 30);
             this.txtTarvenkeeper.TabIndex = 50;
             // 
             // txtShopWorker
@@ -1205,7 +1207,7 @@
             this.txtShopWorker.Location = new System.Drawing.Point(336, 918);
             this.txtShopWorker.Margin = new System.Windows.Forms.Padding(6);
             this.txtShopWorker.Name = "txtShopWorker";
-            this.txtShopWorker.Size = new System.Drawing.Size(792, 26);
+            this.txtShopWorker.Size = new System.Drawing.Size(792, 30);
             this.txtShopWorker.TabIndex = 49;
             // 
             // txtRuralNotableNotary
@@ -1214,7 +1216,7 @@
             this.txtRuralNotableNotary.Location = new System.Drawing.Point(336, 870);
             this.txtRuralNotableNotary.Margin = new System.Windows.Forms.Padding(6);
             this.txtRuralNotableNotary.Name = "txtRuralNotableNotary";
-            this.txtRuralNotableNotary.Size = new System.Drawing.Size(792, 26);
+            this.txtRuralNotableNotary.Size = new System.Drawing.Size(792, 30);
             this.txtRuralNotableNotary.TabIndex = 48;
             // 
             // txtVillagerFemaleChild
@@ -1223,7 +1225,7 @@
             this.txtVillagerFemaleChild.Location = new System.Drawing.Point(336, 486);
             this.txtVillagerFemaleChild.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillagerFemaleChild.Name = "txtVillagerFemaleChild";
-            this.txtVillagerFemaleChild.Size = new System.Drawing.Size(792, 26);
+            this.txtVillagerFemaleChild.Size = new System.Drawing.Size(792, 30);
             this.txtVillagerFemaleChild.TabIndex = 41;
             // 
             // label38
@@ -1244,7 +1246,7 @@
             this.txtPreacherNotary.Location = new System.Drawing.Point(336, 822);
             this.txtPreacherNotary.Margin = new System.Windows.Forms.Padding(6);
             this.txtPreacherNotary.Name = "txtPreacherNotary";
-            this.txtPreacherNotary.Size = new System.Drawing.Size(792, 26);
+            this.txtPreacherNotary.Size = new System.Drawing.Size(792, 30);
             this.txtPreacherNotary.TabIndex = 36;
             // 
             // txtArtisanNotary
@@ -1253,7 +1255,7 @@
             this.txtArtisanNotary.Location = new System.Drawing.Point(336, 774);
             this.txtArtisanNotary.Margin = new System.Windows.Forms.Padding(6);
             this.txtArtisanNotary.Name = "txtArtisanNotary";
-            this.txtArtisanNotary.Size = new System.Drawing.Size(792, 26);
+            this.txtArtisanNotary.Size = new System.Drawing.Size(792, 30);
             this.txtArtisanNotary.TabIndex = 35;
             // 
             // txtMerchantNotary
@@ -1262,7 +1264,7 @@
             this.txtMerchantNotary.Location = new System.Drawing.Point(336, 726);
             this.txtMerchantNotary.Margin = new System.Windows.Forms.Padding(6);
             this.txtMerchantNotary.Name = "txtMerchantNotary";
-            this.txtMerchantNotary.Size = new System.Drawing.Size(792, 26);
+            this.txtMerchantNotary.Size = new System.Drawing.Size(792, 30);
             this.txtMerchantNotary.TabIndex = 34;
             // 
             // txtGangleaderBodyGuard
@@ -1271,7 +1273,7 @@
             this.txtGangleaderBodyGuard.Location = new System.Drawing.Point(336, 678);
             this.txtGangleaderBodyGuard.Margin = new System.Windows.Forms.Padding(6);
             this.txtGangleaderBodyGuard.Name = "txtGangleaderBodyGuard";
-            this.txtGangleaderBodyGuard.Size = new System.Drawing.Size(792, 26);
+            this.txtGangleaderBodyGuard.Size = new System.Drawing.Size(792, 30);
             this.txtGangleaderBodyGuard.TabIndex = 33;
             // 
             // txtRansomBroker
@@ -1280,7 +1282,7 @@
             this.txtRansomBroker.Location = new System.Drawing.Point(336, 630);
             this.txtRansomBroker.Margin = new System.Windows.Forms.Padding(6);
             this.txtRansomBroker.Name = "txtRansomBroker";
-            this.txtRansomBroker.Size = new System.Drawing.Size(792, 26);
+            this.txtRansomBroker.Size = new System.Drawing.Size(792, 30);
             this.txtRansomBroker.TabIndex = 32;
             // 
             // txtTownsmanTeenager
@@ -1289,7 +1291,7 @@
             this.txtTownsmanTeenager.Location = new System.Drawing.Point(336, 582);
             this.txtTownsmanTeenager.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownsmanTeenager.Name = "txtTownsmanTeenager";
-            this.txtTownsmanTeenager.Size = new System.Drawing.Size(792, 26);
+            this.txtTownsmanTeenager.Size = new System.Drawing.Size(792, 30);
             this.txtTownsmanTeenager.TabIndex = 31;
             // 
             // txtVillagerFemaleTeenager
@@ -1298,7 +1300,7 @@
             this.txtVillagerFemaleTeenager.Location = new System.Drawing.Point(336, 534);
             this.txtVillagerFemaleTeenager.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillagerFemaleTeenager.Name = "txtVillagerFemaleTeenager";
-            this.txtVillagerFemaleTeenager.Size = new System.Drawing.Size(792, 26);
+            this.txtVillagerFemaleTeenager.Size = new System.Drawing.Size(792, 30);
             this.txtVillagerFemaleTeenager.TabIndex = 30;
             // 
             // txtVillagerMaleTeenager
@@ -1307,7 +1309,7 @@
             this.txtVillagerMaleTeenager.Location = new System.Drawing.Point(336, 438);
             this.txtVillagerMaleTeenager.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillagerMaleTeenager.Name = "txtVillagerMaleTeenager";
-            this.txtVillagerMaleTeenager.Size = new System.Drawing.Size(792, 26);
+            this.txtVillagerMaleTeenager.Size = new System.Drawing.Size(792, 30);
             this.txtVillagerMaleTeenager.TabIndex = 28;
             // 
             // txtVillagerMaleChild
@@ -1316,7 +1318,7 @@
             this.txtVillagerMaleChild.Location = new System.Drawing.Point(336, 390);
             this.txtVillagerMaleChild.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillagerMaleChild.Name = "txtVillagerMaleChild";
-            this.txtVillagerMaleChild.Size = new System.Drawing.Size(792, 26);
+            this.txtVillagerMaleChild.Size = new System.Drawing.Size(792, 30);
             this.txtVillagerMaleChild.TabIndex = 27;
             // 
             // txtVillageWoman
@@ -1325,7 +1327,7 @@
             this.txtVillageWoman.Location = new System.Drawing.Point(336, 342);
             this.txtVillageWoman.Margin = new System.Windows.Forms.Padding(6);
             this.txtVillageWoman.Name = "txtVillageWoman";
-            this.txtVillageWoman.Size = new System.Drawing.Size(792, 26);
+            this.txtVillageWoman.Size = new System.Drawing.Size(792, 30);
             this.txtVillageWoman.TabIndex = 26;
             // 
             // txtTownsmanChild
@@ -1334,7 +1336,7 @@
             this.txtTownsmanChild.Location = new System.Drawing.Point(336, 294);
             this.txtTownsmanChild.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownsmanChild.Name = "txtTownsmanChild";
-            this.txtTownsmanChild.Size = new System.Drawing.Size(792, 26);
+            this.txtTownsmanChild.Size = new System.Drawing.Size(792, 30);
             this.txtTownsmanChild.TabIndex = 25;
             // 
             // txtTownsmanInfant
@@ -1343,7 +1345,7 @@
             this.txtTownsmanInfant.Location = new System.Drawing.Point(336, 246);
             this.txtTownsmanInfant.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownsmanInfant.Name = "txtTownsmanInfant";
-            this.txtTownsmanInfant.Size = new System.Drawing.Size(792, 26);
+            this.txtTownsmanInfant.Size = new System.Drawing.Size(792, 30);
             this.txtTownsmanInfant.TabIndex = 24;
             // 
             // txtTownsman
@@ -1352,7 +1354,7 @@
             this.txtTownsman.Location = new System.Drawing.Point(336, 198);
             this.txtTownsman.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownsman.Name = "txtTownsman";
-            this.txtTownsman.Size = new System.Drawing.Size(792, 26);
+            this.txtTownsman.Size = new System.Drawing.Size(792, 30);
             this.txtTownsman.TabIndex = 23;
             // 
             // txtTownswomanInfant
@@ -1361,7 +1363,7 @@
             this.txtTownswomanInfant.Location = new System.Drawing.Point(336, 54);
             this.txtTownswomanInfant.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownswomanInfant.Name = "txtTownswomanInfant";
-            this.txtTownswomanInfant.Size = new System.Drawing.Size(792, 26);
+            this.txtTownswomanInfant.Size = new System.Drawing.Size(792, 30);
             this.txtTownswomanInfant.TabIndex = 20;
             // 
             // label39
@@ -1562,7 +1564,7 @@
             this.txtTownswoman.Location = new System.Drawing.Point(336, 6);
             this.txtTownswoman.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownswoman.Name = "txtTownswoman";
-            this.txtTownswoman.Size = new System.Drawing.Size(792, 26);
+            this.txtTownswoman.Size = new System.Drawing.Size(792, 30);
             this.txtTownswoman.TabIndex = 19;
             // 
             // label55
@@ -1583,7 +1585,7 @@
             this.txtTownswomanChild.Location = new System.Drawing.Point(336, 102);
             this.txtTownswomanChild.Margin = new System.Windows.Forms.Padding(6);
             this.txtTownswomanChild.Name = "txtTownswomanChild";
-            this.txtTownswomanChild.Size = new System.Drawing.Size(792, 26);
+            this.txtTownswomanChild.Size = new System.Drawing.Size(792, 30);
             this.txtTownswomanChild.TabIndex = 38;
             // 
             // textBox21
@@ -1592,7 +1594,7 @@
             this.textBox21.Location = new System.Drawing.Point(336, 150);
             this.textBox21.Margin = new System.Windows.Forms.Padding(6);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(792, 26);
+            this.textBox21.Size = new System.Drawing.Size(792, 30);
             this.textBox21.TabIndex = 42;
             // 
             // label56
@@ -1655,16 +1657,18 @@
             this.label60.Text = "musician";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tabPage4
+            // tabPageDetails3
             // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage4.Controls.Add(this.tableLayoutPanel6);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(6);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1134, 1107);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Details Info #3";
+            this.tabPageDetails3.AutoScroll = true;
+            this.tabPageDetails3.AutoScrollMinSize = new System.Drawing.Size(1000, 1000);
+            this.tabPageDetails3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageDetails3.Controls.Add(this.tableLayoutPanel6);
+            this.tabPageDetails3.Location = new System.Drawing.Point(4, 32);
+            this.tabPageDetails3.Margin = new System.Windows.Forms.Padding(6);
+            this.tabPageDetails3.Name = "tabPageDetails3";
+            this.tabPageDetails3.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageDetails3.TabIndex = 3;
+            this.tabPageDetails3.Text = "Details Info #3";
             // 
             // tableLayoutPanel6
             // 
@@ -1722,7 +1726,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1107);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1102);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // txtWeaponPracticeStage2
@@ -1731,7 +1735,7 @@
             this.txtWeaponPracticeStage2.Location = new System.Drawing.Point(336, 486);
             this.txtWeaponPracticeStage2.Margin = new System.Windows.Forms.Padding(6);
             this.txtWeaponPracticeStage2.Name = "txtWeaponPracticeStage2";
-            this.txtWeaponPracticeStage2.Size = new System.Drawing.Size(792, 26);
+            this.txtWeaponPracticeStage2.Size = new System.Drawing.Size(792, 30);
             this.txtWeaponPracticeStage2.TabIndex = 41;
             // 
             // label61
@@ -1752,7 +1756,7 @@
             this.txtBoardGameType.Location = new System.Drawing.Point(336, 630);
             this.txtBoardGameType.Margin = new System.Windows.Forms.Padding(6);
             this.txtBoardGameType.Name = "txtBoardGameType";
-            this.txtBoardGameType.Size = new System.Drawing.Size(792, 26);
+            this.txtBoardGameType.Size = new System.Drawing.Size(792, 30);
             this.txtBoardGameType.TabIndex = 32;
             // 
             // txtGearDummy
@@ -1761,7 +1765,7 @@
             this.txtGearDummy.Location = new System.Drawing.Point(336, 582);
             this.txtGearDummy.Margin = new System.Windows.Forms.Padding(6);
             this.txtGearDummy.Name = "txtGearDummy";
-            this.txtGearDummy.Size = new System.Drawing.Size(792, 26);
+            this.txtGearDummy.Size = new System.Drawing.Size(792, 30);
             this.txtGearDummy.TabIndex = 31;
             // 
             // txtWeaponPracticeStage3
@@ -1770,7 +1774,7 @@
             this.txtWeaponPracticeStage3.Location = new System.Drawing.Point(336, 534);
             this.txtWeaponPracticeStage3.Margin = new System.Windows.Forms.Padding(6);
             this.txtWeaponPracticeStage3.Name = "txtWeaponPracticeStage3";
-            this.txtWeaponPracticeStage3.Size = new System.Drawing.Size(792, 26);
+            this.txtWeaponPracticeStage3.Size = new System.Drawing.Size(792, 30);
             this.txtWeaponPracticeStage3.TabIndex = 30;
             // 
             // txtWeaponPracticeStage1
@@ -1779,7 +1783,7 @@
             this.txtWeaponPracticeStage1.Location = new System.Drawing.Point(336, 438);
             this.txtWeaponPracticeStage1.Margin = new System.Windows.Forms.Padding(6);
             this.txtWeaponPracticeStage1.Name = "txtWeaponPracticeStage1";
-            this.txtWeaponPracticeStage1.Size = new System.Drawing.Size(792, 26);
+            this.txtWeaponPracticeStage1.Size = new System.Drawing.Size(792, 30);
             this.txtWeaponPracticeStage1.TabIndex = 28;
             // 
             // txtGearPracticeDummy
@@ -1788,7 +1792,7 @@
             this.txtGearPracticeDummy.Location = new System.Drawing.Point(336, 390);
             this.txtGearPracticeDummy.Margin = new System.Windows.Forms.Padding(6);
             this.txtGearPracticeDummy.Name = "txtGearPracticeDummy";
-            this.txtGearPracticeDummy.Size = new System.Drawing.Size(792, 26);
+            this.txtGearPracticeDummy.Size = new System.Drawing.Size(792, 30);
             this.txtGearPracticeDummy.TabIndex = 27;
             // 
             // txtFemaleDancer
@@ -1797,7 +1801,7 @@
             this.txtFemaleDancer.Location = new System.Drawing.Point(336, 342);
             this.txtFemaleDancer.Margin = new System.Windows.Forms.Padding(6);
             this.txtFemaleDancer.Name = "txtFemaleDancer";
-            this.txtFemaleDancer.Size = new System.Drawing.Size(792, 26);
+            this.txtFemaleDancer.Size = new System.Drawing.Size(792, 30);
             this.txtFemaleDancer.TabIndex = 26;
             // 
             // txtFemaleBeggar
@@ -1806,7 +1810,7 @@
             this.txtFemaleBeggar.Location = new System.Drawing.Point(336, 294);
             this.txtFemaleBeggar.Margin = new System.Windows.Forms.Padding(6);
             this.txtFemaleBeggar.Name = "txtFemaleBeggar";
-            this.txtFemaleBeggar.Size = new System.Drawing.Size(792, 26);
+            this.txtFemaleBeggar.Size = new System.Drawing.Size(792, 30);
             this.txtFemaleBeggar.TabIndex = 25;
             // 
             // txtBeggar
@@ -1815,7 +1819,7 @@
             this.txtBeggar.Location = new System.Drawing.Point(336, 246);
             this.txtBeggar.Margin = new System.Windows.Forms.Padding(6);
             this.txtBeggar.Name = "txtBeggar";
-            this.txtBeggar.Size = new System.Drawing.Size(792, 26);
+            this.txtBeggar.Size = new System.Drawing.Size(792, 30);
             this.txtBeggar.TabIndex = 24;
             // 
             // txtMerchant
@@ -1824,7 +1828,7 @@
             this.txtMerchant.Location = new System.Drawing.Point(336, 198);
             this.txtMerchant.Margin = new System.Windows.Forms.Padding(6);
             this.txtMerchant.Name = "txtMerchant";
-            this.txtMerchant.Size = new System.Drawing.Size(792, 26);
+            this.txtMerchant.Size = new System.Drawing.Size(792, 30);
             this.txtMerchant.TabIndex = 23;
             // 
             // txtArmorer
@@ -1833,7 +1837,7 @@
             this.txtArmorer.Location = new System.Drawing.Point(336, 54);
             this.txtArmorer.Margin = new System.Windows.Forms.Padding(6);
             this.txtArmorer.Name = "txtArmorer";
-            this.txtArmorer.Size = new System.Drawing.Size(792, 26);
+            this.txtArmorer.Size = new System.Drawing.Size(792, 30);
             this.txtArmorer.TabIndex = 20;
             // 
             // label62
@@ -1986,7 +1990,7 @@
             this.txtTavernWench.Location = new System.Drawing.Point(336, 6);
             this.txtTavernWench.Margin = new System.Windows.Forms.Padding(6);
             this.txtTavernWench.Name = "txtTavernWench";
-            this.txtTavernWench.Size = new System.Drawing.Size(792, 26);
+            this.txtTavernWench.Size = new System.Drawing.Size(792, 30);
             this.txtTavernWench.TabIndex = 19;
             // 
             // label78
@@ -2007,7 +2011,7 @@
             this.txtHorseMerchant.Location = new System.Drawing.Point(336, 102);
             this.txtHorseMerchant.Margin = new System.Windows.Forms.Padding(6);
             this.txtHorseMerchant.Name = "txtHorseMerchant";
-            this.txtHorseMerchant.Size = new System.Drawing.Size(792, 26);
+            this.txtHorseMerchant.Size = new System.Drawing.Size(792, 30);
             this.txtHorseMerchant.TabIndex = 38;
             // 
             // txtBarber
@@ -2016,20 +2020,22 @@
             this.txtBarber.Location = new System.Drawing.Point(336, 150);
             this.txtBarber.Margin = new System.Windows.Forms.Padding(6);
             this.txtBarber.Name = "txtBarber";
-            this.txtBarber.Size = new System.Drawing.Size(792, 26);
+            this.txtBarber.Size = new System.Drawing.Size(792, 30);
             this.txtBarber.TabIndex = 42;
             // 
-            // tabPage7
+            // tabPageNameBuilder
             // 
-            this.tabPage7.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage7.Controls.Add(this.tableLayoutPanel3);
-            this.tabPage7.Location = new System.Drawing.Point(4, 27);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(6);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPage7.Size = new System.Drawing.Size(1134, 1107);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Name Builder";
+            this.tabPageNameBuilder.AutoScroll = true;
+            this.tabPageNameBuilder.AutoScrollMinSize = new System.Drawing.Size(1000, 1000);
+            this.tabPageNameBuilder.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageNameBuilder.Controls.Add(this.tableLayoutPanel3);
+            this.tabPageNameBuilder.Location = new System.Drawing.Point(4, 32);
+            this.tabPageNameBuilder.Margin = new System.Windows.Forms.Padding(6);
+            this.tabPageNameBuilder.Name = "tabPageNameBuilder";
+            this.tabPageNameBuilder.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPageNameBuilder.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageNameBuilder.TabIndex = 6;
+            this.tabPageNameBuilder.Text = "Name Builder";
             // 
             // tableLayoutPanel3
             // 
@@ -2051,7 +2057,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 288F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 288F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1122, 1095);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1122, 1090);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel4
@@ -2069,7 +2075,7 @@
             // 
             // btnModifyClanName
             // 
-            this.btnModifyClanName.Location = new System.Drawing.Point(781, 130);
+            this.btnModifyClanName.Location = new System.Drawing.Point(602, 118);
             this.btnModifyClanName.Margin = new System.Windows.Forms.Padding(6);
             this.btnModifyClanName.Name = "btnModifyClanName";
             this.btnModifyClanName.Size = new System.Drawing.Size(77, 44);
@@ -2080,7 +2086,7 @@
             // 
             // btnDeleteClanName
             // 
-            this.btnDeleteClanName.Location = new System.Drawing.Point(782, 75);
+            this.btnDeleteClanName.Location = new System.Drawing.Point(603, 63);
             this.btnDeleteClanName.Margin = new System.Windows.Forms.Padding(6);
             this.btnDeleteClanName.Name = "btnDeleteClanName";
             this.btnDeleteClanName.Size = new System.Drawing.Size(77, 44);
@@ -2091,7 +2097,7 @@
             // 
             // btnAddClanName
             // 
-            this.btnAddClanName.Location = new System.Drawing.Point(782, 18);
+            this.btnAddClanName.Location = new System.Drawing.Point(603, 6);
             this.btnAddClanName.Margin = new System.Windows.Forms.Padding(6);
             this.btnAddClanName.Name = "btnAddClanName";
             this.btnAddClanName.Size = new System.Drawing.Size(77, 44);
@@ -2103,11 +2109,11 @@
             // clanNamesList
             // 
             this.clanNamesList.FormattingEnabled = true;
-            this.clanNamesList.ItemHeight = 18;
-            this.clanNamesList.Location = new System.Drawing.Point(26, 18);
+            this.clanNamesList.ItemHeight = 23;
+            this.clanNamesList.Location = new System.Drawing.Point(0, 0);
             this.clanNamesList.Margin = new System.Windows.Forms.Padding(6);
             this.clanNamesList.Name = "clanNamesList";
-            this.clanNamesList.Size = new System.Drawing.Size(741, 220);
+            this.clanNamesList.Size = new System.Drawing.Size(591, 280);
             this.clanNamesList.TabIndex = 4;
             // 
             // panel3
@@ -2125,7 +2131,7 @@
             // 
             // btnModifyFemaleName
             // 
-            this.btnModifyFemaleName.Location = new System.Drawing.Point(781, 130);
+            this.btnModifyFemaleName.Location = new System.Drawing.Point(601, 118);
             this.btnModifyFemaleName.Margin = new System.Windows.Forms.Padding(6);
             this.btnModifyFemaleName.Name = "btnModifyFemaleName";
             this.btnModifyFemaleName.Size = new System.Drawing.Size(77, 44);
@@ -2136,7 +2142,7 @@
             // 
             // btnDeleteFemaleName
             // 
-            this.btnDeleteFemaleName.Location = new System.Drawing.Point(782, 75);
+            this.btnDeleteFemaleName.Location = new System.Drawing.Point(602, 63);
             this.btnDeleteFemaleName.Margin = new System.Windows.Forms.Padding(6);
             this.btnDeleteFemaleName.Name = "btnDeleteFemaleName";
             this.btnDeleteFemaleName.Size = new System.Drawing.Size(77, 44);
@@ -2147,7 +2153,7 @@
             // 
             // btnAddFemaleName
             // 
-            this.btnAddFemaleName.Location = new System.Drawing.Point(782, 18);
+            this.btnAddFemaleName.Location = new System.Drawing.Point(602, 6);
             this.btnAddFemaleName.Margin = new System.Windows.Forms.Padding(6);
             this.btnAddFemaleName.Name = "btnAddFemaleName";
             this.btnAddFemaleName.Size = new System.Drawing.Size(77, 44);
@@ -2159,11 +2165,11 @@
             // femaleNamesList
             // 
             this.femaleNamesList.FormattingEnabled = true;
-            this.femaleNamesList.ItemHeight = 18;
-            this.femaleNamesList.Location = new System.Drawing.Point(26, 18);
+            this.femaleNamesList.ItemHeight = 23;
+            this.femaleNamesList.Location = new System.Drawing.Point(6, 13);
             this.femaleNamesList.Margin = new System.Windows.Forms.Padding(6);
             this.femaleNamesList.Name = "femaleNamesList";
-            this.femaleNamesList.Size = new System.Drawing.Size(741, 220);
+            this.femaleNamesList.Size = new System.Drawing.Size(591, 257);
             this.femaleNamesList.TabIndex = 4;
             // 
             // label3
@@ -2176,6 +2182,7 @@
             this.label3.Size = new System.Drawing.Size(208, 288);
             this.label3.TabIndex = 0;
             this.label3.Text = "Male Names:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label18
             // 
@@ -2187,6 +2194,7 @@
             this.label18.Size = new System.Drawing.Size(208, 288);
             this.label18.TabIndex = 1;
             this.label18.Text = "Female Names";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label19
             // 
@@ -2198,6 +2206,7 @@
             this.label19.Size = new System.Drawing.Size(208, 288);
             this.label19.TabIndex = 2;
             this.label19.Text = "Clan Names";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
             // 
@@ -2214,7 +2223,7 @@
             // 
             // btnModifyMaleName
             // 
-            this.btnModifyMaleName.Location = new System.Drawing.Point(780, 135);
+            this.btnModifyMaleName.Location = new System.Drawing.Point(602, 118);
             this.btnModifyMaleName.Margin = new System.Windows.Forms.Padding(6);
             this.btnModifyMaleName.Name = "btnModifyMaleName";
             this.btnModifyMaleName.Size = new System.Drawing.Size(77, 44);
@@ -2225,7 +2234,7 @@
             // 
             // btnDeleteMaleName
             // 
-            this.btnDeleteMaleName.Location = new System.Drawing.Point(781, 78);
+            this.btnDeleteMaleName.Location = new System.Drawing.Point(603, 61);
             this.btnDeleteMaleName.Margin = new System.Windows.Forms.Padding(6);
             this.btnDeleteMaleName.Name = "btnDeleteMaleName";
             this.btnDeleteMaleName.Size = new System.Drawing.Size(77, 44);
@@ -2236,7 +2245,7 @@
             // 
             // btnAddMaleName
             // 
-            this.btnAddMaleName.Location = new System.Drawing.Point(781, 23);
+            this.btnAddMaleName.Location = new System.Drawing.Point(603, 6);
             this.btnAddMaleName.Margin = new System.Windows.Forms.Padding(6);
             this.btnAddMaleName.Name = "btnAddMaleName";
             this.btnAddMaleName.Size = new System.Drawing.Size(77, 44);
@@ -2248,37 +2257,16 @@
             // maleNamesList
             // 
             this.maleNamesList.FormattingEnabled = true;
-            this.maleNamesList.ItemHeight = 18;
-            this.maleNamesList.Location = new System.Drawing.Point(23, 23);
+            this.maleNamesList.ItemHeight = 23;
+            this.maleNamesList.Location = new System.Drawing.Point(0, 0);
             this.maleNamesList.Margin = new System.Windows.Forms.Padding(6);
             this.maleNamesList.Name = "maleNamesList";
-            this.maleNamesList.Size = new System.Drawing.Size(741, 220);
+            this.maleNamesList.Size = new System.Drawing.Size(591, 257);
             this.maleNamesList.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnSave);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(6, 1156);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1142, 65);
-            this.panel1.TabIndex = 2;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(991, 12);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(138, 44);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // ucCultureDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2286,26 +2274,25 @@
             this.Name = "ucCultureDetails";
             this.Size = new System.Drawing.Size(1154, 1227);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.tabCtrlCultureDetails.ResumeLayout(false);
+            this.tabPageBasicInfo.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.tabPageDetails1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.tabPageDetails2.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
+            this.tabPageDetails3.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
+            this.tabPageNameBuilder.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2313,8 +2300,8 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabCtrlCultureDetails;
+        private System.Windows.Forms.TabPage tabPageBasicInfo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtRebelsPartyTemplate;
         private System.Windows.Forms.TextBox txtMilitiaPartyTemplate;
@@ -2350,12 +2337,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.CheckBox chkIsMainCulture;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPageDetails1;
+        private System.Windows.Forms.TabPage tabPageDetails2;
+        private System.Windows.Forms.TabPage tabPageDetails3;
+        private System.Windows.Forms.TabPage tabPageNameBuilder;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label18;

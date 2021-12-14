@@ -32,32 +32,32 @@ namespace ArenaModdingTool.Controls
 
         private void loadCultureDetails()
         {
+            loadDataFromCulture(culture, tableLayoutPanel1);
+            loadDataFromCulture(culture, tableLayoutPanel4);
+            loadDataFromCulture(culture, tableLayoutPanel5);
+            loadDataFromCulture(culture, tableLayoutPanel6);
+        }
+
+        private void loadDataFromCulture(MBBannerlordCulture culture, TableLayoutPanel tableLayoutPanel)
+        {
             var propertiesInfos = culture.GetType().GetProperties();
-            for (int i = 0; i < tableLayoutPanel1.RowCount; i++)
+            for (int i = 0; i < tableLayoutPanel.RowCount; i++)
             {
-                var controlName = tableLayoutPanel1.GetControlFromPosition(0, i).Text;
-                var searchResult = propertiesInfos.Where(o => o.Name == controlName);
+                var control = tableLayoutPanel.GetControlFromPosition(0, i);
+
+                if (control == null)
+                    continue;
+
+                var controlName = tableLayoutPanel.GetControlFromPosition(0, i).Text;
+                var searchResult = propertiesInfos.Where(o => o.Name == controlName.ToLower());
                 if (searchResult.Count() == 1)
                 {
-                    tableLayoutPanel1.GetControlFromPosition(1, i).Text = searchResult.First().GetValue(culture).ToString();
-                }
-            }
-            for (int i = 0; i < tableLayoutPanel4.RowCount; i++)
-            {
-                var controlName = tableLayoutPanel1.GetControlFromPosition(0, i).Text;
-                var searchResult = propertiesInfos.Where(o => o.Name == controlName);
-                if (searchResult.Count() == 1)
-                {
-                    tableLayoutPanel1.GetControlFromPosition(1, i).Text = searchResult.First().GetValue(culture).ToString();
-                }
-            }
-            for (int i = 0; i < tableLayoutPanel5.RowCount; i++)
-            {
-                var controlName = tableLayoutPanel1.GetControlFromPosition(0, i).Text;
-                var searchResult = propertiesInfos.Where(o => o.Name == controlName);
-                if (searchResult.Count() == 1)
-                {
-                    tableLayoutPanel1.GetControlFromPosition(1, i).Text = searchResult.First().GetValue(culture).ToString();
+                    var textBoxControl = tableLayoutPanel.GetControlFromPosition(1, i);
+                    var objectVal = searchResult.First().GetValue(culture);
+                    if (objectVal != null)
+                    {
+                        textBoxControl.Text = objectVal.ToString();
+                    }
                 }
             }
         }

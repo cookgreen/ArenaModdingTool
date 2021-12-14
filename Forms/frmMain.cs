@@ -324,7 +324,57 @@ namespace ArenaModdingTool
 
         private void btnCultures_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WIP!");
+            bool isContinue = true;
+
+            if (currentProject.BannerlordModule.ModuleCultures.Count == 0)
+            {
+                var dialogResult = MessageBox.Show(Helper.LOC("str_info_message_no_any_cultures_found_in_current_module"), Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    frmCreateNewFile createNewFileWin = new frmCreateNewFile(null, currentProject.BannerlordModule.ModuleDataPath, "Cultures");
+                    if (createNewFileWin.ShowDialog() == DialogResult.OK)
+                    {
+                        string fileName = createNewFileWin.FileName;
+                        string errMsg;
+                        bool canLoaded = currentProject.CopyFileIntoCurrentModuleAndLoad("Cultures", fileName, out errMsg);
+
+                        if (!canLoaded)
+                        {
+                            MessageBox.Show(errMsg, "Notice");
+                            return;
+                        }
+                        else
+                        {
+                            var mbXmlNode = createNewFileWin.MBXmlNode;
+                            currentProject.BannerlordModule.ModuleInfo.XmlNodes.Add(mbXmlNode);
+                            currentProject.SaveModuleInfo();
+                        }
+                    }
+                    else
+                    {
+                        isContinue = false;
+                    }
+                }
+            }
+
+            if (isContinue)
+            {
+                TabControl tabControl = new TabControl();
+                tabControl.Dock = DockStyle.Fill;
+                foreach (var items in currentProject.BannerlordModule.ModuleCultures)
+                {
+                    var moduleName = (new DirectoryInfo(items.FilePath).Parent.Parent.Name);
+                    var fileName = new DirectoryInfo(items.FilePath).Name;
+                    var page = new TabPage(moduleName + " - " + fileName);
+                    ucCultureEditor cultureEditor = new ucCultureEditor(currentProject, items);
+                    page.Controls.Clear();
+                    page.Controls.Add(cultureEditor);
+                    cultureEditor.Dock = DockStyle.Fill;
+                    tabControl.TabPages.Add(page);
+                }
+                panelMain.Controls.Clear();
+                panelMain.Controls.Add(tabControl);
+            }
         }
 
         #endregion

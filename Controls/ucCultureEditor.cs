@@ -34,7 +34,11 @@ namespace ArenaModdingTool.Controls
 
         private void CultureListCtrl_SelectCultureChanged(MBBannerlordCulture selectedCulture, int index)
         {
-
+            cultureDetailsCtrl = new ucCultureDetails(project, selectedCulture, index, cultureListCtrl.State);
+            panel3.Controls.Clear();
+            panel3.Controls.Add(cultureDetailsCtrl);
+            cultureDetailsCtrl.Dock = DockStyle.Fill;
+            btnSave.Visible = true;
         }
     }
 }
