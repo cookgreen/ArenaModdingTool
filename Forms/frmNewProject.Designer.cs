@@ -38,6 +38,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.groupbox_module_info = new System.Windows.Forms.GroupBox();
+            this.btnEditDepencyModules = new System.Windows.Forms.Button();
             this.txtBannerlordVersion = new System.Windows.Forms.TextBox();
             this.lbVersion = new System.Windows.Forms.Label();
             this.groupbox_xmls = new System.Windows.Forms.GroupBox();
@@ -59,7 +60,6 @@
             this.colSubModuleTags = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chkMultiplayer = new System.Windows.Forms.CheckBox();
             this.chkSinglePlayer = new System.Windows.Forms.CheckBox();
-            this.btnEditDepencyModules = new System.Windows.Forms.Button();
             this.groupbox_module_info.SuspendLayout();
             this.groupbox_xmls.SuspendLayout();
             this.groupbox_submodules.SuspendLayout();
@@ -68,66 +68,74 @@
             // lbProjectName
             // 
             this.lbProjectName.AutoSize = true;
-            this.lbProjectName.Location = new System.Drawing.Point(13, 13);
+            this.lbProjectName.Location = new System.Drawing.Point(21, 26);
+            this.lbProjectName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbProjectName.Name = "lbProjectName";
-            this.lbProjectName.Size = new System.Drawing.Size(83, 12);
+            this.lbProjectName.Size = new System.Drawing.Size(115, 24);
             this.lbProjectName.TabIndex = 0;
             this.lbProjectName.Text = "Project Name:";
             // 
             // txtProjectName
             // 
-            this.txtProjectName.Location = new System.Drawing.Point(102, 10);
+            this.txtProjectName.Location = new System.Drawing.Point(170, 19);
+            this.txtProjectName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(325, 21);
+            this.txtProjectName.Size = new System.Drawing.Size(539, 30);
             this.txtProjectName.TabIndex = 1;
             // 
             // lbModuleName
             // 
             this.lbModuleName.AutoSize = true;
-            this.lbModuleName.Location = new System.Drawing.Point(15, 44);
+            this.lbModuleName.Location = new System.Drawing.Point(25, 88);
+            this.lbModuleName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbModuleName.Name = "lbModuleName";
-            this.lbModuleName.Size = new System.Drawing.Size(77, 12);
+            this.lbModuleName.Size = new System.Drawing.Size(119, 24);
             this.lbModuleName.TabIndex = 2;
             this.lbModuleName.Text = "Module Name:";
             // 
             // txtMBModuleName
             // 
-            this.txtMBModuleName.Location = new System.Drawing.Point(102, 41);
+            this.txtMBModuleName.Location = new System.Drawing.Point(170, 82);
+            this.txtMBModuleName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMBModuleName.Name = "txtMBModuleName";
-            this.txtMBModuleName.Size = new System.Drawing.Size(325, 21);
+            this.txtMBModuleName.Size = new System.Drawing.Size(539, 30);
             this.txtMBModuleName.TabIndex = 3;
             // 
             // lbLocation
             // 
             this.lbLocation.AutoSize = true;
-            this.lbLocation.Location = new System.Drawing.Point(13, 77);
+            this.lbLocation.Location = new System.Drawing.Point(21, 154);
+            this.lbLocation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbLocation.Name = "lbLocation";
-            this.lbLocation.Size = new System.Drawing.Size(59, 12);
+            this.lbLocation.Size = new System.Drawing.Size(76, 24);
             this.lbLocation.TabIndex = 4;
             this.lbLocation.Text = "Location:";
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(102, 74);
+            this.txtLocation.Location = new System.Drawing.Point(170, 147);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.ReadOnly = true;
-            this.txtLocation.Size = new System.Drawing.Size(272, 21);
+            this.txtLocation.Size = new System.Drawing.Size(450, 30);
             this.txtLocation.TabIndex = 5;
             // 
             // btnLocationBrowse
             // 
-            this.btnLocationBrowse.Location = new System.Drawing.Point(380, 72);
+            this.btnLocationBrowse.Location = new System.Drawing.Point(634, 144);
+            this.btnLocationBrowse.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnLocationBrowse.Name = "btnLocationBrowse";
-            this.btnLocationBrowse.Size = new System.Drawing.Size(47, 23);
+            this.btnLocationBrowse.Size = new System.Drawing.Size(79, 46);
             this.btnLocationBrowse.TabIndex = 6;
             this.btnLocationBrowse.Text = "...";
             this.btnLocationBrowse.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(352, 490);
+            this.btnCancel.Location = new System.Drawing.Point(586, 979);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -135,9 +143,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(271, 490);
+            this.btnOK.Location = new System.Drawing.Point(451, 979);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -152,27 +161,41 @@
             this.groupbox_module_info.Controls.Add(this.groupbox_submodules);
             this.groupbox_module_info.Controls.Add(this.chkMultiplayer);
             this.groupbox_module_info.Controls.Add(this.chkSinglePlayer);
-            this.groupbox_module_info.Location = new System.Drawing.Point(15, 101);
+            this.groupbox_module_info.Location = new System.Drawing.Point(25, 202);
+            this.groupbox_module_info.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupbox_module_info.Name = "groupbox_module_info";
-            this.groupbox_module_info.Size = new System.Drawing.Size(412, 383);
+            this.groupbox_module_info.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupbox_module_info.Size = new System.Drawing.Size(686, 766);
             this.groupbox_module_info.TabIndex = 9;
             this.groupbox_module_info.TabStop = false;
             this.groupbox_module_info.Text = "Module Information";
             // 
+            // btnEditDepencyModules
+            // 
+            this.btnEditDepencyModules.Location = new System.Drawing.Point(20, 90);
+            this.btnEditDepencyModules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnEditDepencyModules.Name = "btnEditDepencyModules";
+            this.btnEditDepencyModules.Size = new System.Drawing.Size(476, 46);
+            this.btnEditDepencyModules.TabIndex = 7;
+            this.btnEditDepencyModules.Text = "Edit Depency Modules";
+            this.btnEditDepencyModules.UseVisualStyleBackColor = true;
+            // 
             // txtBannerlordVersion
             // 
-            this.txtBannerlordVersion.Location = new System.Drawing.Point(69, 18);
+            this.txtBannerlordVersion.Location = new System.Drawing.Point(115, 35);
+            this.txtBannerlordVersion.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBannerlordVersion.Name = "txtBannerlordVersion";
             this.txtBannerlordVersion.ReadOnly = true;
-            this.txtBannerlordVersion.Size = new System.Drawing.Size(229, 21);
+            this.txtBannerlordVersion.Size = new System.Drawing.Size(379, 30);
             this.txtBannerlordVersion.TabIndex = 6;
             // 
             // lbVersion
             // 
             this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(10, 21);
+            this.lbVersion.Location = new System.Drawing.Point(16, 42);
+            this.lbVersion.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbVersion.Name = "lbVersion";
-            this.lbVersion.Size = new System.Drawing.Size(53, 12);
+            this.lbVersion.Size = new System.Drawing.Size(69, 24);
             this.lbVersion.TabIndex = 5;
             this.lbVersion.Text = "Version:";
             // 
@@ -182,18 +205,21 @@
             this.groupbox_xmls.Controls.Add(this.btnDeleteXmlNode);
             this.groupbox_xmls.Controls.Add(this.btnAddXmlNode);
             this.groupbox_xmls.Controls.Add(this.lsvXmls);
-            this.groupbox_xmls.Location = new System.Drawing.Point(6, 229);
+            this.groupbox_xmls.Location = new System.Drawing.Point(10, 458);
+            this.groupbox_xmls.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupbox_xmls.Name = "groupbox_xmls";
-            this.groupbox_xmls.Size = new System.Drawing.Size(400, 148);
+            this.groupbox_xmls.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupbox_xmls.Size = new System.Drawing.Size(666, 296);
             this.groupbox_xmls.TabIndex = 4;
             this.groupbox_xmls.TabStop = false;
             this.groupbox_xmls.Text = "Xmls";
             // 
             // btnModifyXmlNode
             // 
-            this.btnModifyXmlNode.Location = new System.Drawing.Point(76, 120);
+            this.btnModifyXmlNode.Location = new System.Drawing.Point(126, 240);
+            this.btnModifyXmlNode.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnModifyXmlNode.Name = "btnModifyXmlNode";
-            this.btnModifyXmlNode.Size = new System.Drawing.Size(71, 23);
+            this.btnModifyXmlNode.Size = new System.Drawing.Size(119, 46);
             this.btnModifyXmlNode.TabIndex = 6;
             this.btnModifyXmlNode.Text = "Modify";
             this.btnModifyXmlNode.UseVisualStyleBackColor = true;
@@ -201,9 +227,10 @@
             // 
             // btnDeleteXmlNode
             // 
-            this.btnDeleteXmlNode.Location = new System.Drawing.Point(41, 120);
+            this.btnDeleteXmlNode.Location = new System.Drawing.Point(69, 240);
+            this.btnDeleteXmlNode.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDeleteXmlNode.Name = "btnDeleteXmlNode";
-            this.btnDeleteXmlNode.Size = new System.Drawing.Size(29, 23);
+            this.btnDeleteXmlNode.Size = new System.Drawing.Size(49, 46);
             this.btnDeleteXmlNode.TabIndex = 5;
             this.btnDeleteXmlNode.Text = "-";
             this.btnDeleteXmlNode.UseVisualStyleBackColor = true;
@@ -211,9 +238,10 @@
             // 
             // btnAddXmlNode
             // 
-            this.btnAddXmlNode.Location = new System.Drawing.Point(6, 120);
+            this.btnAddXmlNode.Location = new System.Drawing.Point(10, 240);
+            this.btnAddXmlNode.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAddXmlNode.Name = "btnAddXmlNode";
-            this.btnAddXmlNode.Size = new System.Drawing.Size(29, 23);
+            this.btnAddXmlNode.Size = new System.Drawing.Size(49, 46);
             this.btnAddXmlNode.TabIndex = 4;
             this.btnAddXmlNode.Text = "+";
             this.btnAddXmlNode.UseVisualStyleBackColor = true;
@@ -225,9 +253,11 @@
             this.colXmlNodeID,
             this.colXmlNodePath,
             this.colXmlNodeIncludedGameTypes});
-            this.lsvXmls.Location = new System.Drawing.Point(6, 20);
+            this.lsvXmls.HideSelection = false;
+            this.lsvXmls.Location = new System.Drawing.Point(10, 40);
+            this.lsvXmls.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lsvXmls.Name = "lsvXmls";
-            this.lsvXmls.Size = new System.Drawing.Size(388, 97);
+            this.lsvXmls.Size = new System.Drawing.Size(644, 190);
             this.lsvXmls.TabIndex = 0;
             this.lsvXmls.UseCompatibleStateImageBehavior = false;
             this.lsvXmls.View = System.Windows.Forms.View.Details;
@@ -253,18 +283,21 @@
             this.groupbox_submodules.Controls.Add(this.btnDeleteSubModule);
             this.groupbox_submodules.Controls.Add(this.btnAddSubModule);
             this.groupbox_submodules.Controls.Add(this.lsvSubModules);
-            this.groupbox_submodules.Location = new System.Drawing.Point(6, 74);
+            this.groupbox_submodules.Location = new System.Drawing.Point(10, 147);
+            this.groupbox_submodules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupbox_submodules.Name = "groupbox_submodules";
-            this.groupbox_submodules.Size = new System.Drawing.Size(400, 149);
+            this.groupbox_submodules.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupbox_submodules.Size = new System.Drawing.Size(666, 298);
             this.groupbox_submodules.TabIndex = 3;
             this.groupbox_submodules.TabStop = false;
             this.groupbox_submodules.Text = "Sub Modules";
             // 
             // btnModifySubModule
             // 
-            this.btnModifySubModule.Location = new System.Drawing.Point(76, 120);
+            this.btnModifySubModule.Location = new System.Drawing.Point(126, 240);
+            this.btnModifySubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnModifySubModule.Name = "btnModifySubModule";
-            this.btnModifySubModule.Size = new System.Drawing.Size(71, 23);
+            this.btnModifySubModule.Size = new System.Drawing.Size(119, 46);
             this.btnModifySubModule.TabIndex = 3;
             this.btnModifySubModule.Text = "Modify";
             this.btnModifySubModule.UseVisualStyleBackColor = true;
@@ -272,9 +305,10 @@
             // 
             // btnDeleteSubModule
             // 
-            this.btnDeleteSubModule.Location = new System.Drawing.Point(41, 120);
+            this.btnDeleteSubModule.Location = new System.Drawing.Point(69, 240);
+            this.btnDeleteSubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDeleteSubModule.Name = "btnDeleteSubModule";
-            this.btnDeleteSubModule.Size = new System.Drawing.Size(29, 23);
+            this.btnDeleteSubModule.Size = new System.Drawing.Size(49, 46);
             this.btnDeleteSubModule.TabIndex = 2;
             this.btnDeleteSubModule.Text = "-";
             this.btnDeleteSubModule.UseVisualStyleBackColor = true;
@@ -282,9 +316,10 @@
             // 
             // btnAddSubModule
             // 
-            this.btnAddSubModule.Location = new System.Drawing.Point(6, 120);
+            this.btnAddSubModule.Location = new System.Drawing.Point(10, 240);
+            this.btnAddSubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAddSubModule.Name = "btnAddSubModule";
-            this.btnAddSubModule.Size = new System.Drawing.Size(29, 23);
+            this.btnAddSubModule.Size = new System.Drawing.Size(49, 46);
             this.btnAddSubModule.TabIndex = 1;
             this.btnAddSubModule.Text = "+";
             this.btnAddSubModule.UseVisualStyleBackColor = true;
@@ -297,9 +332,11 @@
             this.colSubModule_DllName,
             this.colSubModuleClassType,
             this.colSubModuleTags});
-            this.lsvSubModules.Location = new System.Drawing.Point(6, 20);
+            this.lsvSubModules.HideSelection = false;
+            this.lsvSubModules.Location = new System.Drawing.Point(10, 40);
+            this.lsvSubModules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lsvSubModules.Name = "lsvSubModules";
-            this.lsvSubModules.Size = new System.Drawing.Size(388, 97);
+            this.lsvSubModules.Size = new System.Drawing.Size(644, 190);
             this.lsvSubModules.TabIndex = 0;
             this.lsvSubModules.UseCompatibleStateImageBehavior = false;
             this.lsvSubModules.View = System.Windows.Forms.View.Details;
@@ -325,9 +362,10 @@
             // chkMultiplayer
             // 
             this.chkMultiplayer.AutoSize = true;
-            this.chkMultiplayer.Location = new System.Drawing.Point(304, 49);
+            this.chkMultiplayer.Location = new System.Drawing.Point(506, 98);
+            this.chkMultiplayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkMultiplayer.Name = "chkMultiplayer";
-            this.chkMultiplayer.Size = new System.Drawing.Size(90, 16);
+            this.chkMultiplayer.Size = new System.Drawing.Size(111, 28);
             this.chkMultiplayer.TabIndex = 2;
             this.chkMultiplayer.Text = "Multiplayer";
             this.chkMultiplayer.UseVisualStyleBackColor = true;
@@ -335,27 +373,19 @@
             // chkSinglePlayer
             // 
             this.chkSinglePlayer.AutoSize = true;
-            this.chkSinglePlayer.Location = new System.Drawing.Point(304, 20);
+            this.chkSinglePlayer.Location = new System.Drawing.Point(506, 40);
+            this.chkSinglePlayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkSinglePlayer.Name = "chkSinglePlayer";
-            this.chkSinglePlayer.Size = new System.Drawing.Size(96, 16);
+            this.chkSinglePlayer.Size = new System.Drawing.Size(122, 28);
             this.chkSinglePlayer.TabIndex = 1;
             this.chkSinglePlayer.Text = "SinglePlayer";
             this.chkSinglePlayer.UseVisualStyleBackColor = true;
             // 
-            // btnEditDepencyModules
-            // 
-            this.btnEditDepencyModules.Location = new System.Drawing.Point(12, 45);
-            this.btnEditDepencyModules.Name = "btnEditDepencyModules";
-            this.btnEditDepencyModules.Size = new System.Drawing.Size(286, 23);
-            this.btnEditDepencyModules.TabIndex = 7;
-            this.btnEditDepencyModules.Text = "Edit Depency Modules";
-            this.btnEditDepencyModules.UseVisualStyleBackColor = true;
-            // 
             // frmNewProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 520);
+            this.ClientSize = new System.Drawing.Size(731, 1040);
             this.Controls.Add(this.groupbox_module_info);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
@@ -366,7 +396,9 @@
             this.Controls.Add(this.lbModuleName);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.lbProjectName);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNewProject";

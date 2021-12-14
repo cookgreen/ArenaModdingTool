@@ -56,136 +56,153 @@ namespace ArenaModdingTool.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 22);
+            this.label1.Location = new System.Drawing.Point(22, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.Size = new System.Drawing.Size(113, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Head Armour:";
             // 
             // txtHeadArmour
             // 
-            this.txtHeadArmour.Location = new System.Drawing.Point(168, 19);
+            this.txtHeadArmour.Location = new System.Drawing.Point(261, 15);
+            this.txtHeadArmour.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtHeadArmour.Name = "txtHeadArmour";
-            this.txtHeadArmour.Size = new System.Drawing.Size(281, 21);
+            this.txtHeadArmour.Size = new System.Drawing.Size(465, 30);
             this.txtHeadArmour.TabIndex = 3;
             // 
             // txtHairCoverType
             // 
-            this.txtHairCoverType.Location = new System.Drawing.Point(168, 88);
+            this.txtHairCoverType.Location = new System.Drawing.Point(261, 97);
+            this.txtHairCoverType.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtHairCoverType.Name = "txtHairCoverType";
-            this.txtHairCoverType.Size = new System.Drawing.Size(281, 21);
+            this.txtHairCoverType.Size = new System.Drawing.Size(465, 30);
             this.txtHairCoverType.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 91);
+            this.label3.Location = new System.Drawing.Point(22, 100);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 12);
+            this.label3.Size = new System.Drawing.Size(135, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Hair Cover Type:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 127);
+            this.label4.Location = new System.Drawing.Point(22, 161);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 12);
+            this.label4.Size = new System.Drawing.Size(149, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "Bread Cover Type:";
             // 
             // txtBreadCoverType
             // 
-            this.txtBreadCoverType.Location = new System.Drawing.Point(168, 124);
+            this.txtBreadCoverType.Location = new System.Drawing.Point(261, 155);
+            this.txtBreadCoverType.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBreadCoverType.Name = "txtBreadCoverType";
-            this.txtBreadCoverType.Size = new System.Drawing.Size(281, 21);
+            this.txtBreadCoverType.Size = new System.Drawing.Size(465, 30);
             this.txtBreadCoverType.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 164);
+            this.label5.Location = new System.Drawing.Point(22, 215);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 12);
+            this.label5.Size = new System.Drawing.Size(123, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Modifier Group:";
             // 
             // txtModifierGroup
             // 
-            this.txtModifierGroup.Location = new System.Drawing.Point(168, 161);
+            this.txtModifierGroup.Location = new System.Drawing.Point(261, 209);
+            this.txtModifierGroup.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtModifierGroup.Name = "txtModifierGroup";
-            this.txtModifierGroup.Size = new System.Drawing.Size(281, 21);
+            this.txtModifierGroup.Size = new System.Drawing.Size(465, 30);
             this.txtModifierGroup.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 204);
+            this.label6.Location = new System.Drawing.Point(22, 266);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 12);
+            this.label6.Size = new System.Drawing.Size(115, 24);
             this.label6.TabIndex = 10;
             this.label6.Text = "Material Type:";
             // 
             // txtMaterialType
             // 
-            this.txtMaterialType.Location = new System.Drawing.Point(168, 201);
+            this.txtMaterialType.Location = new System.Drawing.Point(261, 260);
+            this.txtMaterialType.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMaterialType.Name = "txtMaterialType";
-            this.txtMaterialType.Size = new System.Drawing.Size(281, 21);
+            this.txtMaterialType.Size = new System.Drawing.Size(465, 30);
             this.txtMaterialType.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 245);
+            this.label7.Location = new System.Drawing.Point(22, 318);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 12);
+            this.label7.Size = new System.Drawing.Size(101, 24);
             this.label7.TabIndex = 12;
             this.label7.Text = "Leg Armour:";
             // 
             // txtLegArmour
             // 
-            this.txtLegArmour.Location = new System.Drawing.Point(168, 242);
+            this.txtLegArmour.Location = new System.Drawing.Point(261, 311);
+            this.txtLegArmour.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtLegArmour.Name = "txtLegArmour";
-            this.txtLegArmour.Size = new System.Drawing.Size(281, 21);
+            this.txtLegArmour.Size = new System.Drawing.Size(465, 30);
             this.txtLegArmour.TabIndex = 13;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(25, 328);
+            this.label9.Location = new System.Drawing.Point(22, 423);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 12);
+            this.label9.Size = new System.Drawing.Size(105, 24);
             this.label9.TabIndex = 16;
             this.label9.Text = "Arm Armour:";
             // 
             // txtArmArmour
             // 
-            this.txtArmArmour.Location = new System.Drawing.Point(168, 325);
+            this.txtArmArmour.Location = new System.Drawing.Point(261, 417);
+            this.txtArmArmour.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtArmArmour.Name = "txtArmArmour";
-            this.txtArmArmour.Size = new System.Drawing.Size(281, 21);
+            this.txtArmArmour.Size = new System.Drawing.Size(465, 30);
             this.txtArmArmour.TabIndex = 17;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(25, 406);
+            this.label11.Location = new System.Drawing.Point(22, 530);
+            this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 12);
+            this.label11.Size = new System.Drawing.Size(112, 24);
             this.label11.TabIndex = 20;
             this.label11.Text = "Body Armour:";
             // 
             // txtBodyArmour
             // 
-            this.txtBodyArmour.Location = new System.Drawing.Point(168, 403);
+            this.txtBodyArmour.Location = new System.Drawing.Point(261, 523);
+            this.txtBodyArmour.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBodyArmour.Name = "txtBodyArmour";
-            this.txtBodyArmour.Size = new System.Drawing.Size(281, 21);
+            this.txtBodyArmour.Size = new System.Drawing.Size(465, 30);
             this.txtBodyArmour.TabIndex = 21;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(374, 469);
+            this.btnCancel.Location = new System.Drawing.Point(601, 625);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 24;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -193,9 +210,10 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(293, 469);
+            this.btnOK.Location = new System.Drawing.Point(466, 625);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 25;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -204,9 +222,10 @@ namespace ArenaModdingTool.Forms
             // chkHasGenderVariations
             // 
             this.chkHasGenderVariations.AutoSize = true;
-            this.chkHasGenderVariations.Location = new System.Drawing.Point(168, 56);
+            this.chkHasGenderVariations.Location = new System.Drawing.Point(261, 57);
+            this.chkHasGenderVariations.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkHasGenderVariations.Name = "chkHasGenderVariations";
-            this.chkHasGenderVariations.Size = new System.Drawing.Size(150, 16);
+            this.chkHasGenderVariations.Size = new System.Drawing.Size(196, 28);
             this.chkHasGenderVariations.TabIndex = 26;
             this.chkHasGenderVariations.Text = "Has Gender Variations";
             this.chkHasGenderVariations.UseVisualStyleBackColor = true;
@@ -214,9 +233,10 @@ namespace ArenaModdingTool.Forms
             // chkCoversLegs
             // 
             this.chkCoversLegs.AutoSize = true;
-            this.chkCoversLegs.Location = new System.Drawing.Point(168, 285);
+            this.chkCoversLegs.Location = new System.Drawing.Point(261, 368);
+            this.chkCoversLegs.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkCoversLegs.Name = "chkCoversLegs";
-            this.chkCoversLegs.Size = new System.Drawing.Size(90, 16);
+            this.chkCoversLegs.Size = new System.Drawing.Size(124, 28);
             this.chkCoversLegs.TabIndex = 27;
             this.chkCoversLegs.Text = "Covers Legs";
             this.chkCoversLegs.UseVisualStyleBackColor = true;
@@ -224,9 +244,10 @@ namespace ArenaModdingTool.Forms
             // chkCoversHands
             // 
             this.chkCoversHands.AutoSize = true;
-            this.chkCoversHands.Location = new System.Drawing.Point(168, 368);
+            this.chkCoversHands.Location = new System.Drawing.Point(261, 473);
+            this.chkCoversHands.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkCoversHands.Name = "chkCoversHands";
-            this.chkCoversHands.Size = new System.Drawing.Size(96, 16);
+            this.chkCoversHands.Size = new System.Drawing.Size(136, 28);
             this.chkCoversHands.TabIndex = 28;
             this.chkCoversHands.Text = "Covers Hands";
             this.chkCoversHands.UseVisualStyleBackColor = true;
@@ -234,18 +255,19 @@ namespace ArenaModdingTool.Forms
             // chkCoversBody
             // 
             this.chkCoversBody.AutoSize = true;
-            this.chkCoversBody.Location = new System.Drawing.Point(168, 442);
+            this.chkCoversBody.Location = new System.Drawing.Point(261, 583);
+            this.chkCoversBody.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkCoversBody.Name = "chkCoversBody";
-            this.chkCoversBody.Size = new System.Drawing.Size(90, 16);
+            this.chkCoversBody.Size = new System.Drawing.Size(127, 28);
             this.chkCoversBody.TabIndex = 29;
             this.chkCoversBody.Text = "Covers Body";
             this.chkCoversBody.UseVisualStyleBackColor = true;
             // 
             // frmItemComponentArmourEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 504);
+            this.ClientSize = new System.Drawing.Size(781, 686);
             this.Controls.Add(this.chkCoversBody);
             this.Controls.Add(this.chkCoversHands);
             this.Controls.Add(this.chkCoversLegs);
@@ -268,7 +290,9 @@ namespace ArenaModdingTool.Forms
             this.Controls.Add(this.txtHairCoverType);
             this.Controls.Add(this.txtHeadArmour);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmItemComponentArmourEditor";

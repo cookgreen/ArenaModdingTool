@@ -35,9 +35,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(149, 432);
+            this.btnOK.Location = new System.Drawing.Point(257, 545);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(230, 432);
+            this.btnCancel.Location = new System.Drawing.Point(392, 545);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -55,20 +57,23 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(20, 24);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 414);
+            this.panel1.Size = new System.Drawing.Size(489, 509);
             this.panel1.TabIndex = 3;
             // 
             // frmHeroListViewer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 464);
+            this.ClientSize = new System.Drawing.Size(531, 606);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmHeroListViewer";

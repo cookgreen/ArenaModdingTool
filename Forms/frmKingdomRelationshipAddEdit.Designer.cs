@@ -40,53 +40,59 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(23, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(92, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kingdom:";
             // 
             // txtKingdom
             // 
-            this.txtKingdom.Location = new System.Drawing.Point(72, 10);
+            this.txtKingdom.Location = new System.Drawing.Point(132, 18);
+            this.txtKingdom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtKingdom.Name = "txtKingdom";
             this.txtKingdom.ReadOnly = true;
-            this.txtKingdom.Size = new System.Drawing.Size(181, 21);
+            this.txtKingdom.Size = new System.Drawing.Size(328, 30);
             this.txtKingdom.TabIndex = 1;
             this.txtKingdom.DoubleClick += new System.EventHandler(this.txtKingdom_DoubleClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 48);
+            this.label2.Location = new System.Drawing.Point(23, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Value:";
             // 
             // txtValue
             // 
-            this.txtValue.Location = new System.Drawing.Point(72, 45);
+            this.txtValue.Location = new System.Drawing.Point(132, 78);
+            this.txtValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(181, 21);
+            this.txtValue.Size = new System.Drawing.Size(328, 30);
             this.txtValue.TabIndex = 3;
             this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
             // chkIsAtWar
             // 
             this.chkIsAtWar.AutoSize = true;
-            this.chkIsAtWar.Location = new System.Drawing.Point(72, 84);
+            this.chkIsAtWar.Location = new System.Drawing.Point(132, 132);
+            this.chkIsAtWar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.chkIsAtWar.Name = "chkIsAtWar";
-            this.chkIsAtWar.Size = new System.Drawing.Size(66, 16);
+            this.chkIsAtWar.Size = new System.Drawing.Size(103, 27);
             this.chkIsAtWar.TabIndex = 4;
             this.chkIsAtWar.Text = "IsAtWar";
             this.chkIsAtWar.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(178, 111);
+            this.btnCancel.Location = new System.Drawing.Point(322, 176);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(138, 44);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -94,9 +100,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(97, 111);
+            this.btnOK.Location = new System.Drawing.Point(173, 176);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(138, 44);
             this.btnOK.TabIndex = 6;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -104,9 +111,9 @@
             // 
             // frmKingdomRelationshipAddEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(265, 146);
+            this.ClientSize = new System.Drawing.Size(485, 245);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.chkIsAtWar);
@@ -114,7 +121,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtKingdom);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmKingdomRelationshipAddEdit";

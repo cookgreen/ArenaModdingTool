@@ -58,6 +58,7 @@
             // 
             // menu
             // 
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuTool,
@@ -65,7 +66,8 @@
             this.mnuHelp});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 25);
+            this.menu.Padding = new System.Windows.Forms.Padding(11, 3, 0, 3);
+            this.menu.Size = new System.Drawing.Size(1467, 30);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -80,7 +82,7 @@
             this.toolStripMenuItem2,
             this.mnuFileExit});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(39, 21);
+            this.mnuFile.Size = new System.Drawing.Size(48, 24);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
@@ -89,20 +91,20 @@
             this.mnuFileNewProject,
             this.mnuFileNewOtherFile});
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(219, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(276, 26);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileNewProject
             // 
             this.mnuFileNewProject.Name = "mnuFileNewProject";
-            this.mnuFileNewProject.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileNewProject.Size = new System.Drawing.Size(144, 26);
             this.mnuFileNewProject.Text = "Project";
             this.mnuFileNewProject.Click += new System.EventHandler(this.mnuFileNewProject_Click);
             // 
             // mnuFileNewOtherFile
             // 
             this.mnuFileNewOtherFile.Name = "mnuFileNewOtherFile";
-            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(180, 22);
+            this.mnuFileNewOtherFile.Size = new System.Drawing.Size(144, 26);
             this.mnuFileNewOtherFile.Text = "File";
             this.mnuFileNewOtherFile.Click += new System.EventHandler(this.mnuFileNewOtherFile_Click);
             // 
@@ -112,48 +114,48 @@
             this.mnuFileOpenProject,
             this.mnuFileOpenOtherFile});
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(219, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(276, 26);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileOpenProject
             // 
             this.mnuFileOpenProject.Name = "mnuFileOpenProject";
-            this.mnuFileOpenProject.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileOpenProject.Size = new System.Drawing.Size(144, 26);
             this.mnuFileOpenProject.Text = "Project";
             // 
             // mnuFileOpenOtherFile
             // 
             this.mnuFileOpenOtherFile.Name = "mnuFileOpenOtherFile";
-            this.mnuFileOpenOtherFile.Size = new System.Drawing.Size(116, 22);
+            this.mnuFileOpenOtherFile.Size = new System.Drawing.Size(144, 26);
             this.mnuFileOpenOtherFile.Text = "File";
             // 
             // mnuImport
             // 
             this.mnuImport.Name = "mnuImport";
-            this.mnuImport.Size = new System.Drawing.Size(219, 22);
+            this.mnuImport.Size = new System.Drawing.Size(276, 26);
             this.mnuImport.Text = "Import";
             this.mnuImport.Click += new System.EventHandler(this.mnuImport_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(216, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(273, 6);
             // 
             // mnuRecentlyImportedProject
             // 
             this.mnuRecentlyImportedProject.Name = "mnuRecentlyImportedProject";
-            this.mnuRecentlyImportedProject.Size = new System.Drawing.Size(219, 22);
+            this.mnuRecentlyImportedProject.Size = new System.Drawing.Size(276, 26);
             this.mnuRecentlyImportedProject.Text = "RecentlyImportedProject";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(216, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(273, 6);
             // 
             // mnuFileExit
             // 
             this.mnuFileExit.Name = "mnuFileExit";
-            this.mnuFileExit.Size = new System.Drawing.Size(219, 22);
+            this.mnuFileExit.Size = new System.Drawing.Size(276, 26);
             this.mnuFileExit.Text = "Exit";
             this.mnuFileExit.Click += new System.EventHandler(this.mnuFileExit_Click);
             // 
@@ -162,25 +164,25 @@
             this.mnuTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuToolLanguage});
             this.mnuTool.Name = "mnuTool";
-            this.mnuTool.Size = new System.Drawing.Size(46, 21);
+            this.mnuTool.Size = new System.Drawing.Size(56, 24);
             this.mnuTool.Text = "Tool";
             // 
             // mnuToolLanguage
             // 
             this.mnuToolLanguage.Name = "mnuToolLanguage";
-            this.mnuToolLanguage.Size = new System.Drawing.Size(130, 22);
+            this.mnuToolLanguage.Size = new System.Drawing.Size(159, 26);
             this.mnuToolLanguage.Text = "language";
             // 
             // mnuPlugin
             // 
             this.mnuPlugin.Name = "mnuPlugin";
-            this.mnuPlugin.Size = new System.Drawing.Size(55, 21);
+            this.mnuPlugin.Size = new System.Drawing.Size(68, 24);
             this.mnuPlugin.Text = "Plugin";
             // 
             // mnuHelp
             // 
             this.mnuHelp.Name = "mnuHelp";
-            this.mnuHelp.Size = new System.Drawing.Size(47, 21);
+            this.mnuHelp.Size = new System.Drawing.Size(58, 24);
             this.mnuHelp.Text = "Help";
             // 
             // panelControls
@@ -192,17 +194,19 @@
             this.panelControls.Controls.Add(this.btnCultures);
             this.panelControls.Controls.Add(this.btnKingdoms);
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelControls.Location = new System.Drawing.Point(0, 25);
+            this.panelControls.Location = new System.Drawing.Point(0, 30);
+            this.panelControls.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(142, 425);
+            this.panelControls.Size = new System.Drawing.Size(259, 832);
             this.panelControls.TabIndex = 1;
             // 
             // btnItems
             // 
             this.btnItems.Enabled = false;
-            this.btnItems.Location = new System.Drawing.Point(22, 312);
+            this.btnItems.Location = new System.Drawing.Point(40, 598);
+            this.btnItems.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(95, 68);
+            this.btnItems.Size = new System.Drawing.Size(175, 130);
             this.btnItems.TabIndex = 4;
             this.btnItems.Text = "Items";
             this.btnItems.UseVisualStyleBackColor = true;
@@ -211,9 +215,10 @@
             // btnHeros
             // 
             this.btnHeros.Enabled = false;
-            this.btnHeros.Location = new System.Drawing.Point(22, 238);
+            this.btnHeros.Location = new System.Drawing.Point(40, 457);
+            this.btnHeros.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnHeros.Name = "btnHeros";
-            this.btnHeros.Size = new System.Drawing.Size(95, 68);
+            this.btnHeros.Size = new System.Drawing.Size(175, 130);
             this.btnHeros.TabIndex = 3;
             this.btnHeros.Text = "Heros";
             this.btnHeros.UseVisualStyleBackColor = true;
@@ -222,9 +227,10 @@
             // btnNPCCharacters
             // 
             this.btnNPCCharacters.Enabled = false;
-            this.btnNPCCharacters.Location = new System.Drawing.Point(22, 164);
+            this.btnNPCCharacters.Location = new System.Drawing.Point(40, 314);
+            this.btnNPCCharacters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnNPCCharacters.Name = "btnNPCCharacters";
-            this.btnNPCCharacters.Size = new System.Drawing.Size(95, 68);
+            this.btnNPCCharacters.Size = new System.Drawing.Size(175, 130);
             this.btnNPCCharacters.TabIndex = 2;
             this.btnNPCCharacters.Text = "NPCCharacters";
             this.btnNPCCharacters.UseVisualStyleBackColor = true;
@@ -233,9 +239,10 @@
             // btnCultures
             // 
             this.btnCultures.Enabled = false;
-            this.btnCultures.Location = new System.Drawing.Point(22, 90);
+            this.btnCultures.Location = new System.Drawing.Point(40, 172);
+            this.btnCultures.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCultures.Name = "btnCultures";
-            this.btnCultures.Size = new System.Drawing.Size(95, 68);
+            this.btnCultures.Size = new System.Drawing.Size(175, 130);
             this.btnCultures.TabIndex = 1;
             this.btnCultures.Text = "Cultures";
             this.btnCultures.UseVisualStyleBackColor = true;
@@ -244,9 +251,10 @@
             // btnKingdoms
             // 
             this.btnKingdoms.Enabled = false;
-            this.btnKingdoms.Location = new System.Drawing.Point(22, 16);
+            this.btnKingdoms.Location = new System.Drawing.Point(40, 31);
+            this.btnKingdoms.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnKingdoms.Name = "btnKingdoms";
-            this.btnKingdoms.Size = new System.Drawing.Size(95, 68);
+            this.btnKingdoms.Size = new System.Drawing.Size(175, 130);
             this.btnKingdoms.TabIndex = 0;
             this.btnKingdoms.Text = "Kingdoms";
             this.btnKingdoms.UseVisualStyleBackColor = true;
@@ -256,20 +264,23 @@
             // 
             this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(142, 25);
+            this.panelMain.Location = new System.Drawing.Point(259, 30);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(658, 425);
+            this.panelMain.Size = new System.Drawing.Size(1208, 832);
             this.panelMain.TabIndex = 2;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1467, 862);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.menu);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menu;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arena - Modding Tool for Bannerlord";

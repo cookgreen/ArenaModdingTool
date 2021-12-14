@@ -42,9 +42,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(491, 278);
+            this.btnCancel.Location = new System.Drawing.Point(819, 557);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(410, 278);
+            this.btnOK.Location = new System.Drawing.Point(684, 557);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -66,18 +68,21 @@
             this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.skillListView);
-            this.groupBox1.Location = new System.Drawing.Point(12, 0);
+            this.groupBox1.Location = new System.Drawing.Point(20, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(554, 272);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupBox1.Size = new System.Drawing.Size(924, 544);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
             // btnModify
             // 
             this.btnModify.Enabled = false;
-            this.btnModify.Location = new System.Drawing.Point(73, 246);
+            this.btnModify.Location = new System.Drawing.Point(121, 493);
+            this.btnModify.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.Size = new System.Drawing.Size(125, 46);
             this.btnModify.TabIndex = 7;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
@@ -86,9 +91,10 @@
             // btnDelete
             // 
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(40, 246);
+            this.btnDelete.Location = new System.Drawing.Point(66, 493);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(27, 23);
+            this.btnDelete.Size = new System.Drawing.Size(45, 46);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "-";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -96,9 +102,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(7, 246);
+            this.btnAdd.Location = new System.Drawing.Point(11, 493);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(27, 23);
+            this.btnAdd.Size = new System.Drawing.Size(45, 46);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -112,9 +119,10 @@
             this.skillListView.FullRowSelect = true;
             this.skillListView.GridLines = true;
             this.skillListView.HideSelection = false;
-            this.skillListView.Location = new System.Drawing.Point(6, 12);
+            this.skillListView.Location = new System.Drawing.Point(10, 24);
+            this.skillListView.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.skillListView.Name = "skillListView";
-            this.skillListView.Size = new System.Drawing.Size(537, 227);
+            this.skillListView.Size = new System.Drawing.Size(893, 450);
             this.skillListView.TabIndex = 4;
             this.skillListView.UseCompatibleStateImageBehavior = false;
             this.skillListView.View = System.Windows.Forms.View.Details;
@@ -132,13 +140,15 @@
             // 
             // frmNPCCharacterSkillEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 313);
+            this.ClientSize = new System.Drawing.Size(964, 626);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNPCCharacterSkillEditor";

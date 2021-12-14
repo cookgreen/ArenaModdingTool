@@ -55,169 +55,190 @@ namespace ArenaModdingTool.Forms
             // 
             // txtWeaponClass
             // 
-            this.txtWeaponClass.Location = new System.Drawing.Point(140, 22);
+            this.txtWeaponClass.Location = new System.Drawing.Point(225, 15);
+            this.txtWeaponClass.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtWeaponClass.Name = "txtWeaponClass";
-            this.txtWeaponClass.Size = new System.Drawing.Size(305, 21);
+            this.txtWeaponClass.Size = new System.Drawing.Size(505, 30);
             this.txtWeaponClass.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 25);
+            this.label1.Location = new System.Drawing.Point(26, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 12);
+            this.label1.Size = new System.Drawing.Size(120, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Weapon Class:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 64);
+            this.label2.Location = new System.Drawing.Point(26, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 12);
+            this.label2.Size = new System.Drawing.Size(138, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Weapon Balance:";
             // 
             // txtWeaponBalance
             // 
-            this.txtWeaponBalance.Location = new System.Drawing.Point(140, 61);
+            this.txtWeaponBalance.Location = new System.Drawing.Point(225, 72);
+            this.txtWeaponBalance.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtWeaponBalance.Name = "txtWeaponBalance";
-            this.txtWeaponBalance.Size = new System.Drawing.Size(305, 21);
+            this.txtWeaponBalance.Size = new System.Drawing.Size(505, 30);
             this.txtWeaponBalance.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 104);
+            this.label3.Location = new System.Drawing.Point(26, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 12);
+            this.label3.Size = new System.Drawing.Size(113, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "Thrust Speed:";
             // 
             // txtThrustSpeed
             // 
-            this.txtThrustSpeed.Location = new System.Drawing.Point(140, 101);
+            this.txtThrustSpeed.Location = new System.Drawing.Point(225, 134);
+            this.txtThrustSpeed.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtThrustSpeed.Name = "txtThrustSpeed";
-            this.txtThrustSpeed.Size = new System.Drawing.Size(305, 21);
+            this.txtThrustSpeed.Size = new System.Drawing.Size(505, 30);
             this.txtThrustSpeed.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 146);
+            this.label4.Location = new System.Drawing.Point(26, 198);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 12);
+            this.label4.Size = new System.Drawing.Size(114, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "Speed Rating:";
             // 
             // txtSpeedRating
             // 
-            this.txtSpeedRating.Location = new System.Drawing.Point(140, 143);
+            this.txtSpeedRating.Location = new System.Drawing.Point(225, 193);
+            this.txtSpeedRating.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSpeedRating.Name = "txtSpeedRating";
-            this.txtSpeedRating.Size = new System.Drawing.Size(305, 21);
+            this.txtSpeedRating.Size = new System.Drawing.Size(505, 30);
             this.txtSpeedRating.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 187);
+            this.label5.Location = new System.Drawing.Point(26, 261);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 12);
+            this.label5.Size = new System.Drawing.Size(116, 24);
             this.label5.TabIndex = 12;
             this.label5.Text = "Missile Speed:";
             // 
             // txtMissileSpeed
             // 
-            this.txtMissileSpeed.Location = new System.Drawing.Point(140, 184);
+            this.txtMissileSpeed.Location = new System.Drawing.Point(225, 255);
+            this.txtMissileSpeed.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMissileSpeed.Name = "txtMissileSpeed";
-            this.txtMissileSpeed.Size = new System.Drawing.Size(305, 21);
+            this.txtMissileSpeed.Size = new System.Drawing.Size(505, 30);
             this.txtMissileSpeed.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 230);
+            this.label6.Location = new System.Drawing.Point(26, 333);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 12);
+            this.label6.Size = new System.Drawing.Size(130, 24);
             this.label6.TabIndex = 14;
             this.label6.Text = "Weapon Length:";
             // 
             // txtWeaponLength
             // 
-            this.txtWeaponLength.Location = new System.Drawing.Point(140, 227);
+            this.txtWeaponLength.Location = new System.Drawing.Point(225, 326);
+            this.txtWeaponLength.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtWeaponLength.Name = "txtWeaponLength";
-            this.txtWeaponLength.Size = new System.Drawing.Size(305, 21);
+            this.txtWeaponLength.Size = new System.Drawing.Size(505, 30);
             this.txtWeaponLength.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 272);
+            this.label7.Location = new System.Drawing.Point(26, 405);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 12);
+            this.label7.Size = new System.Drawing.Size(128, 24);
             this.label7.TabIndex = 16;
             this.label7.Text = "Swing Damage:";
             // 
             // txtSwingDamage
             // 
-            this.txtSwingDamage.Location = new System.Drawing.Point(140, 269);
+            this.txtSwingDamage.Location = new System.Drawing.Point(225, 399);
+            this.txtSwingDamage.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSwingDamage.Name = "txtSwingDamage";
-            this.txtSwingDamage.Size = new System.Drawing.Size(305, 21);
+            this.txtSwingDamage.Size = new System.Drawing.Size(505, 30);
             this.txtSwingDamage.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 312);
+            this.label8.Location = new System.Drawing.Point(26, 477);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 12);
+            this.label8.Size = new System.Drawing.Size(170, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "Swing Damage Type:";
             // 
             // txtSwingDamageType
             // 
-            this.txtSwingDamageType.Location = new System.Drawing.Point(140, 309);
+            this.txtSwingDamageType.Location = new System.Drawing.Point(225, 471);
+            this.txtSwingDamageType.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSwingDamageType.Name = "txtSwingDamageType";
-            this.txtSwingDamageType.Size = new System.Drawing.Size(305, 21);
+            this.txtSwingDamageType.Size = new System.Drawing.Size(505, 30);
             this.txtSwingDamageType.TabIndex = 19;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 349);
+            this.label9.Location = new System.Drawing.Point(26, 552);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 12);
+            this.label9.Size = new System.Drawing.Size(101, 24);
             this.label9.TabIndex = 20;
             this.label9.Text = "Item Usage:";
             // 
             // txtItemUsage
             // 
-            this.txtItemUsage.Location = new System.Drawing.Point(140, 346);
+            this.txtItemUsage.Location = new System.Drawing.Point(225, 545);
+            this.txtItemUsage.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtItemUsage.Name = "txtItemUsage";
-            this.txtItemUsage.Size = new System.Drawing.Size(305, 21);
+            this.txtItemUsage.Size = new System.Drawing.Size(505, 30);
             this.txtItemUsage.TabIndex = 21;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 388);
+            this.label10.Location = new System.Drawing.Point(26, 636);
+            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 12);
+            this.label10.Size = new System.Drawing.Size(134, 24);
             this.label10.TabIndex = 22;
             this.label10.Text = "Physics Material:";
             // 
             // txtPhysicsMaterial
             // 
-            this.txtPhysicsMaterial.Location = new System.Drawing.Point(140, 385);
+            this.txtPhysicsMaterial.Location = new System.Drawing.Point(225, 630);
+            this.txtPhysicsMaterial.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPhysicsMaterial.Name = "txtPhysicsMaterial";
-            this.txtPhysicsMaterial.Size = new System.Drawing.Size(305, 21);
+            this.txtPhysicsMaterial.Size = new System.Drawing.Size(505, 30);
             this.txtPhysicsMaterial.TabIndex = 23;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(370, 415);
+            this.btnCancel.Location = new System.Drawing.Point(605, 694);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 24;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -225,9 +246,10 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(289, 415);
+            this.btnOK.Location = new System.Drawing.Point(470, 694);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 25;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -235,9 +257,9 @@ namespace ArenaModdingTool.Forms
             // 
             // frmItemComponentWeaponEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 450);
+            this.ClientSize = new System.Drawing.Size(781, 753);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtPhysicsMaterial);
@@ -260,7 +282,9 @@ namespace ArenaModdingTool.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtWeaponClass);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmItemComponentWeaponEditor";

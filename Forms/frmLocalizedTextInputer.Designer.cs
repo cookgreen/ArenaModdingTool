@@ -41,7 +41,7 @@
             this.lbLocalizedID.AutoSize = true;
             this.lbLocalizedID.Location = new System.Drawing.Point(13, 13);
             this.lbLocalizedID.Name = "lbLocalizedID";
-            this.lbLocalizedID.Size = new System.Drawing.Size(111, 15);
+            this.lbLocalizedID.Size = new System.Drawing.Size(117, 23);
             this.lbLocalizedID.TabIndex = 0;
             this.lbLocalizedID.Text = "localized ID:";
             // 
@@ -50,7 +50,7 @@
             this.lbOriginalText.AutoSize = true;
             this.lbOriginalText.Location = new System.Drawing.Point(15, 48);
             this.lbOriginalText.Name = "lbOriginalText";
-            this.lbOriginalText.Size = new System.Drawing.Size(47, 15);
+            this.lbOriginalText.Size = new System.Drawing.Size(52, 23);
             this.lbOriginalText.TabIndex = 1;
             this.lbOriginalText.Text = "Text:";
             // 
@@ -58,7 +58,7 @@
             // 
             this.txtLocalizedID.Location = new System.Drawing.Point(130, 10);
             this.txtLocalizedID.Name = "txtLocalizedID";
-            this.txtLocalizedID.Size = new System.Drawing.Size(406, 25);
+            this.txtLocalizedID.Size = new System.Drawing.Size(406, 30);
             this.txtLocalizedID.TabIndex = 2;
             // 
             // txtOriginalText
@@ -98,6 +98,7 @@
             this.Controls.Add(this.txtLocalizedID);
             this.Controls.Add(this.lbOriginalText);
             this.Controls.Add(this.lbLocalizedID);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

@@ -37,9 +37,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Language:";
             // 
@@ -47,16 +49,18 @@
             // 
             this.cmbLanguages.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLanguages.FormattingEnabled = true;
-            this.cmbLanguages.Location = new System.Drawing.Point(78, 10);
+            this.cmbLanguages.Location = new System.Drawing.Point(130, 19);
+            this.cmbLanguages.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbLanguages.Name = "cmbLanguages";
-            this.cmbLanguages.Size = new System.Drawing.Size(156, 20);
+            this.cmbLanguages.Size = new System.Drawing.Size(258, 32);
             this.cmbLanguages.TabIndex = 1;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(159, 36);
+            this.btnCancel.Location = new System.Drawing.Point(265, 72);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -64,9 +68,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(78, 36);
+            this.btnOK.Location = new System.Drawing.Point(130, 72);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -74,14 +79,16 @@
             // 
             // frmAppSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(246, 67);
+            this.ClientSize = new System.Drawing.Size(410, 134);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cmbLanguages);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAppSetting";

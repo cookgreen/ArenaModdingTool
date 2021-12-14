@@ -40,42 +40,47 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(21, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.Size = new System.Drawing.Size(65, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Skill ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 39);
+            this.label2.Location = new System.Drawing.Point(25, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(56, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Value:";
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(90, 37);
+            this.numericUpDown1.Location = new System.Drawing.Point(150, 74);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(184, 21);
+            this.numericUpDown1.Size = new System.Drawing.Size(306, 30);
             this.numericUpDown1.TabIndex = 2;
             // 
             // cmbSkills
             // 
             this.cmbSkills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSkills.FormattingEnabled = true;
-            this.cmbSkills.Location = new System.Drawing.Point(90, 10);
+            this.cmbSkills.Location = new System.Drawing.Point(150, 19);
+            this.cmbSkills.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbSkills.Name = "cmbSkills";
-            this.cmbSkills.Size = new System.Drawing.Size(184, 20);
+            this.cmbSkills.Size = new System.Drawing.Size(304, 32);
             this.cmbSkills.TabIndex = 3;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(199, 65);
+            this.btnCancel.Location = new System.Drawing.Point(331, 130);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -83,9 +88,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(118, 65);
+            this.btnOK.Location = new System.Drawing.Point(196, 130);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -93,16 +99,18 @@
             // 
             // frmNPCCharacterSkillAddEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 100);
+            this.ClientSize = new System.Drawing.Size(476, 200);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cmbSkills);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNPCCharacterSkillAddEdit";

@@ -38,25 +38,28 @@
             // lbModLocation
             // 
             this.lbModLocation.AutoSize = true;
-            this.lbModLocation.Location = new System.Drawing.Point(13, 29);
+            this.lbModLocation.Location = new System.Drawing.Point(21, 58);
+            this.lbModLocation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbModLocation.Name = "lbModLocation";
-            this.lbModLocation.Size = new System.Drawing.Size(101, 12);
+            this.lbModLocation.Size = new System.Drawing.Size(135, 24);
             this.lbModLocation.TabIndex = 0;
             this.lbModLocation.Text = "Module Location:";
             // 
             // txtModuleLocation
             // 
-            this.txtModuleLocation.Location = new System.Drawing.Point(120, 26);
+            this.txtModuleLocation.Location = new System.Drawing.Point(200, 51);
+            this.txtModuleLocation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtModuleLocation.Name = "txtModuleLocation";
             this.txtModuleLocation.ReadOnly = true;
-            this.txtModuleLocation.Size = new System.Drawing.Size(307, 21);
+            this.txtModuleLocation.Size = new System.Drawing.Size(509, 30);
             this.txtModuleLocation.TabIndex = 1;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(433, 24);
+            this.btnBrowse.Location = new System.Drawing.Point(721, 48);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(42, 23);
+            this.btnBrowse.Size = new System.Drawing.Size(70, 46);
             this.btnBrowse.TabIndex = 2;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -64,9 +67,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(400, 68);
+            this.btnCancel.Location = new System.Drawing.Point(666, 136);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -74,9 +78,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(319, 68);
+            this.btnOK.Location = new System.Drawing.Point(531, 136);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 4;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -84,15 +89,17 @@
             // 
             // frmImportProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 99);
+            this.ClientSize = new System.Drawing.Size(805, 198);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtModuleLocation);
             this.Controls.Add(this.lbModLocation);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmImportProject";

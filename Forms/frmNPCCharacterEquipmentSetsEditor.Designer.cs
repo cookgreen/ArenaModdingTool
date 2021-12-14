@@ -39,18 +39,20 @@
             // equipmentSetList
             // 
             this.equipmentSetList.FormattingEnabled = true;
-            this.equipmentSetList.ItemHeight = 12;
-            this.equipmentSetList.Location = new System.Drawing.Point(92, 12);
+            this.equipmentSetList.ItemHeight = 24;
+            this.equipmentSetList.Location = new System.Drawing.Point(154, 24);
+            this.equipmentSetList.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.equipmentSetList.Name = "equipmentSetList";
-            this.equipmentSetList.Size = new System.Drawing.Size(427, 304);
+            this.equipmentSetList.Size = new System.Drawing.Size(709, 604);
             this.equipmentSetList.TabIndex = 0;
             this.equipmentSetList.SelectedIndexChanged += new System.EventHandler(this.equipmentSetList_SelectedIndexChanged);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(446, 322);
+            this.btnCancel.Location = new System.Drawing.Point(744, 643);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(365, 322);
+            this.btnOK.Location = new System.Drawing.Point(609, 643);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@
             // btnDelete
             // 
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(11, 70);
+            this.btnDelete.Location = new System.Drawing.Point(19, 141);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(125, 46);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@
             // btnEdit
             // 
             this.btnEdit.Enabled = false;
-            this.btnEdit.Location = new System.Drawing.Point(11, 41);
+            this.btnEdit.Location = new System.Drawing.Point(19, 82);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.Size = new System.Drawing.Size(125, 46);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -90,9 +95,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(11, 12);
+            this.btnAdd.Location = new System.Drawing.Point(19, 24);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(125, 46);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -100,16 +106,18 @@
             // 
             // frmNPCCharacterEquipmentSetsEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 354);
+            this.ClientSize = new System.Drawing.Size(885, 707);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.equipmentSetList);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNPCCharacterEquipmentSetsEditor";

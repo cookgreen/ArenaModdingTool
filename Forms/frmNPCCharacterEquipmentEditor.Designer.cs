@@ -39,33 +39,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(21, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(43, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Slot:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 44);
+            this.label2.Location = new System.Drawing.Point(21, 88);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.Size = new System.Drawing.Size(49, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Item:";
             // 
             // txtItemId
             // 
-            this.txtItemId.Location = new System.Drawing.Point(54, 41);
+            this.txtItemId.Location = new System.Drawing.Point(90, 82);
+            this.txtItemId.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtItemId.Name = "txtItemId";
-            this.txtItemId.Size = new System.Drawing.Size(239, 21);
+            this.txtItemId.Size = new System.Drawing.Size(395, 30);
             this.txtItemId.TabIndex = 3;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(218, 68);
+            this.btnCancel.Location = new System.Drawing.Point(364, 136);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -73,9 +77,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(137, 68);
+            this.btnOK.Location = new System.Drawing.Point(229, 136);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -94,22 +99,25 @@
             "Item1",
             "Item2",
             "Item3"});
-            this.cmbEquipmentSlots.Location = new System.Drawing.Point(54, 10);
+            this.cmbEquipmentSlots.Location = new System.Drawing.Point(90, 19);
+            this.cmbEquipmentSlots.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbEquipmentSlots.Name = "cmbEquipmentSlots";
-            this.cmbEquipmentSlots.Size = new System.Drawing.Size(239, 20);
+            this.cmbEquipmentSlots.Size = new System.Drawing.Size(395, 32);
             this.cmbEquipmentSlots.TabIndex = 6;
             // 
             // frmNPCCharacterEquipmentEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 101);
+            this.ClientSize = new System.Drawing.Size(509, 202);
             this.Controls.Add(this.cmbEquipmentSlots);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtItemId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNPCCharacterEquipmentEditor";

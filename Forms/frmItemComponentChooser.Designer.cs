@@ -41,18 +41,21 @@ namespace ArenaModdingTool.Forms
             // 
             this.groupBox1.Controls.Add(this.rbItemComponentWeapon);
             this.groupBox1.Controls.Add(this.rbItemComponentArmour);
-            this.groupBox1.Location = new System.Drawing.Point(2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(4, 3);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(244, 80);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupBox1.Size = new System.Drawing.Size(406, 129);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // rbItemComponentWeapon
             // 
             this.rbItemComponentWeapon.AutoSize = true;
-            this.rbItemComponentWeapon.Location = new System.Drawing.Point(77, 47);
+            this.rbItemComponentWeapon.Location = new System.Drawing.Point(129, 80);
+            this.rbItemComponentWeapon.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rbItemComponentWeapon.Name = "rbItemComponentWeapon";
-            this.rbItemComponentWeapon.Size = new System.Drawing.Size(59, 16);
+            this.rbItemComponentWeapon.Size = new System.Drawing.Size(91, 28);
             this.rbItemComponentWeapon.TabIndex = 1;
             this.rbItemComponentWeapon.TabStop = true;
             this.rbItemComponentWeapon.Text = "Weapon";
@@ -61,9 +64,10 @@ namespace ArenaModdingTool.Forms
             // rbItemComponentArmour
             // 
             this.rbItemComponentArmour.AutoSize = true;
-            this.rbItemComponentArmour.Location = new System.Drawing.Point(77, 20);
+            this.rbItemComponentArmour.Location = new System.Drawing.Point(129, 40);
+            this.rbItemComponentArmour.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rbItemComponentArmour.Name = "rbItemComponentArmour";
-            this.rbItemComponentArmour.Size = new System.Drawing.Size(59, 16);
+            this.rbItemComponentArmour.Size = new System.Drawing.Size(85, 28);
             this.rbItemComponentArmour.TabIndex = 0;
             this.rbItemComponentArmour.TabStop = true;
             this.rbItemComponentArmour.Text = "Armour";
@@ -71,9 +75,10 @@ namespace ArenaModdingTool.Forms
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(160, 88);
+            this.btnCancel.Location = new System.Drawing.Point(272, 144);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -81,9 +86,10 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(79, 88);
+            this.btnOK.Location = new System.Drawing.Point(137, 144);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -91,13 +97,15 @@ namespace ArenaModdingTool.Forms
             // 
             // frmItemComponentChooser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 120);
+            this.ClientSize = new System.Drawing.Size(411, 209);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmItemComponentChooser";

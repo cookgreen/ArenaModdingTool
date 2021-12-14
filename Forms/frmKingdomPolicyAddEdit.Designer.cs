@@ -37,24 +37,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(18, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 15);
+            this.label1.Size = new System.Drawing.Size(176, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kingdom Policy ID:";
             // 
             // txtKingdomPolicyID
             // 
-            this.txtKingdomPolicyID.Location = new System.Drawing.Point(170, 10);
+            this.txtKingdomPolicyID.Location = new System.Drawing.Point(234, 15);
+            this.txtKingdomPolicyID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtKingdomPolicyID.Name = "txtKingdomPolicyID";
-            this.txtKingdomPolicyID.Size = new System.Drawing.Size(401, 25);
+            this.txtKingdomPolicyID.Size = new System.Drawing.Size(550, 30);
             this.txtKingdomPolicyID.TabIndex = 1;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(496, 41);
+            this.btnCancel.Location = new System.Drawing.Point(682, 63);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 38);
+            this.btnCancel.Size = new System.Drawing.Size(103, 58);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(415, 41);
+            this.btnOK.Location = new System.Drawing.Point(571, 63);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 38);
+            this.btnOK.Size = new System.Drawing.Size(103, 58);
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -72,14 +76,16 @@
             // 
             // frmKingdomPolicyAddEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 91);
+            this.ClientSize = new System.Drawing.Size(803, 140);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtKingdomPolicyID);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmKingdomPolicyAddEdit";

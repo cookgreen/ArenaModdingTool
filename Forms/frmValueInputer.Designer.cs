@@ -39,7 +39,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.Size = new System.Drawing.Size(56, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Value:";
             // 
@@ -47,14 +47,14 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(59, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 21);
+            this.textBox1.Size = new System.Drawing.Size(304, 30);
             this.textBox1.TabIndex = 1;
             // 
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(288, 53);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 34);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@
             // 
             this.btnOK.Location = new System.Drawing.Point(207, 53);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 34);
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -72,11 +72,12 @@
             // 
             // frmValueInputer
             // 
-            this.ClientSize = new System.Drawing.Size(375, 88);
+            this.ClientSize = new System.Drawing.Size(375, 99);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

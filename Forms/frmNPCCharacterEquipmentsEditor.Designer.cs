@@ -47,9 +47,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Location = new System.Drawing.Point(20, 24);
+            this.listView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(627, 324);
+            this.listView1.Size = new System.Drawing.Size(1043, 644);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -67,9 +68,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(13, 343);
+            this.btnAdd.Location = new System.Drawing.Point(21, 686);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(23, 23);
+            this.btnAdd.Size = new System.Drawing.Size(39, 46);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -78,9 +80,10 @@
             // btnDelete
             // 
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(42, 342);
+            this.btnDelete.Location = new System.Drawing.Point(70, 685);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(23, 23);
+            this.btnDelete.Size = new System.Drawing.Size(39, 46);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "-";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -89,9 +92,10 @@
             // btnModify
             // 
             this.btnModify.Enabled = false;
-            this.btnModify.Location = new System.Drawing.Point(71, 343);
+            this.btnModify.Location = new System.Drawing.Point(119, 686);
+            this.btnModify.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.Size = new System.Drawing.Size(125, 46);
             this.btnModify.TabIndex = 3;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
@@ -99,9 +103,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(564, 387);
+            this.button1.Location = new System.Drawing.Point(940, 774);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(125, 46);
             this.button1.TabIndex = 4;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
@@ -109,9 +114,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(483, 387);
+            this.btnOK.Location = new System.Drawing.Point(805, 774);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -120,18 +126,19 @@
             // chkIsCivilian
             // 
             this.chkIsCivilian.AutoSize = true;
-            this.chkIsCivilian.Location = new System.Drawing.Point(561, 346);
+            this.chkIsCivilian.Location = new System.Drawing.Point(935, 691);
+            this.chkIsCivilian.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkIsCivilian.Name = "chkIsCivilian";
-            this.chkIsCivilian.Size = new System.Drawing.Size(72, 16);
+            this.chkIsCivilian.Size = new System.Drawing.Size(79, 28);
             this.chkIsCivilian.TabIndex = 6;
             this.chkIsCivilian.Text = "civilian";
             this.chkIsCivilian.UseVisualStyleBackColor = true;
             // 
             // frmNPCCharacterEquipmentsEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 422);
+            this.ClientSize = new System.Drawing.Size(1085, 845);
             this.Controls.Add(this.chkIsCivilian);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.button1);
@@ -139,7 +146,9 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.listView1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNPCCharacterEquipmentsEditor";

@@ -42,56 +42,63 @@ namespace ArenaModdingTool.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(21, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 12);
+            this.label1.Size = new System.Drawing.Size(26, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "X:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 39);
+            this.label2.Location = new System.Drawing.Point(21, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 12);
+            this.label2.Size = new System.Drawing.Size(26, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Y:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 66);
+            this.label3.Location = new System.Drawing.Point(21, 131);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 12);
+            this.label3.Size = new System.Drawing.Size(25, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Z:";
             // 
             // txtVectorX
             // 
-            this.txtVectorX.Location = new System.Drawing.Point(36, 10);
+            this.txtVectorX.Location = new System.Drawing.Point(60, 19);
+            this.txtVectorX.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtVectorX.Name = "txtVectorX";
-            this.txtVectorX.Size = new System.Drawing.Size(220, 21);
+            this.txtVectorX.Size = new System.Drawing.Size(364, 30);
             this.txtVectorX.TabIndex = 3;
             // 
             // txtVectorY
             // 
-            this.txtVectorY.Location = new System.Drawing.Point(36, 36);
+            this.txtVectorY.Location = new System.Drawing.Point(60, 72);
+            this.txtVectorY.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtVectorY.Name = "txtVectorY";
-            this.txtVectorY.Size = new System.Drawing.Size(220, 21);
+            this.txtVectorY.Size = new System.Drawing.Size(364, 30);
             this.txtVectorY.TabIndex = 4;
             // 
             // txtVectorZ
             // 
-            this.txtVectorZ.Location = new System.Drawing.Point(36, 63);
+            this.txtVectorZ.Location = new System.Drawing.Point(60, 126);
+            this.txtVectorZ.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtVectorZ.Name = "txtVectorZ";
-            this.txtVectorZ.Size = new System.Drawing.Size(220, 21);
+            this.txtVectorZ.Size = new System.Drawing.Size(364, 30);
             this.txtVectorZ.TabIndex = 5;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(181, 90);
+            this.btnCancel.Location = new System.Drawing.Point(301, 179);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(125, 46);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -99,9 +106,10 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(100, 90);
+            this.btnOK.Location = new System.Drawing.Point(166, 179);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(125, 46);
             this.btnOK.TabIndex = 7;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -109,9 +117,9 @@ namespace ArenaModdingTool.Forms
             // 
             // frmVectorEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(268, 118);
+            this.ClientSize = new System.Drawing.Size(446, 237);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtVectorZ);
@@ -120,7 +128,9 @@ namespace ArenaModdingTool.Forms
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmVectorEditor";
