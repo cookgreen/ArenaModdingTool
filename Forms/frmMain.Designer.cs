@@ -49,12 +49,12 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.panelControls = new System.Windows.Forms.Panel();
             this.btnItems = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnHeros = new System.Windows.Forms.Button();
             this.btnNPCCharacters = new System.Windows.Forms.Button();
             this.btnCultures = new System.Windows.Forms.Button();
             this.btnKingdoms = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -218,6 +218,16 @@
             this.btnItems.UseVisualStyleBackColor = true;
             this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icon-culture.png");
+            this.imageList1.Images.SetKeyName(1, "icon-hero.png");
+            this.imageList1.Images.SetKeyName(2, "icon-item.png");
+            this.imageList1.Images.SetKeyName(3, "icon-kingdom.png");
+            this.imageList1.Images.SetKeyName(4, "icon-troop.png");
+            // 
             // btnHeros
             // 
             this.btnHeros.Enabled = false;
@@ -288,16 +298,6 @@
             this.panelMain.Size = new System.Drawing.Size(1155, 832);
             this.panelMain.TabIndex = 2;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "icon-culture.png");
-            this.imageList1.Images.SetKeyName(1, "icon-hero.png");
-            this.imageList1.Images.SetKeyName(2, "icon-item.png");
-            this.imageList1.Images.SetKeyName(3, "icon-kingdom.png");
-            this.imageList1.Images.SetKeyName(4, "icon-troop.png");
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -307,6 +307,7 @@
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.menu);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menu;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMain";

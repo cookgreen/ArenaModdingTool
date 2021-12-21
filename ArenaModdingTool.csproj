@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon_Arena.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -506,6 +509,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Icon_Arena.ico" />
     <Content Include="Images\icon-culture.png" />
     <Content Include="Images\icon-hero.png" />
     <Content Include="Images\icon-item.png" />
