@@ -101,7 +101,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnEditFace, 1, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -127,7 +127,7 @@
             // 
             this.txtOccupation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtOccupation.Location = new System.Drawing.Point(204, 290);
-            this.txtOccupation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOccupation.Margin = new System.Windows.Forms.Padding(4);
             this.txtOccupation.Name = "txtOccupation";
             this.txtOccupation.Size = new System.Drawing.Size(576, 25);
             this.txtOccupation.TabIndex = 23;
@@ -136,7 +136,7 @@
             // 
             this.txtCivilianTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCivilianTemplate.Location = new System.Drawing.Point(204, 228);
-            this.txtCivilianTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCivilianTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.txtCivilianTemplate.Name = "txtCivilianTemplate";
             this.txtCivilianTemplate.ReadOnly = true;
             this.txtCivilianTemplate.Size = new System.Drawing.Size(576, 25);
@@ -147,7 +147,7 @@
             // 
             this.txtCulture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCulture.Location = new System.Drawing.Point(204, 97);
-            this.txtCulture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCulture.Margin = new System.Windows.Forms.Padding(4);
             this.txtCulture.Name = "txtCulture";
             this.txtCulture.ReadOnly = true;
             this.txtCulture.Size = new System.Drawing.Size(576, 25);
@@ -158,7 +158,7 @@
             // 
             this.txtVoice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtVoice.Location = new System.Drawing.Point(204, 66);
-            this.txtVoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVoice.Margin = new System.Windows.Forms.Padding(4);
             this.txtVoice.Name = "txtVoice";
             this.txtVoice.Size = new System.Drawing.Size(576, 25);
             this.txtVoice.TabIndex = 17;
@@ -167,7 +167,7 @@
             // 
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtName.Location = new System.Drawing.Point(204, 35);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(576, 25);
             this.txtName.TabIndex = 16;
@@ -320,7 +320,7 @@
             // 
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtID.Location = new System.Drawing.Point(204, 4);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(576, 25);
             this.txtID.TabIndex = 15;
@@ -331,7 +331,7 @@
             this.panel1.Controls.Add(this.chkIsHero);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(204, 128);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(576, 42);
             this.panel1.TabIndex = 24;
@@ -340,7 +340,7 @@
             // 
             this.chkIsMecenary.AutoSize = true;
             this.chkIsMecenary.Location = new System.Drawing.Point(108, 10);
-            this.chkIsMecenary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkIsMecenary.Margin = new System.Windows.Forms.Padding(4);
             this.chkIsMecenary.Name = "chkIsMecenary";
             this.chkIsMecenary.Size = new System.Drawing.Size(109, 19);
             this.chkIsMecenary.TabIndex = 1;
@@ -351,7 +351,7 @@
             // 
             this.chkIsHero.AutoSize = true;
             this.chkIsHero.Location = new System.Drawing.Point(4, 10);
-            this.chkIsHero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkIsHero.Margin = new System.Windows.Forms.Padding(4);
             this.chkIsHero.Name = "chkIsHero";
             this.chkIsHero.Size = new System.Drawing.Size(77, 19);
             this.chkIsHero.TabIndex = 0;
@@ -364,7 +364,7 @@
             this.panel2.Controls.Add(this.chkIsFemale);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(204, 178);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(576, 42);
             this.panel2.TabIndex = 25;
@@ -373,7 +373,7 @@
             // 
             this.chkIsCompanion.AutoSize = true;
             this.chkIsCompanion.Location = new System.Drawing.Point(108, 11);
-            this.chkIsCompanion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkIsCompanion.Margin = new System.Windows.Forms.Padding(4);
             this.chkIsCompanion.Name = "chkIsCompanion";
             this.chkIsCompanion.Size = new System.Drawing.Size(117, 19);
             this.chkIsCompanion.TabIndex = 2;
@@ -384,7 +384,7 @@
             // 
             this.chkIsFemale.AutoSize = true;
             this.chkIsFemale.Location = new System.Drawing.Point(4, 11);
-            this.chkIsFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkIsFemale.Margin = new System.Windows.Forms.Padding(4);
             this.chkIsFemale.Name = "chkIsFemale";
             this.chkIsFemale.Size = new System.Drawing.Size(93, 19);
             this.chkIsFemale.TabIndex = 1;
@@ -401,7 +401,7 @@
             "Archer",
             "Cavalry"});
             this.cmbGroups.Location = new System.Drawing.Point(204, 259);
-            this.cmbGroups.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbGroups.Margin = new System.Windows.Forms.Padding(4);
             this.cmbGroups.Name = "cmbGroups";
             this.cmbGroups.Size = new System.Drawing.Size(576, 23);
             this.cmbGroups.TabIndex = 26;
@@ -410,7 +410,7 @@
             // 
             this.btnEditComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditComponents.Location = new System.Drawing.Point(204, 365);
-            this.btnEditComponents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditComponents.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditComponents.Name = "btnEditComponents";
             this.btnEditComponents.Size = new System.Drawing.Size(576, 36);
             this.btnEditComponents.TabIndex = 27;
@@ -422,7 +422,7 @@
             // 
             this.btnEditSkills.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditSkills.Location = new System.Drawing.Point(204, 409);
-            this.btnEditSkills.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditSkills.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditSkills.Name = "btnEditSkills";
             this.btnEditSkills.Size = new System.Drawing.Size(576, 36);
             this.btnEditSkills.TabIndex = 28;
@@ -434,7 +434,7 @@
             // 
             this.btnEditEquipmentSet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditEquipmentSet.Location = new System.Drawing.Point(204, 453);
-            this.btnEditEquipmentSet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditEquipmentSet.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditEquipmentSet.Name = "btnEditEquipmentSet";
             this.btnEditEquipmentSet.Size = new System.Drawing.Size(576, 36);
             this.btnEditEquipmentSet.TabIndex = 29;
@@ -446,7 +446,7 @@
             // 
             this.btnEditOtherEquipments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditOtherEquipments.Location = new System.Drawing.Point(204, 497);
-            this.btnEditOtherEquipments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditOtherEquipments.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditOtherEquipments.Name = "btnEditOtherEquipments";
             this.btnEditOtherEquipments.Size = new System.Drawing.Size(576, 36);
             this.btnEditOtherEquipments.TabIndex = 30;
@@ -459,7 +459,7 @@
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(204, 609);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(576, 42);
             this.panel3.TabIndex = 31;
@@ -468,7 +468,7 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Location = new System.Drawing.Point(472, 6);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 29);
             this.btnSave.TabIndex = 0;
@@ -480,7 +480,7 @@
             // 
             this.btnEditFace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditFace.Location = new System.Drawing.Point(204, 321);
-            this.btnEditFace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditFace.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditFace.Name = "btnEditFace";
             this.btnEditFace.Size = new System.Drawing.Size(576, 36);
             this.btnEditFace.TabIndex = 32;
@@ -493,7 +493,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucNPCCharacterDetails";
             this.Size = new System.Drawing.Size(784, 655);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -78,7 +78,7 @@ namespace ArenaModdingTool.Controls
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -91,7 +91,7 @@ namespace ArenaModdingTool.Controls
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(6, 841);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1088, 65);
             this.panel1.TabIndex = 2;
@@ -99,7 +99,7 @@ namespace ArenaModdingTool.Controls
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(918, 9);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(138, 44);
             this.btnSave.TabIndex = 0;
@@ -142,7 +142,7 @@ namespace ArenaModdingTool.Controls
             this.tableLayoutPanel1.Controls.Add(this.btnEditItemComponent, 1, 14);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 6);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -216,7 +216,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtCulture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCulture.Location = new System.Drawing.Point(281, 246);
-            this.txtCulture.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCulture.Margin = new System.Windows.Forms.Padding(6);
             this.txtCulture.Name = "txtCulture";
             this.txtCulture.ReadOnly = true;
             this.txtCulture.Size = new System.Drawing.Size(801, 30);
@@ -226,7 +226,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtBodyName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBodyName.Location = new System.Drawing.Point(281, 150);
-            this.txtBodyName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtBodyName.Margin = new System.Windows.Forms.Padding(6);
             this.txtBodyName.Name = "txtBodyName";
             this.txtBodyName.Size = new System.Drawing.Size(801, 30);
             this.txtBodyName.TabIndex = 8;
@@ -235,7 +235,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtName.Location = new System.Drawing.Point(281, 102);
-            this.txtName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtName.Margin = new System.Windows.Forms.Padding(6);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(801, 30);
             this.txtName.TabIndex = 6;
@@ -256,7 +256,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtId.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtId.Location = new System.Drawing.Point(281, 6);
-            this.txtId.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtId.Margin = new System.Windows.Forms.Padding(6);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(801, 30);
             this.txtId.TabIndex = 2;
@@ -265,7 +265,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.chkMultiplayerItem.AutoSize = true;
             this.chkMultiplayerItem.Location = new System.Drawing.Point(281, 54);
-            this.chkMultiplayerItem.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkMultiplayerItem.Margin = new System.Windows.Forms.Padding(6);
             this.chkMultiplayerItem.Name = "chkMultiplayerItem";
             this.chkMultiplayerItem.Size = new System.Drawing.Size(172, 27);
             this.chkMultiplayerItem.TabIndex = 19;
@@ -276,7 +276,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtMesh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMesh.Location = new System.Drawing.Point(281, 198);
-            this.txtMesh.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMesh.Margin = new System.Windows.Forms.Padding(6);
             this.txtMesh.Name = "txtMesh";
             this.txtMesh.Size = new System.Drawing.Size(801, 30);
             this.txtMesh.TabIndex = 30;
@@ -297,7 +297,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.chkIsMerchandise.AutoSize = true;
             this.chkIsMerchandise.Location = new System.Drawing.Point(281, 342);
-            this.chkIsMerchandise.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chkIsMerchandise.Margin = new System.Windows.Forms.Padding(6);
             this.chkIsMerchandise.Name = "chkIsMerchandise";
             this.chkIsMerchandise.Size = new System.Drawing.Size(168, 27);
             this.chkIsMerchandise.TabIndex = 32;
@@ -380,7 +380,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.numWeight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numWeight.Location = new System.Drawing.Point(281, 390);
-            this.numWeight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numWeight.Margin = new System.Windows.Forms.Padding(6);
             this.numWeight.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -394,7 +394,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtType.Location = new System.Drawing.Point(281, 486);
-            this.txtType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtType.Margin = new System.Windows.Forms.Padding(6);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(801, 30);
             this.txtType.TabIndex = 41;
@@ -403,7 +403,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtAmmoOffset.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAmmoOffset.Location = new System.Drawing.Point(281, 534);
-            this.txtAmmoOffset.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtAmmoOffset.Margin = new System.Windows.Forms.Padding(6);
             this.txtAmmoOffset.Name = "txtAmmoOffset";
             this.txtAmmoOffset.ReadOnly = true;
             this.txtAmmoOffset.Size = new System.Drawing.Size(801, 30);
@@ -414,7 +414,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtItemHolsters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtItemHolsters.Location = new System.Drawing.Point(281, 582);
-            this.txtItemHolsters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtItemHolsters.Margin = new System.Windows.Forms.Padding(6);
             this.txtItemHolsters.Name = "txtItemHolsters";
             this.txtItemHolsters.ReadOnly = true;
             this.txtItemHolsters.Size = new System.Drawing.Size(801, 30);
@@ -425,7 +425,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.txtHolsterPositionShift.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHolsterPositionShift.Location = new System.Drawing.Point(281, 630);
-            this.txtHolsterPositionShift.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtHolsterPositionShift.Margin = new System.Windows.Forms.Padding(6);
             this.txtHolsterPositionShift.Name = "txtHolsterPositionShift";
             this.txtHolsterPositionShift.ReadOnly = true;
             this.txtHolsterPositionShift.Size = new System.Drawing.Size(801, 30);
@@ -436,7 +436,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.numDifficulty.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numDifficulty.Location = new System.Drawing.Point(281, 438);
-            this.numDifficulty.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numDifficulty.Margin = new System.Windows.Forms.Padding(6);
             this.numDifficulty.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -450,7 +450,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.numValue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numValue.Location = new System.Drawing.Point(281, 294);
-            this.numValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numValue.Margin = new System.Windows.Forms.Padding(6);
             this.numValue.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -476,7 +476,7 @@ namespace ArenaModdingTool.Controls
             // 
             this.btnEditItemComponent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditItemComponent.Location = new System.Drawing.Point(281, 678);
-            this.btnEditItemComponent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEditItemComponent.Margin = new System.Windows.Forms.Padding(6);
             this.btnEditItemComponent.Name = "btnEditItemComponent";
             this.btnEditItemComponent.Size = new System.Drawing.Size(801, 36);
             this.btnEditItemComponent.TabIndex = 48;
@@ -490,7 +490,7 @@ namespace ArenaModdingTool.Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ucItemsDetails";
             this.Size = new System.Drawing.Size(1100, 912);
             this.tableLayoutPanel2.ResumeLayout(false);

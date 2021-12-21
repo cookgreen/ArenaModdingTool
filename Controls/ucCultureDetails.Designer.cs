@@ -695,7 +695,7 @@
             this.tabPageDetails1.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageDetails1.Name = "tabPageDetails1";
             this.tabPageDetails1.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPageDetails1.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageDetails1.Size = new System.Drawing.Size(1134, 1179);
             this.tabPageDetails1.TabIndex = 1;
             this.tabPageDetails1.Text = "Details Info #1";
             // 
@@ -759,7 +759,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1090);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1167);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // txtDuelPreset
@@ -1086,7 +1086,7 @@
             this.tabPageDetails2.Location = new System.Drawing.Point(4, 32);
             this.tabPageDetails2.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageDetails2.Name = "tabPageDetails2";
-            this.tabPageDetails2.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageDetails2.Size = new System.Drawing.Size(1134, 1179);
             this.tabPageDetails2.TabIndex = 2;
             this.tabPageDetails2.Text = "Details Info #2";
             // 
@@ -1171,7 +1171,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1134, 1102);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1134, 1179);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // txtMusician
@@ -1666,7 +1666,7 @@
             this.tabPageDetails3.Location = new System.Drawing.Point(4, 32);
             this.tabPageDetails3.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageDetails3.Name = "tabPageDetails3";
-            this.tabPageDetails3.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageDetails3.Size = new System.Drawing.Size(1134, 1179);
             this.tabPageDetails3.TabIndex = 3;
             this.tabPageDetails3.Text = "Details Info #3";
             // 
@@ -1726,7 +1726,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1102);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1179);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // txtWeaponPracticeStage2
@@ -2033,7 +2033,7 @@
             this.tabPageNameBuilder.Margin = new System.Windows.Forms.Padding(6);
             this.tabPageNameBuilder.Name = "tabPageNameBuilder";
             this.tabPageNameBuilder.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPageNameBuilder.Size = new System.Drawing.Size(1134, 1102);
+            this.tabPageNameBuilder.Size = new System.Drawing.Size(1134, 1179);
             this.tabPageNameBuilder.TabIndex = 6;
             this.tabPageNameBuilder.Text = "Name Builder";
             // 
@@ -2057,7 +2057,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 288F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 288F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1122, 1090);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1122, 1167);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel4

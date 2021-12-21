@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menu = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +54,7 @@
             this.btnCultures = new System.Windows.Forms.Button();
             this.btnKingdoms = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menu.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
@@ -195,68 +198,83 @@
             this.panelControls.Controls.Add(this.btnKingdoms);
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControls.Location = new System.Drawing.Point(0, 30);
-            this.panelControls.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelControls.Margin = new System.Windows.Forms.Padding(6);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(259, 832);
+            this.panelControls.Size = new System.Drawing.Size(312, 832);
             this.panelControls.TabIndex = 1;
             // 
             // btnItems
             // 
             this.btnItems.Enabled = false;
-            this.btnItems.Location = new System.Drawing.Point(40, 598);
-            this.btnItems.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnItems.ImageKey = "icon-item.png";
+            this.btnItems.ImageList = this.imageList1;
+            this.btnItems.Location = new System.Drawing.Point(14, 589);
+            this.btnItems.Margin = new System.Windows.Forms.Padding(6);
             this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(175, 130);
+            this.btnItems.Size = new System.Drawing.Size(285, 130);
             this.btnItems.TabIndex = 4;
             this.btnItems.Text = "Items";
+            this.btnItems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnItems.UseVisualStyleBackColor = true;
             this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
             // btnHeros
             // 
             this.btnHeros.Enabled = false;
-            this.btnHeros.Location = new System.Drawing.Point(40, 457);
-            this.btnHeros.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnHeros.ImageKey = "icon-hero.png";
+            this.btnHeros.ImageList = this.imageList1;
+            this.btnHeros.Location = new System.Drawing.Point(14, 447);
+            this.btnHeros.Margin = new System.Windows.Forms.Padding(6);
             this.btnHeros.Name = "btnHeros";
-            this.btnHeros.Size = new System.Drawing.Size(175, 130);
+            this.btnHeros.Size = new System.Drawing.Size(285, 130);
             this.btnHeros.TabIndex = 3;
             this.btnHeros.Text = "Heros";
+            this.btnHeros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHeros.UseVisualStyleBackColor = true;
             this.btnHeros.Click += new System.EventHandler(this.btnHeros_Click);
             // 
             // btnNPCCharacters
             // 
             this.btnNPCCharacters.Enabled = false;
-            this.btnNPCCharacters.Location = new System.Drawing.Point(40, 314);
-            this.btnNPCCharacters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnNPCCharacters.ImageKey = "icon-troop.png";
+            this.btnNPCCharacters.ImageList = this.imageList1;
+            this.btnNPCCharacters.Location = new System.Drawing.Point(14, 305);
+            this.btnNPCCharacters.Margin = new System.Windows.Forms.Padding(6);
             this.btnNPCCharacters.Name = "btnNPCCharacters";
-            this.btnNPCCharacters.Size = new System.Drawing.Size(175, 130);
+            this.btnNPCCharacters.Size = new System.Drawing.Size(285, 130);
             this.btnNPCCharacters.TabIndex = 2;
             this.btnNPCCharacters.Text = "NPCCharacters";
+            this.btnNPCCharacters.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNPCCharacters.UseVisualStyleBackColor = true;
             this.btnNPCCharacters.Click += new System.EventHandler(this.btnNPCCharacters_Click);
             // 
             // btnCultures
             // 
             this.btnCultures.Enabled = false;
-            this.btnCultures.Location = new System.Drawing.Point(40, 172);
-            this.btnCultures.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCultures.ImageKey = "icon-culture.png";
+            this.btnCultures.ImageList = this.imageList1;
+            this.btnCultures.Location = new System.Drawing.Point(14, 163);
+            this.btnCultures.Margin = new System.Windows.Forms.Padding(6);
             this.btnCultures.Name = "btnCultures";
-            this.btnCultures.Size = new System.Drawing.Size(175, 130);
+            this.btnCultures.Size = new System.Drawing.Size(285, 130);
             this.btnCultures.TabIndex = 1;
             this.btnCultures.Text = "Cultures";
+            this.btnCultures.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCultures.UseVisualStyleBackColor = true;
             this.btnCultures.Click += new System.EventHandler(this.btnCultures_Click);
             // 
             // btnKingdoms
             // 
             this.btnKingdoms.Enabled = false;
-            this.btnKingdoms.Location = new System.Drawing.Point(40, 31);
-            this.btnKingdoms.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnKingdoms.ImageKey = "icon-kingdom.png";
+            this.btnKingdoms.ImageList = this.imageList1;
+            this.btnKingdoms.Location = new System.Drawing.Point(14, 21);
+            this.btnKingdoms.Margin = new System.Windows.Forms.Padding(6);
             this.btnKingdoms.Name = "btnKingdoms";
-            this.btnKingdoms.Size = new System.Drawing.Size(175, 130);
+            this.btnKingdoms.Size = new System.Drawing.Size(285, 130);
             this.btnKingdoms.TabIndex = 0;
             this.btnKingdoms.Text = "Kingdoms";
+            this.btnKingdoms.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKingdoms.UseVisualStyleBackColor = true;
             this.btnKingdoms.Click += new System.EventHandler(this.btnKingdoms_Click);
             // 
@@ -264,11 +282,21 @@
             // 
             this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(259, 30);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelMain.Location = new System.Drawing.Point(312, 30);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(6);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1208, 832);
+            this.panelMain.Size = new System.Drawing.Size(1155, 832);
             this.panelMain.TabIndex = 2;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icon-culture.png");
+            this.imageList1.Images.SetKeyName(1, "icon-hero.png");
+            this.imageList1.Images.SetKeyName(2, "icon-item.png");
+            this.imageList1.Images.SetKeyName(3, "icon-kingdom.png");
+            this.imageList1.Images.SetKeyName(4, "icon-troop.png");
             // 
             // frmMain
             // 
@@ -280,7 +308,7 @@
             this.Controls.Add(this.menu);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arena - Modding Tool for Bannerlord";
@@ -319,6 +347,7 @@
         private System.Windows.Forms.Button btnItems;
         private System.Windows.Forms.ToolStripMenuItem mnuRecentlyImportedProject;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

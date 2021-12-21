@@ -477,6 +477,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="languages\Lang_CNS.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -505,6 +506,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\icon-culture.png" />
+    <Content Include="Images\icon-hero.png" />
+    <Content Include="Images\icon-item.png" />
+    <Content Include="Images\icon-kingdom.png" />
+    <Content Include="Images\icon-troop.png" />
     <Content Include="RecentOperations.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
