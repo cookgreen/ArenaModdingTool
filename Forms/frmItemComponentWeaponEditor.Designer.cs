@@ -74,7 +74,7 @@ namespace ArenaModdingTool.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 78);
+            this.label2.Location = new System.Drawing.Point(26, 60);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 24);
@@ -83,7 +83,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtWeaponBalance
             // 
-            this.txtWeaponBalance.Location = new System.Drawing.Point(225, 72);
+            this.txtWeaponBalance.Location = new System.Drawing.Point(225, 57);
             this.txtWeaponBalance.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtWeaponBalance.Name = "txtWeaponBalance";
             this.txtWeaponBalance.Size = new System.Drawing.Size(505, 30);
@@ -92,7 +92,7 @@ namespace ArenaModdingTool.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 140);
+            this.label3.Location = new System.Drawing.Point(26, 102);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 24);
@@ -101,7 +101,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtThrustSpeed
             // 
-            this.txtThrustSpeed.Location = new System.Drawing.Point(225, 134);
+            this.txtThrustSpeed.Location = new System.Drawing.Point(225, 99);
             this.txtThrustSpeed.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtThrustSpeed.Name = "txtThrustSpeed";
             this.txtThrustSpeed.Size = new System.Drawing.Size(505, 30);
@@ -110,7 +110,7 @@ namespace ArenaModdingTool.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 198);
+            this.label4.Location = new System.Drawing.Point(26, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 24);
@@ -119,7 +119,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtSpeedRating
             // 
-            this.txtSpeedRating.Location = new System.Drawing.Point(225, 193);
+            this.txtSpeedRating.Location = new System.Drawing.Point(225, 141);
             this.txtSpeedRating.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSpeedRating.Name = "txtSpeedRating";
             this.txtSpeedRating.Size = new System.Drawing.Size(505, 30);
@@ -128,7 +128,7 @@ namespace ArenaModdingTool.Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 261);
+            this.label5.Location = new System.Drawing.Point(26, 186);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 24);
@@ -137,7 +137,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtMissileSpeed
             // 
-            this.txtMissileSpeed.Location = new System.Drawing.Point(225, 255);
+            this.txtMissileSpeed.Location = new System.Drawing.Point(225, 183);
             this.txtMissileSpeed.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMissileSpeed.Name = "txtMissileSpeed";
             this.txtMissileSpeed.Size = new System.Drawing.Size(505, 30);
@@ -146,7 +146,7 @@ namespace ArenaModdingTool.Forms
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 333);
+            this.label6.Location = new System.Drawing.Point(26, 228);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 24);
@@ -155,7 +155,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtWeaponLength
             // 
-            this.txtWeaponLength.Location = new System.Drawing.Point(225, 326);
+            this.txtWeaponLength.Location = new System.Drawing.Point(225, 225);
             this.txtWeaponLength.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtWeaponLength.Name = "txtWeaponLength";
             this.txtWeaponLength.Size = new System.Drawing.Size(505, 30);
@@ -164,7 +164,7 @@ namespace ArenaModdingTool.Forms
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 405);
+            this.label7.Location = new System.Drawing.Point(26, 270);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 24);
@@ -173,7 +173,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtSwingDamage
             // 
-            this.txtSwingDamage.Location = new System.Drawing.Point(225, 399);
+            this.txtSwingDamage.Location = new System.Drawing.Point(225, 267);
             this.txtSwingDamage.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSwingDamage.Name = "txtSwingDamage";
             this.txtSwingDamage.Size = new System.Drawing.Size(505, 30);
@@ -182,7 +182,7 @@ namespace ArenaModdingTool.Forms
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 477);
+            this.label8.Location = new System.Drawing.Point(26, 312);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(170, 24);
@@ -191,7 +191,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtSwingDamageType
             // 
-            this.txtSwingDamageType.Location = new System.Drawing.Point(225, 471);
+            this.txtSwingDamageType.Location = new System.Drawing.Point(225, 309);
             this.txtSwingDamageType.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSwingDamageType.Name = "txtSwingDamageType";
             this.txtSwingDamageType.Size = new System.Drawing.Size(505, 30);
@@ -200,7 +200,7 @@ namespace ArenaModdingTool.Forms
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 552);
+            this.label9.Location = new System.Drawing.Point(26, 354);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 24);
@@ -209,7 +209,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtItemUsage
             // 
-            this.txtItemUsage.Location = new System.Drawing.Point(225, 545);
+            this.txtItemUsage.Location = new System.Drawing.Point(225, 351);
             this.txtItemUsage.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtItemUsage.Name = "txtItemUsage";
             this.txtItemUsage.Size = new System.Drawing.Size(505, 30);
@@ -218,7 +218,7 @@ namespace ArenaModdingTool.Forms
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(26, 636);
+            this.label10.Location = new System.Drawing.Point(26, 396);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(134, 24);
@@ -227,7 +227,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtPhysicsMaterial
             // 
-            this.txtPhysicsMaterial.Location = new System.Drawing.Point(225, 630);
+            this.txtPhysicsMaterial.Location = new System.Drawing.Point(225, 393);
             this.txtPhysicsMaterial.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPhysicsMaterial.Name = "txtPhysicsMaterial";
             this.txtPhysicsMaterial.Size = new System.Drawing.Size(505, 30);
@@ -235,7 +235,7 @@ namespace ArenaModdingTool.Forms
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(605, 694);
+            this.btnCancel.Location = new System.Drawing.Point(605, 435);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 46);
@@ -246,7 +246,7 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(470, 694);
+            this.btnOK.Location = new System.Drawing.Point(470, 435);
             this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 46);
@@ -259,7 +259,7 @@ namespace ArenaModdingTool.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 753);
+            this.ClientSize = new System.Drawing.Size(746, 498);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtPhysicsMaterial);

@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRulerTitle = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
@@ -71,53 +68,13 @@
             this.txtIntroduction = new System.Windows.Forms.RichTextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.btnEditRelationshipsAndPolicies = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1247, 1464);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnSave);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(6, 1384);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1235, 74);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Enabled = false;
-            this.btnSave.Location = new System.Drawing.Point(1083, 14);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(138, 44);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.AutoScroll = true;
+            this.tableLayoutPanel2.AutoScrollMinSize = new System.Drawing.Size(100, 100);
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -161,10 +118,10 @@
             this.tableLayoutPanel2.Controls.Add(this.txtID, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnEditRelationshipsAndPolicies, 1, 18);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 6);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 20;
+            this.tableLayoutPanel2.RowCount = 21;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -180,14 +137,14 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1235, 1366);
-            this.tableLayoutPanel2.TabIndex = 1;
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1247, 1464);
+            this.tableLayoutPanel2.TabIndex = 2;
             // 
             // txtRulerTitle
             // 
@@ -195,7 +152,7 @@
             this.txtRulerTitle.Location = new System.Drawing.Point(281, 774);
             this.txtRulerTitle.Margin = new System.Windows.Forms.Padding(6);
             this.txtRulerTitle.Name = "txtRulerTitle";
-            this.txtRulerTitle.Size = new System.Drawing.Size(948, 30);
+            this.txtRulerTitle.Size = new System.Drawing.Size(960, 30);
             this.txtRulerTitle.TabIndex = 37;
             // 
             // txtTitle
@@ -204,7 +161,7 @@
             this.txtTitle.Location = new System.Drawing.Point(281, 726);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(6);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(948, 30);
+            this.txtTitle.Size = new System.Drawing.Size(960, 30);
             this.txtTitle.TabIndex = 36;
             // 
             // txtShortName
@@ -213,7 +170,7 @@
             this.txtShortName.Location = new System.Drawing.Point(281, 678);
             this.txtShortName.Margin = new System.Windows.Forms.Padding(6);
             this.txtShortName.Name = "txtShortName";
-            this.txtShortName.Size = new System.Drawing.Size(948, 30);
+            this.txtShortName.Size = new System.Drawing.Size(960, 30);
             this.txtShortName.TabIndex = 35;
             // 
             // txtName
@@ -222,7 +179,7 @@
             this.txtName.Location = new System.Drawing.Point(281, 630);
             this.txtName.Margin = new System.Windows.Forms.Padding(6);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(948, 30);
+            this.txtName.Size = new System.Drawing.Size(960, 30);
             this.txtName.TabIndex = 34;
             // 
             // txtFlagMesh
@@ -231,7 +188,7 @@
             this.txtFlagMesh.Location = new System.Drawing.Point(281, 582);
             this.txtFlagMesh.Margin = new System.Windows.Forms.Padding(6);
             this.txtFlagMesh.Name = "txtFlagMesh";
-            this.txtFlagMesh.Size = new System.Drawing.Size(948, 30);
+            this.txtFlagMesh.Size = new System.Drawing.Size(960, 30);
             this.txtFlagMesh.TabIndex = 33;
             // 
             // txtSettlementBannerMesh
@@ -240,7 +197,7 @@
             this.txtSettlementBannerMesh.Location = new System.Drawing.Point(281, 534);
             this.txtSettlementBannerMesh.Margin = new System.Windows.Forms.Padding(6);
             this.txtSettlementBannerMesh.Name = "txtSettlementBannerMesh";
-            this.txtSettlementBannerMesh.Size = new System.Drawing.Size(948, 30);
+            this.txtSettlementBannerMesh.Size = new System.Drawing.Size(960, 30);
             this.txtSettlementBannerMesh.TabIndex = 32;
             // 
             // txtCulture
@@ -250,9 +207,8 @@
             this.txtCulture.Margin = new System.Windows.Forms.Padding(6);
             this.txtCulture.Name = "txtCulture";
             this.txtCulture.ReadOnly = true;
-            this.txtCulture.Size = new System.Drawing.Size(948, 30);
+            this.txtCulture.Size = new System.Drawing.Size(960, 30);
             this.txtCulture.TabIndex = 31;
-            this.txtCulture.DoubleClick += new System.EventHandler(this.txtCulture_DoubleClick);
             // 
             // txtAlternativeColor2
             // 
@@ -261,9 +217,8 @@
             this.txtAlternativeColor2.Margin = new System.Windows.Forms.Padding(6);
             this.txtAlternativeColor2.Name = "txtAlternativeColor2";
             this.txtAlternativeColor2.ReadOnly = true;
-            this.txtAlternativeColor2.Size = new System.Drawing.Size(948, 30);
+            this.txtAlternativeColor2.Size = new System.Drawing.Size(960, 30);
             this.txtAlternativeColor2.TabIndex = 30;
-            this.txtAlternativeColor2.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtAlternativeColor
             // 
@@ -272,9 +227,8 @@
             this.txtAlternativeColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtAlternativeColor.Name = "txtAlternativeColor";
             this.txtAlternativeColor.ReadOnly = true;
-            this.txtAlternativeColor.Size = new System.Drawing.Size(948, 30);
+            this.txtAlternativeColor.Size = new System.Drawing.Size(960, 30);
             this.txtAlternativeColor.TabIndex = 29;
-            this.txtAlternativeColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtColor2
             // 
@@ -283,9 +237,8 @@
             this.txtColor2.Margin = new System.Windows.Forms.Padding(6);
             this.txtColor2.Name = "txtColor2";
             this.txtColor2.ReadOnly = true;
-            this.txtColor2.Size = new System.Drawing.Size(948, 30);
+            this.txtColor2.Size = new System.Drawing.Size(960, 30);
             this.txtColor2.TabIndex = 28;
-            this.txtColor2.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtColor
             // 
@@ -294,9 +247,8 @@
             this.txtColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtColor.Name = "txtColor";
             this.txtColor.ReadOnly = true;
-            this.txtColor.Size = new System.Drawing.Size(948, 30);
+            this.txtColor.Size = new System.Drawing.Size(960, 30);
             this.txtColor.TabIndex = 27;
-            this.txtColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtLabelColor
             // 
@@ -305,9 +257,8 @@
             this.txtLabelColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtLabelColor.Name = "txtLabelColor";
             this.txtLabelColor.ReadOnly = true;
-            this.txtLabelColor.Size = new System.Drawing.Size(948, 30);
+            this.txtLabelColor.Size = new System.Drawing.Size(960, 30);
             this.txtLabelColor.TabIndex = 26;
-            this.txtLabelColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtSecondaryBannerlordColor
             // 
@@ -316,9 +267,8 @@
             this.txtSecondaryBannerlordColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtSecondaryBannerlordColor.Name = "txtSecondaryBannerlordColor";
             this.txtSecondaryBannerlordColor.ReadOnly = true;
-            this.txtSecondaryBannerlordColor.Size = new System.Drawing.Size(948, 30);
+            this.txtSecondaryBannerlordColor.Size = new System.Drawing.Size(960, 30);
             this.txtSecondaryBannerlordColor.TabIndex = 25;
-            this.txtSecondaryBannerlordColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtPrimaryBannerColor
             // 
@@ -327,9 +277,8 @@
             this.txtPrimaryBannerColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtPrimaryBannerColor.Name = "txtPrimaryBannerColor";
             this.txtPrimaryBannerColor.ReadOnly = true;
-            this.txtPrimaryBannerColor.Size = new System.Drawing.Size(948, 30);
+            this.txtPrimaryBannerColor.Size = new System.Drawing.Size(960, 30);
             this.txtPrimaryBannerColor.TabIndex = 24;
-            this.txtPrimaryBannerColor.DoubleClick += new System.EventHandler(this.colorTextBox_Click);
             // 
             // txtBannerKey
             // 
@@ -337,10 +286,8 @@
             this.txtBannerKey.Location = new System.Drawing.Point(281, 102);
             this.txtBannerKey.Margin = new System.Windows.Forms.Padding(6);
             this.txtBannerKey.Name = "txtBannerKey";
-            this.txtBannerKey.Size = new System.Drawing.Size(948, 30);
+            this.txtBannerKey.Size = new System.Drawing.Size(960, 30);
             this.txtBannerKey.TabIndex = 23;
-            this.txtBannerKey.DoubleClick += new System.EventHandler(this.txtBannerKey_DoubleClick);
-            this.txtBannerKey.Enter += new System.EventHandler(this.txtBannerKey_Enter);
             // 
             // txtOwner
             // 
@@ -349,9 +296,8 @@
             this.txtOwner.Margin = new System.Windows.Forms.Padding(6);
             this.txtOwner.Name = "txtOwner";
             this.txtOwner.ReadOnly = true;
-            this.txtOwner.Size = new System.Drawing.Size(948, 30);
+            this.txtOwner.Size = new System.Drawing.Size(960, 30);
             this.txtOwner.TabIndex = 22;
-            this.txtOwner.DoubleClick += new System.EventHandler(this.txtOwner_DoubleClick);
             // 
             // label1
             // 
@@ -564,7 +510,7 @@
             this.label18.Location = new System.Drawing.Point(6, 816);
             this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(263, 454);
+            this.label18.Size = new System.Drawing.Size(263, 250);
             this.label18.TabIndex = 17;
             this.label18.Text = "text";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -573,7 +519,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Location = new System.Drawing.Point(6, 1270);
+            this.label19.Location = new System.Drawing.Point(6, 1066);
             this.label19.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(263, 48);
@@ -585,7 +531,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(6, 1318);
+            this.label20.Location = new System.Drawing.Point(6, 1114);
             this.label20.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(263, 48);
@@ -599,7 +545,7 @@
             this.txtIntroduction.Location = new System.Drawing.Point(281, 822);
             this.txtIntroduction.Margin = new System.Windows.Forms.Padding(6);
             this.txtIntroduction.Name = "txtIntroduction";
-            this.txtIntroduction.Size = new System.Drawing.Size(948, 442);
+            this.txtIntroduction.Size = new System.Drawing.Size(960, 238);
             this.txtIntroduction.TabIndex = 20;
             this.txtIntroduction.Text = "";
             // 
@@ -609,33 +555,32 @@
             this.txtID.Location = new System.Drawing.Point(281, 6);
             this.txtID.Margin = new System.Windows.Forms.Padding(6);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(948, 30);
+            this.txtID.Size = new System.Drawing.Size(960, 30);
             this.txtID.TabIndex = 21;
             // 
             // btnEditRelationshipsAndPolicies
             // 
             this.btnEditRelationshipsAndPolicies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditRelationshipsAndPolicies.Location = new System.Drawing.Point(281, 1276);
+            this.btnEditRelationshipsAndPolicies.Location = new System.Drawing.Point(281, 1072);
             this.btnEditRelationshipsAndPolicies.Margin = new System.Windows.Forms.Padding(6);
             this.btnEditRelationshipsAndPolicies.Name = "btnEditRelationshipsAndPolicies";
             this.tableLayoutPanel2.SetRowSpan(this.btnEditRelationshipsAndPolicies, 2);
-            this.btnEditRelationshipsAndPolicies.Size = new System.Drawing.Size(948, 84);
+            this.btnEditRelationshipsAndPolicies.Size = new System.Drawing.Size(960, 84);
             this.btnEditRelationshipsAndPolicies.TabIndex = 38;
             this.btnEditRelationshipsAndPolicies.Text = "Edit Relationship and Policies";
             this.btnEditRelationshipsAndPolicies.UseVisualStyleBackColor = true;
-            this.btnEditRelationshipsAndPolicies.Click += new System.EventHandler(this.btnEditRelationshipsAndPolicies_Click);
             // 
             // ucKingdomDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.AutoScroll = true;
+            this.AutoScrollMinSize = new System.Drawing.Size(100, 100);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ucKingdomDetails";
             this.Size = new System.Drawing.Size(1247, 1464);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -644,10 +589,23 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox txtRulerTitle;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtShortName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtFlagMesh;
+        private System.Windows.Forms.TextBox txtSettlementBannerMesh;
+        private System.Windows.Forms.TextBox txtCulture;
+        private System.Windows.Forms.TextBox txtAlternativeColor2;
+        private System.Windows.Forms.TextBox txtAlternativeColor;
+        private System.Windows.Forms.TextBox txtColor2;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.TextBox txtLabelColor;
+        private System.Windows.Forms.TextBox txtSecondaryBannerlordColor;
+        private System.Windows.Forms.TextBox txtPrimaryBannerColor;
+        private System.Windows.Forms.TextBox txtBannerKey;
+        private System.Windows.Forms.TextBox txtOwner;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -670,22 +628,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.RichTextBox txtIntroduction;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtRulerTitle;
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox txtShortName;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtFlagMesh;
-        private System.Windows.Forms.TextBox txtSettlementBannerMesh;
-        private System.Windows.Forms.TextBox txtCulture;
-        private System.Windows.Forms.TextBox txtAlternativeColor2;
-        private System.Windows.Forms.TextBox txtAlternativeColor;
-        private System.Windows.Forms.TextBox txtColor2;
-        private System.Windows.Forms.TextBox txtColor;
-        private System.Windows.Forms.TextBox txtLabelColor;
-        private System.Windows.Forms.TextBox txtSecondaryBannerlordColor;
-        private System.Windows.Forms.TextBox txtPrimaryBannerColor;
-        private System.Windows.Forms.TextBox txtBannerKey;
-        private System.Windows.Forms.TextBox txtOwner;
         private System.Windows.Forms.Button btnEditRelationshipsAndPolicies;
     }
 }

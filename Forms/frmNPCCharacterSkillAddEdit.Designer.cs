@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 26);
+            this.label1.Location = new System.Drawing.Point(25, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 24);
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 78);
+            this.label2.Location = new System.Drawing.Point(25, 57);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 24);
@@ -59,7 +59,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(150, 74);
+            this.numericUpDown1.Location = new System.Drawing.Point(150, 55);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(306, 30);
@@ -69,7 +69,7 @@
             // 
             this.cmbSkills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSkills.FormattingEnabled = true;
-            this.cmbSkills.Location = new System.Drawing.Point(150, 19);
+            this.cmbSkills.Location = new System.Drawing.Point(150, 11);
             this.cmbSkills.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbSkills.Name = "cmbSkills";
             this.cmbSkills.Size = new System.Drawing.Size(304, 32);
@@ -77,7 +77,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(331, 130);
+            this.btnCancel.Location = new System.Drawing.Point(337, 97);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 46);
@@ -88,7 +88,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(196, 130);
+            this.btnOK.Location = new System.Drawing.Point(202, 97);
             this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 46);
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 200);
+            this.ClientSize = new System.Drawing.Size(476, 159);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cmbSkills);

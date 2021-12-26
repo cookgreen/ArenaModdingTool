@@ -42,7 +42,7 @@ namespace ArenaModdingTool.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 26);
+            this.label1.Location = new System.Drawing.Point(20, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 24);
@@ -52,7 +52,7 @@ namespace ArenaModdingTool.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 78);
+            this.label2.Location = new System.Drawing.Point(20, 61);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 24);
@@ -62,7 +62,7 @@ namespace ArenaModdingTool.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 131);
+            this.label3.Location = new System.Drawing.Point(20, 103);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 24);
@@ -71,7 +71,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtVectorX
             // 
-            this.txtVectorX.Location = new System.Drawing.Point(60, 19);
+            this.txtVectorX.Location = new System.Drawing.Point(62, 16);
             this.txtVectorX.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtVectorX.Name = "txtVectorX";
             this.txtVectorX.Size = new System.Drawing.Size(364, 30);
@@ -79,7 +79,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtVectorY
             // 
-            this.txtVectorY.Location = new System.Drawing.Point(60, 72);
+            this.txtVectorY.Location = new System.Drawing.Point(62, 58);
             this.txtVectorY.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtVectorY.Name = "txtVectorY";
             this.txtVectorY.Size = new System.Drawing.Size(364, 30);
@@ -87,7 +87,7 @@ namespace ArenaModdingTool.Forms
             // 
             // txtVectorZ
             // 
-            this.txtVectorZ.Location = new System.Drawing.Point(60, 126);
+            this.txtVectorZ.Location = new System.Drawing.Point(62, 100);
             this.txtVectorZ.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtVectorZ.Name = "txtVectorZ";
             this.txtVectorZ.Size = new System.Drawing.Size(364, 30);
@@ -95,7 +95,7 @@ namespace ArenaModdingTool.Forms
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(301, 179);
+            this.btnCancel.Location = new System.Drawing.Point(301, 142);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 46);
@@ -106,7 +106,7 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(166, 179);
+            this.btnOK.Location = new System.Drawing.Point(166, 142);
             this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 46);
@@ -119,7 +119,7 @@ namespace ArenaModdingTool.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 237);
+            this.ClientSize = new System.Drawing.Size(446, 202);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtVectorZ);

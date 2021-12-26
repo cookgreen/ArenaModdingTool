@@ -35,8 +35,8 @@ namespace ArenaModdingTool.Controls
         private void FactionList_SelectKingdomChanged(MBBannerlordKingdom kingdom, int index)
         {
             factionDetailsCtrl = new ucKingdomDetails(project, kingdom, factionListCtrl.State, index);
-            panel2.Controls.Clear();
-            panel2.Controls.Add(factionDetailsCtrl);
+            panel3.Controls.Clear();
+            panel3.Controls.Add(factionDetailsCtrl);
             factionDetailsCtrl.Dock = DockStyle.Fill;
 
             factionDetailsCtrl.SaveKingdomInfoFinished += FactionDetailsCtrl_SaveKingdomInfoFinished;

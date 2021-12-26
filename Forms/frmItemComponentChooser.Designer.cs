@@ -45,14 +45,14 @@ namespace ArenaModdingTool.Forms
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.groupBox1.Size = new System.Drawing.Size(406, 129);
+            this.groupBox1.Size = new System.Drawing.Size(406, 89);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // rbItemComponentWeapon
             // 
             this.rbItemComponentWeapon.AutoSize = true;
-            this.rbItemComponentWeapon.Location = new System.Drawing.Point(129, 80);
+            this.rbItemComponentWeapon.Location = new System.Drawing.Point(129, 52);
             this.rbItemComponentWeapon.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rbItemComponentWeapon.Name = "rbItemComponentWeapon";
             this.rbItemComponentWeapon.Size = new System.Drawing.Size(91, 28);
@@ -64,7 +64,7 @@ namespace ArenaModdingTool.Forms
             // rbItemComponentArmour
             // 
             this.rbItemComponentArmour.AutoSize = true;
-            this.rbItemComponentArmour.Location = new System.Drawing.Point(129, 40);
+            this.rbItemComponentArmour.Location = new System.Drawing.Point(129, 12);
             this.rbItemComponentArmour.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rbItemComponentArmour.Name = "rbItemComponentArmour";
             this.rbItemComponentArmour.Size = new System.Drawing.Size(85, 28);
@@ -75,7 +75,7 @@ namespace ArenaModdingTool.Forms
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(272, 144);
+            this.btnCancel.Location = new System.Drawing.Point(285, 104);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 46);
@@ -86,7 +86,7 @@ namespace ArenaModdingTool.Forms
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(137, 144);
+            this.btnOK.Location = new System.Drawing.Point(150, 104);
             this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 46);
@@ -99,7 +99,7 @@ namespace ArenaModdingTool.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 209);
+            this.ClientSize = new System.Drawing.Size(411, 160);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupBox1);

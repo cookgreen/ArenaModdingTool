@@ -19,6 +19,8 @@ namespace ArenaModdingTool.Controls
         private int index;
         private AMProject project;
 
+        public event Action<bool> SaveButtonStateChanged;
+
         public event Action<MBBannerlordKingdom, AddEditState, int> SaveKingdomInfoFinished;
         public ucKingdomDetails(AMProject project, MBBannerlordKingdom kingdom, AddEditState state, int index)
         {
@@ -29,11 +31,11 @@ namespace ArenaModdingTool.Controls
             this.project = project;
             if (state == AddEditState.Add || state == AddEditState.Edit)
             {
-                btnSave.Enabled = true;
+                SaveButtonStateChanged?.Invoke(true);
             }
             else if(state == AddEditState.View)
             {
-                btnSave.Enabled = false;
+                SaveButtonStateChanged?.Invoke(false);
             }
         }
 
@@ -125,7 +127,7 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void Save()
         {
             if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtID.Text))
             {
@@ -152,7 +154,7 @@ namespace ArenaModdingTool.Controls
             kingdom.text = txtIntroduction.Text;
             kingdom.title = txtTitle.Text;
 
-            btnSave.Enabled = false;
+            SaveButtonStateChanged?.Invoke(false);
 
             SaveKingdomInfoFinished?.Invoke(kingdom, state, index);
 

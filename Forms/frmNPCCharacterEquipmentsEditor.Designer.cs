@@ -50,7 +50,7 @@
             this.listView1.Location = new System.Drawing.Point(20, 24);
             this.listView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1043, 644);
+            this.listView1.Size = new System.Drawing.Size(879, 403);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -68,7 +68,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(21, 686);
+            this.btnAdd.Location = new System.Drawing.Point(21, 439);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(39, 46);
@@ -80,7 +80,7 @@
             // btnDelete
             // 
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(70, 685);
+            this.btnDelete.Location = new System.Drawing.Point(70, 438);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(39, 46);
@@ -92,7 +92,7 @@
             // btnModify
             // 
             this.btnModify.Enabled = false;
-            this.btnModify.Location = new System.Drawing.Point(119, 686);
+            this.btnModify.Location = new System.Drawing.Point(119, 439);
             this.btnModify.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(125, 46);
@@ -103,7 +103,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(940, 774);
+            this.button1.Location = new System.Drawing.Point(774, 479);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 46);
@@ -114,7 +114,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(805, 774);
+            this.btnOK.Location = new System.Drawing.Point(639, 479);
             this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 46);
@@ -126,7 +126,7 @@
             // chkIsCivilian
             // 
             this.chkIsCivilian.AutoSize = true;
-            this.chkIsCivilian.Location = new System.Drawing.Point(935, 691);
+            this.chkIsCivilian.Location = new System.Drawing.Point(820, 439);
             this.chkIsCivilian.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkIsCivilian.Name = "chkIsCivilian";
             this.chkIsCivilian.Size = new System.Drawing.Size(79, 28);
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 845);
+            this.ClientSize = new System.Drawing.Size(916, 543);
             this.Controls.Add(this.chkIsCivilian);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.button1);

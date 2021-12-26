@@ -68,7 +68,7 @@
             // lbProjectName
             // 
             this.lbProjectName.AutoSize = true;
-            this.lbProjectName.Location = new System.Drawing.Point(21, 26);
+            this.lbProjectName.Location = new System.Drawing.Point(14, 9);
             this.lbProjectName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbProjectName.Name = "lbProjectName";
             this.lbProjectName.Size = new System.Drawing.Size(115, 24);
@@ -77,7 +77,7 @@
             // 
             // txtProjectName
             // 
-            this.txtProjectName.Location = new System.Drawing.Point(170, 19);
+            this.txtProjectName.Location = new System.Drawing.Point(150, 6);
             this.txtProjectName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(539, 30);
@@ -86,7 +86,7 @@
             // lbModuleName
             // 
             this.lbModuleName.AutoSize = true;
-            this.lbModuleName.Location = new System.Drawing.Point(25, 88);
+            this.lbModuleName.Location = new System.Drawing.Point(14, 51);
             this.lbModuleName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbModuleName.Name = "lbModuleName";
             this.lbModuleName.Size = new System.Drawing.Size(119, 24);
@@ -95,7 +95,7 @@
             // 
             // txtMBModuleName
             // 
-            this.txtMBModuleName.Location = new System.Drawing.Point(170, 82);
+            this.txtMBModuleName.Location = new System.Drawing.Point(150, 48);
             this.txtMBModuleName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMBModuleName.Name = "txtMBModuleName";
             this.txtMBModuleName.Size = new System.Drawing.Size(539, 30);
@@ -104,7 +104,7 @@
             // lbLocation
             // 
             this.lbLocation.AutoSize = true;
-            this.lbLocation.Location = new System.Drawing.Point(21, 154);
+            this.lbLocation.Location = new System.Drawing.Point(14, 93);
             this.lbLocation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbLocation.Name = "lbLocation";
             this.lbLocation.Size = new System.Drawing.Size(76, 24);
@@ -113,7 +113,7 @@
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(170, 147);
+            this.txtLocation.Location = new System.Drawing.Point(150, 90);
             this.txtLocation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.ReadOnly = true;
@@ -122,7 +122,7 @@
             // 
             // btnLocationBrowse
             // 
-            this.btnLocationBrowse.Location = new System.Drawing.Point(634, 144);
+            this.btnLocationBrowse.Location = new System.Drawing.Point(610, 82);
             this.btnLocationBrowse.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnLocationBrowse.Name = "btnLocationBrowse";
             this.btnLocationBrowse.Size = new System.Drawing.Size(79, 46);
@@ -132,7 +132,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(586, 979);
+            this.btnCancel.Location = new System.Drawing.Point(579, 910);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 46);
@@ -143,7 +143,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(451, 979);
+            this.btnOK.Location = new System.Drawing.Point(444, 910);
             this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 46);
@@ -161,7 +161,7 @@
             this.groupbox_module_info.Controls.Add(this.groupbox_submodules);
             this.groupbox_module_info.Controls.Add(this.chkMultiplayer);
             this.groupbox_module_info.Controls.Add(this.chkSinglePlayer);
-            this.groupbox_module_info.Location = new System.Drawing.Point(25, 202);
+            this.groupbox_module_info.Location = new System.Drawing.Point(18, 132);
             this.groupbox_module_info.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupbox_module_info.Name = "groupbox_module_info";
             this.groupbox_module_info.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -385,7 +385,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 1040);
+            this.ClientSize = new System.Drawing.Size(715, 811);
             this.Controls.Add(this.groupbox_module_info);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
