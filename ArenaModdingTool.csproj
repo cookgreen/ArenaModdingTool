@@ -52,8 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AMProject.cs" />
-    <Compile Include="AppSetting.cs" />
+    <Compile Include="Entities\AMProject.cs" />
+    <Compile Include="Entities\AppSetting.cs" />
     <Compile Include="Controls\ucCultureDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,7 +144,7 @@
     <Compile Include="Controls\ucKingdomDetails.Designer.cs">
       <DependentUpon>ucKingdomDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddEditState.cs" />
+    <Compile Include="Entities\AddEditState.cs" />
     <Compile Include="Controls\ucNPCCharacterDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -322,25 +322,25 @@
     <Compile Include="Forms\frmVectorEditor.Designer.cs">
       <DependentUpon>frmVectorEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helper.cs" />
-    <Compile Include="ILocalization.cs" />
-    <Compile Include="ItemComponentType.cs" />
-    <Compile Include="LangLocalization.cs" />
-    <Compile Include="LanguageManager.cs" />
-    <Compile Include="MBBannerlordModManager.cs" />
-    <Compile Include="MBBannerlordModule.cs" />
+    <Compile Include="Entities\Helper.cs" />
+    <Compile Include="Entities\ILocalization.cs" />
+    <Compile Include="Entities\ItemComponentType.cs" />
+    <Compile Include="Entities\LangLocalization.cs" />
+    <Compile Include="Entities\LanguageManager.cs" />
+    <Compile Include="Entities\MBBannerlordModManager.cs" />
+    <Compile Include="Entities\MBBannerlordModule.cs" />
     <Compile Include="ModdingFiles\MBBannerlordCulture.cs" />
     <Compile Include="ModdingFiles\MBBannerlordHeroes.cs" />
     <Compile Include="ModdingFiles\MBBannerlordItems.cs" />
     <Compile Include="ModdingFiles\MBBannerlordNPCCharacters.cs" />
     <Compile Include="ModdingFiles\MBBannerlordSPKingdoms.cs" />
     <Compile Include="ModdingFiles\MBBannerlordModule.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Entities\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecentOperations.cs" />
-    <Compile Include="TemplateFile.cs" />
-    <Compile Include="TemplateFileManager.cs" />
-    <Compile Include="XmlLoader.cs" />
+    <Compile Include="Entities\RecentOperations.cs" />
+    <Compile Include="Entities\TemplateFile.cs" />
+    <Compile Include="Entities\TemplateFileManager.cs" />
+    <Compile Include="Entities\XmlLoader.cs" />
     <EmbeddedResource Include="Controls\ucCultureDetails.resx">
       <DependentUpon>ucCultureDetails.cs</DependentUpon>
     </EmbeddedResource>
