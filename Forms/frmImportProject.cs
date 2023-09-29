@@ -31,7 +31,9 @@ namespace ArenaModdingTool
                 var files = di.EnumerateFiles();
                 if (files.Where(o => o.Name == "SubModule.xml").Count() == 0)
                 {
-                    MessageBox.Show(Helper.LOC("str_error_message_invalid_module_path"));
+                    MessageBox.Show(
+                        Helper.LOC("str_error_message_invalid_module_path"),
+                        Helper.LOC("str_error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtModuleLocation.Text = null;
                 }
             }
@@ -41,12 +43,18 @@ namespace ArenaModdingTool
         {
             if (!Directory.Exists(txtModuleLocation.Text))
             {
-                MessageBox.Show("Please select a valid path");
+                MessageBox.Show(
+                    Helper.LOC("str_error_message_please_select_a_valid_module_path"), 
+                    Helper.LOC("str_error"), MessageBoxButtons.OK, MessageBoxIcon.Error
+                );
             }
-            project = new ModdingProject(txtModuleLocation.Text);
-            DialogResult = DialogResult.OK;
-            
-            Close();
+            else
+            {
+                project = new ModdingProject(txtModuleLocation.Text);
+                DialogResult = DialogResult.OK;
+
+                Close();
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

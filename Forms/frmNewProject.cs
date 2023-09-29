@@ -92,5 +92,10 @@ namespace ArenaModdingTool
 		{
 
 		}
+
+		private void btnLocationBrowse_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

@@ -39,7 +39,7 @@ namespace ArenaModdingTool.Controls
                 txtName.Text = item.name;
                 txtBodyName.Text = item.body_name;
                 txtMesh.Text = item.mesh;
-                txtCulture.Text = item.culture;
+                cmbCulture.SelectedItem = item.culture;
                 if (decimal.TryParse(item.value, out val))
                 {
                     numValue.Value = val;
@@ -161,7 +161,7 @@ namespace ArenaModdingTool.Controls
             item.name = txtName.Text;
             item.body_name = txtBodyName.Text;
             item.mesh = txtMesh.Text;
-            item.culture = txtCulture.Text;
+            item.culture = cmbCulture.SelectedItem.ToString();
             item.value = numValue.Value.ToString();
             item.is_merchandise = chkIsMerchandise.Checked.ToString();
             item.weight = numWeight.Value.ToString();

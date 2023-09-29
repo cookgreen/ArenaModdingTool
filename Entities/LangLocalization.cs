@@ -40,6 +40,10 @@ namespace ArenaModdingTool
                 while (reader.Peek() > -1)
                 {
                     string line = reader.ReadLine();
+                    
+                    if (string.IsNullOrEmpty(line) || line.StartsWith(";"))
+                        continue;
+                    
                     string[] tokens = line.Split('=');
                     string key = tokens[0].Trim();
                     string value = tokens[1].Trim();

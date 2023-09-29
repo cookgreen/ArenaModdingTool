@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\AMProject.cs" />
+    <Compile Include="Entities\ModdingProject.cs" />
     <Compile Include="Entities\AppSetting.cs" />
     <Compile Include="Controls\ucCultureDetails.cs">
       <SubType>UserControl</SubType>
@@ -208,11 +208,11 @@
     <Compile Include="Forms\frmItemComponentWeaponEditor.Designer.cs">
       <DependentUpon>frmItemComponentWeaponEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmLocalizedTextInputer.cs">
+    <Compile Include="Forms\frmLocalizedTextEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmLocalizedTextInputer.Designer.cs">
-      <DependentUpon>frmLocalizedTextInputer.cs</DependentUpon>
+    <Compile Include="Forms\frmLocalizedTextEditor.Designer.cs">
+      <DependentUpon>frmLocalizedTextEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNPCCharacterComponentEditor.cs">
       <SubType>Form</SubType>
@@ -437,8 +437,8 @@
     <EmbeddedResource Include="Forms\frmKingdomRelationshipPolicyEditor.resx">
       <DependentUpon>frmKingdomRelationshipPolicyEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLocalizedTextInputer.resx">
-      <DependentUpon>frmLocalizedTextInputer.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmLocalizedTextEditor.resx">
+      <DependentUpon>frmLocalizedTextEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

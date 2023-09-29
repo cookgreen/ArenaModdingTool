@@ -40,16 +40,12 @@
 			this.groupbox_module_info = new System.Windows.Forms.GroupBox();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tbBasicInfo = new System.Windows.Forms.TabPage();
+			this.btnEditDepencyModules = new System.Windows.Forms.Button();
+			this.txtBannerlordVersion = new System.Windows.Forms.TextBox();
+			this.lbVersion = new System.Windows.Forms.Label();
+			this.chkMultiplayer = new System.Windows.Forms.CheckBox();
+			this.chkSinglePlayer = new System.Windows.Forms.CheckBox();
 			this.tbSubModule = new System.Windows.Forms.TabPage();
-			this.tbXmls = new System.Windows.Forms.TabPage();
-			this.groupbox_xmls = new System.Windows.Forms.GroupBox();
-			this.btnModifyXmlNode = new System.Windows.Forms.Button();
-			this.btnDeleteXmlNode = new System.Windows.Forms.Button();
-			this.btnAddXmlNode = new System.Windows.Forms.Button();
-			this.lsvXmls = new System.Windows.Forms.ListView();
-			this.colXmlNodeID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colXmlNodePath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colXmlNodeIncludedGameTypes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.groupbox_submodules = new System.Windows.Forms.GroupBox();
 			this.btnModifySubModule = new System.Windows.Forms.Button();
 			this.btnDeleteSubModule = new System.Windows.Forms.Button();
@@ -59,18 +55,22 @@
 			this.colSubModule_DllName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colSubModuleClassType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colSubModuleTags = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.btnEditDepencyModules = new System.Windows.Forms.Button();
-			this.txtBannerlordVersion = new System.Windows.Forms.TextBox();
-			this.lbVersion = new System.Windows.Forms.Label();
-			this.chkMultiplayer = new System.Windows.Forms.CheckBox();
-			this.chkSinglePlayer = new System.Windows.Forms.CheckBox();
+			this.tbXmls = new System.Windows.Forms.TabPage();
+			this.groupbox_xmls = new System.Windows.Forms.GroupBox();
+			this.btnModifyXmlNode = new System.Windows.Forms.Button();
+			this.btnDeleteXmlNode = new System.Windows.Forms.Button();
+			this.btnAddXmlNode = new System.Windows.Forms.Button();
+			this.lsvXmls = new System.Windows.Forms.ListView();
+			this.colXmlNodeID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.colXmlNodePath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.colXmlNodeIncludedGameTypes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.groupbox_module_info.SuspendLayout();
 			this.tabControl1.SuspendLayout();
 			this.tbBasicInfo.SuspendLayout();
 			this.tbSubModule.SuspendLayout();
+			this.groupbox_submodules.SuspendLayout();
 			this.tbXmls.SuspendLayout();
 			this.groupbox_xmls.SuspendLayout();
-			this.groupbox_submodules.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// lbProjectName
@@ -137,6 +137,7 @@
 			this.btnLocationBrowse.TabIndex = 6;
 			this.btnLocationBrowse.Text = "...";
 			this.btnLocationBrowse.UseVisualStyleBackColor = true;
+			this.btnLocationBrowse.Click += new System.EventHandler(this.btnLocationBrowse_Click);
 			// 
 			// btnCancel
 			// 
@@ -198,6 +199,57 @@
 			this.tbBasicInfo.Text = "Basic Info";
 			this.tbBasicInfo.UseVisualStyleBackColor = true;
 			// 
+			// btnEditDepencyModules
+			// 
+			this.btnEditDepencyModules.Location = new System.Drawing.Point(12, 266);
+			this.btnEditDepencyModules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnEditDepencyModules.Name = "btnEditDepencyModules";
+			this.btnEditDepencyModules.Size = new System.Drawing.Size(635, 46);
+			this.btnEditDepencyModules.TabIndex = 12;
+			this.btnEditDepencyModules.Text = "Edit Depency Modules";
+			this.btnEditDepencyModules.UseVisualStyleBackColor = true;
+			// 
+			// txtBannerlordVersion
+			// 
+			this.txtBannerlordVersion.Location = new System.Drawing.Point(87, 16);
+			this.txtBannerlordVersion.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.txtBannerlordVersion.Name = "txtBannerlordVersion";
+			this.txtBannerlordVersion.ReadOnly = true;
+			this.txtBannerlordVersion.Size = new System.Drawing.Size(560, 30);
+			this.txtBannerlordVersion.TabIndex = 11;
+			// 
+			// lbVersion
+			// 
+			this.lbVersion.AutoSize = true;
+			this.lbVersion.Location = new System.Drawing.Point(8, 19);
+			this.lbVersion.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+			this.lbVersion.Name = "lbVersion";
+			this.lbVersion.Size = new System.Drawing.Size(69, 24);
+			this.lbVersion.TabIndex = 10;
+			this.lbVersion.Text = "Version:";
+			// 
+			// chkMultiplayer
+			// 
+			this.chkMultiplayer.AutoSize = true;
+			this.chkMultiplayer.Location = new System.Drawing.Point(144, 67);
+			this.chkMultiplayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.chkMultiplayer.Name = "chkMultiplayer";
+			this.chkMultiplayer.Size = new System.Drawing.Size(111, 28);
+			this.chkMultiplayer.TabIndex = 9;
+			this.chkMultiplayer.Text = "Multiplayer";
+			this.chkMultiplayer.UseVisualStyleBackColor = true;
+			// 
+			// chkSinglePlayer
+			// 
+			this.chkSinglePlayer.AutoSize = true;
+			this.chkSinglePlayer.Location = new System.Drawing.Point(12, 67);
+			this.chkSinglePlayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.chkSinglePlayer.Name = "chkSinglePlayer";
+			this.chkSinglePlayer.Size = new System.Drawing.Size(122, 28);
+			this.chkSinglePlayer.TabIndex = 8;
+			this.chkSinglePlayer.Text = "SinglePlayer";
+			this.chkSinglePlayer.UseVisualStyleBackColor = true;
+			// 
 			// tbSubModule
 			// 
 			this.tbSubModule.Controls.Add(this.groupbox_submodules);
@@ -208,6 +260,85 @@
 			this.tbSubModule.TabIndex = 1;
 			this.tbSubModule.Text = "Sub Module";
 			this.tbSubModule.UseVisualStyleBackColor = true;
+			// 
+			// groupbox_submodules
+			// 
+			this.groupbox_submodules.Controls.Add(this.btnModifySubModule);
+			this.groupbox_submodules.Controls.Add(this.btnDeleteSubModule);
+			this.groupbox_submodules.Controls.Add(this.btnAddSubModule);
+			this.groupbox_submodules.Controls.Add(this.lsvSubModules);
+			this.groupbox_submodules.Location = new System.Drawing.Point(8, 9);
+			this.groupbox_submodules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.groupbox_submodules.Name = "groupbox_submodules";
+			this.groupbox_submodules.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.groupbox_submodules.Size = new System.Drawing.Size(639, 298);
+			this.groupbox_submodules.TabIndex = 4;
+			this.groupbox_submodules.TabStop = false;
+			this.groupbox_submodules.Text = "Sub Modules";
+			// 
+			// btnModifySubModule
+			// 
+			this.btnModifySubModule.Location = new System.Drawing.Point(126, 240);
+			this.btnModifySubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnModifySubModule.Name = "btnModifySubModule";
+			this.btnModifySubModule.Size = new System.Drawing.Size(119, 46);
+			this.btnModifySubModule.TabIndex = 3;
+			this.btnModifySubModule.Text = "Modify";
+			this.btnModifySubModule.UseVisualStyleBackColor = true;
+			// 
+			// btnDeleteSubModule
+			// 
+			this.btnDeleteSubModule.Location = new System.Drawing.Point(69, 240);
+			this.btnDeleteSubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnDeleteSubModule.Name = "btnDeleteSubModule";
+			this.btnDeleteSubModule.Size = new System.Drawing.Size(49, 46);
+			this.btnDeleteSubModule.TabIndex = 2;
+			this.btnDeleteSubModule.Text = "-";
+			this.btnDeleteSubModule.UseVisualStyleBackColor = true;
+			// 
+			// btnAddSubModule
+			// 
+			this.btnAddSubModule.Location = new System.Drawing.Point(10, 240);
+			this.btnAddSubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnAddSubModule.Name = "btnAddSubModule";
+			this.btnAddSubModule.Size = new System.Drawing.Size(49, 46);
+			this.btnAddSubModule.TabIndex = 1;
+			this.btnAddSubModule.Text = "+";
+			this.btnAddSubModule.UseVisualStyleBackColor = true;
+			// 
+			// lsvSubModules
+			// 
+			this.lsvSubModules.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colSubModuleName,
+            this.colSubModule_DllName,
+            this.colSubModuleClassType,
+            this.colSubModuleTags});
+			this.lsvSubModules.HideSelection = false;
+			this.lsvSubModules.Location = new System.Drawing.Point(10, 40);
+			this.lsvSubModules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.lsvSubModules.Name = "lsvSubModules";
+			this.lsvSubModules.Size = new System.Drawing.Size(619, 190);
+			this.lsvSubModules.TabIndex = 0;
+			this.lsvSubModules.UseCompatibleStateImageBehavior = false;
+			this.lsvSubModules.View = System.Windows.Forms.View.Details;
+			// 
+			// colSubModuleName
+			// 
+			this.colSubModuleName.Text = "Name";
+			// 
+			// colSubModule_DllName
+			// 
+			this.colSubModule_DllName.Text = "DLLName";
+			// 
+			// colSubModuleClassType
+			// 
+			this.colSubModuleClassType.Text = "SubModuleClassType";
+			this.colSubModuleClassType.Width = 112;
+			// 
+			// colSubModuleTags
+			// 
+			this.colSubModuleTags.Text = "Tags";
+			this.colSubModuleTags.Width = 142;
 			// 
 			// tbXmls
 			// 
@@ -295,136 +426,6 @@
 			this.colXmlNodeIncludedGameTypes.Text = "Included Game Types";
 			this.colXmlNodeIncludedGameTypes.Width = 153;
 			// 
-			// groupbox_submodules
-			// 
-			this.groupbox_submodules.Controls.Add(this.btnModifySubModule);
-			this.groupbox_submodules.Controls.Add(this.btnDeleteSubModule);
-			this.groupbox_submodules.Controls.Add(this.btnAddSubModule);
-			this.groupbox_submodules.Controls.Add(this.lsvSubModules);
-			this.groupbox_submodules.Location = new System.Drawing.Point(8, 9);
-			this.groupbox_submodules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.groupbox_submodules.Name = "groupbox_submodules";
-			this.groupbox_submodules.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.groupbox_submodules.Size = new System.Drawing.Size(639, 298);
-			this.groupbox_submodules.TabIndex = 4;
-			this.groupbox_submodules.TabStop = false;
-			this.groupbox_submodules.Text = "Sub Modules";
-			// 
-			// btnModifySubModule
-			// 
-			this.btnModifySubModule.Location = new System.Drawing.Point(126, 240);
-			this.btnModifySubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.btnModifySubModule.Name = "btnModifySubModule";
-			this.btnModifySubModule.Size = new System.Drawing.Size(119, 46);
-			this.btnModifySubModule.TabIndex = 3;
-			this.btnModifySubModule.Text = "Modify";
-			this.btnModifySubModule.UseVisualStyleBackColor = true;
-			// 
-			// btnDeleteSubModule
-			// 
-			this.btnDeleteSubModule.Location = new System.Drawing.Point(69, 240);
-			this.btnDeleteSubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.btnDeleteSubModule.Name = "btnDeleteSubModule";
-			this.btnDeleteSubModule.Size = new System.Drawing.Size(49, 46);
-			this.btnDeleteSubModule.TabIndex = 2;
-			this.btnDeleteSubModule.Text = "-";
-			this.btnDeleteSubModule.UseVisualStyleBackColor = true;
-			// 
-			// btnAddSubModule
-			// 
-			this.btnAddSubModule.Location = new System.Drawing.Point(10, 240);
-			this.btnAddSubModule.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.btnAddSubModule.Name = "btnAddSubModule";
-			this.btnAddSubModule.Size = new System.Drawing.Size(49, 46);
-			this.btnAddSubModule.TabIndex = 1;
-			this.btnAddSubModule.Text = "+";
-			this.btnAddSubModule.UseVisualStyleBackColor = true;
-			// 
-			// lsvSubModules
-			// 
-			this.lsvSubModules.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colSubModuleName,
-            this.colSubModule_DllName,
-            this.colSubModuleClassType,
-            this.colSubModuleTags});
-			this.lsvSubModules.HideSelection = false;
-			this.lsvSubModules.Location = new System.Drawing.Point(10, 40);
-			this.lsvSubModules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.lsvSubModules.Name = "lsvSubModules";
-			this.lsvSubModules.Size = new System.Drawing.Size(619, 190);
-			this.lsvSubModules.TabIndex = 0;
-			this.lsvSubModules.UseCompatibleStateImageBehavior = false;
-			this.lsvSubModules.View = System.Windows.Forms.View.Details;
-			// 
-			// colSubModuleName
-			// 
-			this.colSubModuleName.Text = "Name";
-			// 
-			// colSubModule_DllName
-			// 
-			this.colSubModule_DllName.Text = "DLLName";
-			// 
-			// colSubModuleClassType
-			// 
-			this.colSubModuleClassType.Text = "SubModuleClassType";
-			this.colSubModuleClassType.Width = 112;
-			// 
-			// colSubModuleTags
-			// 
-			this.colSubModuleTags.Text = "Tags";
-			this.colSubModuleTags.Width = 142;
-			// 
-			// btnEditDepencyModules
-			// 
-			this.btnEditDepencyModules.Location = new System.Drawing.Point(12, 67);
-			this.btnEditDepencyModules.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.btnEditDepencyModules.Name = "btnEditDepencyModules";
-			this.btnEditDepencyModules.Size = new System.Drawing.Size(476, 46);
-			this.btnEditDepencyModules.TabIndex = 12;
-			this.btnEditDepencyModules.Text = "Edit Depency Modules";
-			this.btnEditDepencyModules.UseVisualStyleBackColor = true;
-			// 
-			// txtBannerlordVersion
-			// 
-			this.txtBannerlordVersion.Location = new System.Drawing.Point(107, 12);
-			this.txtBannerlordVersion.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.txtBannerlordVersion.Name = "txtBannerlordVersion";
-			this.txtBannerlordVersion.ReadOnly = true;
-			this.txtBannerlordVersion.Size = new System.Drawing.Size(379, 30);
-			this.txtBannerlordVersion.TabIndex = 11;
-			// 
-			// lbVersion
-			// 
-			this.lbVersion.AutoSize = true;
-			this.lbVersion.Location = new System.Drawing.Point(8, 19);
-			this.lbVersion.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-			this.lbVersion.Name = "lbVersion";
-			this.lbVersion.Size = new System.Drawing.Size(69, 24);
-			this.lbVersion.TabIndex = 10;
-			this.lbVersion.Text = "Version:";
-			// 
-			// chkMultiplayer
-			// 
-			this.chkMultiplayer.AutoSize = true;
-			this.chkMultiplayer.Location = new System.Drawing.Point(498, 57);
-			this.chkMultiplayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.chkMultiplayer.Name = "chkMultiplayer";
-			this.chkMultiplayer.Size = new System.Drawing.Size(111, 28);
-			this.chkMultiplayer.TabIndex = 9;
-			this.chkMultiplayer.Text = "Multiplayer";
-			this.chkMultiplayer.UseVisualStyleBackColor = true;
-			// 
-			// chkSinglePlayer
-			// 
-			this.chkSinglePlayer.AutoSize = true;
-			this.chkSinglePlayer.Location = new System.Drawing.Point(498, 17);
-			this.chkSinglePlayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.chkSinglePlayer.Name = "chkSinglePlayer";
-			this.chkSinglePlayer.Size = new System.Drawing.Size(122, 28);
-			this.chkSinglePlayer.TabIndex = 8;
-			this.chkSinglePlayer.Text = "SinglePlayer";
-			this.chkSinglePlayer.UseVisualStyleBackColor = true;
-			// 
 			// frmNewProject
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
@@ -454,9 +455,9 @@
 			this.tbBasicInfo.ResumeLayout(false);
 			this.tbBasicInfo.PerformLayout();
 			this.tbSubModule.ResumeLayout(false);
+			this.groupbox_submodules.ResumeLayout(false);
 			this.tbXmls.ResumeLayout(false);
 			this.groupbox_xmls.ResumeLayout(false);
-			this.groupbox_submodules.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
