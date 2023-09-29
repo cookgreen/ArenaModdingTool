@@ -26,6 +26,7 @@ namespace ArenaModdingTool.Controls
         public ucItemsDetails(MBBannerlordItem item, AddEditState addEditState)
         {
             InitializeComponent();
+            initializeTooltip();
 
             this.item = item;
             this.addEditState = addEditState;
@@ -62,7 +63,13 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void txtAmmoOffset_MouseDoubleClick(object sender, MouseEventArgs e)
+		private void initializeTooltip()
+		{
+            toolTip.SetToolTip(txtAmmoOffset, Helper.LOC("str_tooltip_message_item_details_ammo_offset"));
+            toolTip.SetToolTip(txtBodyName, Helper.LOC("str_"));
+		}
+
+		private void txtAmmoOffset_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             frmVectorEditor vectorEditor = new frmVectorEditor(txtAmmoOffset.Text);
             if (vectorEditor.ShowDialog() == DialogResult.OK)

@@ -20,12 +20,15 @@ namespace ArenaModdingTool.Controls
         private AMProject project;
 
         public event Action<bool> SaveButtonStateChanged;
-
         public event Action<MBBannerlordKingdom, AddEditState, int> SaveKingdomInfoFinished;
+
         public ucKingdomDetails(AMProject project, MBBannerlordKingdom kingdom, AddEditState state, int index)
         {
             InitializeComponent();
+            initializeTooltip();
+
             loadKingdomDetails(kingdom);
+            
             this.state = state;
             this.index = index;
             this.project = project;
@@ -39,15 +42,34 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void loadKingdomDetails(MBBannerlordKingdom kingdom)
+		private void initializeTooltip()
+		{
+            toolTip.SetToolTip(txtID, Helper.LOC("str_tooltip_message_kingdom_details_id"));
+            toolTip.SetToolTip(txtOwner, Helper.LOC("str_tooltip_message_kingdom_details_owner"));
+            toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_tooltip_message_kingdom_details_banner_key"));
+		}
+
+		private void loadKingdomDetails(MBBannerlordKingdom kingdom)
         {
+            foreach(var mod in MBBannerlordModManager.Instance.OfficialMods)
+            {
+                foreach(var cultures in mod.ModuleCultures)
+                {
+                    foreach(var culture in cultures.Cultures)
+                    {
+                        cmbCulture.Items.Add("Cultures." + culture.id);
+                    }
+                }
+            }
+
+
             this.kingdom = kingdom;
             txtAlternativeColor.Text = kingdom.alternative_color;
             txtAlternativeColor2.Text = kingdom.alternative_color2;
             txtBannerKey.Text = kingdom.banner_key;
             txtColor.Text = kingdom.color;
             txtColor2.Text = kingdom.color2;
-            txtCulture.Text = kingdom.culture;
+            cmbCulture.SelectedItem = kingdom.culture;
             txtFlagMesh.Text = kingdom.flag_mesh;
             txtID.Text = kingdom.id;
             txtIntroduction.Text = kingdom.text;
@@ -127,7 +149,7 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void Save()
+        public void Save()
         {
             if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtID.Text))
             {
@@ -140,7 +162,7 @@ namespace ArenaModdingTool.Controls
             kingdom.banner_key = txtBannerKey.Text;
             kingdom.color = txtColor.Text;
             kingdom.color2 = txtColor2.Text;
-            kingdom.culture = txtCulture.Text;
+            kingdom.culture = cmbCulture.SelectedItem.ToString();
             kingdom.flag_mesh = txtFlagMesh.Text;
             kingdom.id = txtID.Text;
             kingdom.label_color = txtLabelColor.Text;
@@ -166,7 +188,7 @@ namespace ArenaModdingTool.Controls
             frmCultureListViewer cultureListViewer = new frmCultureListViewer(project);
             if (cultureListViewer.ShowDialog() == DialogResult.OK)
             {
-                txtCulture.Text = "Cultures." + cultureListViewer.SelectedCulture.id;
+                //txtCulture.Text = "Cultures." + cultureListViewer.SelectedCulture.id;
             }
         }
 

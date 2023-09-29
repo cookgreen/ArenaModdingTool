@@ -28,135 +28,135 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnModify = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.chkIsCivilian = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.listView1 = new System.Windows.Forms.ListView();
+			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.btnAdd = new System.Windows.Forms.Button();
+			this.btnDelete = new System.Windows.Forms.Button();
+			this.btnModify = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
+			this.btnOK = new System.Windows.Forms.Button();
+			this.chkIsCivilian = new System.Windows.Forms.CheckBox();
+			this.SuspendLayout();
+			// 
+			// listView1
+			// 
+			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(20, 24);
-            this.listView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(879, 403);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Slot";
-            this.columnHeader1.Width = 158;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Item";
-            this.columnHeader2.Width = 440;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(21, 439);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(39, 46);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "+";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(70, 438);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(39, 46);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "-";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnModify
-            // 
-            this.btnModify.Enabled = false;
-            this.btnModify.Location = new System.Drawing.Point(119, 439);
-            this.btnModify.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(125, 46);
-            this.btnModify.TabIndex = 3;
-            this.btnModify.Text = "Modify";
-            this.btnModify.UseVisualStyleBackColor = true;
-            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(774, 479);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 46);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnOK
-            // 
-            this.btnOK.Location = new System.Drawing.Point(639, 479);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(125, 46);
-            this.btnOK.TabIndex = 5;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
-            // chkIsCivilian
-            // 
-            this.chkIsCivilian.AutoSize = true;
-            this.chkIsCivilian.Location = new System.Drawing.Point(820, 439);
-            this.chkIsCivilian.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.chkIsCivilian.Name = "chkIsCivilian";
-            this.chkIsCivilian.Size = new System.Drawing.Size(79, 28);
-            this.chkIsCivilian.TabIndex = 6;
-            this.chkIsCivilian.Text = "civilian";
-            this.chkIsCivilian.UseVisualStyleBackColor = true;
-            // 
-            // frmNPCCharacterEquipmentsEditor
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 543);
-            this.Controls.Add(this.chkIsCivilian);
-            this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnModify);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.listView1);
-            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmNPCCharacterEquipmentsEditor";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NPC Character Equipments Editor";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.listView1.FullRowSelect = true;
+			this.listView1.GridLines = true;
+			this.listView1.HideSelection = false;
+			this.listView1.Location = new System.Drawing.Point(14, 15);
+			this.listView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.listView1.Name = "listView1";
+			this.listView1.Size = new System.Drawing.Size(750, 400);
+			this.listView1.TabIndex = 0;
+			this.listView1.UseCompatibleStateImageBehavior = false;
+			this.listView1.View = System.Windows.Forms.View.Details;
+			this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+			// 
+			// columnHeader1
+			// 
+			this.columnHeader1.Text = "Slot";
+			this.columnHeader1.Width = 158;
+			// 
+			// columnHeader2
+			// 
+			this.columnHeader2.Text = "Item";
+			this.columnHeader2.Width = 440;
+			// 
+			// btnAdd
+			// 
+			this.btnAdd.Location = new System.Drawing.Point(13, 427);
+			this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnAdd.Name = "btnAdd";
+			this.btnAdd.Size = new System.Drawing.Size(39, 46);
+			this.btnAdd.TabIndex = 1;
+			this.btnAdd.Text = "+";
+			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+			// 
+			// btnDelete
+			// 
+			this.btnDelete.Enabled = false;
+			this.btnDelete.Location = new System.Drawing.Point(62, 426);
+			this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnDelete.Name = "btnDelete";
+			this.btnDelete.Size = new System.Drawing.Size(39, 46);
+			this.btnDelete.TabIndex = 2;
+			this.btnDelete.Text = "-";
+			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+			// 
+			// btnModify
+			// 
+			this.btnModify.Enabled = false;
+			this.btnModify.Location = new System.Drawing.Point(111, 427);
+			this.btnModify.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnModify.Name = "btnModify";
+			this.btnModify.Size = new System.Drawing.Size(125, 46);
+			this.btnModify.TabIndex = 3;
+			this.btnModify.Text = "Modify";
+			this.btnModify.UseVisualStyleBackColor = true;
+			this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(639, 482);
+			this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(125, 46);
+			this.button1.TabIndex = 4;
+			this.button1.Text = "Cancel";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.btnCancel_Click);
+			// 
+			// btnOK
+			// 
+			this.btnOK.Location = new System.Drawing.Point(504, 482);
+			this.btnOK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.btnOK.Name = "btnOK";
+			this.btnOK.Size = new System.Drawing.Size(125, 46);
+			this.btnOK.TabIndex = 5;
+			this.btnOK.Text = "OK";
+			this.btnOK.UseVisualStyleBackColor = true;
+			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+			// 
+			// chkIsCivilian
+			// 
+			this.chkIsCivilian.AutoSize = true;
+			this.chkIsCivilian.Location = new System.Drawing.Point(685, 427);
+			this.chkIsCivilian.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.chkIsCivilian.Name = "chkIsCivilian";
+			this.chkIsCivilian.Size = new System.Drawing.Size(79, 28);
+			this.chkIsCivilian.TabIndex = 6;
+			this.chkIsCivilian.Text = "civilian";
+			this.chkIsCivilian.UseVisualStyleBackColor = true;
+			// 
+			// frmNPCCharacterEquipmentsEditor
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(781, 543);
+			this.Controls.Add(this.chkIsCivilian);
+			this.Controls.Add(this.btnOK);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.btnModify);
+			this.Controls.Add(this.btnDelete);
+			this.Controls.Add(this.btnAdd);
+			this.Controls.Add(this.listView1);
+			this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "frmNPCCharacterEquipmentsEditor";
+			this.ShowIcon = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "NPC Character Equipments Editor";
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
