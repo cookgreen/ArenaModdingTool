@@ -11,14 +11,14 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucHeroDetails : UserControl
     {
-        private AMProject project;
+        private ModdingProject project;
         private MBBannerlordHero hero;
         private int selectedIndex;
         private AddEditState addEditState;
 
         public event Action<MBBannerlordHero, AddEditState, int> SaveHeroInfoFinished;
 
-        public ucHeroDetails(AMProject project, MBBannerlordHero hero, int index, AddEditState addEditState)
+        public ucHeroDetails(ModdingProject project, MBBannerlordHero hero, int index, AddEditState addEditState)
         {
             InitializeComponent();
 

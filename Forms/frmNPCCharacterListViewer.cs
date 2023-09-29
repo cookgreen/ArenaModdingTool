@@ -15,13 +15,13 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmNPCCharacterListViewer : Form
     {
-        private AMProject project;
+        private ModdingProject project;
         private MBBannerlordNPCCharacter selectedCharacter;
         public MBBannerlordNPCCharacter SelectedCharacter
         {
             get { return selectedCharacter; }
         }
-        public frmNPCCharacterListViewer(AMProject project)
+        public frmNPCCharacterListViewer(ModdingProject project)
         {
             InitializeComponent();
             this.project = project;

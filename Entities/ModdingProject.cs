@@ -9,29 +9,29 @@ using XmlLoader;
 
 namespace ArenaModdingTool
 {
-    public class AMProject
+    public class ModdingProject
     {
         private string path;
         private XmlObjectLoader xmlObjectLoader;
-        private MBBannerlordModule bannerlordModule;
+        private MBBannerlordMod bannerlordModule;
 
         public string Name { get; set; }
         public string ModuleName { get; set; }
         public string Location { get; set; }
         public List<string> IncludedFiles { get; set; }
-        public MBBannerlordModule BannerlordModule { get { return bannerlordModule; } }
+        public MBBannerlordMod BannerlordModule { get { return bannerlordModule; } }
         
-        public AMProject()
+        public ModdingProject()
         {
-            bannerlordModule = new MBBannerlordModule();
+            bannerlordModule = new MBBannerlordMod();
         }
 
-        public AMProject(string path)
+        public ModdingProject(string path)
         {
             this.path = path;
             DirectoryInfo di = new DirectoryInfo(path);
             Name = di.Name;
-            bannerlordModule = new MBBannerlordModule(path);
+            bannerlordModule = new MBBannerlordMod(path);
             ModuleName = bannerlordModule.ModuleInfo.Name.value;
             Location = path;
         }

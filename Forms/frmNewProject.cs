@@ -12,8 +12,8 @@ namespace ArenaModdingTool
 {
     public partial class frmNewProject : Form, ILocalization
     {
-        private AMProject newProject;
-        public AMProject NewProject 
+        private ModdingProject newProject;
+        public ModdingProject NewProject 
         {
             get
             {
@@ -25,7 +25,7 @@ namespace ArenaModdingTool
         {
             InitializeComponent();
             SwitchLanguage();
-            newProject = new AMProject();
+            newProject = new ModdingProject();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -87,5 +87,10 @@ namespace ArenaModdingTool
         {
 
         }
-    }
+
+		private void btnEditDepencyModules_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

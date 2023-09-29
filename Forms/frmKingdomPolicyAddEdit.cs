@@ -13,7 +13,7 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmKingdomPolicyAddEdit : Form
     {
-        private AMProject project;
+        private ModdingProject project;
         private MBBannerlordKingdom kingdom;
         private bool isAddOrEdit;
         private KingdomPolicy kingdomPolicy;
@@ -23,7 +23,7 @@ namespace ArenaModdingTool.Forms
             get { return kingdomPolicy; }
         }
 
-        public frmKingdomPolicyAddEdit(AMProject project, MBBannerlordKingdom kingdom, bool isAddOrEdit, KingdomPolicy kingdomPolicy = null)
+        public frmKingdomPolicyAddEdit(ModdingProject project, MBBannerlordKingdom kingdom, bool isAddOrEdit, KingdomPolicy kingdomPolicy = null)
         {
             InitializeComponent();
 

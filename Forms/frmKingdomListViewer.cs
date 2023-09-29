@@ -16,14 +16,14 @@ namespace ArenaModdingTool.Forms
     public partial class frmKingdomListViewer : Form
     {
         private MBBannerlordKingdom selectedKingdom;
-        private AMProject project;
+        private ModdingProject project;
 
         public MBBannerlordKingdom SelectedKingdom
         {
             get { return selectedKingdom; }
         }
 
-        public frmKingdomListViewer(AMProject project)
+        public frmKingdomListViewer(ModdingProject project)
         {
             InitializeComponent();
             this.project = project;

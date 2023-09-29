@@ -15,9 +15,9 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmCultureListViewer : Form
     {
-        private AMProject project;
+        private ModdingProject project;
 
-        public frmCultureListViewer(AMProject project)
+        public frmCultureListViewer(ModdingProject project)
         {
             InitializeComponent();
             this.project = project;

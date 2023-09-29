@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace ArenaModdingTool.Forms
 {
-    public partial class frmLocalizedTextInputer : Form, ILocalization
+    public partial class frmLocalizedTextEditor : Form, ILocalization
     {
         public string ResultText
         {
@@ -17,10 +17,19 @@ namespace ArenaModdingTool.Forms
                 return "{=" + txtLocalizedID.Text + "} " + txtOriginalText.Text;
             }
         }
-        public frmLocalizedTextInputer()
+        public frmLocalizedTextEditor(string inputText)
         {
             InitializeComponent();
             SwitchLanguage();
+
+            if(!string.IsNullOrEmpty(inputText))
+            {
+                if(inputText.StartsWith("{=") && inputText.Contains("}"))
+                {
+                    txtLocalizedID.Text = inputText.Substring(inputText.IndexOf("=") + 1, inputText.IndexOf("}") - inputText.IndexOf("=") - 1);
+                    txtOriginalText.Text = inputText.Substring(inputText.IndexOf("}") + 1);
+                }
+            }
         }
 
         private void btnOK_Click(object sender, EventArgs e)

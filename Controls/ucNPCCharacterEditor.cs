@@ -16,9 +16,9 @@ namespace ArenaModdingTool.Controls
     {
         private MBBannerlordNPCCharacters characters;
         private ucNPCCharacterListEdit trooperListCtrl;
-        private AMProject project;
+        private ModdingProject project;
 
-        public ucNPCCharacterEditor(AMProject project, MBBannerlordNPCCharacters characters)
+        public ucNPCCharacterEditor(ModdingProject project, MBBannerlordNPCCharacters characters)
         {
             InitializeComponent();
             this.characters = characters;

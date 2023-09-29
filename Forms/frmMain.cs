@@ -18,7 +18,7 @@ namespace ArenaModdingTool
     public partial class frmMain : Form, ILocalization
     {
         private AppSetting appSetting;
-        private AMProject currentProject;
+        private ModdingProject currentProject;
         private RecentOperations recentOperations;
 
         public frmMain(AppSetting appSetting, RecentOperations recentOperations)
@@ -62,7 +62,7 @@ namespace ArenaModdingTool
                             MessageBox.Show(Helper.LOC("str_error_message_cannot_find_specific_directory"), Helper.LOC("str_error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
-                        currentProject = new AMProject(recentOpt.Value);
+                        currentProject = new ModdingProject(recentOpt.Value);
                         OpenProject(currentProject);
                     };
                 }
@@ -406,7 +406,7 @@ namespace ArenaModdingTool
             }
         }
 
-        private void OpenProject(AMProject currentProject)
+        private void OpenProject(ModdingProject currentProject)
         {
             MBBannerlordModManager.Instance.Init();
             btnKingdoms.Enabled = true;

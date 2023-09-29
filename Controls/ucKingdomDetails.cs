@@ -17,12 +17,12 @@ namespace ArenaModdingTool.Controls
         private AddEditState state;
         private MBBannerlordKingdom kingdom;
         private int index;
-        private AMProject project;
+        private ModdingProject project;
 
         public event Action<bool> SaveButtonStateChanged;
         public event Action<MBBannerlordKingdom, AddEditState, int> SaveKingdomInfoFinished;
 
-        public ucKingdomDetails(AMProject project, MBBannerlordKingdom kingdom, AddEditState state, int index)
+        public ucKingdomDetails(ModdingProject project, MBBannerlordKingdom kingdom, AddEditState state, int index)
         {
             InitializeComponent();
             initializeTooltip();

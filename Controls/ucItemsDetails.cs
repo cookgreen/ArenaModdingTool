@@ -173,5 +173,14 @@ namespace ArenaModdingTool.Controls
 
             DoSave?.Invoke();
         }
-    }
+
+		private void txtName_Enter(object sender, EventArgs e)
+		{
+            frmLocalizedTextEditor localizedTextEditorWin = new frmLocalizedTextEditor(txtName.Text);
+            if(localizedTextEditorWin.ShowDialog() == DialogResult.OK)
+            {
+                txtName.Text = localizedTextEditorWin.ResultText;
+            }
+		}
+	}
 }

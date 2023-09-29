@@ -17,9 +17,9 @@ namespace ArenaModdingTool.Controls
         private MBBannerlordKingdoms kingdoms;
         private ucKingdomsList factionListCtrl;
         private ucKingdomDetails factionDetailsCtrl;
-        private AMProject project;
+        private ModdingProject project;
 
-        public ucKingdomEditor(AMProject project, MBBannerlordKingdoms kingdoms)
+        public ucKingdomEditor(ModdingProject project, MBBannerlordKingdoms kingdoms)
         {
             InitializeComponent();
             this.kingdoms = kingdoms;

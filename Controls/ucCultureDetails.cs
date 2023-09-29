@@ -13,12 +13,12 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucCultureDetails : UserControl
     {
-        private AMProject project;
+        private ModdingProject project;
         private MBBannerlordCulture culture;
         private int index;
         private AddEditState addEditState;
 
-        public ucCultureDetails(AMProject project, MBBannerlordCulture culture, int index, AddEditState addEditState)
+        public ucCultureDetails(ModdingProject project, MBBannerlordCulture culture, int index, AddEditState addEditState)
         {
             InitializeComponent();
 

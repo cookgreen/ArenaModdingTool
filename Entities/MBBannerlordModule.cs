@@ -10,9 +10,9 @@ using XmlLoader;
 
 namespace ArenaModdingTool
 {
-    public class MBBannerlordModule
+    public class MBBannerlordMod
     {
-        private ModdingFiles.MBBannerlordModule moduleInfo;
+        private MBBannerlordModule moduleInfo;
         private List<MBBannerlordKingdoms> moduleKingdoms;
         private List<MBBannerlordCultures> moduleCultures;
         private List<MBBannerlordHeroes> moduleHeroes;
@@ -23,13 +23,44 @@ namespace ArenaModdingTool
         public string ModuleDataPath
         {
             get { return Path.Combine(path, "ModuleData"); }
-        }
+		}
 
-        public MBBannerlordModule()
+		public MBBannerlordModule ModuleInfo
+		{
+			get { return moduleInfo; }
+		}
+
+		public List<MBBannerlordItems> ModuleItems
+		{
+			get { return moduleItems; }
+		}
+
+		public List<MBBannerlordKingdoms> ModuleKingdoms
+		{
+			get { return moduleKingdoms; }
+		}
+
+		public List<MBBannerlordCultures> ModuleCultures
+		{
+			get { return moduleCultures; }
+		}
+
+		public List<MBBannerlordHeroes> ModuleHeroes
+		{
+			get { return moduleHeroes; }
+		}
+
+		public List<MBBannerlordNPCCharacters> ModuleNPCCharacters
+		{
+			get { return moduleNPCCharacters; }
+		}
+
+		public MBBannerlordMod()
         {
 
         }
-        public MBBannerlordModule(string path)
+
+        public MBBannerlordMod(string path)
         {
             this.path = path;
 
@@ -45,7 +76,7 @@ namespace ArenaModdingTool
         private void loadMod()
         {
             XmlObjectLoader xmlLoader = new XmlObjectLoader(Path.Combine(path, "SubModule.xml"));
-            xmlLoader.Load<ModdingFiles.MBBannerlordModule>(out moduleInfo);
+            xmlLoader.Load(out moduleInfo);
 
             var findedSPKingdomsNode = moduleInfo.XmlNodes.Where(o => o.XmlName.id == "Kingdoms");
             foreach (var node in findedSPKingdomsNode)
@@ -153,31 +184,6 @@ namespace ArenaModdingTool
             xmlLoader.Load(out characters);
             characters.FilePath = destFileFullPath;
             moduleNPCCharacters.Add(characters);
-        }
-
-        public ModdingFiles.MBBannerlordModule ModuleInfo
-        {
-            get { return moduleInfo; }
-        }
-        public List<MBBannerlordItems> ModuleItems
-        {
-            get { return moduleItems; }
-        }
-        public List<MBBannerlordKingdoms> ModuleKingdoms
-        {
-            get { return moduleKingdoms; }
-        }
-        public List<MBBannerlordCultures> ModuleCultures
-        {
-            get { return moduleCultures; }
-        }
-        public List<MBBannerlordHeroes> ModuleHeroes
-        {
-            get { return moduleHeroes; }
-        }
-        public List<MBBannerlordNPCCharacters> ModuleNPCCharacters
-        {
-            get { return moduleNPCCharacters; }
         }
 
         public string ModulePath { get { return path; } }

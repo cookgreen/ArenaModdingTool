@@ -14,14 +14,14 @@ namespace ArenaModdingTool.Forms
     public partial class frmNPCCharacterFaceEditor : Form
     {
         private MBBannerlordNPCCharacter character;
-        private AMProject project;
+        private ModdingProject project;
         private MBNPCCharacterFace characterFace;
         public MBNPCCharacterFace CharacterFace
         {
             get { return characterFace; }
         }
 
-        public frmNPCCharacterFaceEditor(AMProject project, MBBannerlordNPCCharacter character)
+        public frmNPCCharacterFaceEditor(ModdingProject project, MBBannerlordNPCCharacter character)
         {
             InitializeComponent();
             this.character = character;

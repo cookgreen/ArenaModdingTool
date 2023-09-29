@@ -12,12 +12,12 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucHeroEditor : UserControl
     {
-        private AMProject currentProject;
+        private ModdingProject currentProject;
         private MBBannerlordHeroes heroes;
         private ucHeroListEdit heroListEdit;
         private ucHeroDetails heroDetailsCtl;
 
-        public ucHeroEditor(AMProject currentProject, MBBannerlordHeroes heroes)
+        public ucHeroEditor(ModdingProject currentProject, MBBannerlordHeroes heroes)
         {
             InitializeComponent();
             

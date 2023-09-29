@@ -13,8 +13,8 @@ namespace ArenaModdingTool
 {
     public partial class frmImportProject : Form, ILocalization
     {
-        private AMProject project;
-        public AMProject Project { get { return project; } }
+        private ModdingProject project;
+        public ModdingProject Project { get { return project; } }
         public frmImportProject()
         {
             InitializeComponent();
@@ -43,7 +43,7 @@ namespace ArenaModdingTool
             {
                 MessageBox.Show("Please select a valid path");
             }
-            project = new AMProject(txtModuleLocation.Text);
+            project = new ModdingProject(txtModuleLocation.Text);
             DialogResult = DialogResult.OK;
             
             Close();

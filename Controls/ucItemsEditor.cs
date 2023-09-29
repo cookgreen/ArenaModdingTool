@@ -14,13 +14,13 @@ namespace ArenaModdingTool.Controls
 {
     public partial class ucItemsEditor : UserControl
     {
-        private AMProject currentProject;
+        private ModdingProject currentProject;
         private MBBannerlordItems items;
         private ucItemsListEdit itemsListEdit;
         private ucItemsDetails itemDetailsCtrl;
         private int editIndex;
 
-        public ucItemsEditor(AMProject currentProject, MBBannerlordItems items)
+        public ucItemsEditor(ModdingProject currentProject, MBBannerlordItems items)
         {
             InitializeComponent();
 

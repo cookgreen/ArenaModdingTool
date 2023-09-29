@@ -29,14 +29,14 @@ namespace ArenaModdingTool
         {
             get { return bannerlordExePath; }
         }
-        private List<MBBannerlordModule> officalMods;
-        public List<MBBannerlordModule> OfficialMods
+        private List<MBBannerlordMod> officalMods;
+        public List<MBBannerlordMod> OfficialMods
         {
             get { return officalMods; }
         }
         public MBBannerlordModManager()
         {
-            officalMods = new List<MBBannerlordModule>();
+            officalMods = new List<MBBannerlordMod>();
         }
 
         public void Init()
@@ -63,7 +63,7 @@ namespace ArenaModdingTool
                             xmlObjectLoader.Load(out module);
                             if (module.Official != null && module.Official.value == "true")
                             {
-                                MBBannerlordModule officalModule = new MBBannerlordModule(dii.FullName);
+                                MBBannerlordMod officalModule = new MBBannerlordMod(dii.FullName);
                                 OfficialMods.Add(officalModule);
                             }
                         }

@@ -13,7 +13,7 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmKingdomRelationshipPolicyEditor : Form
     {
-        private AMProject project;
+        private ModdingProject project;
         private MBBannerlordKingdom kingdom;
         private List<KingdomRelationship> relationships;
         private List<KingdomPolicy> policies;
@@ -26,7 +26,7 @@ namespace ArenaModdingTool.Forms
             get { return policies; }
         }
 
-        public frmKingdomRelationshipPolicyEditor(AMProject project, MBBannerlordKingdom kingdom)
+        public frmKingdomRelationshipPolicyEditor(ModdingProject project, MBBannerlordKingdom kingdom)
         {
             InitializeComponent();
             this.project = project;
