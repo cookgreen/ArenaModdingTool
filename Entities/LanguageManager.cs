@@ -32,6 +32,13 @@ namespace ArenaModdingTool
             return languages.Select(o => o.LocalizedName).ToList();
         }
 
+        public bool CheckLocalizedStringExisted(string local, string stringID)
+		{
+			var lang = languages.Where(o => o.LocalizedName == local).FirstOrDefault();
+            return lang.IsLocalizedStringExisted(stringID);
+		}
+
+
         public string GetLocalizationString(string local, string stringID)
         {
             var lang = languages.Where(o => o.LocalizedName == local).FirstOrDefault();

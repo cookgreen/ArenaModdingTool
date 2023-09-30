@@ -66,5 +66,10 @@ namespace ArenaModdingTool
                 }
             }
         }
-    }
+
+		public bool IsLocalizedStringExisted(string stringID)
+		{
+            return localizationDic.ContainsKey(stringID);
+		}
+	}
 }

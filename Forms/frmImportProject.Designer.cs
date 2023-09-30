@@ -38,7 +38,7 @@
 			// lbModLocation
 			// 
 			this.lbModLocation.AutoSize = true;
-			this.lbModLocation.Location = new System.Drawing.Point(14, 41);
+			this.lbModLocation.Location = new System.Drawing.Point(14, 30);
 			this.lbModLocation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.lbModLocation.Name = "lbModLocation";
 			this.lbModLocation.Size = new System.Drawing.Size(135, 24);
@@ -47,7 +47,7 @@
 			// 
 			// txtModuleLocation
 			// 
-			this.txtModuleLocation.Location = new System.Drawing.Point(169, 38);
+			this.txtModuleLocation.Location = new System.Drawing.Point(169, 27);
 			this.txtModuleLocation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
 			this.txtModuleLocation.Name = "txtModuleLocation";
 			this.txtModuleLocation.ReadOnly = true;
@@ -56,7 +56,7 @@
 			// 
 			// btnBrowse
 			// 
-			this.btnBrowse.Location = new System.Drawing.Point(639, 30);
+			this.btnBrowse.Location = new System.Drawing.Point(639, 19);
 			this.btnBrowse.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
 			this.btnBrowse.Name = "btnBrowse";
 			this.btnBrowse.Size = new System.Drawing.Size(70, 46);

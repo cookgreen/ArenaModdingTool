@@ -2082,7 +2082,7 @@
 			this.btnModifyClanName.Name = "btnModifyClanName";
 			this.btnModifyClanName.Size = new System.Drawing.Size(77, 44);
 			this.btnModifyClanName.TabIndex = 7;
-			this.btnModifyClanName.Text = "Mod";
+			this.btnModifyClanName.Text = "Modify";
 			this.btnModifyClanName.UseVisualStyleBackColor = true;
 			this.btnModifyClanName.Click += new System.EventHandler(this.btnModifyClanName_Click);
 			// 
@@ -2138,7 +2138,7 @@
 			this.btnModifyFemaleName.Name = "btnModifyFemaleName";
 			this.btnModifyFemaleName.Size = new System.Drawing.Size(77, 44);
 			this.btnModifyFemaleName.TabIndex = 7;
-			this.btnModifyFemaleName.Text = "Mod";
+			this.btnModifyFemaleName.Text = "Modify";
 			this.btnModifyFemaleName.UseVisualStyleBackColor = true;
 			this.btnModifyFemaleName.Click += new System.EventHandler(this.btnModifyFemaleName_Click);
 			// 
@@ -2230,7 +2230,7 @@
 			this.btnModifyMaleName.Name = "btnModifyMaleName";
 			this.btnModifyMaleName.Size = new System.Drawing.Size(77, 44);
 			this.btnModifyMaleName.TabIndex = 3;
-			this.btnModifyMaleName.Text = "Mod";
+			this.btnModifyMaleName.Text = "Modify";
 			this.btnModifyMaleName.UseVisualStyleBackColor = true;
 			this.btnModifyMaleName.Click += new System.EventHandler(this.btnModifyMaleName_Click);
 			// 

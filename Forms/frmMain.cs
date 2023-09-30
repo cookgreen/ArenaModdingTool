@@ -1,4 +1,5 @@
 ﻿using ArenaModdingTool.Controls;
+using ArenaModdingTool.Entities;
 using ArenaModdingTool.Forms;
 using ArenaModdingTool.ModdingFiles;
 using System;
@@ -24,6 +25,9 @@ namespace ArenaModdingTool
         public frmMain(AppSetting appSetting, RecentOperations recentOperations)
         {
             InitializeComponent();
+
+			DebugMessageManager.Instance.MessageReceived += DebugMessageReceived;
+
             this.appSetting = appSetting;
 
             LanguageManager.Instance.CurrentLocalization = appSetting.Localization;
@@ -69,7 +73,30 @@ namespace ArenaModdingTool
             }
         }
 
-        public void SwitchLanguage()
+		private void DebugMessageReceived(string message, DebugMessageLevel level)
+		{
+            Color textColor = Color.Black;
+            string prefix = string.Empty;
+            switch(level)
+            {
+                case DebugMessageLevel.Info:
+                    textColor = Color.Blue;
+                    prefix = "[INFO] ";
+					break;
+                case DebugMessageLevel.Warning:
+                    textColor = Color.Yellow;
+					prefix = "[WARNING] ";
+					break;
+                case DebugMessageLevel.Error:
+                    textColor = Color.Red;
+					prefix = "[ERROR] ";
+					break;
+            }
+            txtDebugMessageOutput.ForeColor = textColor;
+            txtDebugMessageOutput.AppendText(prefix + message);
+		}
+
+		public void SwitchLanguage()
         {
             Text = Helper.LOC("ui_main_form_title");
             mnuFile.Text = Helper.LOC("ui_main_form_mnuFile");
@@ -153,8 +180,8 @@ namespace ArenaModdingTool
                     factionEditorCtrl.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panelMain.Controls.Clear();
-                panelMain.Controls.Add(tabControl);
+				mainPanel.Controls.Clear();
+				mainPanel.Controls.Add(tabControl);
             }
         }
 
@@ -207,8 +234,8 @@ namespace ArenaModdingTool
                     npcCharacterEditor.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panelMain.Controls.Clear();
-                panelMain.Controls.Add(tabControl);
+				mainPanel.Controls.Clear();
+				mainPanel.Controls.Add(tabControl);
             }
         }
 
@@ -262,8 +289,8 @@ namespace ArenaModdingTool
                     itemsEditor.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panelMain.Controls.Clear();
-                panelMain.Controls.Add(tabControl);
+				mainPanel.Controls.Clear();
+				mainPanel.Controls.Add(tabControl);
             }
         }
 
@@ -317,8 +344,8 @@ namespace ArenaModdingTool
                     heroEditor.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panelMain.Controls.Clear();
-                panelMain.Controls.Add(tabControl);
+				mainPanel.Controls.Clear();
+				mainPanel.Controls.Add(tabControl);
             }
         }
 
@@ -372,8 +399,8 @@ namespace ArenaModdingTool
                     cultureEditor.Dock = DockStyle.Fill;
                     tabControl.TabPages.Add(page);
                 }
-                panelMain.Controls.Clear();
-                panelMain.Controls.Add(tabControl);
+				mainPanel.Controls.Clear();
+				mainPanel.Controls.Add(tabControl);
             }
         }
 

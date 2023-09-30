@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\DebugMessageManager.cs" />
     <Compile Include="Entities\ModdingProject.cs" />
     <Compile Include="Entities\AppSetting.cs" />
     <Compile Include="Controls\ucCultureDetails.cs">

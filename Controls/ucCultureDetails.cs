@@ -21,6 +21,7 @@ namespace ArenaModdingTool.Controls
         public ucCultureDetails(ModdingProject project, MBBannerlordCulture culture, int index, AddEditState addEditState)
         {
             InitializeComponent();
+            initializeTooltip();
 
             this.project = project;
             this.culture = culture;
@@ -30,7 +31,22 @@ namespace ArenaModdingTool.Controls
             loadCultureDetails();
         }
 
-        private void loadCultureDetails()
+		private void initializeTooltip()
+		{
+            foreach (TabPage tabPage in tabCtrlCultureDetails.TabPages)
+            {
+                foreach (Control control in tabPage.Controls[0].Controls)
+                {
+                    if (control is TextBox || control is CheckBox)
+                    {
+                        string fieldName = Helper.RenameSnakeCase(control.Name.Substring(2));
+                        toolTip.SetToolTip(control, Helper.LOC("str_tooltip_message_culture_details_" + fieldName));
+                    }
+                }
+            }
+		}
+
+		private void loadCultureDetails()
         {
             loadDataFromCulture(culture, tableLayoutPanel1);
             loadDataFromCulture(culture, tableLayoutPanel4);
