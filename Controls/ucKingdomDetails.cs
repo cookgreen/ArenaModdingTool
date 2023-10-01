@@ -47,6 +47,22 @@ namespace ArenaModdingTool.Controls
             toolTip.SetToolTip(txtID, Helper.LOC("str_tooltip_message_kingdom_details_id"));
             toolTip.SetToolTip(txtOwner, Helper.LOC("str_tooltip_message_kingdom_details_owner"));
             toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_tooltip_message_kingdom_details_banner_key"));
+            toolTip.SetToolTip(txtPrimaryBannerColor, Helper.LOC("str_tooltip_message_kingdom_details_primary_banner_color"));
+            toolTip.SetToolTip(txtSecondaryBannerColor, Helper.LOC("str_tooltip_message_kingdom_details_secondary_banner_color"));
+            toolTip.SetToolTip(txtLabelColor, Helper.LOC("str_tooltip_message_kingdom_details_label_color"));
+            toolTip.SetToolTip(txtColor, Helper.LOC("str_tooltip_message_kingdom_details_color"));
+            toolTip.SetToolTip(txtColor2, Helper.LOC("str_tooltip_message_kingdom_details_color2"));
+            toolTip.SetToolTip(txtAlternativeColor, Helper.LOC("str_tooltip_message_kingdom_details_alternative_color"));
+            toolTip.SetToolTip(txtAlternativeColor2, Helper.LOC("str_tooltip_message_kingdom_details_alternative_color2"));
+            toolTip.SetToolTip(cmbCulture, Helper.LOC("str_tooltip_message_kingdom_details_culture"));
+            toolTip.SetToolTip(txtSettlementBannerMesh, Helper.LOC("str_tooltip_message_kingdom_details_settlement_banner_mesh"));
+            toolTip.SetToolTip(txtFlagMesh, Helper.LOC("str_tooltip_message_kingdom_details_flag_mesh"));
+            toolTip.SetToolTip(txtName, Helper.LOC("str_tooltip_message_kingdom_details_name"));
+            toolTip.SetToolTip(txtShortName, Helper.LOC("str_tooltip_message_kingdom_details_short_name"));
+            toolTip.SetToolTip(txtTitle, Helper.LOC("str_tooltip_message_kingdom_details_title"));
+            toolTip.SetToolTip(txtRulerTitle, Helper.LOC("str_tooltip_message_kingdom_details_ruler_title"));
+            toolTip.SetToolTip(txtIntroduction, Helper.LOC("str_tooltip_message_kingdom_details_text"));
+            toolTip.SetToolTip(btnEditRelationshipsAndPolicies, Helper.LOC("str_tooltip_message_kingdom_details_relationship_and_policy"));
 		}
 
 		private void loadKingdomDetails(MBBannerlordKingdom kingdom)
@@ -78,7 +94,7 @@ namespace ArenaModdingTool.Controls
             txtOwner.Text = kingdom.owner;
             txtPrimaryBannerColor.Text = kingdom.primary_banner_color;
             txtRulerTitle.Text = kingdom.ruler_title;
-            txtSecondaryBannerlordColor.Text = kingdom.secondary_banner_color;
+            txtSecondaryBannerColor.Text = kingdom.secondary_banner_color;
             txtSettlementBannerMesh.Text = kingdom.settlement_banner_mesh;
             txtShortName.Text = kingdom.short_name;
             txtTitle.Text = kingdom.title;
@@ -121,22 +137,11 @@ namespace ArenaModdingTool.Controls
                 {
                     txtPrimaryBannerColor.Text = color2;
                 }
-                else if (name == txtSecondaryBannerlordColor.Name)
+                else if (name == txtSecondaryBannerColor.Name)
                 {
-                    txtSecondaryBannerlordColor.Text = color2;
+                    txtSecondaryBannerColor.Text = color2;
                 }
             }
-        }
-
-        private void txtBannerKey_DoubleClick(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://bannerlord.party/banner/");
-        }
-
-        private void txtBannerKey_Enter(object sender, EventArgs e)
-        {
-            ToolTip toolTip = new ToolTip();
-            toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_tooltip_message_double_click_textbox_will_open_banner_editor"));
         }
 
         private void btnEditRelationshipsAndPolicies_Click(object sender, EventArgs e)
@@ -170,7 +175,7 @@ namespace ArenaModdingTool.Controls
             kingdom.owner = txtOwner.Text;
             kingdom.primary_banner_color = txtPrimaryBannerColor.Text;
             kingdom.ruler_title = txtRulerTitle.Text;
-            kingdom.secondary_banner_color = txtSecondaryBannerlordColor.Text;
+            kingdom.secondary_banner_color = txtSecondaryBannerColor.Text;
             kingdom.settlement_banner_mesh = txtSettlementBannerMesh.Text;
             kingdom.short_name = txtShortName.Text;
             kingdom.text = txtIntroduction.Text;
@@ -199,6 +204,11 @@ namespace ArenaModdingTool.Controls
             {
                 txtOwner.Text = "Heroes." + heroListViewer.SelectedHero.id;
             }
-        }
-    }
+		}
+
+		private void txtBannerKey_DoubleClick(object sender, EventArgs e)
+		{
+			System.Diagnostics.Process.Start("https://bannerlord.party/banner/");
+		}
+	}
 }

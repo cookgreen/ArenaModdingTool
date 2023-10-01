@@ -21,6 +21,7 @@ namespace ArenaModdingTool.Controls
         public ucHeroDetails(ModdingProject project, MBBannerlordHero hero, int index, AddEditState addEditState)
         {
             InitializeComponent();
+            initializeTooltip();
 
             this.project = project;
             this.hero = hero;
@@ -30,7 +31,20 @@ namespace ArenaModdingTool.Controls
             loadHeroDetails();
         }
 
-        private void loadHeroDetails()
+		private void initializeTooltip()
+		{
+            toolTip.SetToolTip(txtID, Helper.LOC("str_tooltip_message_hero_details_id"));
+            toolTip.SetToolTip(chkIsNoble, Helper.LOC("str_tooltip_message_hero_details_is_noble"));
+            toolTip.SetToolTip(txtFather, Helper.LOC("str_tooltip_message_hero_details_father"));
+            toolTip.SetToolTip(txtMother, Helper.LOC("str_tooltip_message_hero_details_mother"));
+            toolTip.SetToolTip(chkIsAlive, Helper.LOC("str_tooltip_message_hero_details_is_alive"));
+            toolTip.SetToolTip(txtFaction, Helper.LOC("str_tooltip_message_hero_details_faction"));
+            toolTip.SetToolTip(txtSpouse, Helper.LOC("str_tooltip_message_hero_details_spouse"));
+            toolTip.SetToolTip(txtBannerKey, Helper.LOC("str_tooltip_message_hero_details_banner_key"));
+            toolTip.SetToolTip(txtIntroduction, Helper.LOC("str_tooltip_message_hero_details_introduction"));
+		}
+
+		private void loadHeroDetails()
         {
             txtID.Text = hero.id;
             
@@ -76,6 +90,11 @@ namespace ArenaModdingTool.Controls
             SaveHeroInfoFinished?.Invoke(hero, addEditState, selectedIndex);
 
             addEditState = AddEditState.View;
-        }
-    }
+		}
+
+		private void txtBannerKey_DoubleClick(object sender, EventArgs e)
+		{
+			System.Diagnostics.Process.Start("https://bannerlord.party/banner/");
+		}
+	}
 }

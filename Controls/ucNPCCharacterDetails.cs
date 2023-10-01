@@ -24,6 +24,8 @@ namespace ArenaModdingTool.Controls
         public ucNPCCharacterDetails(ModdingProject project, MBBannerlordNPCCharacter character, AddEditState state, int index)
         {
             InitializeComponent();
+            initializeTooltip();
+
             this.project = project;
             this.character = character;
             this.state = state;
@@ -41,7 +43,26 @@ namespace ArenaModdingTool.Controls
             LoadNPCCharacter();
         }
 
-        private void LoadNPCCharacter()
+		private void initializeTooltip()
+		{
+            toolTip.SetToolTip(txtID, Helper.LOC("str_tooltip_message_npc_character_details_id"));
+            toolTip.SetToolTip(txtName, Helper.LOC("str_tooltip_message_npc_character_details_name"));
+            toolTip.SetToolTip(txtVoice, Helper.LOC("str_tooltip_message_npc_character_details_voice"));
+            toolTip.SetToolTip(txtCulture, Helper.LOC("str_tooltip_message_npc_character_details_culture"));
+            toolTip.SetToolTip(chkIsHero, Helper.LOC("str_tooltip_message_npc_character_details_is_hero"));
+            toolTip.SetToolTip(chkIsMecenary, Helper.LOC("str_tooltip_message_npc_character_details_is_mecenary"));
+            toolTip.SetToolTip(chkIsFemale, Helper.LOC("str_tooltip_message_npc_character_details_is_female"));
+            toolTip.SetToolTip(chkIsCompanion, Helper.LOC("str_tooltip_message_npc_character_details_is_companion"));
+            toolTip.SetToolTip(txtCivilianTemplate, Helper.LOC("str_tooltip_message_npc_character_details_civilian_template"));
+            toolTip.SetToolTip(cmbGroups, Helper.LOC("str_tooltip_message_npc_character_details_default_group"));
+            toolTip.SetToolTip(txtOccupation, Helper.LOC("str_tooltip_message_npc_character_details_occupation"));
+            toolTip.SetToolTip(btnEditFace, Helper.LOC("str_tooltip_message_npc_character_details_face"));
+            toolTip.SetToolTip(btnEditComponents, Helper.LOC("str_tooltip_message_npc_character_details_component"));
+            toolTip.SetToolTip(btnEditEquipmentSet, Helper.LOC("str_tooltip_message_npc_character_details_equipment_set"));
+            toolTip.SetToolTip(btnEditOtherEquipments, Helper.LOC("str_tooltip_message_npc_character_details_other_equipment"));
+		}
+
+		private void LoadNPCCharacter()
         {
             txtID.Text = character.id;
             txtName.Text = character.name;

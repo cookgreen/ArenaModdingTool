@@ -65,8 +65,20 @@ namespace ArenaModdingTool.Controls
 
 		private void initializeTooltip()
 		{
+            toolTip.SetToolTip(txtId, Helper.LOC("str_tooltip_message_item_details_ammo_offset"));
+            toolTip.SetToolTip(chkMultiplayerItem, Helper.LOC("str_tooltip_message_item_details_is_multiplayer_item"));
+            toolTip.SetToolTip(txtName, Helper.LOC("str_tooltip_message_item_details_name"));
+            toolTip.SetToolTip(txtMesh, Helper.LOC("str_tooltip_message_item_details_mesh"));
+            toolTip.SetToolTip(cmbCulture, Helper.LOC("str_tooltip_message_item_details_culture"));
+            toolTip.SetToolTip(numValue, Helper.LOC("str_tooltip_message_item_details_value"));
+            toolTip.SetToolTip(chkIsMerchandise, Helper.LOC("str_tooltip_message_item_details_is_merchandise"));
+            toolTip.SetToolTip(numWeight, Helper.LOC("str_tooltip_message_item_details_weight"));
+            toolTip.SetToolTip(numDifficulty, Helper.LOC("str_tooltip_message_item_details_difficulty"));
+            toolTip.SetToolTip(txtType, Helper.LOC("str_tooltip_message_item_details_type"));
             toolTip.SetToolTip(txtAmmoOffset, Helper.LOC("str_tooltip_message_item_details_ammo_offset"));
-            toolTip.SetToolTip(txtBodyName, Helper.LOC("str_"));
+            toolTip.SetToolTip(txtItemHolsters, Helper.LOC("str_tooltip_message_item_details_item_holsters"));
+            toolTip.SetToolTip(txtHolsterPositionShift, Helper.LOC("str_tooltip_message_item_details_holster_position_shift"));
+            toolTip.SetToolTip(btnEditItemComponent, Helper.LOC("str_tooltip_message_item_details_component"));
 		}
 
 		private void txtAmmoOffset_MouseDoubleClick(object sender, MouseEventArgs e)

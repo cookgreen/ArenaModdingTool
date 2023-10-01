@@ -41,7 +41,7 @@
 			this.txtColor2 = new System.Windows.Forms.TextBox();
 			this.txtColor = new System.Windows.Forms.TextBox();
 			this.txtLabelColor = new System.Windows.Forms.TextBox();
-			this.txtSecondaryBannerlordColor = new System.Windows.Forms.TextBox();
+			this.txtSecondaryBannerColor = new System.Windows.Forms.TextBox();
 			this.txtPrimaryBannerColor = new System.Windows.Forms.TextBox();
 			this.txtBannerKey = new System.Windows.Forms.TextBox();
 			this.txtOwner = new System.Windows.Forms.TextBox();
@@ -68,8 +68,8 @@
 			this.txtIntroduction = new System.Windows.Forms.RichTextBox();
 			this.txtID = new System.Windows.Forms.TextBox();
 			this.btnEditRelationshipsAndPolicies = new System.Windows.Forms.Button();
-			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.cmbCulture = new System.Windows.Forms.ComboBox();
+			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.tableLayoutPanel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -91,7 +91,7 @@
 			this.tableLayoutPanel2.Controls.Add(this.txtColor2, 1, 7);
 			this.tableLayoutPanel2.Controls.Add(this.txtColor, 1, 6);
 			this.tableLayoutPanel2.Controls.Add(this.txtLabelColor, 1, 5);
-			this.tableLayoutPanel2.Controls.Add(this.txtSecondaryBannerlordColor, 1, 4);
+			this.tableLayoutPanel2.Controls.Add(this.txtSecondaryBannerColor, 1, 4);
 			this.tableLayoutPanel2.Controls.Add(this.txtPrimaryBannerColor, 1, 3);
 			this.tableLayoutPanel2.Controls.Add(this.txtBannerKey, 1, 2);
 			this.tableLayoutPanel2.Controls.Add(this.txtOwner, 1, 1);
@@ -252,15 +252,15 @@
 			this.txtLabelColor.Size = new System.Drawing.Size(960, 30);
 			this.txtLabelColor.TabIndex = 26;
 			// 
-			// txtSecondaryBannerlordColor
+			// txtSecondaryBannerColor
 			// 
-			this.txtSecondaryBannerlordColor.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtSecondaryBannerlordColor.Location = new System.Drawing.Point(281, 198);
-			this.txtSecondaryBannerlordColor.Margin = new System.Windows.Forms.Padding(6);
-			this.txtSecondaryBannerlordColor.Name = "txtSecondaryBannerlordColor";
-			this.txtSecondaryBannerlordColor.ReadOnly = true;
-			this.txtSecondaryBannerlordColor.Size = new System.Drawing.Size(960, 30);
-			this.txtSecondaryBannerlordColor.TabIndex = 25;
+			this.txtSecondaryBannerColor.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtSecondaryBannerColor.Location = new System.Drawing.Point(281, 198);
+			this.txtSecondaryBannerColor.Margin = new System.Windows.Forms.Padding(6);
+			this.txtSecondaryBannerColor.Name = "txtSecondaryBannerColor";
+			this.txtSecondaryBannerColor.ReadOnly = true;
+			this.txtSecondaryBannerColor.Size = new System.Drawing.Size(960, 30);
+			this.txtSecondaryBannerColor.TabIndex = 25;
 			// 
 			// txtPrimaryBannerColor
 			// 
@@ -280,6 +280,7 @@
 			this.txtBannerKey.Name = "txtBannerKey";
 			this.txtBannerKey.Size = new System.Drawing.Size(960, 30);
 			this.txtBannerKey.TabIndex = 23;
+			this.txtBannerKey.DoubleClick += new System.EventHandler(this.txtBannerKey_DoubleClick);
 			// 
 			// txtOwner
 			// 
@@ -603,7 +604,7 @@
         private System.Windows.Forms.TextBox txtColor2;
         private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.TextBox txtLabelColor;
-        private System.Windows.Forms.TextBox txtSecondaryBannerlordColor;
+        private System.Windows.Forms.TextBox txtSecondaryBannerColor;
         private System.Windows.Forms.TextBox txtPrimaryBannerColor;
         private System.Windows.Forms.TextBox txtBannerKey;
         private System.Windows.Forms.TextBox txtOwner;

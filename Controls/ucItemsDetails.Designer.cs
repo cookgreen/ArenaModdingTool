@@ -61,8 +61,8 @@ namespace ArenaModdingTool.Controls
 			this.numValue = new System.Windows.Forms.NumericUpDown();
 			this.label13 = new System.Windows.Forms.Label();
 			this.btnEditItemComponent = new System.Windows.Forms.Button();
-			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.cmbCulture = new System.Windows.Forms.ComboBox();
+			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.tableLayoutPanel2.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
@@ -102,10 +102,10 @@ namespace ArenaModdingTool.Controls
 			// 
 			// btnSave
 			// 
-			this.btnSave.Location = new System.Drawing.Point(918, 9);
+			this.btnSave.Location = new System.Drawing.Point(846, 0);
 			this.btnSave.Margin = new System.Windows.Forms.Padding(6);
 			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(138, 44);
+			this.btnSave.Size = new System.Drawing.Size(158, 65);
 			this.btnSave.TabIndex = 0;
 			this.btnSave.Text = "Save";
 			this.btnSave.UseVisualStyleBackColor = true;
@@ -501,7 +501,7 @@ namespace ArenaModdingTool.Controls
 			this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "ucItemsDetails";
-			this.Size = new System.Drawing.Size(995, 891);
+			this.Size = new System.Drawing.Size(995, 870);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
 			this.tableLayoutPanel1.ResumeLayout(false);
