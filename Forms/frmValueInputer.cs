@@ -10,11 +10,13 @@ namespace ArenaModdingTool.Forms
 {
     public partial class frmValueInputer : Form
     {
-        public string Value { get { return textBox1.Text; } }
-        public frmValueInputer(string title)
+        public string Value { get { return txtValue.Text; } }
+        public frmValueInputer(string title, string val = "")
         {
             InitializeComponent();
-            Text = title;
+            Text = title + " Editor";
+            txtValue.Text = val;
+            lbValue.Text = title + ":";
         }
 
         private void btnOK_Click(object sender, EventArgs e)

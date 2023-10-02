@@ -198,6 +198,8 @@
 			this.btnAddMaleName = new System.Windows.Forms.Button();
 			this.maleNamesList = new System.Windows.Forms.ListBox();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.btnSave = new System.Windows.Forms.Button();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabCtrlCultureDetails.SuspendLayout();
 			this.tabPageBasicInfo.SuspendLayout();
@@ -213,6 +215,7 @@
 			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.panel2.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel2
@@ -220,13 +223,14 @@
 			this.tableLayoutPanel2.ColumnCount = 1;
 			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel2.Controls.Add(this.tabCtrlCultureDetails, 0, 0);
+			this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 1);
 			this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-			this.tableLayoutPanel2.RowCount = 1;
+			this.tableLayoutPanel2.RowCount = 2;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
 			this.tableLayoutPanel2.Size = new System.Drawing.Size(1154, 1227);
 			this.tableLayoutPanel2.TabIndex = 1;
 			// 
@@ -237,12 +241,11 @@
 			this.tabCtrlCultureDetails.Controls.Add(this.tabPageDetails2);
 			this.tabCtrlCultureDetails.Controls.Add(this.tabPageDetails3);
 			this.tabCtrlCultureDetails.Controls.Add(this.tabPageNameBuilder);
-			this.tabCtrlCultureDetails.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tabCtrlCultureDetails.Location = new System.Drawing.Point(6, 6);
 			this.tabCtrlCultureDetails.Margin = new System.Windows.Forms.Padding(6);
 			this.tabCtrlCultureDetails.Name = "tabCtrlCultureDetails";
 			this.tabCtrlCultureDetails.SelectedIndex = 0;
-			this.tabCtrlCultureDetails.Size = new System.Drawing.Size(1142, 1215);
+			this.tabCtrlCultureDetails.Size = new System.Drawing.Size(1142, 1135);
 			this.tabCtrlCultureDetails.TabIndex = 1;
 			// 
 			// tabPageBasicInfo
@@ -255,7 +258,7 @@
 			this.tabPageBasicInfo.Margin = new System.Windows.Forms.Padding(6);
 			this.tabPageBasicInfo.Name = "tabPageBasicInfo";
 			this.tabPageBasicInfo.Padding = new System.Windows.Forms.Padding(6);
-			this.tabPageBasicInfo.Size = new System.Drawing.Size(1134, 1179);
+			this.tabPageBasicInfo.Size = new System.Drawing.Size(1134, 1099);
 			this.tabPageBasicInfo.TabIndex = 0;
 			this.tabPageBasicInfo.Text = "Basic Info";
 			// 
@@ -324,7 +327,7 @@
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 1167);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 1087);
 			this.tableLayoutPanel1.TabIndex = 0;
 			// 
 			// txtRebelsPartyTemplate
@@ -2035,7 +2038,7 @@
 			this.tabPageNameBuilder.Margin = new System.Windows.Forms.Padding(6);
 			this.tabPageNameBuilder.Name = "tabPageNameBuilder";
 			this.tabPageNameBuilder.Padding = new System.Windows.Forms.Padding(6);
-			this.tabPageNameBuilder.Size = new System.Drawing.Size(1134, 1179);
+			this.tabPageNameBuilder.Size = new System.Drawing.Size(1134, 1099);
 			this.tabPageNameBuilder.TabIndex = 6;
 			this.tabPageNameBuilder.Text = "Name Builder";
 			// 
@@ -2059,7 +2062,7 @@
 			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 288F));
 			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 288F));
 			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(1122, 1167);
+			this.tableLayoutPanel3.Size = new System.Drawing.Size(1122, 1087);
 			this.tableLayoutPanel3.TabIndex = 0;
 			// 
 			// panel4
@@ -2077,6 +2080,7 @@
 			// 
 			// btnModifyClanName
 			// 
+			this.btnModifyClanName.Enabled = false;
 			this.btnModifyClanName.Location = new System.Drawing.Point(602, 118);
 			this.btnModifyClanName.Margin = new System.Windows.Forms.Padding(6);
 			this.btnModifyClanName.Name = "btnModifyClanName";
@@ -2088,6 +2092,7 @@
 			// 
 			// btnDeleteClanName
 			// 
+			this.btnDeleteClanName.Enabled = false;
 			this.btnDeleteClanName.Location = new System.Drawing.Point(603, 63);
 			this.btnDeleteClanName.Margin = new System.Windows.Forms.Padding(6);
 			this.btnDeleteClanName.Name = "btnDeleteClanName";
@@ -2117,6 +2122,7 @@
 			this.clanNamesList.Name = "clanNamesList";
 			this.clanNamesList.Size = new System.Drawing.Size(591, 280);
 			this.clanNamesList.TabIndex = 4;
+			this.clanNamesList.SelectedIndexChanged += new System.EventHandler(this.clanNamesList_SelectedIndexChanged);
 			// 
 			// panel3
 			// 
@@ -2133,6 +2139,7 @@
 			// 
 			// btnModifyFemaleName
 			// 
+			this.btnModifyFemaleName.Enabled = false;
 			this.btnModifyFemaleName.Location = new System.Drawing.Point(601, 118);
 			this.btnModifyFemaleName.Margin = new System.Windows.Forms.Padding(6);
 			this.btnModifyFemaleName.Name = "btnModifyFemaleName";
@@ -2144,6 +2151,7 @@
 			// 
 			// btnDeleteFemaleName
 			// 
+			this.btnDeleteFemaleName.Enabled = false;
 			this.btnDeleteFemaleName.Location = new System.Drawing.Point(602, 63);
 			this.btnDeleteFemaleName.Margin = new System.Windows.Forms.Padding(6);
 			this.btnDeleteFemaleName.Name = "btnDeleteFemaleName";
@@ -2173,6 +2181,7 @@
 			this.femaleNamesList.Name = "femaleNamesList";
 			this.femaleNamesList.Size = new System.Drawing.Size(591, 257);
 			this.femaleNamesList.TabIndex = 4;
+			this.femaleNamesList.SelectedIndexChanged += new System.EventHandler(this.femaleNamesList_SelectedIndexChanged);
 			// 
 			// label3
 			// 
@@ -2225,6 +2234,7 @@
 			// 
 			// btnModifyMaleName
 			// 
+			this.btnModifyMaleName.Enabled = false;
 			this.btnModifyMaleName.Location = new System.Drawing.Point(602, 118);
 			this.btnModifyMaleName.Margin = new System.Windows.Forms.Padding(6);
 			this.btnModifyMaleName.Name = "btnModifyMaleName";
@@ -2236,6 +2246,7 @@
 			// 
 			// btnDeleteMaleName
 			// 
+			this.btnDeleteMaleName.Enabled = false;
 			this.btnDeleteMaleName.Location = new System.Drawing.Point(603, 61);
 			this.btnDeleteMaleName.Margin = new System.Windows.Forms.Padding(6);
 			this.btnDeleteMaleName.Name = "btnDeleteMaleName";
@@ -2265,6 +2276,28 @@
 			this.maleNamesList.Name = "maleNamesList";
 			this.maleNamesList.Size = new System.Drawing.Size(591, 257);
 			this.maleNamesList.TabIndex = 0;
+			this.maleNamesList.SelectedIndexChanged += new System.EventHandler(this.maleNamesList_SelectedIndexChanged);
+			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.btnSave);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel1.Location = new System.Drawing.Point(3, 1150);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1148, 74);
+			this.panel1.TabIndex = 2;
+			// 
+			// btnSave
+			// 
+			this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnSave.Location = new System.Drawing.Point(998, 1);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(150, 70);
+			this.btnSave.TabIndex = 0;
+			this.btnSave.Text = "Save";
+			this.btnSave.UseVisualStyleBackColor = true;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// ucCultureDetails
 			// 
@@ -2295,6 +2328,7 @@
 			this.panel4.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
@@ -2470,5 +2504,7 @@
         private System.Windows.Forms.TextBox txtHorseMerchant;
         private System.Windows.Forms.TextBox txtBarber;
 		private System.Windows.Forms.ToolTip toolTip;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Button btnSave;
 	}
 }

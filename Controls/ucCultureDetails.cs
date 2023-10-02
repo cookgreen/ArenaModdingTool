@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ArenaModdingTool.ModdingFiles;
+using ArenaModdingTool.Forms;
 
 namespace ArenaModdingTool.Controls
 {
@@ -82,54 +83,138 @@ namespace ArenaModdingTool.Controls
 
         private void btnAddMaleName_Click(object sender, EventArgs e)
         {
-
+            frmValueInputer maleNameEditorWin = new frmValueInputer("Male Name");
+            if(maleNameEditorWin.ShowDialog() == DialogResult.OK)
+            {
+                maleNamesList.Items.Add(maleNameEditorWin.Value);
+            }
         }
 
         private void btnDeleteMaleName_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show(
+                Helper.LOC("str_info_message_do_you_want_to_delete_this"), 
+                Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) 
+                == DialogResult.Yes)
+            {
+                maleNamesList.Items.Remove(maleNamesList.SelectedItem);
+            }
         }
 
         private void btnModifyMaleName_Click(object sender, EventArgs e)
-        {
-
-        }
+		{
+			frmValueInputer maleNameEditorWin = new frmValueInputer("Male Name", maleNamesList.SelectedItem.ToString());
+			if (maleNameEditorWin.ShowDialog() == DialogResult.OK)
+			{
+				maleNamesList.Items.Add(maleNameEditorWin.Value);
+			}
+		}
 
         private void btnAddFemaleName_Click(object sender, EventArgs e)
-        {
-
-        }
+		{
+			frmValueInputer femaleNameEditorWin = new frmValueInputer("Female Name");
+			if (femaleNameEditorWin.ShowDialog() == DialogResult.OK)
+			{
+				femaleNamesList.Items.Add(femaleNameEditorWin.Value);
+			}
+		}
 
         private void btnDeleteFemaleName_Click(object sender, EventArgs e)
-        {
-
-        }
+		{
+			if (MessageBox.Show(
+				Helper.LOC("str_info_message_do_you_want_to_delete_this"),
+				Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+				== DialogResult.Yes)
+			{
+				femaleNamesList.Items.Remove(femaleNamesList.SelectedItem);
+			}
+		}
 
         private void btnModifyFemaleName_Click(object sender, EventArgs e)
-        {
-
-        }
+		{
+			frmValueInputer femaleNameEditorWin = new frmValueInputer("Female Name", femaleNamesList.SelectedItem.ToString());
+			if (femaleNameEditorWin.ShowDialog() == DialogResult.OK)
+			{
+				femaleNamesList.Items.Add(femaleNameEditorWin.Value);
+			}
+		}
 
         private void btnAddClanName_Click(object sender, EventArgs e)
-        {
-
-        }
+		{
+			frmValueInputer clanNameEditorWin = new frmValueInputer("Clan Name");
+			if (clanNameEditorWin.ShowDialog() == DialogResult.OK)
+			{
+				clanNamesList.Items.Add(clanNameEditorWin.Value);
+			}
+		}
 
         private void btnDeleteClanName_Click(object sender, EventArgs e)
-        {
-
-        }
+		{
+			if (MessageBox.Show(
+				Helper.LOC("str_info_message_do_you_want_to_delete_this"),
+				Helper.LOC("str_notice"), MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+				== DialogResult.Yes)
+			{
+				clanNamesList.Items.Remove(clanNamesList.SelectedItem);
+			}
+		}
 
         private void btnModifyClanName_Click(object sender, EventArgs e)
+		{
+			frmValueInputer clanNameEditorWin = new frmValueInputer("Clan Name", clanNamesList.SelectedItem.ToString());
+			if (clanNameEditorWin.ShowDialog() == DialogResult.OK)
+			{
+				clanNamesList.Items.Add(clanNameEditorWin.Value);
+			}
+		}
+
+		private void femaleNamesList_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (femaleNamesList.SelectedIndex > 0)
+			{
+				btnDeleteFemaleName.Enabled = true;
+				btnModifyFemaleName.Enabled = true;
+			}
+			else
+			{
+				btnDeleteFemaleName.Enabled = false;
+				btnModifyFemaleName.Enabled = false;
+			}
+		}
+
+		private void clanNamesList_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (clanNamesList.SelectedIndex > 0)
+			{
+				btnDeleteClanName.Enabled = true;
+				btnModifyClanName.Enabled = true;
+			}
+			else
+			{
+				btnDeleteClanName.Enabled = false;
+				btnModifyClanName.Enabled = false;
+			}
+		}
+
+		#endregion
+
+		private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
 
-        #endregion
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
+		private void maleNamesList_SelectedIndexChanged(object sender, EventArgs e)
+		{
+            if (maleNamesList.SelectedIndex > 0)
+            {
+                btnDeleteMaleName.Enabled = true;
+                btnModifyMaleName.Enabled = true;
+            }
+            else
+			{
+				btnDeleteMaleName.Enabled = false;
+				btnModifyMaleName.Enabled = false;
+			}
+		}
+	}
 }
