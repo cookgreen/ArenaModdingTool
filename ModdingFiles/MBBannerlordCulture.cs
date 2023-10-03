@@ -181,13 +181,17 @@ namespace ArenaModdingTool.ModdingFiles
 
         [XmlArray("tournament_team_templates_one_participant")]
         [XmlArrayItem("template")]
-        public List<MBCultureTemplateName> tournament_team_templates_one_participants { get; set; }
+        public List<MBCultureTemplateName> tournament_team_templates_one_participant { get; set; }
 
         [XmlArray("tournament_team_templates_two_participant")]
         [XmlArrayItem("template")]
         public List<MBCultureTemplateName> tournament_team_templates_two_participant { get; set; }
 
-        [XmlArray("tournament_team_templates_four_participant")]
+		[XmlArray("tournament_team_templates_three_participant")]
+		[XmlArrayItem("template")]
+		public List<MBCultureTemplateName> tournament_team_templates_three_participant { get; set; }
+
+		[XmlArray("tournament_team_templates_four_participant")]
         [XmlArrayItem("template")]
         public List<MBCultureTemplateName> tournament_team_templates_four_participant { get; set; }
 
@@ -196,9 +200,10 @@ namespace ArenaModdingTool.ModdingFiles
             MaleNames = new List<MBCultureName>();
             FemaleNames = new List<MBCultureName>();
             ClanNames = new List<MBCultureName>();
-            tournament_team_templates_one_participants = new List<MBCultureTemplateName>();
+            tournament_team_templates_one_participant = new List<MBCultureTemplateName>();
             tournament_team_templates_two_participant = new List<MBCultureTemplateName>();
-            tournament_team_templates_four_participant = new List<MBCultureTemplateName>();
+            tournament_team_templates_three_participant = new List<MBCultureTemplateName>();
+			tournament_team_templates_four_participant = new List<MBCultureTemplateName>();
         }
     }
 

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlLoader;
 
 namespace ArenaModdingTool.Controls
 {
@@ -38,7 +39,29 @@ namespace ArenaModdingTool.Controls
             panel3.Controls.Clear();
             panel3.Controls.Add(cultureDetailsCtrl);
             cultureDetailsCtrl.Dock = DockStyle.Fill;
-            btnSave.Visible = true;
-        }
-    }
+
+			cultureDetailsCtrl.SaveCultureInfoFinished += CultureDetailsCtrl_SaveCultureInfoFinished;
+
+		}
+
+		private void CultureDetailsCtrl_SaveCultureInfoFinished(MBBannerlordCulture savedCulture, AddEditState addEditState, int index)
+		{
+			if (addEditState == AddEditState.Add)
+			{
+				cultures.Cultures.Add(savedCulture);
+				XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(cultures.FilePath);
+				xmlObjectLoader.Save(cultures);
+				cultureListCtrl.ChangeAddEditState(AddEditState.View);
+				cultureListCtrl.RefreshData();
+			}
+			else if (addEditState == AddEditState.Edit)
+			{
+				cultures.Cultures[index] = savedCulture;
+				XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(cultures.FilePath);
+				xmlObjectLoader.Save(cultures);
+				cultureListCtrl.ChangeAddEditState(AddEditState.View);
+				cultureListCtrl.RefreshData();
+			}
+		}
+	}
 }

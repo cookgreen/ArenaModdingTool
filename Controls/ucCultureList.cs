@@ -12,9 +12,12 @@ using ArenaModdingTool.ModdingFiles;
 namespace ArenaModdingTool.Controls
 {
     public partial class ucCultureList : UserControl
-    {
-        private MBBannerlordCultures cultures;
-        public event Action<MBBannerlordCulture, int> SelectCultureChanged;
+	{
+        private MBBannerlordCulture selectedCulture;
+		private MBBannerlordCultures cultures;
+
+		public MBBannerlordCulture SelectedCulture { get { return selectedCulture; } }
+		public event Action<MBBannerlordCulture, int> SelectCultureChanged;
 
         public ucCultureList(MBBannerlordCultures cultures)
         {
@@ -23,7 +26,7 @@ namespace ArenaModdingTool.Controls
             loadCultures();
         }
 
-        private void loadCultures()
+        public void loadCultures()
         {
             treeView1.Nodes.Clear();
             foreach (var culture in cultures.Cultures)
@@ -32,13 +35,19 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node != null)
             {
                 int index = treeView1.Nodes.IndexOf(e.Node);
-                SelectCultureChanged?.Invoke(cultures.Cultures[index], index);
+				selectedCulture = cultures.Cultures[index];
+				SelectCultureChanged?.Invoke(cultures.Cultures[index], index);
             }
-        }
-    }
+		}
+
+		public void DeleteSelected()
+		{
+
+		}
+	}
 }

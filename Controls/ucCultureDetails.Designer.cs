@@ -33,6 +33,9 @@
 			this.tabCtrlCultureDetails = new System.Windows.Forms.TabControl();
 			this.tabPageBasicInfo = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.txtRangedMilitiaTroop = new System.Windows.Forms.TextBox();
+			this.label33 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
 			this.txtRebelsPartyTemplate = new System.Windows.Forms.TextBox();
 			this.txtMilitiaPartyTemplate = new System.Windows.Forms.TextBox();
 			this.txtEliteCaravanPartyTemplate = new System.Windows.Forms.TextBox();
@@ -55,7 +58,6 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
@@ -69,6 +71,9 @@
 			this.txtID = new System.Windows.Forms.TextBox();
 			this.tabPageDetails1 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+			this.label41 = new System.Windows.Forms.Label();
+			this.label35 = new System.Windows.Forms.Label();
+			this.label34 = new System.Windows.Forms.Label();
 			this.txtDuelPreset = new System.Windows.Forms.TextBox();
 			this.label37 = new System.Windows.Forms.Label();
 			this.txtBlackmith = new System.Windows.Forms.TextBox();
@@ -168,7 +173,6 @@
 			this.label66 = new System.Windows.Forms.Label();
 			this.label67 = new System.Windows.Forms.Label();
 			this.label68 = new System.Windows.Forms.Label();
-			this.label69 = new System.Windows.Forms.Label();
 			this.label70 = new System.Windows.Forms.Label();
 			this.label71 = new System.Windows.Forms.Label();
 			this.label72 = new System.Windows.Forms.Label();
@@ -197,9 +201,17 @@
 			this.btnDeleteMaleName = new System.Windows.Forms.Button();
 			this.btnAddMaleName = new System.Windows.Forms.Button();
 			this.maleNamesList = new System.Windows.Forms.ListBox();
-			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnSave = new System.Windows.Forms.Button();
+			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.txtTornamentTeamTemplatesOneParticipant = new System.Windows.Forms.TextBox();
+			this.txtTornamentTeamTemplatesTwoParticipant = new System.Windows.Forms.TextBox();
+			this.txtTornamentTeamTemplatesFourParticipant = new System.Windows.Forms.TextBox();
+			this.label74 = new System.Windows.Forms.Label();
+			this.txtTornamentTeamTemplatesThreeParticipant = new System.Windows.Forms.TextBox();
+			this.label69 = new System.Windows.Forms.Label();
+			this.txtWeaponSmith = new System.Windows.Forms.TextBox();
+			this.label75 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabCtrlCultureDetails.SuspendLayout();
 			this.tabPageBasicInfo.SuspendLayout();
@@ -268,14 +280,17 @@
 			this.tableLayoutPanel1.ColumnCount = 2;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 330F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Controls.Add(this.txtRebelsPartyTemplate, 1, 17);
-			this.tableLayoutPanel1.Controls.Add(this.txtMilitiaPartyTemplate, 1, 16);
-			this.tableLayoutPanel1.Controls.Add(this.txtEliteCaravanPartyTemplate, 1, 15);
-			this.tableLayoutPanel1.Controls.Add(this.txtCaravanPartyTemplate, 1, 14);
-			this.tableLayoutPanel1.Controls.Add(this.txtDefaultPartyTemplate, 1, 13);
-			this.tableLayoutPanel1.Controls.Add(this.txtVillagerPartyTemplate, 1, 12);
-			this.tableLayoutPanel1.Controls.Add(this.txtTownEdgeNumber, 1, 11);
-			this.tableLayoutPanel1.Controls.Add(this.txtRangedEliteMilitaTroop, 1, 9);
+			this.tableLayoutPanel1.Controls.Add(this.txtRangedMilitiaTroop, 1, 9);
+			this.tableLayoutPanel1.Controls.Add(this.label33, 0, 9);
+			this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
+			this.tableLayoutPanel1.Controls.Add(this.txtRebelsPartyTemplate, 1, 18);
+			this.tableLayoutPanel1.Controls.Add(this.txtMilitiaPartyTemplate, 1, 17);
+			this.tableLayoutPanel1.Controls.Add(this.txtEliteCaravanPartyTemplate, 1, 16);
+			this.tableLayoutPanel1.Controls.Add(this.txtCaravanPartyTemplate, 1, 15);
+			this.tableLayoutPanel1.Controls.Add(this.txtDefaultPartyTemplate, 1, 14);
+			this.tableLayoutPanel1.Controls.Add(this.txtVillagerPartyTemplate, 1, 13);
+			this.tableLayoutPanel1.Controls.Add(this.txtTownEdgeNumber, 1, 12);
+			this.tableLayoutPanel1.Controls.Add(this.txtRangedEliteMilitaTroop, 1, 10);
 			this.tableLayoutPanel1.Controls.Add(this.txtMeleeEliteMilitiaTroop, 1, 8);
 			this.tableLayoutPanel1.Controls.Add(this.txtMeleeMilitiaTroop, 1, 7);
 			this.tableLayoutPanel1.Controls.Add(this.txtBasicTroop, 1, 6);
@@ -290,23 +305,23 @@
 			this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
 			this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
 			this.tableLayoutPanel1.Controls.Add(this.label8, 0, 7);
-			this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
-			this.tableLayoutPanel1.Controls.Add(this.label10, 0, 9);
-			this.tableLayoutPanel1.Controls.Add(this.label12, 0, 11);
-			this.tableLayoutPanel1.Controls.Add(this.label13, 0, 12);
-			this.tableLayoutPanel1.Controls.Add(this.chkCanHaveSettlement, 1, 10);
-			this.tableLayoutPanel1.Controls.Add(this.label14, 0, 13);
-			this.tableLayoutPanel1.Controls.Add(this.label11, 0, 14);
-			this.tableLayoutPanel1.Controls.Add(this.label15, 0, 15);
-			this.tableLayoutPanel1.Controls.Add(this.label16, 0, 16);
-			this.tableLayoutPanel1.Controls.Add(this.label17, 0, 17);
+			this.tableLayoutPanel1.Controls.Add(this.label10, 0, 10);
+			this.tableLayoutPanel1.Controls.Add(this.label12, 0, 12);
+			this.tableLayoutPanel1.Controls.Add(this.label13, 0, 13);
+			this.tableLayoutPanel1.Controls.Add(this.chkCanHaveSettlement, 1, 11);
+			this.tableLayoutPanel1.Controls.Add(this.label14, 0, 14);
+			this.tableLayoutPanel1.Controls.Add(this.label11, 0, 15);
+			this.tableLayoutPanel1.Controls.Add(this.label15, 0, 16);
+			this.tableLayoutPanel1.Controls.Add(this.label16, 0, 17);
+			this.tableLayoutPanel1.Controls.Add(this.label17, 0, 18);
 			this.tableLayoutPanel1.Controls.Add(this.chkIsMainCulture, 1, 2);
 			this.tableLayoutPanel1.Controls.Add(this.txtID, 1, 0);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 6);
 			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 19;
+			this.tableLayoutPanel1.RowCount = 20;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -326,14 +341,46 @@
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 1087);
 			this.tableLayoutPanel1.TabIndex = 0;
+			// 
+			// txtRangedMilitiaTroop
+			// 
+			this.txtRangedMilitiaTroop.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtRangedMilitiaTroop.Location = new System.Drawing.Point(336, 438);
+			this.txtRangedMilitiaTroop.Margin = new System.Windows.Forms.Padding(6);
+			this.txtRangedMilitiaTroop.Name = "txtRangedMilitiaTroop";
+			this.txtRangedMilitiaTroop.Size = new System.Drawing.Size(780, 30);
+			this.txtRangedMilitiaTroop.TabIndex = 40;
+			// 
+			// label33
+			// 
+			this.label33.AutoSize = true;
+			this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label33.Location = new System.Drawing.Point(6, 432);
+			this.label33.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label33.Name = "label33";
+			this.label33.Size = new System.Drawing.Size(318, 48);
+			this.label33.TabIndex = 39;
+			this.label33.Text = "ranged militia troop";
+			this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label9.Location = new System.Drawing.Point(6, 384);
+			this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(318, 48);
+			this.label9.TabIndex = 38;
+			this.label9.Text = "melee elite militia troop";
+			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtRebelsPartyTemplate
 			// 
 			this.txtRebelsPartyTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtRebelsPartyTemplate.Location = new System.Drawing.Point(336, 822);
+			this.txtRebelsPartyTemplate.Location = new System.Drawing.Point(336, 870);
 			this.txtRebelsPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
 			this.txtRebelsPartyTemplate.Name = "txtRebelsPartyTemplate";
 			this.txtRebelsPartyTemplate.Size = new System.Drawing.Size(780, 30);
@@ -342,7 +389,7 @@
 			// txtMilitiaPartyTemplate
 			// 
 			this.txtMilitiaPartyTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtMilitiaPartyTemplate.Location = new System.Drawing.Point(336, 774);
+			this.txtMilitiaPartyTemplate.Location = new System.Drawing.Point(336, 822);
 			this.txtMilitiaPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
 			this.txtMilitiaPartyTemplate.Name = "txtMilitiaPartyTemplate";
 			this.txtMilitiaPartyTemplate.Size = new System.Drawing.Size(780, 30);
@@ -351,7 +398,7 @@
 			// txtEliteCaravanPartyTemplate
 			// 
 			this.txtEliteCaravanPartyTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtEliteCaravanPartyTemplate.Location = new System.Drawing.Point(336, 726);
+			this.txtEliteCaravanPartyTemplate.Location = new System.Drawing.Point(336, 774);
 			this.txtEliteCaravanPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
 			this.txtEliteCaravanPartyTemplate.Name = "txtEliteCaravanPartyTemplate";
 			this.txtEliteCaravanPartyTemplate.Size = new System.Drawing.Size(780, 30);
@@ -360,7 +407,7 @@
 			// txtCaravanPartyTemplate
 			// 
 			this.txtCaravanPartyTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtCaravanPartyTemplate.Location = new System.Drawing.Point(336, 678);
+			this.txtCaravanPartyTemplate.Location = new System.Drawing.Point(336, 726);
 			this.txtCaravanPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
 			this.txtCaravanPartyTemplate.Name = "txtCaravanPartyTemplate";
 			this.txtCaravanPartyTemplate.Size = new System.Drawing.Size(780, 30);
@@ -369,7 +416,7 @@
 			// txtDefaultPartyTemplate
 			// 
 			this.txtDefaultPartyTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtDefaultPartyTemplate.Location = new System.Drawing.Point(336, 630);
+			this.txtDefaultPartyTemplate.Location = new System.Drawing.Point(336, 678);
 			this.txtDefaultPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
 			this.txtDefaultPartyTemplate.Name = "txtDefaultPartyTemplate";
 			this.txtDefaultPartyTemplate.Size = new System.Drawing.Size(780, 30);
@@ -378,7 +425,7 @@
 			// txtVillagerPartyTemplate
 			// 
 			this.txtVillagerPartyTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtVillagerPartyTemplate.Location = new System.Drawing.Point(336, 582);
+			this.txtVillagerPartyTemplate.Location = new System.Drawing.Point(336, 630);
 			this.txtVillagerPartyTemplate.Margin = new System.Windows.Forms.Padding(6);
 			this.txtVillagerPartyTemplate.Name = "txtVillagerPartyTemplate";
 			this.txtVillagerPartyTemplate.Size = new System.Drawing.Size(780, 30);
@@ -387,7 +434,7 @@
 			// txtTownEdgeNumber
 			// 
 			this.txtTownEdgeNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtTownEdgeNumber.Location = new System.Drawing.Point(336, 534);
+			this.txtTownEdgeNumber.Location = new System.Drawing.Point(336, 582);
 			this.txtTownEdgeNumber.Margin = new System.Windows.Forms.Padding(6);
 			this.txtTownEdgeNumber.Name = "txtTownEdgeNumber";
 			this.txtTownEdgeNumber.Size = new System.Drawing.Size(780, 30);
@@ -396,7 +443,7 @@
 			// txtRangedEliteMilitaTroop
 			// 
 			this.txtRangedEliteMilitaTroop.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtRangedEliteMilitaTroop.Location = new System.Drawing.Point(336, 438);
+			this.txtRangedEliteMilitaTroop.Location = new System.Drawing.Point(336, 486);
 			this.txtRangedEliteMilitaTroop.Margin = new System.Windows.Forms.Padding(6);
 			this.txtRangedEliteMilitaTroop.Name = "txtRangedEliteMilitaTroop";
 			this.txtRangedEliteMilitaTroop.Size = new System.Drawing.Size(780, 30);
@@ -549,23 +596,11 @@
 			this.label8.Text = "melee militia troop";
 			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label9.Location = new System.Drawing.Point(6, 384);
-			this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(318, 48);
-			this.label9.TabIndex = 7;
-			this.label9.Text = "melee elite militia troop";
-			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
 			// label10
 			// 
 			this.label10.AutoSize = true;
 			this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label10.Location = new System.Drawing.Point(6, 432);
+			this.label10.Location = new System.Drawing.Point(6, 480);
 			this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(318, 48);
@@ -577,7 +612,7 @@
 			// 
 			this.label12.AutoSize = true;
 			this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label12.Location = new System.Drawing.Point(6, 528);
+			this.label12.Location = new System.Drawing.Point(6, 576);
 			this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(318, 48);
@@ -589,7 +624,7 @@
 			// 
 			this.label13.AutoSize = true;
 			this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label13.Location = new System.Drawing.Point(6, 576);
+			this.label13.Location = new System.Drawing.Point(6, 624);
 			this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(318, 48);
@@ -601,7 +636,7 @@
 			// 
 			this.chkCanHaveSettlement.AutoSize = true;
 			this.chkCanHaveSettlement.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.chkCanHaveSettlement.Location = new System.Drawing.Point(336, 486);
+			this.chkCanHaveSettlement.Location = new System.Drawing.Point(336, 534);
 			this.chkCanHaveSettlement.Margin = new System.Windows.Forms.Padding(6);
 			this.chkCanHaveSettlement.Name = "chkCanHaveSettlement";
 			this.chkCanHaveSettlement.Size = new System.Drawing.Size(780, 36);
@@ -613,7 +648,7 @@
 			// 
 			this.label14.AutoSize = true;
 			this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label14.Location = new System.Drawing.Point(6, 624);
+			this.label14.Location = new System.Drawing.Point(6, 672);
 			this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(318, 48);
@@ -625,7 +660,7 @@
 			// 
 			this.label11.AutoSize = true;
 			this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label11.Location = new System.Drawing.Point(6, 672);
+			this.label11.Location = new System.Drawing.Point(6, 720);
 			this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(318, 48);
@@ -637,7 +672,7 @@
 			// 
 			this.label15.AutoSize = true;
 			this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label15.Location = new System.Drawing.Point(6, 720);
+			this.label15.Location = new System.Drawing.Point(6, 768);
 			this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(318, 48);
@@ -649,7 +684,7 @@
 			// 
 			this.label16.AutoSize = true;
 			this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label16.Location = new System.Drawing.Point(6, 768);
+			this.label16.Location = new System.Drawing.Point(6, 816);
 			this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(318, 48);
@@ -661,7 +696,7 @@
 			// 
 			this.label17.AutoSize = true;
 			this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label17.Location = new System.Drawing.Point(6, 816);
+			this.label17.Location = new System.Drawing.Point(6, 864);
 			this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label17.Name = "label17";
 			this.label17.Size = new System.Drawing.Size(318, 48);
@@ -700,7 +735,7 @@
 			this.tabPageDetails1.Margin = new System.Windows.Forms.Padding(6);
 			this.tabPageDetails1.Name = "tabPageDetails1";
 			this.tabPageDetails1.Padding = new System.Windows.Forms.Padding(6);
-			this.tabPageDetails1.Size = new System.Drawing.Size(1134, 1179);
+			this.tabPageDetails1.Size = new System.Drawing.Size(1134, 1099);
 			this.tabPageDetails1.TabIndex = 1;
 			this.tabPageDetails1.Text = "Details Info #1";
 			// 
@@ -710,45 +745,57 @@
 			this.tableLayoutPanel4.ColumnCount = 2;
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 330F));
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel4.Controls.Add(this.txtDuelPreset, 1, 10);
-			this.tableLayoutPanel4.Controls.Add(this.label37, 0, 10);
-			this.tableLayoutPanel4.Controls.Add(this.txtBlackmith, 1, 14);
-			this.tableLayoutPanel4.Controls.Add(this.txtSteward, 1, 13);
-			this.tableLayoutPanel4.Controls.Add(this.txtGuard, 1, 12);
-			this.tableLayoutPanel4.Controls.Add(this.txtPrisonGuard, 1, 11);
-			this.tableLayoutPanel4.Controls.Add(this.txtVeteranCaravanGuard, 1, 9);
-			this.tableLayoutPanel4.Controls.Add(this.txtCaravanGuard, 1, 8);
-			this.tableLayoutPanel4.Controls.Add(this.txtArmedTrader, 1, 7);
-			this.tableLayoutPanel4.Controls.Add(this.txtCaravanMaster, 1, 6);
-			this.tableLayoutPanel4.Controls.Add(this.txtVillager, 1, 5);
+			this.tableLayoutPanel4.Controls.Add(this.txtTornamentTeamTemplatesThreeParticipant, 1, 7);
+			this.tableLayoutPanel4.Controls.Add(this.label74, 0, 7);
+			this.tableLayoutPanel4.Controls.Add(this.label41, 0, 6);
+			this.tableLayoutPanel4.Controls.Add(this.label35, 0, 5);
+			this.tableLayoutPanel4.Controls.Add(this.label34, 0, 8);
+			this.tableLayoutPanel4.Controls.Add(this.txtDuelPreset, 1, 14);
+			this.tableLayoutPanel4.Controls.Add(this.label37, 0, 14);
+			this.tableLayoutPanel4.Controls.Add(this.txtBlackmith, 1, 18);
+			this.tableLayoutPanel4.Controls.Add(this.txtSteward, 1, 17);
+			this.tableLayoutPanel4.Controls.Add(this.txtGuard, 1, 16);
+			this.tableLayoutPanel4.Controls.Add(this.txtPrisonGuard, 1, 15);
+			this.tableLayoutPanel4.Controls.Add(this.txtVeteranCaravanGuard, 1, 13);
+			this.tableLayoutPanel4.Controls.Add(this.txtCaravanGuard, 1, 12);
+			this.tableLayoutPanel4.Controls.Add(this.txtArmedTrader, 1, 11);
+			this.tableLayoutPanel4.Controls.Add(this.txtCaravanMaster, 1, 10);
+			this.tableLayoutPanel4.Controls.Add(this.txtVillager, 1, 9);
 			this.tableLayoutPanel4.Controls.Add(this.txtTournamentMaster, 1, 4);
 			this.tableLayoutPanel4.Controls.Add(this.txtEncounterBackgroundMesh, 1, 1);
 			this.tableLayoutPanel4.Controls.Add(this.label20, 0, 0);
 			this.tableLayoutPanel4.Controls.Add(this.label21, 0, 1);
 			this.tableLayoutPanel4.Controls.Add(this.label22, 0, 3);
 			this.tableLayoutPanel4.Controls.Add(this.label23, 0, 4);
-			this.tableLayoutPanel4.Controls.Add(this.label24, 0, 5);
-			this.tableLayoutPanel4.Controls.Add(this.label25, 0, 6);
-			this.tableLayoutPanel4.Controls.Add(this.label26, 0, 7);
-			this.tableLayoutPanel4.Controls.Add(this.label27, 0, 8);
-			this.tableLayoutPanel4.Controls.Add(this.label28, 0, 9);
-			this.tableLayoutPanel4.Controls.Add(this.label29, 0, 11);
-			this.tableLayoutPanel4.Controls.Add(this.label30, 0, 12);
-			this.tableLayoutPanel4.Controls.Add(this.label31, 0, 13);
-			this.tableLayoutPanel4.Controls.Add(this.label32, 0, 14);
+			this.tableLayoutPanel4.Controls.Add(this.label24, 0, 9);
+			this.tableLayoutPanel4.Controls.Add(this.label25, 0, 10);
+			this.tableLayoutPanel4.Controls.Add(this.label26, 0, 11);
+			this.tableLayoutPanel4.Controls.Add(this.label27, 0, 12);
+			this.tableLayoutPanel4.Controls.Add(this.label28, 0, 13);
+			this.tableLayoutPanel4.Controls.Add(this.label29, 0, 15);
+			this.tableLayoutPanel4.Controls.Add(this.label30, 0, 16);
+			this.tableLayoutPanel4.Controls.Add(this.label31, 0, 17);
+			this.tableLayoutPanel4.Controls.Add(this.label32, 0, 18);
 			this.tableLayoutPanel4.Controls.Add(this.txtProsperityBonus, 1, 0);
 			this.tableLayoutPanel4.Controls.Add(this.label36, 0, 2);
 			this.tableLayoutPanel4.Controls.Add(this.txtDefaultFaceKey, 1, 2);
 			this.tableLayoutPanel4.Controls.Add(this.txtText, 1, 3);
+			this.tableLayoutPanel4.Controls.Add(this.txtTornamentTeamTemplatesOneParticipant, 1, 5);
+			this.tableLayoutPanel4.Controls.Add(this.txtTornamentTeamTemplatesTwoParticipant, 1, 6);
+			this.tableLayoutPanel4.Controls.Add(this.txtTornamentTeamTemplatesFourParticipant, 1, 8);
 			this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 6);
 			this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(6);
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-			this.tableLayoutPanel4.RowCount = 16;
+			this.tableLayoutPanel4.RowCount = 20;
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 239F));
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 220F));
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -761,16 +808,49 @@
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-			this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1167);
+			this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1087);
 			this.tableLayoutPanel4.TabIndex = 1;
+			// 
+			// label41
+			// 
+			this.label41.AutoSize = true;
+			this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label41.Location = new System.Drawing.Point(6, 460);
+			this.label41.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label41.Name = "label41";
+			this.label41.Size = new System.Drawing.Size(318, 48);
+			this.label41.TabIndex = 47;
+			this.label41.Text = "tournament team templates two participant";
+			this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label35
+			// 
+			this.label35.AutoSize = true;
+			this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label35.Location = new System.Drawing.Point(6, 412);
+			this.label35.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label35.Name = "label35";
+			this.label35.Size = new System.Drawing.Size(318, 48);
+			this.label35.TabIndex = 46;
+			this.label35.Text = "tournament team templates one participant";
+			this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label34
+			// 
+			this.label34.AutoSize = true;
+			this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label34.Location = new System.Drawing.Point(6, 556);
+			this.label34.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label34.Name = "label34";
+			this.label34.Size = new System.Drawing.Size(318, 48);
+			this.label34.TabIndex = 42;
+			this.label34.Text = "tournament team templates four participant";
+			this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtDuelPreset
 			// 
 			this.txtDuelPreset.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtDuelPreset.Location = new System.Drawing.Point(336, 677);
+			this.txtDuelPreset.Location = new System.Drawing.Point(336, 850);
 			this.txtDuelPreset.Margin = new System.Windows.Forms.Padding(6);
 			this.txtDuelPreset.Name = "txtDuelPreset";
 			this.txtDuelPreset.Size = new System.Drawing.Size(780, 30);
@@ -780,18 +860,18 @@
 			// 
 			this.label37.AutoSize = true;
 			this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label37.Location = new System.Drawing.Point(6, 671);
+			this.label37.Location = new System.Drawing.Point(6, 844);
 			this.label37.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label37.Name = "label37";
 			this.label37.Size = new System.Drawing.Size(318, 48);
 			this.label37.TabIndex = 40;
-			this.label37.Text = "duel_preset";
+			this.label37.Text = "duel preset";
 			this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtBlackmith
 			// 
 			this.txtBlackmith.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtBlackmith.Location = new System.Drawing.Point(336, 869);
+			this.txtBlackmith.Location = new System.Drawing.Point(336, 1042);
 			this.txtBlackmith.Margin = new System.Windows.Forms.Padding(6);
 			this.txtBlackmith.Name = "txtBlackmith";
 			this.txtBlackmith.Size = new System.Drawing.Size(780, 30);
@@ -800,7 +880,7 @@
 			// txtSteward
 			// 
 			this.txtSteward.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtSteward.Location = new System.Drawing.Point(336, 821);
+			this.txtSteward.Location = new System.Drawing.Point(336, 994);
 			this.txtSteward.Margin = new System.Windows.Forms.Padding(6);
 			this.txtSteward.Name = "txtSteward";
 			this.txtSteward.Size = new System.Drawing.Size(780, 30);
@@ -809,7 +889,7 @@
 			// txtGuard
 			// 
 			this.txtGuard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtGuard.Location = new System.Drawing.Point(336, 773);
+			this.txtGuard.Location = new System.Drawing.Point(336, 946);
 			this.txtGuard.Margin = new System.Windows.Forms.Padding(6);
 			this.txtGuard.Name = "txtGuard";
 			this.txtGuard.Size = new System.Drawing.Size(780, 30);
@@ -818,7 +898,7 @@
 			// txtPrisonGuard
 			// 
 			this.txtPrisonGuard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtPrisonGuard.Location = new System.Drawing.Point(336, 725);
+			this.txtPrisonGuard.Location = new System.Drawing.Point(336, 898);
 			this.txtPrisonGuard.Margin = new System.Windows.Forms.Padding(6);
 			this.txtPrisonGuard.Name = "txtPrisonGuard";
 			this.txtPrisonGuard.Size = new System.Drawing.Size(780, 30);
@@ -827,7 +907,7 @@
 			// txtVeteranCaravanGuard
 			// 
 			this.txtVeteranCaravanGuard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtVeteranCaravanGuard.Location = new System.Drawing.Point(336, 629);
+			this.txtVeteranCaravanGuard.Location = new System.Drawing.Point(336, 802);
 			this.txtVeteranCaravanGuard.Margin = new System.Windows.Forms.Padding(6);
 			this.txtVeteranCaravanGuard.Name = "txtVeteranCaravanGuard";
 			this.txtVeteranCaravanGuard.Size = new System.Drawing.Size(780, 30);
@@ -836,7 +916,7 @@
 			// txtCaravanGuard
 			// 
 			this.txtCaravanGuard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtCaravanGuard.Location = new System.Drawing.Point(336, 581);
+			this.txtCaravanGuard.Location = new System.Drawing.Point(336, 754);
 			this.txtCaravanGuard.Margin = new System.Windows.Forms.Padding(6);
 			this.txtCaravanGuard.Name = "txtCaravanGuard";
 			this.txtCaravanGuard.Size = new System.Drawing.Size(780, 30);
@@ -845,7 +925,7 @@
 			// txtArmedTrader
 			// 
 			this.txtArmedTrader.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtArmedTrader.Location = new System.Drawing.Point(336, 533);
+			this.txtArmedTrader.Location = new System.Drawing.Point(336, 706);
 			this.txtArmedTrader.Margin = new System.Windows.Forms.Padding(6);
 			this.txtArmedTrader.Name = "txtArmedTrader";
 			this.txtArmedTrader.Size = new System.Drawing.Size(780, 30);
@@ -854,7 +934,7 @@
 			// txtCaravanMaster
 			// 
 			this.txtCaravanMaster.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtCaravanMaster.Location = new System.Drawing.Point(336, 485);
+			this.txtCaravanMaster.Location = new System.Drawing.Point(336, 658);
 			this.txtCaravanMaster.Margin = new System.Windows.Forms.Padding(6);
 			this.txtCaravanMaster.Name = "txtCaravanMaster";
 			this.txtCaravanMaster.Size = new System.Drawing.Size(780, 30);
@@ -863,7 +943,7 @@
 			// txtVillager
 			// 
 			this.txtVillager.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtVillager.Location = new System.Drawing.Point(336, 437);
+			this.txtVillager.Location = new System.Drawing.Point(336, 610);
 			this.txtVillager.Margin = new System.Windows.Forms.Padding(6);
 			this.txtVillager.Name = "txtVillager";
 			this.txtVillager.Size = new System.Drawing.Size(780, 30);
@@ -872,7 +952,7 @@
 			// txtTournamentMaster
 			// 
 			this.txtTournamentMaster.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtTournamentMaster.Location = new System.Drawing.Point(336, 389);
+			this.txtTournamentMaster.Location = new System.Drawing.Point(336, 370);
 			this.txtTournamentMaster.Margin = new System.Windows.Forms.Padding(6);
 			this.txtTournamentMaster.Name = "txtTournamentMaster";
 			this.txtTournamentMaster.Size = new System.Drawing.Size(780, 30);
@@ -918,7 +998,7 @@
 			this.label22.Location = new System.Drawing.Point(6, 144);
 			this.label22.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(318, 239);
+			this.label22.Size = new System.Drawing.Size(318, 220);
 			this.label22.TabIndex = 2;
 			this.label22.Text = "text";
 			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -927,7 +1007,7 @@
 			// 
 			this.label23.AutoSize = true;
 			this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label23.Location = new System.Drawing.Point(6, 383);
+			this.label23.Location = new System.Drawing.Point(6, 364);
 			this.label23.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label23.Name = "label23";
 			this.label23.Size = new System.Drawing.Size(318, 48);
@@ -939,7 +1019,7 @@
 			// 
 			this.label24.AutoSize = true;
 			this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label24.Location = new System.Drawing.Point(6, 431);
+			this.label24.Location = new System.Drawing.Point(6, 604);
 			this.label24.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label24.Name = "label24";
 			this.label24.Size = new System.Drawing.Size(318, 48);
@@ -951,7 +1031,7 @@
 			// 
 			this.label25.AutoSize = true;
 			this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label25.Location = new System.Drawing.Point(6, 479);
+			this.label25.Location = new System.Drawing.Point(6, 652);
 			this.label25.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label25.Name = "label25";
 			this.label25.Size = new System.Drawing.Size(318, 48);
@@ -963,7 +1043,7 @@
 			// 
 			this.label26.AutoSize = true;
 			this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label26.Location = new System.Drawing.Point(6, 527);
+			this.label26.Location = new System.Drawing.Point(6, 700);
 			this.label26.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label26.Name = "label26";
 			this.label26.Size = new System.Drawing.Size(318, 48);
@@ -975,43 +1055,43 @@
 			// 
 			this.label27.AutoSize = true;
 			this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label27.Location = new System.Drawing.Point(6, 575);
+			this.label27.Location = new System.Drawing.Point(6, 748);
 			this.label27.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label27.Name = "label27";
 			this.label27.Size = new System.Drawing.Size(318, 48);
 			this.label27.TabIndex = 7;
-			this.label27.Text = "caravan_guard";
+			this.label27.Text = "caravan guard";
 			this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label28
 			// 
 			this.label28.AutoSize = true;
 			this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label28.Location = new System.Drawing.Point(6, 623);
+			this.label28.Location = new System.Drawing.Point(6, 796);
 			this.label28.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label28.Name = "label28";
 			this.label28.Size = new System.Drawing.Size(318, 48);
 			this.label28.TabIndex = 8;
-			this.label28.Text = "veteran_caravan_guard";
+			this.label28.Text = "veteran caravan guard";
 			this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label29
 			// 
 			this.label29.AutoSize = true;
 			this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label29.Location = new System.Drawing.Point(6, 719);
+			this.label29.Location = new System.Drawing.Point(6, 892);
 			this.label29.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label29.Name = "label29";
 			this.label29.Size = new System.Drawing.Size(318, 48);
 			this.label29.TabIndex = 10;
-			this.label29.Text = "prison_guard";
+			this.label29.Text = "prison guard";
 			this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label30
 			// 
 			this.label30.AutoSize = true;
 			this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label30.Location = new System.Drawing.Point(6, 767);
+			this.label30.Location = new System.Drawing.Point(6, 940);
 			this.label30.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label30.Name = "label30";
 			this.label30.Size = new System.Drawing.Size(318, 48);
@@ -1023,7 +1103,7 @@
 			// 
 			this.label31.AutoSize = true;
 			this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label31.Location = new System.Drawing.Point(6, 815);
+			this.label31.Location = new System.Drawing.Point(6, 988);
 			this.label31.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label31.Name = "label31";
 			this.label31.Size = new System.Drawing.Size(318, 48);
@@ -1035,7 +1115,7 @@
 			// 
 			this.label32.AutoSize = true;
 			this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label32.Location = new System.Drawing.Point(6, 863);
+			this.label32.Location = new System.Drawing.Point(6, 1036);
 			this.label32.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label32.Name = "label32";
 			this.label32.Size = new System.Drawing.Size(318, 48);
@@ -1078,7 +1158,7 @@
 			this.txtText.Location = new System.Drawing.Point(336, 150);
 			this.txtText.Margin = new System.Windows.Forms.Padding(6);
 			this.txtText.Name = "txtText";
-			this.txtText.Size = new System.Drawing.Size(780, 227);
+			this.txtText.Size = new System.Drawing.Size(780, 208);
 			this.txtText.TabIndex = 39;
 			this.txtText.Text = "";
 			// 
@@ -1091,7 +1171,7 @@
 			this.tabPageDetails2.Location = new System.Drawing.Point(4, 32);
 			this.tabPageDetails2.Margin = new System.Windows.Forms.Padding(6);
 			this.tabPageDetails2.Name = "tabPageDetails2";
-			this.tabPageDetails2.Size = new System.Drawing.Size(1134, 1179);
+			this.tabPageDetails2.Size = new System.Drawing.Size(1134, 1099);
 			this.tabPageDetails2.TabIndex = 2;
 			this.tabPageDetails2.Text = "Details Info #2";
 			// 
@@ -1176,7 +1256,7 @@
 			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel5.Size = new System.Drawing.Size(1134, 1179);
+			this.tableLayoutPanel5.Size = new System.Drawing.Size(1134, 1099);
 			this.tableLayoutPanel5.TabIndex = 2;
 			// 
 			// txtMusician
@@ -1242,7 +1322,7 @@
 			this.label38.Name = "label38";
 			this.label38.Size = new System.Drawing.Size(318, 48);
 			this.label38.TabIndex = 40;
-			this.label38.Text = "villager_female_child";
+			this.label38.Text = "villager female child";
 			this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtPreacherNotary
@@ -1392,7 +1472,7 @@
 			this.label40.Name = "label40";
 			this.label40.Size = new System.Drawing.Size(318, 48);
 			this.label40.TabIndex = 1;
-			this.label40.Text = "townswoman_infant";
+			this.label40.Text = "townswoman infantry";
 			this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtTownswomanTeenager
@@ -1404,7 +1484,7 @@
 			this.txtTownswomanTeenager.Name = "txtTownswomanTeenager";
 			this.txtTownswomanTeenager.Size = new System.Drawing.Size(318, 48);
 			this.txtTownswomanTeenager.TabIndex = 2;
-			this.txtTownswomanTeenager.Text = "townswoman_teenager";
+			this.txtTownswomanTeenager.Text = "townswoman teenager";
 			this.txtTownswomanTeenager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label42
@@ -1428,7 +1508,7 @@
 			this.label43.Name = "label43";
 			this.label43.Size = new System.Drawing.Size(318, 48);
 			this.label43.TabIndex = 4;
-			this.label43.Text = "townsman_infant";
+			this.label43.Text = "townsman infantry";
 			this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label44
@@ -1440,7 +1520,7 @@
 			this.label44.Name = "label44";
 			this.label44.Size = new System.Drawing.Size(318, 48);
 			this.label44.TabIndex = 5;
-			this.label44.Text = "townsman_child";
+			this.label44.Text = "townsman child";
 			this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label45
@@ -1452,7 +1532,7 @@
 			this.label45.Name = "label45";
 			this.label45.Size = new System.Drawing.Size(318, 48);
 			this.label45.TabIndex = 6;
-			this.label45.Text = "village_woman";
+			this.label45.Text = "village woman";
 			this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label46
@@ -1464,7 +1544,7 @@
 			this.label46.Name = "label46";
 			this.label46.Size = new System.Drawing.Size(318, 48);
 			this.label46.TabIndex = 7;
-			this.label46.Text = "villager_male_child";
+			this.label46.Text = "villager male child";
 			this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label47
@@ -1476,7 +1556,7 @@
 			this.label47.Name = "label47";
 			this.label47.Size = new System.Drawing.Size(318, 48);
 			this.label47.TabIndex = 8;
-			this.label47.Text = "villager_male_teenager";
+			this.label47.Text = "villager male teenager";
 			this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label48
@@ -1488,7 +1568,7 @@
 			this.label48.Name = "label48";
 			this.label48.Size = new System.Drawing.Size(318, 48);
 			this.label48.TabIndex = 10;
-			this.label48.Text = "villager_female_teenager";
+			this.label48.Text = "villager female teenager";
 			this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label49
@@ -1500,7 +1580,7 @@
 			this.label49.Name = "label49";
 			this.label49.Size = new System.Drawing.Size(318, 48);
 			this.label49.TabIndex = 11;
-			this.label49.Text = "townsman_teenager";
+			this.label49.Text = "townsman teenager";
 			this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label50
@@ -1512,7 +1592,7 @@
 			this.label50.Name = "label50";
 			this.label50.Size = new System.Drawing.Size(318, 48);
 			this.label50.TabIndex = 14;
-			this.label50.Text = "ransom_broker";
+			this.label50.Text = "ransom broker";
 			this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label51
@@ -1524,7 +1604,7 @@
 			this.label51.Name = "label51";
 			this.label51.Size = new System.Drawing.Size(318, 48);
 			this.label51.TabIndex = 13;
-			this.label51.Text = "gangleader_bodyguard";
+			this.label51.Text = "gang leader bodyguard";
 			this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label52
@@ -1536,7 +1616,7 @@
 			this.label52.Name = "label52";
 			this.label52.Size = new System.Drawing.Size(318, 48);
 			this.label52.TabIndex = 15;
-			this.label52.Text = "merchant_notary";
+			this.label52.Text = "merchant notary";
 			this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label53
@@ -1548,7 +1628,7 @@
 			this.label53.Name = "label53";
 			this.label53.Size = new System.Drawing.Size(318, 48);
 			this.label53.TabIndex = 16;
-			this.label53.Text = "artisan_notary";
+			this.label53.Text = "artisan notary";
 			this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label54
@@ -1560,7 +1640,7 @@
 			this.label54.Name = "label54";
 			this.label54.Size = new System.Drawing.Size(318, 48);
 			this.label54.TabIndex = 17;
-			this.label54.Text = "preacher_notary";
+			this.label54.Text = "preacher notary";
 			this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtTownswoman
@@ -1581,7 +1661,7 @@
 			this.label55.Name = "label55";
 			this.label55.Size = new System.Drawing.Size(318, 48);
 			this.label55.TabIndex = 37;
-			this.label55.Text = "townswoman_child";
+			this.label55.Text = "townswoman child";
 			this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtTownswomanChild
@@ -1611,7 +1691,7 @@
 			this.label56.Name = "label56";
 			this.label56.Size = new System.Drawing.Size(322, 48);
 			this.label56.TabIndex = 43;
-			this.label56.Text = "rural_notable_notary";
+			this.label56.Text = "rural notable notary";
 			this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label57
@@ -1623,7 +1703,7 @@
 			this.label57.Name = "label57";
 			this.label57.Size = new System.Drawing.Size(322, 48);
 			this.label57.TabIndex = 44;
-			this.label57.Text = "shop_worker";
+			this.label57.Text = "shop worker";
 			this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label58
@@ -1671,7 +1751,7 @@
 			this.tabPageDetails3.Location = new System.Drawing.Point(4, 32);
 			this.tabPageDetails3.Margin = new System.Windows.Forms.Padding(6);
 			this.tabPageDetails3.Name = "tabPageDetails3";
-			this.tabPageDetails3.Size = new System.Drawing.Size(1134, 1179);
+			this.tabPageDetails3.Size = new System.Drawing.Size(1134, 1099);
 			this.tabPageDetails3.TabIndex = 3;
 			this.tabPageDetails3.Text = "Details Info #3";
 			// 
@@ -1680,12 +1760,15 @@
 			this.tableLayoutPanel6.ColumnCount = 2;
 			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 330F));
 			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel6.Controls.Add(this.txtWeaponPracticeStage2, 1, 10);
-			this.tableLayoutPanel6.Controls.Add(this.label61, 0, 10);
-			this.tableLayoutPanel6.Controls.Add(this.txtBoardGameType, 1, 13);
-			this.tableLayoutPanel6.Controls.Add(this.txtGearDummy, 1, 12);
-			this.tableLayoutPanel6.Controls.Add(this.txtWeaponPracticeStage3, 1, 11);
-			this.tableLayoutPanel6.Controls.Add(this.txtWeaponPracticeStage1, 1, 9);
+			this.tableLayoutPanel6.Controls.Add(this.label75, 0, 9);
+			this.tableLayoutPanel6.Controls.Add(this.txtWeaponSmith, 1, 9);
+			this.tableLayoutPanel6.Controls.Add(this.label69, 0, 8);
+			this.tableLayoutPanel6.Controls.Add(this.txtWeaponPracticeStage2, 1, 11);
+			this.tableLayoutPanel6.Controls.Add(this.label61, 0, 11);
+			this.tableLayoutPanel6.Controls.Add(this.txtBoardGameType, 1, 14);
+			this.tableLayoutPanel6.Controls.Add(this.txtGearDummy, 1, 13);
+			this.tableLayoutPanel6.Controls.Add(this.txtWeaponPracticeStage3, 1, 12);
+			this.tableLayoutPanel6.Controls.Add(this.txtWeaponPracticeStage1, 1, 10);
 			this.tableLayoutPanel6.Controls.Add(this.txtGearPracticeDummy, 1, 8);
 			this.tableLayoutPanel6.Controls.Add(this.txtFemaleDancer, 1, 7);
 			this.tableLayoutPanel6.Controls.Add(this.txtFemaleBeggar, 1, 6);
@@ -1699,11 +1782,10 @@
 			this.tableLayoutPanel6.Controls.Add(this.label66, 0, 5);
 			this.tableLayoutPanel6.Controls.Add(this.label67, 0, 6);
 			this.tableLayoutPanel6.Controls.Add(this.label68, 0, 7);
-			this.tableLayoutPanel6.Controls.Add(this.label69, 0, 8);
-			this.tableLayoutPanel6.Controls.Add(this.label70, 0, 9);
-			this.tableLayoutPanel6.Controls.Add(this.label71, 0, 11);
-			this.tableLayoutPanel6.Controls.Add(this.label72, 0, 12);
-			this.tableLayoutPanel6.Controls.Add(this.label73, 0, 13);
+			this.tableLayoutPanel6.Controls.Add(this.label70, 0, 10);
+			this.tableLayoutPanel6.Controls.Add(this.label71, 0, 12);
+			this.tableLayoutPanel6.Controls.Add(this.label72, 0, 13);
+			this.tableLayoutPanel6.Controls.Add(this.label73, 0, 14);
 			this.tableLayoutPanel6.Controls.Add(this.txtTavernWench, 1, 0);
 			this.tableLayoutPanel6.Controls.Add(this.label78, 0, 2);
 			this.tableLayoutPanel6.Controls.Add(this.txtHorseMerchant, 1, 2);
@@ -1712,7 +1794,8 @@
 			this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(6);
 			this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-			this.tableLayoutPanel6.RowCount = 15;
+			this.tableLayoutPanel6.RowCount = 16;
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -1728,16 +1811,13 @@
 			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
 			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-			this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1179);
+			this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1099);
 			this.tableLayoutPanel6.TabIndex = 3;
 			// 
 			// txtWeaponPracticeStage2
 			// 
 			this.txtWeaponPracticeStage2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtWeaponPracticeStage2.Location = new System.Drawing.Point(336, 486);
+			this.txtWeaponPracticeStage2.Location = new System.Drawing.Point(336, 534);
 			this.txtWeaponPracticeStage2.Margin = new System.Windows.Forms.Padding(6);
 			this.txtWeaponPracticeStage2.Name = "txtWeaponPracticeStage2";
 			this.txtWeaponPracticeStage2.Size = new System.Drawing.Size(792, 30);
@@ -1747,18 +1827,18 @@
 			// 
 			this.label61.AutoSize = true;
 			this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label61.Location = new System.Drawing.Point(6, 480);
+			this.label61.Location = new System.Drawing.Point(6, 528);
 			this.label61.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label61.Name = "label61";
 			this.label61.Size = new System.Drawing.Size(318, 48);
 			this.label61.TabIndex = 40;
-			this.label61.Text = "weapon_practice_stage_2";
+			this.label61.Text = "weapon practice stage #2";
 			this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtBoardGameType
 			// 
 			this.txtBoardGameType.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtBoardGameType.Location = new System.Drawing.Point(336, 630);
+			this.txtBoardGameType.Location = new System.Drawing.Point(336, 678);
 			this.txtBoardGameType.Margin = new System.Windows.Forms.Padding(6);
 			this.txtBoardGameType.Name = "txtBoardGameType";
 			this.txtBoardGameType.Size = new System.Drawing.Size(792, 30);
@@ -1767,7 +1847,7 @@
 			// txtGearDummy
 			// 
 			this.txtGearDummy.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtGearDummy.Location = new System.Drawing.Point(336, 582);
+			this.txtGearDummy.Location = new System.Drawing.Point(336, 630);
 			this.txtGearDummy.Margin = new System.Windows.Forms.Padding(6);
 			this.txtGearDummy.Name = "txtGearDummy";
 			this.txtGearDummy.Size = new System.Drawing.Size(792, 30);
@@ -1776,7 +1856,7 @@
 			// txtWeaponPracticeStage3
 			// 
 			this.txtWeaponPracticeStage3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtWeaponPracticeStage3.Location = new System.Drawing.Point(336, 534);
+			this.txtWeaponPracticeStage3.Location = new System.Drawing.Point(336, 582);
 			this.txtWeaponPracticeStage3.Margin = new System.Windows.Forms.Padding(6);
 			this.txtWeaponPracticeStage3.Name = "txtWeaponPracticeStage3";
 			this.txtWeaponPracticeStage3.Size = new System.Drawing.Size(792, 30);
@@ -1785,7 +1865,7 @@
 			// txtWeaponPracticeStage1
 			// 
 			this.txtWeaponPracticeStage1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtWeaponPracticeStage1.Location = new System.Drawing.Point(336, 438);
+			this.txtWeaponPracticeStage1.Location = new System.Drawing.Point(336, 486);
 			this.txtWeaponPracticeStage1.Margin = new System.Windows.Forms.Padding(6);
 			this.txtWeaponPracticeStage1.Name = "txtWeaponPracticeStage1";
 			this.txtWeaponPracticeStage1.Size = new System.Drawing.Size(792, 30);
@@ -1854,7 +1934,7 @@
 			this.label62.Name = "label62";
 			this.label62.Size = new System.Drawing.Size(318, 48);
 			this.label62.TabIndex = 0;
-			this.label62.Text = "tavern_wench";
+			this.label62.Text = "tavern wench";
 			this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label63
@@ -1914,7 +1994,7 @@
 			this.label67.Name = "label67";
 			this.label67.Size = new System.Drawing.Size(318, 48);
 			this.label67.TabIndex = 5;
-			this.label67.Text = "female_beggar";
+			this.label67.Text = "female beggar";
 			this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label68
@@ -1926,67 +2006,55 @@
 			this.label68.Name = "label68";
 			this.label68.Size = new System.Drawing.Size(318, 48);
 			this.label68.TabIndex = 6;
-			this.label68.Text = "female_dancer";
+			this.label68.Text = "female dancer";
 			this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label69
-			// 
-			this.label69.AutoSize = true;
-			this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label69.Location = new System.Drawing.Point(6, 384);
-			this.label69.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-			this.label69.Name = "label69";
-			this.label69.Size = new System.Drawing.Size(318, 48);
-			this.label69.TabIndex = 7;
-			this.label69.Text = "gear_practice_dummy";
-			this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label70
 			// 
 			this.label70.AutoSize = true;
 			this.label70.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label70.Location = new System.Drawing.Point(6, 432);
+			this.label70.Location = new System.Drawing.Point(6, 480);
 			this.label70.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label70.Name = "label70";
 			this.label70.Size = new System.Drawing.Size(318, 48);
 			this.label70.TabIndex = 8;
-			this.label70.Text = "weapon_practice_stage_1";
+			this.label70.Text = "weapon practice stage #1";
 			this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label71
 			// 
 			this.label71.AutoSize = true;
 			this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label71.Location = new System.Drawing.Point(6, 528);
+			this.label71.Location = new System.Drawing.Point(6, 576);
 			this.label71.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label71.Name = "label71";
 			this.label71.Size = new System.Drawing.Size(318, 48);
 			this.label71.TabIndex = 10;
-			this.label71.Text = "weapon_practice_stage_3";
+			this.label71.Text = "weapon practice stage #3";
 			this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label72
 			// 
 			this.label72.AutoSize = true;
 			this.label72.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label72.Location = new System.Drawing.Point(6, 576);
+			this.label72.Location = new System.Drawing.Point(6, 624);
 			this.label72.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label72.Name = "label72";
 			this.label72.Size = new System.Drawing.Size(318, 48);
 			this.label72.TabIndex = 11;
-			this.label72.Text = "gear_dummy";
+			this.label72.Text = "gear dummy";
 			this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// label73
 			// 
 			this.label73.AutoSize = true;
 			this.label73.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label73.Location = new System.Drawing.Point(6, 624);
+			this.label73.Location = new System.Drawing.Point(6, 672);
 			this.label73.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label73.Name = "label73";
 			this.label73.Size = new System.Drawing.Size(318, 48);
 			this.label73.TabIndex = 14;
-			this.label73.Text = "board_game_type";
+			this.label73.Text = "board game type";
 			this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtTavernWench
@@ -2007,7 +2075,7 @@
 			this.label78.Name = "label78";
 			this.label78.Size = new System.Drawing.Size(318, 48);
 			this.label78.TabIndex = 37;
-			this.label78.Text = "horseMerchant";
+			this.label78.Text = "horse merchant";
 			this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// txtHorseMerchant
@@ -2299,6 +2367,83 @@
 			this.btnSave.UseVisualStyleBackColor = true;
 			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
+			// txtTornamentTeamTemplatesOneParticipant
+			// 
+			this.txtTornamentTeamTemplatesOneParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesOneParticipant.Location = new System.Drawing.Point(333, 415);
+			this.txtTornamentTeamTemplatesOneParticipant.Name = "txtTornamentTeamTemplatesOneParticipant";
+			this.txtTornamentTeamTemplatesOneParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesOneParticipant.TabIndex = 48;
+			// 
+			// txtTornamentTeamTemplatesTwoParticipant
+			// 
+			this.txtTornamentTeamTemplatesTwoParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesTwoParticipant.Location = new System.Drawing.Point(333, 463);
+			this.txtTornamentTeamTemplatesTwoParticipant.Name = "txtTornamentTeamTemplatesTwoParticipant";
+			this.txtTornamentTeamTemplatesTwoParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesTwoParticipant.TabIndex = 49;
+			// 
+			// txtTornamentTeamTemplatesFourParticipant
+			// 
+			this.txtTornamentTeamTemplatesFourParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesFourParticipant.Location = new System.Drawing.Point(333, 559);
+			this.txtTornamentTeamTemplatesFourParticipant.Name = "txtTornamentTeamTemplatesFourParticipant";
+			this.txtTornamentTeamTemplatesFourParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesFourParticipant.TabIndex = 50;
+			// 
+			// label74
+			// 
+			this.label74.AutoSize = true;
+			this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label74.Location = new System.Drawing.Point(6, 508);
+			this.label74.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label74.Name = "label74";
+			this.label74.Size = new System.Drawing.Size(318, 48);
+			this.label74.TabIndex = 52;
+			this.label74.Text = "tournament team templates three participant";
+			this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// txtTornamentTeamTemplatesThreeParticipant
+			// 
+			this.txtTornamentTeamTemplatesThreeParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesThreeParticipant.Location = new System.Drawing.Point(333, 511);
+			this.txtTornamentTeamTemplatesThreeParticipant.Name = "txtTornamentTeamTemplatesThreeParticipant";
+			this.txtTornamentTeamTemplatesThreeParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesThreeParticipant.TabIndex = 53;
+			// 
+			// label69
+			// 
+			this.label69.AutoSize = true;
+			this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label69.Location = new System.Drawing.Point(6, 384);
+			this.label69.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label69.Name = "label69";
+			this.label69.Size = new System.Drawing.Size(318, 48);
+			this.label69.TabIndex = 43;
+			this.label69.Text = "gear practice dummy";
+			this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// txtWeaponSmith
+			// 
+			this.txtWeaponSmith.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtWeaponSmith.Location = new System.Drawing.Point(336, 438);
+			this.txtWeaponSmith.Margin = new System.Windows.Forms.Padding(6);
+			this.txtWeaponSmith.Name = "txtWeaponSmith";
+			this.txtWeaponSmith.Size = new System.Drawing.Size(792, 30);
+			this.txtWeaponSmith.TabIndex = 44;
+			// 
+			// label75
+			// 
+			this.label75.AutoSize = true;
+			this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label75.Location = new System.Drawing.Point(6, 432);
+			this.label75.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label75.Name = "label75";
+			this.label75.Size = new System.Drawing.Size(318, 48);
+			this.label75.TabIndex = 45;
+			this.label75.Text = "weaponsmith";
+			this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
 			// ucCultureDetails
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -2361,7 +2506,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -2494,7 +2638,6 @@
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
@@ -2506,5 +2649,19 @@
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button btnSave;
+		private System.Windows.Forms.TextBox txtRangedMilitiaTroop;
+		private System.Windows.Forms.Label label33;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label label34;
+		private System.Windows.Forms.Label label35;
+		private System.Windows.Forms.Label label41;
+		private System.Windows.Forms.TextBox txtTornamentTeamTemplatesOneParticipant;
+		private System.Windows.Forms.TextBox txtTornamentTeamTemplatesTwoParticipant;
+		private System.Windows.Forms.TextBox txtTornamentTeamTemplatesFourParticipant;
+		private System.Windows.Forms.Label label74;
+		private System.Windows.Forms.TextBox txtTornamentTeamTemplatesThreeParticipant;
+		private System.Windows.Forms.Label label69;
+		private System.Windows.Forms.TextBox txtWeaponSmith;
+		private System.Windows.Forms.Label label75;
 	}
 }
