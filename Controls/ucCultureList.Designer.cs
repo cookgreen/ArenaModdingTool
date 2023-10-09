@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.SuspendLayout();
-            // 
-            // treeView1
-            // 
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(372, 458);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
-            // 
-            // ucCultureList
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.treeView1);
-            this.Name = "ucCultureList";
-            this.Size = new System.Drawing.Size(372, 458);
-            this.ResumeLayout(false);
+			this.cultureList = new System.Windows.Forms.TreeView();
+			this.SuspendLayout();
+			// 
+			// cultureList
+			// 
+			this.cultureList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.cultureList.Location = new System.Drawing.Point(0, 0);
+			this.cultureList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cultureList.Name = "cultureList";
+			this.cultureList.Size = new System.Drawing.Size(496, 572);
+			this.cultureList.TabIndex = 0;
+			this.cultureList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.cultureList_AfterSelect);
+			// 
+			// ucCultureList
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.cultureList);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Name = "ucCultureList";
+			this.Size = new System.Drawing.Size(496, 572);
+			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView cultureList;
     }
 }

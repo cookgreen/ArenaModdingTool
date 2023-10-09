@@ -29,28 +29,28 @@ namespace ArenaModdingTool.Controls
 
         private void loadItems()
         {
-            treeView1.Nodes.Clear();
+            itemList.Nodes.Clear();
             foreach (var item in items.Items)
             {
-                var node = treeView1.Nodes.Add(item.name);
+                var node = itemList.Nodes.Add(item.name);
                 node.Tag = item;
             }
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void itemList_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node != null)
             {
                 MBBannerlordItem item = e.Node.Tag as MBBannerlordItem;
                 selectedItem = item;
-                index = treeView1.Nodes.IndexOf(e.Node);
+                index = itemList.Nodes.IndexOf(e.Node);
                 SelectedItemChanged?.Invoke(item, index);
             }
         }
 
         public void DeleteSelectedItem()
         {
-            treeView1.Nodes.RemoveAt(index);
+            itemList.Nodes.RemoveAt(index);
             items.Items.RemoveAt(index);
 
             XmlObjectLoader xmlObjectLoader = new XmlObjectLoader(items.FilePath);

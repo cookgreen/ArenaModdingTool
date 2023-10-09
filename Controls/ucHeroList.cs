@@ -36,7 +36,7 @@ namespace ArenaModdingTool.Controls
             }
         }
 
-        private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
+        private void heroList_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node != null)
             {

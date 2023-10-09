@@ -28,18 +28,18 @@ namespace ArenaModdingTool.Controls
 
         public void loadCultures()
         {
-            treeView1.Nodes.Clear();
+            cultureList.Nodes.Clear();
             foreach (var culture in cultures.Cultures)
             {
-                treeView1.Nodes.Add(culture.name);
+                cultureList.Nodes.Add(culture.name);
             }
         }
 
-        private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
+        private void cultureList_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node != null)
             {
-                int index = treeView1.Nodes.IndexOf(e.Node);
+                int index = cultureList.Nodes.IndexOf(e.Node);
 				selectedCulture = cultures.Cultures[index];
 				SelectCultureChanged?.Invoke(cultures.Cultures[index], index);
             }

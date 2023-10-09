@@ -22,25 +22,24 @@ namespace ArenaModdingTool.Controls
 
         private void InitializeComponent()
         {
-            this.npcCharacterList = new System.Windows.Forms.TreeView();
-            this.SuspendLayout();
-            // 
-            // npcCharacterList
-            // 
-            this.npcCharacterList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.npcCharacterList.Location = new System.Drawing.Point(0, 0);
-            this.npcCharacterList.Name = "npcCharacterList";
-            this.npcCharacterList.Size = new System.Drawing.Size(184, 410);
-            this.npcCharacterList.TabIndex = 0;
-            this.npcCharacterList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            // 
-            // ucNPCCharacterList
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.Controls.Add(this.npcCharacterList);
-            this.Name = "ucNPCCharacterList";
-            this.Size = new System.Drawing.Size(184, 410);
-            this.ResumeLayout(false);
+			this.npcCharacterList = new System.Windows.Forms.TreeView();
+			this.SuspendLayout();
+			// 
+			// npcCharacterList
+			// 
+			this.npcCharacterList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.npcCharacterList.Location = new System.Drawing.Point(0, 0);
+			this.npcCharacterList.Name = "npcCharacterList";
+			this.npcCharacterList.Size = new System.Drawing.Size(272, 410);
+			this.npcCharacterList.TabIndex = 0;
+			this.npcCharacterList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.npcCharacterList_AfterSelect);
+			// 
+			// ucNPCCharacterList
+			// 
+			this.Controls.Add(this.npcCharacterList);
+			this.Name = "ucNPCCharacterList";
+			this.Size = new System.Drawing.Size(272, 410);
+			this.ResumeLayout(false);
 
         }
 
@@ -80,7 +79,7 @@ namespace ArenaModdingTool.Controls
             loadNPCCharacters();
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void npcCharacterList_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node != null)
             {

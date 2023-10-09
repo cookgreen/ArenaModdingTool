@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.SuspendLayout();
-            // 
-            // treeView1
-            // 
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(330, 469);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            // 
-            // ucKingdomList
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.treeView1);
-            this.Name = "ucKingdomList";
-            this.Size = new System.Drawing.Size(330, 469);
-            this.ResumeLayout(false);
+			this.kingdomList = new System.Windows.Forms.TreeView();
+			this.SuspendLayout();
+			// 
+			// kingdomList
+			// 
+			this.kingdomList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.kingdomList.Location = new System.Drawing.Point(0, 0);
+			this.kingdomList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.kingdomList.Name = "kingdomList";
+			this.kingdomList.Size = new System.Drawing.Size(440, 586);
+			this.kingdomList.TabIndex = 0;
+			this.kingdomList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.kingdomList_AfterSelect);
+			// 
+			// ucKingdomList
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.kingdomList);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Name = "ucKingdomList";
+			this.Size = new System.Drawing.Size(440, 586);
+			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView kingdomList;
     }
 }

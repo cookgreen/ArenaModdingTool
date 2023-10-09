@@ -29,31 +29,33 @@ namespace ArenaModdingTool.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.SuspendLayout();
-            // 
-            // treeView1
-            // 
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(328, 463);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            // 
-            // ucItemsList
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.treeView1);
-            this.Name = "ucItemsList";
-            this.Size = new System.Drawing.Size(328, 463);
-            this.ResumeLayout(false);
+			this.itemList = new System.Windows.Forms.TreeView();
+			this.SuspendLayout();
+			// 
+			// itemList
+			// 
+			this.itemList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.itemList.Location = new System.Drawing.Point(0, 0);
+			this.itemList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.itemList.Name = "itemList";
+			this.itemList.Size = new System.Drawing.Size(437, 579);
+			this.itemList.TabIndex = 0;
+			this.itemList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.itemList_AfterSelect);
+			// 
+			// ucItemsList
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.itemList);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Name = "ucItemsList";
+			this.Size = new System.Drawing.Size(437, 579);
+			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView itemList;
     }
 }

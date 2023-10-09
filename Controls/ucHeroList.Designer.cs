@@ -39,7 +39,7 @@
             this.heroList.Name = "heroList";
             this.heroList.Size = new System.Drawing.Size(463, 550);
             this.heroList.TabIndex = 0;
-            this.heroList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
+            this.heroList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.heroList_AfterSelect);
             // 
             // ucHeroList
             // 

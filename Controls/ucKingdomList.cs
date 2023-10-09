@@ -26,18 +26,18 @@ namespace ArenaModdingTool.Controls
         {
             this.kingdoms = kingdoms;
 
-            treeView1.Nodes.Clear();
+            kingdomList.Nodes.Clear();
             foreach (var kingdom in kingdoms.Kingdoms)
             {
-                treeView1.Nodes.Add(kingdom.name);
+                kingdomList.Nodes.Add(kingdom.name);
             }
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void kingdomList_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node != null)
             {
-                int index = treeView1.Nodes.IndexOf(e.Node);
+                int index = kingdomList.Nodes.IndexOf(e.Node);
                 SelectKingdomChanged?.Invoke(kingdoms.Kingdoms[index], index);
             }
         }
