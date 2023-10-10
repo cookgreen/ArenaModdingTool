@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ArenaModdingTool
 {
@@ -59,6 +60,21 @@ namespace ArenaModdingTool
 				}
 			}
 			return builder.ToString();
+		}
+
+		public static void ShowMessageInfo(string info, string title)
+		{
+			MessageBox.Show(info, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+
+		public static void ShowMessageError(string error, string title)
+		{
+			MessageBox.Show(error, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+		}
+
+		public static DialogResult ShowMessageQuestion(string notice, string title)
+		{
+			return MessageBox.Show(notice, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 	}
 }
