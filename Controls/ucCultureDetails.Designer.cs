@@ -71,6 +71,8 @@
 			this.txtID = new System.Windows.Forms.TextBox();
 			this.tabPageDetails1 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+			this.txtTornamentTeamTemplatesThreeParticipant = new System.Windows.Forms.TextBox();
+			this.label74 = new System.Windows.Forms.Label();
 			this.label41 = new System.Windows.Forms.Label();
 			this.label35 = new System.Windows.Forms.Label();
 			this.label34 = new System.Windows.Forms.Label();
@@ -104,6 +106,9 @@
 			this.label36 = new System.Windows.Forms.Label();
 			this.txtDefaultFaceKey = new System.Windows.Forms.TextBox();
 			this.txtText = new System.Windows.Forms.RichTextBox();
+			this.txtTornamentTeamTemplatesOneParticipant = new System.Windows.Forms.TextBox();
+			this.txtTornamentTeamTemplatesTwoParticipant = new System.Windows.Forms.TextBox();
+			this.txtTornamentTeamTemplatesFourParticipant = new System.Windows.Forms.TextBox();
 			this.tabPageDetails2 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
 			this.txtMusician = new System.Windows.Forms.TextBox();
@@ -154,6 +159,9 @@
 			this.label60 = new System.Windows.Forms.Label();
 			this.tabPageDetails3 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+			this.label75 = new System.Windows.Forms.Label();
+			this.txtWeaponSmith = new System.Windows.Forms.TextBox();
+			this.label69 = new System.Windows.Forms.Label();
 			this.txtWeaponPracticeStage2 = new System.Windows.Forms.TextBox();
 			this.label61 = new System.Windows.Forms.Label();
 			this.txtBoardGameType = new System.Windows.Forms.TextBox();
@@ -204,14 +212,6 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-			this.txtTornamentTeamTemplatesOneParticipant = new System.Windows.Forms.TextBox();
-			this.txtTornamentTeamTemplatesTwoParticipant = new System.Windows.Forms.TextBox();
-			this.txtTornamentTeamTemplatesFourParticipant = new System.Windows.Forms.TextBox();
-			this.label74 = new System.Windows.Forms.Label();
-			this.txtTornamentTeamTemplatesThreeParticipant = new System.Windows.Forms.TextBox();
-			this.label69 = new System.Windows.Forms.Label();
-			this.txtWeaponSmith = new System.Windows.Forms.TextBox();
-			this.label75 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabCtrlCultureDetails.SuspendLayout();
 			this.tabPageBasicInfo.SuspendLayout();
@@ -811,6 +811,26 @@
 			this.tableLayoutPanel4.Size = new System.Drawing.Size(1122, 1087);
 			this.tableLayoutPanel4.TabIndex = 1;
 			// 
+			// txtTornamentTeamTemplatesThreeParticipant
+			// 
+			this.txtTornamentTeamTemplatesThreeParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesThreeParticipant.Location = new System.Drawing.Point(333, 511);
+			this.txtTornamentTeamTemplatesThreeParticipant.Name = "txtTornamentTeamTemplatesThreeParticipant";
+			this.txtTornamentTeamTemplatesThreeParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesThreeParticipant.TabIndex = 53;
+			// 
+			// label74
+			// 
+			this.label74.AutoSize = true;
+			this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label74.Location = new System.Drawing.Point(6, 508);
+			this.label74.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label74.Name = "label74";
+			this.label74.Size = new System.Drawing.Size(318, 48);
+			this.label74.TabIndex = 52;
+			this.label74.Text = "tournament team templates three participant";
+			this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
 			// label41
 			// 
 			this.label41.AutoSize = true;
@@ -1161,6 +1181,30 @@
 			this.txtText.Size = new System.Drawing.Size(780, 208);
 			this.txtText.TabIndex = 39;
 			this.txtText.Text = "";
+			// 
+			// txtTornamentTeamTemplatesOneParticipant
+			// 
+			this.txtTornamentTeamTemplatesOneParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesOneParticipant.Location = new System.Drawing.Point(333, 415);
+			this.txtTornamentTeamTemplatesOneParticipant.Name = "txtTornamentTeamTemplatesOneParticipant";
+			this.txtTornamentTeamTemplatesOneParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesOneParticipant.TabIndex = 48;
+			// 
+			// txtTornamentTeamTemplatesTwoParticipant
+			// 
+			this.txtTornamentTeamTemplatesTwoParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesTwoParticipant.Location = new System.Drawing.Point(333, 463);
+			this.txtTornamentTeamTemplatesTwoParticipant.Name = "txtTornamentTeamTemplatesTwoParticipant";
+			this.txtTornamentTeamTemplatesTwoParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesTwoParticipant.TabIndex = 49;
+			// 
+			// txtTornamentTeamTemplatesFourParticipant
+			// 
+			this.txtTornamentTeamTemplatesFourParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtTornamentTeamTemplatesFourParticipant.Location = new System.Drawing.Point(333, 559);
+			this.txtTornamentTeamTemplatesFourParticipant.Name = "txtTornamentTeamTemplatesFourParticipant";
+			this.txtTornamentTeamTemplatesFourParticipant.Size = new System.Drawing.Size(786, 30);
+			this.txtTornamentTeamTemplatesFourParticipant.TabIndex = 50;
 			// 
 			// tabPageDetails2
 			// 
@@ -1814,6 +1858,39 @@
 			this.tableLayoutPanel6.Size = new System.Drawing.Size(1134, 1099);
 			this.tableLayoutPanel6.TabIndex = 3;
 			// 
+			// label75
+			// 
+			this.label75.AutoSize = true;
+			this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label75.Location = new System.Drawing.Point(6, 432);
+			this.label75.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label75.Name = "label75";
+			this.label75.Size = new System.Drawing.Size(318, 48);
+			this.label75.TabIndex = 45;
+			this.label75.Text = "weaponsmith";
+			this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// txtWeaponSmith
+			// 
+			this.txtWeaponSmith.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtWeaponSmith.Location = new System.Drawing.Point(336, 438);
+			this.txtWeaponSmith.Margin = new System.Windows.Forms.Padding(6);
+			this.txtWeaponSmith.Name = "txtWeaponSmith";
+			this.txtWeaponSmith.Size = new System.Drawing.Size(792, 30);
+			this.txtWeaponSmith.TabIndex = 44;
+			// 
+			// label69
+			// 
+			this.label69.AutoSize = true;
+			this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label69.Location = new System.Drawing.Point(6, 384);
+			this.label69.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label69.Name = "label69";
+			this.label69.Size = new System.Drawing.Size(318, 48);
+			this.label69.TabIndex = 43;
+			this.label69.Text = "gear practice dummy";
+			this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
 			// txtWeaponPracticeStage2
 			// 
 			this.txtWeaponPracticeStage2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2366,83 +2443,6 @@
 			this.btnSave.Text = "Save";
 			this.btnSave.UseVisualStyleBackColor = true;
 			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-			// 
-			// txtTornamentTeamTemplatesOneParticipant
-			// 
-			this.txtTornamentTeamTemplatesOneParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtTornamentTeamTemplatesOneParticipant.Location = new System.Drawing.Point(333, 415);
-			this.txtTornamentTeamTemplatesOneParticipant.Name = "txtTornamentTeamTemplatesOneParticipant";
-			this.txtTornamentTeamTemplatesOneParticipant.Size = new System.Drawing.Size(786, 30);
-			this.txtTornamentTeamTemplatesOneParticipant.TabIndex = 48;
-			// 
-			// txtTornamentTeamTemplatesTwoParticipant
-			// 
-			this.txtTornamentTeamTemplatesTwoParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtTornamentTeamTemplatesTwoParticipant.Location = new System.Drawing.Point(333, 463);
-			this.txtTornamentTeamTemplatesTwoParticipant.Name = "txtTornamentTeamTemplatesTwoParticipant";
-			this.txtTornamentTeamTemplatesTwoParticipant.Size = new System.Drawing.Size(786, 30);
-			this.txtTornamentTeamTemplatesTwoParticipant.TabIndex = 49;
-			// 
-			// txtTornamentTeamTemplatesFourParticipant
-			// 
-			this.txtTornamentTeamTemplatesFourParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtTornamentTeamTemplatesFourParticipant.Location = new System.Drawing.Point(333, 559);
-			this.txtTornamentTeamTemplatesFourParticipant.Name = "txtTornamentTeamTemplatesFourParticipant";
-			this.txtTornamentTeamTemplatesFourParticipant.Size = new System.Drawing.Size(786, 30);
-			this.txtTornamentTeamTemplatesFourParticipant.TabIndex = 50;
-			// 
-			// label74
-			// 
-			this.label74.AutoSize = true;
-			this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label74.Location = new System.Drawing.Point(6, 508);
-			this.label74.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-			this.label74.Name = "label74";
-			this.label74.Size = new System.Drawing.Size(318, 48);
-			this.label74.TabIndex = 52;
-			this.label74.Text = "tournament team templates three participant";
-			this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// txtTornamentTeamTemplatesThreeParticipant
-			// 
-			this.txtTornamentTeamTemplatesThreeParticipant.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtTornamentTeamTemplatesThreeParticipant.Location = new System.Drawing.Point(333, 511);
-			this.txtTornamentTeamTemplatesThreeParticipant.Name = "txtTornamentTeamTemplatesThreeParticipant";
-			this.txtTornamentTeamTemplatesThreeParticipant.Size = new System.Drawing.Size(786, 30);
-			this.txtTornamentTeamTemplatesThreeParticipant.TabIndex = 53;
-			// 
-			// label69
-			// 
-			this.label69.AutoSize = true;
-			this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label69.Location = new System.Drawing.Point(6, 384);
-			this.label69.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-			this.label69.Name = "label69";
-			this.label69.Size = new System.Drawing.Size(318, 48);
-			this.label69.TabIndex = 43;
-			this.label69.Text = "gear practice dummy";
-			this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// txtWeaponSmith
-			// 
-			this.txtWeaponSmith.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txtWeaponSmith.Location = new System.Drawing.Point(336, 438);
-			this.txtWeaponSmith.Margin = new System.Windows.Forms.Padding(6);
-			this.txtWeaponSmith.Name = "txtWeaponSmith";
-			this.txtWeaponSmith.Size = new System.Drawing.Size(792, 30);
-			this.txtWeaponSmith.TabIndex = 44;
-			// 
-			// label75
-			// 
-			this.label75.AutoSize = true;
-			this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label75.Location = new System.Drawing.Point(6, 432);
-			this.label75.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-			this.label75.Name = "label75";
-			this.label75.Size = new System.Drawing.Size(318, 48);
-			this.label75.TabIndex = 45;
-			this.label75.Text = "weaponsmith";
-			this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// ucCultureDetails
 			// 

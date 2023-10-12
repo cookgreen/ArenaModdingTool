@@ -501,7 +501,7 @@ namespace ArenaModdingTool.Controls
 			this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "ucItemsDetails";
-			this.Size = new System.Drawing.Size(995, 870);
+			this.Size = new System.Drawing.Size(974, 849);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
 			this.tableLayoutPanel1.ResumeLayout(false);

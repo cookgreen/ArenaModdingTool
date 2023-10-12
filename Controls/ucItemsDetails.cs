@@ -31,37 +31,94 @@ namespace ArenaModdingTool.Controls
             this.item = item;
             this.addEditState = addEditState;
 
-            if (item != null)
+            switch(addEditState)
             {
-                decimal val;
-                bool bll;
-                txtId.Text = item.id;
-                txtName.Text = item.name;
-                txtBodyName.Text = item.body_name;
-                txtMesh.Text = item.mesh;
-                cmbCulture.SelectedItem = item.culture;
-                if (decimal.TryParse(item.value, out val))
-                {
-                    numValue.Value = val;
-                }
-                if (bool.TryParse(item.is_merchandise, out bll))
-                {
-                    chkIsMerchandise.Checked = bll;
-                }
-                if (decimal.TryParse(item.weight, out val))
-                {
-                    numWeight.Value = val;
-                }
-                if (decimal.TryParse(item.difficulty, out val))
-                {
-                    numDifficulty.Value = val;
-                }
-                txtType.Text = item.Type;
-                txtAmmoOffset.Text = item.AmmoOffset;
-                txtItemHolsters.Text = item.item_holsters;
-                txtHolsterPositionShift.Text = item.holster_position_shift;
+                case AddEditState.Add:
+                    btnEditItemComponent.Text = Helper.LOC("str_item_details_add_item_component");
+                    item = new MBBannerlordItem();
+                    enableEditor();
+                    break;
+                case AddEditState.Edit:
+					btnEditItemComponent.Text = Helper.LOC("str_item_details_edit_item_component");
+                    loadItemDetails();
+					enableEditor();
+					break;
+                case AddEditState.View:
+                    btnEditItemComponent.Enabled = false;
+					disableEditor();
+					break;
             }
         }
+
+		private void enableEditor()
+		{
+            btnEditItemComponent.Enabled = true;
+            btnSave.Enabled = true;
+
+            txtAmmoOffset.Enabled = true;
+            txtBodyName.Enabled = true;
+            txtHolsterPositionShift.Enabled = true;
+            txtId.Enabled = true;
+            txtItemHolsters.Enabled = true;
+            txtMesh.Enabled = true;
+            txtName.Enabled = true;
+            txtType.Enabled = true;
+
+            chkIsMerchandise.Enabled = true;
+            chkMultiplayerItem.Enabled = true;
+		}
+
+		private void disableEditor()
+		{
+			btnEditItemComponent.Enabled = false;
+			btnSave.Enabled = false;
+
+			txtAmmoOffset.Enabled = false;
+			txtBodyName.Enabled = false;
+			txtHolsterPositionShift.Enabled = false;
+			txtId.Enabled = false;
+			txtItemHolsters.Enabled = false;
+			txtMesh.Enabled = false;
+			txtName.Enabled = false;
+			txtType.Enabled = false;
+
+			chkIsMerchandise.Enabled = false;
+			chkMultiplayerItem.Enabled = false;
+		}
+
+		private void loadItemDetails()
+		{
+			if (item != null)
+			{
+				decimal val;
+				bool bll;
+				txtId.Text = item.id;
+				txtName.Text = item.name;
+				txtBodyName.Text = item.body_name;
+				txtMesh.Text = item.mesh;
+				cmbCulture.SelectedItem = item.culture;
+				if (decimal.TryParse(item.value, out val))
+				{
+					numValue.Value = val;
+				}
+				if (bool.TryParse(item.is_merchandise, out bll))
+				{
+					chkIsMerchandise.Checked = bll;
+				}
+				if (decimal.TryParse(item.weight, out val))
+				{
+					numWeight.Value = val;
+				}
+				if (decimal.TryParse(item.difficulty, out val))
+				{
+					numDifficulty.Value = val;
+				}
+				txtType.Text = item.Type;
+				txtAmmoOffset.Text = item.AmmoOffset;
+				txtItemHolsters.Text = item.item_holsters;
+				txtHolsterPositionShift.Text = item.holster_position_shift;
+			}
+		}
 
 		private void initializeTooltip()
 		{
@@ -162,13 +219,6 @@ namespace ArenaModdingTool.Controls
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            switch(addEditState)
-            {
-                case AddEditState.Add:
-                    item = new MBBannerlordItem();
-                    break;
-            }
-
             item.id = txtId.Text;
             item.name = txtName.Text;
             item.body_name = txtBodyName.Text;

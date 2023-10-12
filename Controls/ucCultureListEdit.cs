@@ -28,8 +28,8 @@ namespace ArenaModdingTool.Controls
             state = AddEditState.View;
 
             cultureList = new ucCultureList(cultures);
-            panel2.Controls.Clear();
-            panel2.Controls.Add(cultureList);
+            panelList.Controls.Clear();
+            panelList.Controls.Add(cultureList);
             cultureList.Dock = DockStyle.Fill;
 
             cultureList.SelectCultureChanged += CultureList_SelectCultureChanged;

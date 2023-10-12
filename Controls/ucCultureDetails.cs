@@ -34,13 +34,202 @@ namespace ArenaModdingTool.Controls
 			{
 				case AddEditState.Add:
 					this.culture = new MBBannerlordCulture();
+					enableEditor();
 					break;
 				case AddEditState.Edit:
 					this.culture = culture;
 					loadCultureDetails();
+					enableEditor();
+					break;
+				case AddEditState.View:
+					disableEditor();
 					break;
 			}
-        }
+		}
+
+		private void enableEditor()
+		{
+			btnSave.Enabled = true;
+			btnAddClanName.Enabled = true;
+			btnAddFemaleName.Enabled = true;
+			btnAddMaleName.Enabled = true;
+			btnDeleteClanName.Enabled = true;
+			btnDeleteFemaleName.Enabled = true;
+			btnDeleteMaleName.Enabled = true;
+			btnModifyClanName.Enabled = true;
+			btnModifyMaleName.Enabled = true;
+
+			txtArmedTrader.Enabled = true;
+			txtArmorer.Enabled = true;
+			txtArtisanNotary.Enabled = true;
+			txtBarber.Enabled = true;
+			txtBasicTroop.Enabled = true;
+			txtBeggar.Enabled = true;
+			txtBlackmith.Enabled = true;
+			txtBoardGameType.Enabled = true;
+			txtCaravanGuard.Enabled = true;
+			txtCaravanMaster.Enabled = true;
+			txtCaravanPartyTemplate.Enabled = true;
+			txtColor.Enabled = true;
+			txtColor2.Enabled = true;
+			txtDefaultFaceKey.Enabled = true;
+			txtDefaultPartyTemplate.Enabled = true;
+			txtDuelPreset.Enabled = true;
+			txtEliteBasicTroop.Enabled = true;
+			txtEliteCaravanPartyTemplate.Enabled = true;
+			txtEncounterBackgroundMesh.Enabled = true;
+			txtFemaleBeggar.Enabled = true;
+			txtFemaleDancer.Enabled = true;
+			txtGangleaderBodyGuard.Enabled = true;
+			txtGearDummy.Enabled = true;
+			txtGearPracticeDummy.Enabled = true;
+			txtGuard.Enabled = true;
+			txtHorseMerchant.Enabled = true;
+			txtID.Enabled = true;
+			txtMeleeEliteMilitiaTroop.Enabled = true;
+			txtMeleeMilitiaTroop.Enabled = true;
+			txtMerchant.Enabled = true;
+			txtMerchantNotary.Enabled = true;
+			txtMilitiaPartyTemplate.Enabled = true;
+			txtMusician.Enabled = true;
+			txtName.Enabled = true;
+			txtPreacherNotary.Enabled = true;
+			txtPrisonGuard.Enabled = true;
+			txtProsperityBonus.Enabled = true;
+			txtRangedEliteMilitaTroop.Enabled = true;
+			txtRangedMilitiaTroop.Enabled = true;
+			txtRansomBroker.Enabled = true;
+			txtRebelsPartyTemplate.Enabled = true;
+			txtRuralNotableNotary.Enabled = true;
+			txtRebelsPartyTemplate.Enabled = true;
+			txtShopWorker.Enabled = true;
+			txtSteward.Enabled = true;
+			txtTarvenkeeper.Enabled = true;
+			txtTavernGameHost.Enabled = true;
+			txtTavernWench.Enabled = true;
+			txtText.Enabled = true;
+			txtTornamentTeamTemplatesFourParticipant.Enabled = true;
+			txtTornamentTeamTemplatesOneParticipant.Enabled = true;
+			txtTornamentTeamTemplatesThreeParticipant.Enabled = true;
+			txtTornamentTeamTemplatesTwoParticipant.Enabled = true;
+			txtTournamentMaster.Enabled = true;
+			txtTownEdgeNumber.Enabled = true;
+			txtTownsman.Enabled = true;
+			txtTownsmanChild.Enabled = true;
+			txtTownsmanInfant.Enabled = true;
+			txtTownsmanTeenager.Enabled = true;
+			txtTownswoman.Enabled = true;
+			txtTownswomanChild.Enabled = true;
+			txtTownswomanInfant.Enabled = true;
+			txtTownswomanTeenager.Enabled = true;
+			txtVeteranCaravanGuard.Enabled = true;
+			txtVillager.Enabled = true;
+			txtVillagerFemaleChild.Enabled = true;
+			txtVillagerFemaleTeenager.Enabled = true;
+			txtVillagerMaleChild.Enabled = true;
+			txtVillagerMaleTeenager.Enabled = true;
+			txtVillagerPartyTemplate.Enabled = true;
+			txtVillageWoman.Enabled = true;
+			txtWeaponPracticeStage1.Enabled = true;
+			txtWeaponPracticeStage2.Enabled = true;
+			txtWeaponPracticeStage3.Enabled = true;
+			txtWeaponSmith.Enabled = true;
+
+			chkCanHaveSettlement.Enabled = true;
+			chkIsMainCulture.Enabled = true;
+		}
+
+		private void disableEditor()
+		{
+			btnSave.Enabled = false;
+			btnAddClanName.Enabled = false;
+			btnAddFemaleName.Enabled = false;
+			btnAddMaleName.Enabled = false;
+			btnDeleteClanName.Enabled = false;
+			btnDeleteFemaleName.Enabled = false;
+			btnDeleteMaleName.Enabled = false;
+			btnModifyClanName.Enabled = false;
+			btnModifyMaleName.Enabled= false;
+
+			txtArmedTrader.Enabled = false;
+			txtArmorer.Enabled = false;
+			txtArtisanNotary.Enabled = false;
+			txtBarber.Enabled = false;
+			txtBasicTroop.Enabled = false;
+			txtBeggar.Enabled = false;
+			txtBlackmith.Enabled = false;
+			txtBoardGameType.Enabled = false;
+			txtCaravanGuard.Enabled = false;
+			txtCaravanMaster.Enabled = false;
+			txtCaravanPartyTemplate.Enabled = false;
+			txtColor.Enabled = false;
+			txtColor2.Enabled = false;
+			txtDefaultFaceKey.Enabled = false;
+			txtDefaultPartyTemplate.Enabled = false;
+			txtDuelPreset.Enabled = false;
+			txtEliteBasicTroop.Enabled = false;
+			txtEliteCaravanPartyTemplate.Enabled = false;
+			txtEncounterBackgroundMesh.Enabled = false;
+			txtFemaleBeggar.Enabled = false;
+			txtFemaleDancer.Enabled = false;
+			txtGangleaderBodyGuard.Enabled = false;
+			txtGearDummy.Enabled = false;
+			txtGearPracticeDummy.Enabled = false;
+			txtGuard.Enabled = false;
+			txtHorseMerchant.Enabled = false;
+			txtID.Enabled = false;
+			txtMeleeEliteMilitiaTroop.Enabled = false;
+			txtMeleeMilitiaTroop.Enabled = false;
+			txtMerchant.Enabled = false;
+			txtMerchantNotary.Enabled = false;
+			txtMilitiaPartyTemplate.Enabled = false;
+			txtMusician.Enabled = false;
+			txtName.Enabled = false;
+			txtPreacherNotary.Enabled = false;
+			txtPrisonGuard.Enabled = false;
+			txtProsperityBonus.Enabled = false;
+			txtRangedEliteMilitaTroop.Enabled = false;
+			txtRangedMilitiaTroop.Enabled = false;
+			txtRansomBroker.Enabled = false;
+			txtRebelsPartyTemplate.Enabled = false;
+			txtRuralNotableNotary.Enabled = false;
+			txtRebelsPartyTemplate.Enabled = false;
+			txtShopWorker.Enabled = false;
+			txtSteward.Enabled = false;
+			txtTarvenkeeper.Enabled = false;
+			txtTavernGameHost.Enabled = false;
+			txtTavernWench.Enabled = false;
+			txtText.Enabled = false;
+			txtTornamentTeamTemplatesFourParticipant.Enabled = false;
+			txtTornamentTeamTemplatesOneParticipant.Enabled = false;
+			txtTornamentTeamTemplatesThreeParticipant.Enabled = false;
+			txtTornamentTeamTemplatesTwoParticipant.Enabled = false;
+			txtTournamentMaster.Enabled = false;
+			txtTownEdgeNumber.Enabled = false;
+			txtTownsman.Enabled = false;
+			txtTownsmanChild.Enabled = false;
+			txtTownsmanInfant.Enabled = false;
+			txtTownsmanTeenager.Enabled = false;
+			txtTownswoman.Enabled = false;
+			txtTownswomanChild.Enabled = false;
+			txtTownswomanInfant.Enabled = false;
+			txtTownswomanTeenager.Enabled = false;
+			txtVeteranCaravanGuard.Enabled = false;
+			txtVillager.Enabled = false;
+			txtVillagerFemaleChild.Enabled = false;
+			txtVillagerFemaleTeenager.Enabled = false;
+			txtVillagerMaleChild.Enabled = false;
+			txtVillagerMaleTeenager.Enabled = false;
+			txtVillagerPartyTemplate.Enabled = false;
+			txtVillageWoman.Enabled = false;
+			txtWeaponPracticeStage1.Enabled = false;
+			txtWeaponPracticeStage2.Enabled = false;
+			txtWeaponPracticeStage3.Enabled = false;
+			txtWeaponSmith.Enabled = false;
+
+			chkCanHaveSettlement.Enabled = false;
+			chkIsMainCulture.Enabled = false;
+		}
 
 		private void initializeTooltip()
 		{

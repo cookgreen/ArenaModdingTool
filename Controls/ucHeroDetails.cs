@@ -28,8 +28,49 @@ namespace ArenaModdingTool.Controls
             selectedIndex = index;
             this.addEditState = addEditState;
 
-            loadHeroDetails();
-        }
+            switch(addEditState)
+            {
+                case AddEditState.Add:
+                    hero = new MBBannerlordHero();
+                    enableEditor();
+                    break;
+                case AddEditState.Edit:
+					loadHeroDetails();
+					enableEditor();
+					break;
+                case AddEditState.View:
+					disableEditor();
+					break;
+            }
+		}
+
+		private void enableEditor()
+		{
+            txtBannerKey.Enabled = true;
+            txtFaction.Enabled = true;
+            txtFather.Enabled = true;
+            txtID.Enabled = true;
+            txtIntroduction.Enabled = true;
+            txtMother.Enabled = true;
+            txtSpouse.Enabled = true;
+
+            chkIsAlive.Enabled = true;
+            chkIsNoble.Enabled = true; 
+		}
+
+		private void disableEditor()
+		{
+			txtBannerKey.Enabled = false;
+			txtFaction.Enabled = false;
+			txtFather.Enabled = false;
+			txtID.Enabled = false;
+			txtIntroduction.Enabled = false;
+			txtMother.Enabled = false;
+			txtSpouse.Enabled = false;
+
+			chkIsAlive.Enabled = false;
+			chkIsNoble.Enabled = false;
+		}
 
 		private void initializeTooltip()
 		{

@@ -26,18 +26,18 @@ namespace ArenaModdingTool.Controls
             this.project = project;
             this.cultures = cultures;
 
-            panel1.Controls.Clear();
+            panelList.Controls.Clear();
             cultureListCtrl = new ucCultureListEdit(cultures);
             cultureListCtrl.Dock = DockStyle.Fill;
             cultureListCtrl.SelectCultureChanged += CultureListCtrl_SelectCultureChanged; ;
-            panel1.Controls.Add(cultureListCtrl);
+            panelList.Controls.Add(cultureListCtrl);
         }
 
         private void CultureListCtrl_SelectCultureChanged(MBBannerlordCulture selectedCulture, int index)
         {
             cultureDetailsCtrl = new ucCultureDetails(project, selectedCulture, index, cultureListCtrl.State);
-            panel3.Controls.Clear();
-            panel3.Controls.Add(cultureDetailsCtrl);
+            panelDetails.Controls.Clear();
+            panelDetails.Controls.Add(cultureDetailsCtrl);
             cultureDetailsCtrl.Dock = DockStyle.Fill;
 
 			cultureDetailsCtrl.SaveCultureInfoFinished += CultureDetailsCtrl_SaveCultureInfoFinished;

@@ -32,11 +32,11 @@ namespace ArenaModdingTool.Controls
         public ucItemsListEdit(MBBannerlordItems items)
         {
             InitializeComponent();
-            panel2.Controls.Clear();
+            panelList.Controls.Clear();
             itemsListCtrl = new ucItemsList(items);
             itemsListCtrl.SelectedItemChanged += ItemsListCtrl_SelectedItemChanged;
             itemsListCtrl.Dock = DockStyle.Fill;
-            panel2.Controls.Add(itemsListCtrl);
+            panelList.Controls.Add(itemsListCtrl);
         }
 
         private void ItemsListCtrl_SelectedItemChanged(MBBannerlordItem item, int index)

@@ -24,18 +24,18 @@ namespace ArenaModdingTool.Controls
             this.currentProject = currentProject;
             this.heroes = heroes;
 
-            panel1.Controls.Clear();
+            panelList.Controls.Clear();
             heroListEdit = new ucHeroListEdit(heroes);
             heroListEdit.Dock = DockStyle.Fill;
             heroListEdit.SelectedHeroChanged += HeroListEdit_SelectedHeroChanged;
-            panel1.Controls.Add(heroListEdit);
+            panelList.Controls.Add(heroListEdit);
         }
 
         private void HeroListEdit_SelectedHeroChanged(MBBannerlordHero hero, int index, AddEditState addEditState)
         {
             heroDetailsCtl = new ucHeroDetails(currentProject, hero, index, addEditState);
-            panel2.Controls.Clear();
-            panel2.Controls.Add(heroDetailsCtl);
+            panelDetails.Controls.Clear();
+            panelDetails.Controls.Add(heroDetailsCtl);
             heroDetailsCtl.SaveHeroInfoFinished += HeroDetailsCtl_SaveHeroInfoFinished;
             heroDetailsCtl.Dock = DockStyle.Fill;
         }

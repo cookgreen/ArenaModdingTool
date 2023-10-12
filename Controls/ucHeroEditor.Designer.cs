@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(247, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(515, 511);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 511);
-            this.panel1.TabIndex = 2;
-            // 
-            // ucHeroEditor
-            // 
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Name = "ucHeroEditor";
-            this.Size = new System.Drawing.Size(762, 511);
-            this.ResumeLayout(false);
+			this.panelDetails = new System.Windows.Forms.Panel();
+			this.panelList = new System.Windows.Forms.Panel();
+			this.SuspendLayout();
+			// 
+			// panelDetails
+			// 
+			this.panelDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panelDetails.Location = new System.Drawing.Point(247, 0);
+			this.panelDetails.Name = "panelDetails";
+			this.panelDetails.Size = new System.Drawing.Size(515, 511);
+			this.panelDetails.TabIndex = 3;
+			// 
+			// panelList
+			// 
+			this.panelList.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelList.Location = new System.Drawing.Point(0, 0);
+			this.panelList.Name = "panelList";
+			this.panelList.Size = new System.Drawing.Size(247, 511);
+			this.panelList.TabIndex = 2;
+			// 
+			// ucHeroEditor
+			// 
+			this.Controls.Add(this.panelDetails);
+			this.Controls.Add(this.panelList);
+			this.Name = "ucHeroEditor";
+			this.Size = new System.Drawing.Size(762, 511);
+			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelDetails;
+        private System.Windows.Forms.Panel panelList;
     }
 }

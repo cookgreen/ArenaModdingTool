@@ -23,8 +23,8 @@ namespace ArenaModdingTool.Controls
             InitializeComponent();
             ucHeroList = new ucHeroList(heroes);
             ucHeroList.SelectHeroChanged += UcHeroList_SelectHeroChanged;
-            panel2.Controls.Clear();
-            panel2.Controls.Add(ucHeroList);
+            panelList.Controls.Clear();
+            panelList.Controls.Add(ucHeroList);
             ucHeroList.Dock = DockStyle.Fill;
             state = AddEditState.View;
 

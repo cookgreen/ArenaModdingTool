@@ -27,21 +27,21 @@ namespace ArenaModdingTool.Controls
             this.currentProject = currentProject;
             this.items = items;
 
-            panel1.Controls.Clear();
+            panelList.Controls.Clear();
             itemsListEdit = new ucItemsListEdit(items);
             itemsListEdit.Dock = DockStyle.Fill;
             itemsListEdit.SelectedItemChanged += ItemsListEdit_SelectedItemChanged;
             itemsListEdit.AddEditStateChanged += ItemsListEdit_AddEditStateChanged;
-            panel1.Controls.Add(itemsListEdit);
+            panelList.Controls.Add(itemsListEdit);
         }
 
         private void ItemsListEdit_SelectedItemChanged(int index)
         {
-            panel2.Controls.Clear();
+            panelDetails.Controls.Clear();
             itemDetailsCtrl = new ucItemsDetails(itemsListEdit.SelectedItem, itemsListEdit.AddEditState);
             itemDetailsCtrl.Dock = DockStyle.Fill;
             itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
-            panel2.Controls.Add(itemDetailsCtrl);
+            panelDetails.Controls.Add(itemDetailsCtrl);
             editIndex = index;
         }
 
@@ -51,21 +51,21 @@ namespace ArenaModdingTool.Controls
             {
                 case AddEditState.Add:
 
-                    panel2.Controls.Clear();
+                    panelDetails.Controls.Clear();
                     itemDetailsCtrl = new ucItemsDetails(null, itemsListEdit.AddEditState);
                     itemDetailsCtrl.Dock = DockStyle.Fill;
                     itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
-                    panel2.Controls.Add(itemDetailsCtrl);
+                    panelDetails.Controls.Add(itemDetailsCtrl);
 
                     break;
 
                 case AddEditState.Edit:
 
-                    panel2.Controls.Clear();
+                    panelDetails.Controls.Clear();
                     itemDetailsCtrl = new ucItemsDetails(itemsListEdit.SelectedItem, itemsListEdit.AddEditState);
                     itemDetailsCtrl.Dock = DockStyle.Fill;
                     itemDetailsCtrl.DoSave += ItemDetailsCtrl_DoSave;
-                    panel2.Controls.Add(itemDetailsCtrl);
+                    panelDetails.Controls.Add(itemDetailsCtrl);
 
                     break;
             }

@@ -26,21 +26,72 @@ namespace ArenaModdingTool.Controls
         {
             InitializeComponent();
             initializeTooltip();
-
-            loadKingdomDetails(kingdom);
             
             this.state = state;
             this.index = index;
             this.project = project;
-            if (state == AddEditState.Add || state == AddEditState.Edit)
+
+            switch(state)
             {
-                SaveButtonStateChanged?.Invoke(true);
-            }
-            else if(state == AddEditState.View)
-            {
-                SaveButtonStateChanged?.Invoke(false);
+                case AddEditState.Add:
+                    kingdom = new MBBannerlordKingdom();
+                    enableEditor();
+                    break;
+                case AddEditState.Edit:
+                    loadKingdomDetails(kingdom);
+                    enableEditor();
+                    break;
+                case AddEditState.View:
+                    disableEditor();
+                    break;
             }
         }
+
+        private void enableEditor()
+        {
+            txtAlternativeColor.Enabled = true;
+            txtAlternativeColor2.Enabled = true;
+            txtBannerKey.Enabled = true;
+            txtColor.Enabled = true;
+            txtColor2.Enabled = true;
+            txtFlagMesh.Enabled = true;
+            txtID.Enabled = true;
+            txtIntroduction.Enabled = true;
+            txtLabelColor.Enabled = true;
+            txtName.Enabled = true;
+            txtOwner.Enabled = true;
+            txtPrimaryBannerColor.Enabled = true;
+            txtRulerTitle.Enabled = true;
+            txtSecondaryBannerColor.Enabled = true;
+            txtSettlementBannerMesh.Enabled = true;
+            txtShortName.Enabled = true;
+            txtTitle.Enabled = true;
+
+            btnEditRelationshipsAndPolicies.Enabled = true;
+        }
+
+        private void disableEditor()
+		{
+			txtAlternativeColor.Enabled = false;
+			txtAlternativeColor2.Enabled = false;
+			txtBannerKey.Enabled = false;
+			txtColor.Enabled = false;
+			txtColor2.Enabled = false;
+			txtFlagMesh.Enabled = false;
+			txtID.Enabled = false;
+			txtIntroduction.Enabled = false;
+			txtLabelColor.Enabled = false;
+			txtName.Enabled = false;
+			txtOwner.Enabled = false;
+			txtPrimaryBannerColor.Enabled = false;
+			txtRulerTitle.Enabled = false;
+			txtSecondaryBannerColor.Enabled = false;
+			txtSettlementBannerMesh.Enabled = false;
+			txtShortName.Enabled = false;
+			txtTitle.Enabled = false;
+
+			btnEditRelationshipsAndPolicies.Enabled = false;
+		}
 
 		private void initializeTooltip()
 		{
@@ -67,6 +118,7 @@ namespace ArenaModdingTool.Controls
 
 		private void loadKingdomDetails(MBBannerlordKingdom kingdom)
         {
+            //TODO: Use data binding to handle this
             foreach(var mod in MBBannerlordModManager.Instance.OfficialMods)
             {
                 foreach(var cultures in mod.ModuleCultures)
